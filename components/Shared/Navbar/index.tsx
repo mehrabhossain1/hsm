@@ -5,8 +5,8 @@ import RightSide from "./RightSide";
 
 const Navbar = () => {
   return (
-    <div className="">
-      <div className="flex justify-between px-4 max-w-screen-xl mx-auto border-2 border-b-[#FEC53F]">
+    <div className="bg-[#001844]">
+      <div className="flex justify-between px-2 max-w-screen-xl mx-auto">
         <LeftSide />
         <Middle />
         <RightSide />

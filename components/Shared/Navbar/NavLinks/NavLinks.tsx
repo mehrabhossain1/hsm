@@ -8,13 +8,14 @@ import Link from "next/link";
 export function NavbarDemo() {
   return (
     <div className="w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+      <Navbar className="top-2 border-t-2 mt-2 border-t-[#FEC53F]" />
     </div>
   );
 }
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+
   return (
     <div className={cn("inset-x-0 mx-auto z-50", className)}>
       <Menu setActive={setActive}>
@@ -61,9 +62,15 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/">Youtube</Link>
-        <Link href="/">Contact</Link>
-        <Link href="/">Sizear</Link>
+        <Link href="/" className="text-sm">
+          Youtube
+        </Link>
+        <Link href="/" className="text-sm">
+          Contact
+        </Link>
+        <Link href="/" className="text-sm">
+          Sizear
+        </Link>
       </Menu>
     </div>
   );

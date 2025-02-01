@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
