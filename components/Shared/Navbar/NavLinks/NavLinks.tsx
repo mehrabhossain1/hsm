@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/moving-border";
 export function NavbarDemo() {
   return (
     <div className="w-full flex items-center justify-center">
-      <Navbar className="top-2 border-t-2 mt-2 border-t-[#FEC53F]" />
+      <Navbar className="top-2 border-t-2  border-t-[#FEC53F]" />
     </div>
   );
 }
@@ -23,7 +23,7 @@ function Navbar({ className }: { className?: string }) {
         <Link href="/">
           <AiFillHome className="text-lg" />
         </Link>
-        <MenuItem setActive={setActive} active={active} item="About">
+        <MenuItem setActive={setActive} active={active} item="ABOUT">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">About HSM</HoveredLink>
             <HoveredLink href="/interface-design">Vision & Mission</HoveredLink>
@@ -34,7 +34,7 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem
           setActive={setActive}
           active={active}
-          item="Resources & Bookmarks"
+          item="RESOURCES & BOOKMARKS"
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -46,7 +46,7 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem
           setActive={setActive}
           active={active}
-          item="News & Newsletter"
+          item="NEWS & NEWSLETTERS"
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
@@ -55,7 +55,7 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Blog & Interview">
+        <MenuItem setActive={setActive} active={active} item="BLOG & INTERVIEW">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
@@ -63,19 +63,19 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/" className="text-sm">
-          Youtube
+        <Link href="/" className="text-xs">
+          YOUTUBE
         </Link>
-        <Link href="/" className="text-sm">
-          Contact
+        <Link href="/" className="text-xs">
+          CONTACT
         </Link>
-        <Link href="/" className="text-sm">
+        <Link href="/" className="text-xs">
           <Button
             borderRadius="1.75rem"
             className="text-[#FEC53F]"
             borderClassName=""
           >
-            Sizear
+            SIZEAR
           </Button>
         </Link>
       </Menu>
