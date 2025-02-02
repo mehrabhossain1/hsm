@@ -70,7 +70,11 @@ function Navbar({ className }: { className?: string }) {
           Contact
         </Link>
         <Link href="/" className="text-sm">
-          <Button borderRadius="1.75rem" className="" borderClassName="">
+          <Button
+            borderRadius="1.75rem"
+            className="text-[#FEC53F]"
+            borderClassName=""
+          >
             Sizear
           </Button>
         </Link>
