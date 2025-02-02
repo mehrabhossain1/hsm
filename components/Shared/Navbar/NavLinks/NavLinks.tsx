@@ -4,6 +4,7 @@ import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { AiFillHome } from "react-icons/ai";
 import Link from "next/link";
+import { Button } from "@/components/ui/moving-border";
 
 export function NavbarDemo() {
   return (
@@ -17,10 +18,10 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <div className={cn("inset-x-0 mx-auto z-50", className)}>
+    <div className={cn("inset-x-0 mx-auto z-50 w-full", className)}>
       <Menu setActive={setActive}>
         <Link href="/">
-          <AiFillHome className="text-xl" />
+          <AiFillHome className="text-lg" />
         </Link>
         <MenuItem setActive={setActive} active={active} item="About">
           <div className="flex flex-col space-y-4 text-sm">
@@ -69,7 +70,9 @@ function Navbar({ className }: { className?: string }) {
           Contact
         </Link>
         <Link href="/" className="text-sm">
-          Sizear
+          <Button borderRadius="1.75rem" className="" borderClassName="">
+            Sizear
+          </Button>
         </Link>
       </Menu>
     </div>
