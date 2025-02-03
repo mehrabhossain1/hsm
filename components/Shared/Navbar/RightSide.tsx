@@ -5,7 +5,7 @@ const RightSide = () => {
     <div className="flex gap-1 justify-center items-center">
       <Button
         variant="outline"
-        className="bg-transparent text-white outline-[#FEC53F]"
+        className="bg-transparent text-white border-[#FEC53F]"
       >
         Gift
       </Button>
