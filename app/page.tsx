@@ -1,4 +1,5 @@
 import AboutSection from "@/components/Homepage/AboutSection/AboutSection";
+// import { HeroScrollDemo } from "@/components/Homepage/HeroSection/HeroScrollDemo";
 import HeroSection from "@/components/Homepage/HeroSection/HeroSection";
 import ResourcesBookmarks from "@/components/Homepage/ResourcesBookmarks/ResourcesBookmarks";
 import { AnimatedTestimonialsDemo } from "@/components/Homepage/Testimonials/Testimonials";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      {/* <HeroScrollDemo /> */}
       <HeroSection />
       <AboutSection />
       <ResourcesBookmarks />
