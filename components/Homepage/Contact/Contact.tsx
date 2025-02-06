@@ -56,7 +56,7 @@ const Contact = () => {
               id="message"
               // placeholder="Write your message here"
               type="text"
-              className="h-32"
+              className="h-20"
             />
           </LabelInputContainer>
 
@@ -67,8 +67,6 @@ const Contact = () => {
             Submit &rarr;
             <BottomGradient />
           </button>
-
-          <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
         </form>
       </div>
     </div>
