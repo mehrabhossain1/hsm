@@ -4,6 +4,7 @@ import { FaFacebook, FaLinkedin, FaArrowUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "@/public/logo3.png";
 import Image from "next/image";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 const Footer = () => {
   // Function to scroll to the top
@@ -16,7 +17,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto">
         {/* Horizontal line with Back to Top button aligned right */}
         <div className="flex items-center justify-center gap-5 pb-6">
-          <div className="flex-1 border-t border-gray-800">
+          <div className="flex-1 border-t border-gray-400">
             {/* Placeholder to push button to the right */}
           </div>
           <motion.button
@@ -120,10 +121,17 @@ const Footer = () => {
         </div>
 
         {/* Improved Copyright Section */}
-        <div className="pt-6 mt-10 text-white border-t border-gray-200">
-          <p className="text-sm tracking-wide text-center text-gray-200">
+        <div className="pt-6 mt-10 text- border-t border-gray-400">
+          <p className="text-sm tracking-wide text-center text-">
             &copy; {new Date().getFullYear()} Monaemul Islam Sizear. All rights
-            reserved. Privacy Policy and Terms of use.
+            reserved.{" "}
+            <LinkPreview
+              url="https://tailwindcss.com"
+              className="font-bold underline text-blue-500"
+            >
+              Privacy Policy
+            </LinkPreview>{" "}
+            and Terms of use.
           </p>
         </div>
       </div>
