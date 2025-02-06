@@ -12,17 +12,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-10 bg-[#001844] text-gray-300">
+    <footer className="py-10 bg-[#F0F4F8] text-gray-800">
       <div className="max-w-[1200px] mx-auto">
         {/* Horizontal line with Back to Top button aligned right */}
         <div className="flex items-center justify-center gap-5 pb-6">
-          <div className="flex-1 border-t border-gray-200">
+          <div className="flex-1 border-t border-gray-800">
             {/* Placeholder to push button to the right */}
           </div>
           <motion.button
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
-            className="flex items-center space-x-2 text-lg font-semibold text-white hover:text-[#FEC53F] transition duration-300"
+            className="flex items-center space-x-2 text-lg font-semibold text-black hover:text-sky-700 transition duration-300"
             aria-label="Back to Top"
           >
             <span className="tracking-[3px]">BACK TO TOP</span>
@@ -91,7 +91,7 @@ const Footer = () => {
 
           {/* Last Grid */}
           <div className="flex flex-col items-center justify-center">
-            <blockquote className="mb-6 italic text-[#FEC53F] text-center">
+            <blockquote className="mb-6 italic text-sky-700 text-center">
               “Believe work can be better. <br /> Know deeper. Do Better.”
             </blockquote>
             <p className="font-semibold text-center">
