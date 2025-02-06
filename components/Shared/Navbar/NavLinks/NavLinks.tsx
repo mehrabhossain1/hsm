@@ -4,7 +4,6 @@ import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { AiFillHome } from "react-icons/ai";
 import Link from "next/link";
-import { Button } from "@/components/ui/moving-border";
 
 export function NavbarDemo() {
   return (
@@ -68,15 +67,6 @@ function Navbar({ className }: { className?: string }) {
         </Link>
         <Link href="/" className="text-xs">
           CONTACT
-        </Link>
-        <Link href="/" className="text-xs">
-          <Button
-            borderRadius="1.75rem"
-            className="text-[#FEC53F]"
-            borderClassName=""
-          >
-            SIZEAR
-          </Button>
         </Link>
       </Menu>
     </div>
