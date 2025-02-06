@@ -29,17 +29,19 @@ export const projects = [
 
 const AboutSection = () => {
   return (
-    <div className="max-w-screen-xl min-h-dvh mx-auto px-4 flex flex-col justify-center items-center">
-      <div className="flex justify-between items-center w-full mb-8">
-        <h2 className="text-4xl font-semibold text-left">About</h2>{" "}
-        {/* Section Title */}
-        <p className="text-sm text-right text-gray-600">
-          HSM is a resource hub, offering evidence-based insights, expert
-          knowledge, global events, and career opportunities.
-        </p>{" "}
-        {/* Pitch Line */}
+    <div className="">
+      <div className="max-w-screen-xl min-h-dvh mx-auto px-4 flex flex-col justify-center items-center">
+        <div className="flex justify-between items-center w-full mb-8">
+          <h2 className="text-4xl font-semibold text-left">About</h2>{" "}
+          {/* Section Title */}
+          <p className="text-sm text-right text-gray-600">
+            HSM is a resource hub, offering evidence-based insights, expert
+            knowledge, global events, and career opportunities.
+          </p>{" "}
+          {/* Pitch Line */}
+        </div>
+        <HoverEffect items={projects} />
       </div>
-      <HoverEffect items={projects} />
     </div>
   );
 };
