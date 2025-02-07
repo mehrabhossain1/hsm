@@ -31,7 +31,7 @@ const Footer = () => {
           </motion.button>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 px-4 mx-auto max-w-7xl md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 px-4 mx-auto max-w-7xl md:grid-cols-3 text-sm">
           {/* First Grid */}
           <div className="flex flex-col items-center justify-center">
             <Image src={logo} alt="Logo" className="mb-6 w-80" />
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Second Grid */}
-          <div className="flex flex-col">
+          <div className="flex flex-col text-sm">
             <ul className="space-y-2 md:ps-24">
               <li>
                 <a href="#about" className="hover:underline">

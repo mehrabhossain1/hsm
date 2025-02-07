@@ -6,7 +6,11 @@ import { Button } from "@/components/ui/moving-border";
 const LeftSide = () => {
   return (
     <div className="flex gap-2 items-center justify-center py-1 cursor-pointer">
-      <Image src={SizearImage} alt="sizear" className="rounded-full size-12" />
+      <Image
+        src={SizearImage}
+        alt="sizear"
+        className="rounded-full size-12 border-2 border-[#FEC53F]"
+      />
       <Link href="/" className="text-xs">
         <Button
           borderRadius="1.75rem"
