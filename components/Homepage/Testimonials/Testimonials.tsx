@@ -39,7 +39,7 @@ export function AnimatedTestimonialsDemo() {
     },
   ];
   return (
-    <div className="bg-[#E0F2FF]">
+    <div className="bg-[#E0F2FF] rounded-t-2xl">
       <div className="flex justify-between items-center py-20 flex-col w-full">
         <h2 className="text-4xl font-semibold mb-4">TESTIMONIALS</h2>{" "}
         {/* Section Title */}
@@ -51,7 +51,7 @@ export function AnimatedTestimonialsDemo() {
         </p>{" "}
         {/* Pitch Line */}
       </div>
-      <AnimatedTestimonials testimonials={testimonials} autoplay />;
+      <AnimatedTestimonials testimonials={testimonials} autoplay />
     </div>
   );
 }

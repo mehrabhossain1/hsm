@@ -17,7 +17,7 @@ const NewsNewsletter = () => {
 
   return (
     <div className=" min-h-dvh mx-auto px-8 relative overflow-hidden w-full h-full py-20 bg-[#FEC53F] rounded-2xl">
-      <div className="max-w-screen-xl mx-auto px-8 flex justify-between items-center w-full mb-16">
+      <div className="max-w-screen-xl mx-auto px-8 flex justify-between items-center w-full">
         <h2 className="text-4xl font-semibold text-left">News & Newsletter</h2>{" "}
         {/* Section Title */}
         <p className="text-sm text-right text-gray-600">
