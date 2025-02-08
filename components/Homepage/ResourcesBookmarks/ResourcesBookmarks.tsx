@@ -6,13 +6,13 @@ const ResourcesBookmarks = () => {
       title: "Bookmarks",
       link: "https://gomoonbeam.com",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+        "https://www.shutterstock.com/image-vector/website-bookmark-favorite-web-page-260nw-2304565527.jpg",
     },
     {
       title: "Resources",
       link: "https://cursor.so",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+        "https://thumbs.dreamstime.com/b/human-resources-icon-management-rotation-partnership-communication-symbol-ui-web-logo-sign-flat-design-app-stock-vector-79806898.jpg",
     },
   ];
 
