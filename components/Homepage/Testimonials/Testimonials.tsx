@@ -38,5 +38,20 @@ export function AnimatedTestimonialsDemo() {
       src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
-  return <AnimatedTestimonials testimonials={testimonials} autoplay />;
+  return (
+    <div className="bg-[#E0F2FF]">
+      <div className="flex justify-between items-center py-20 flex-col w-full">
+        <h2 className="text-4xl font-semibold mb-4">TESTIMONIALS</h2>{" "}
+        {/* Section Title */}
+        <p className="text-sm text-center max-w-3xl text-gray-600">
+          Users have shared their experiences, underscoring the value of the
+          Health Systems Matter platform. We are truly honored to receive such
+          positive feedback and extend our heartfelt gratitude to everyone who
+          has shared their appreciation.
+        </p>{" "}
+        {/* Pitch Line */}
+      </div>
+      <AnimatedTestimonials testimonials={testimonials} autoplay />;
+    </div>
+  );
 }

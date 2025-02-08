@@ -9,7 +9,7 @@ const HeroSection = () => {
   HSM offers evidence and news within your reach.`;
 
   return (
-    <div className="grid grid-cols-2 min-h-[calc(100vh-120px)] items-center px-4 bg-[#E0F2FF]">
+    <div className="grid grid-cols-2 min-h-[calc(100vh-120px)] items-center px-4">
       <div>left</div>
       <div>
         <TextGenerateEffect duration={2} filter={false} words={words} />

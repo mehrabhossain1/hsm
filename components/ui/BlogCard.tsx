@@ -24,7 +24,7 @@ export const BlogCard = ({
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      className="max-w-lg bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 transition duration-300"
+      className="max-w-lg bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden  dark:border-gray-800 transition duration-300"
     >
       <Link href={pageLink} className="block">
         <Image

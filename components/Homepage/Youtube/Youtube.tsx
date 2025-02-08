@@ -3,8 +3,8 @@ import bg from "@/public/bg.jpeg";
 
 const Youtube = () => {
   return (
-    <section className="bg-[#001844] pt-20 pb-20" id="youtube">
-      <div className="flex flex-col gap-10 min-h-dvh items-center justify-center max-w-screen-xl px-4 mx-auto overflow-x-hidden lg:flex-row">
+    <section className="bg-[#001844] min-h-dvh rounded-2xl" id="youtube">
+      <div className="flex flex-col gap-10 min-h-dvh px-8 items-center justify-center max-w-screen-xl mx-auto overflow-x-hidden lg:flex-row">
         {/* Text Section */}
         <div className="mb-8 lg:w-1/2 lg:mb-0 lg:pr-8">
           <div className="flex flex-row items-center gap-10 pb-10">
