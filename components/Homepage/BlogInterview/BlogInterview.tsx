@@ -2,7 +2,7 @@ import { BlogCard } from "@/components/ui/BlogCard";
 
 const BlogInterview = () => {
   return (
-    <div className="min-h-dvh py-20  bg-gray-100">
+    <div className="min-h-dvh py-20  bg-[#F9F6F3]">
       <div className="w-full text-center">
         <h2 className="text-4xl font-semibold my-2">Blogs & Interviews</h2>{" "}
         {/* Section Title */}
