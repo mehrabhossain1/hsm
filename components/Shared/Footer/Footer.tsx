@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-10 bg-[#F0F4F8] text-gray-800">
+    <footer className="py-10 bg-[#F0F4F8] text-gray-800 rounded-t-2xl">
       <div className="max-w-[1200px] mx-auto">
         {/* Horizontal line with Back to Top button aligned right */}
         <div className="flex items-center justify-center gap-5 pb-6">

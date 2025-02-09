@@ -1,8 +1,9 @@
 "use client";
 
-import { Globe, Users, BookOpen, TrendingUp } from "lucide-react";
+import { Globe, Users, BookOpen, TrendingUp, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 const AboutPage = () => {
   const router = useRouter();
@@ -18,35 +19,34 @@ const AboutPage = () => {
     {
       icon: <Users size={40} className="text-green-500" />,
       title: "Vision and Mission",
-      description: `The vision of Health Systems Matter is to create an evidence-based platform that empowers
-emerging public health professionals to become informed and confident global health
-advocates, dedicated to promoting public health issues and contributing to global health.`,
+      description: `The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging public health professionals to become informed and confident global health advocates.`,
       bg: "bg-green-100",
       route: "vision-and-mission",
     },
     {
       icon: <BookOpen size={40} className="text-yellow-500" />,
       title: "Activities and Approach",
-      description:
-        "Curating essential health documents, research, and reports.",
+      description: `In order to be aligned with the vision and mission of Health Systems Matter, the specific activities are as follows:`,
       bg: "bg-yellow-100",
-      route: "knowledge-hub",
+      route: "activities-and-approach",
     },
     {
       icon: <TrendingUp size={40} className="text-red-500" />,
       title: "Why Health Systems Matter ?",
-      description: "Elevating key health messages through strategic advocacy.",
+      description:
+        "Q1: What inspired the establishment of Health Systems Matter, and what is its foundational background? Sizear: Two key factors inspired me to create the HSM knowledge platform.",
       bg: "bg-red-100",
-      route: "amplification",
+      route: "why-health-systems-matter",
     },
   ];
 
   return (
-    <div className="min-h-[calc(100vh-115px)] flex flex-col  pb-10">
+    <div className="min-h-[calc(100vh-115px)] flex flex-col pb-10 max-w-screen-xl mx-auto">
       {/* Title Section (30% Height) */}
-      <div className="h-[40%] py-10 bg-[#001844] rounded-b-2xl flex flex-col justify-center text-white items-center text-center px-6">
-        <h1 className="text-4xl font-bold">ABOUT</h1>
-        <p className="mt-4 text-lg max-w-2xl text-gray-300">
+      <div className="h-[40%] py-2 rounded-b-2xl flex justify-between px-8 items-center text-center ">
+        <h1 className="text-4xl font-bold text-gray-800">ABOUT</h1>
+
+        <p className="mt-4 text-lg max-w-2xl text-gray-700">
           HSM is a resource hub, offering evidence-based insights, expert
           knowledge, global events, and career opportunities.
         </p>
@@ -58,12 +58,23 @@ advocates, dedicated to promoting public health issues and contributing to globa
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
-            className={`p-6  py-6 rounded-xl shadow-lg ${card.bg} flex flex-col items-center text-center cursor-pointer`}
+            className={`p-6 py-6 rounded-xl shadow-lg ${card.bg} flex flex-col items-center text-center cursor-pointer`}
             onClick={() => router.push(`/about/${card.route}`)}
           >
             {card.icon}
             <h3 className="text-xl font-semibold pt-4">{card.title}</h3>
-            <p className="text-gray-700 pt-2 ">{card.description}</p>
+            <p className="text-gray-700 pt-2 pb-5">{card.description}</p>
+
+            <Button
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent the card click
+                router.push(`/about/${card.route}`);
+              }}
+              className="mt-auto flex bg-[#FEC53F] text-black hover:text-white hover:bg-[#001844]"
+            >
+              Read More
+              <ArrowRight className="size-4 hover:text-white" />
+            </Button>
           </motion.div>
         ))}
       </div>

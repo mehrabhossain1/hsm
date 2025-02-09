@@ -30,9 +30,15 @@ function Navbar({ className }: { className?: string }) {
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/about/about-hsm">About HSM</HoveredLink>
-            <HoveredLink href="/interface-design">Vision & Mission</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/about/vision-and-mission">
+              Vision & Mission
+            </HoveredLink>
+            <HoveredLink href="/about/activities-and-approach">
+              Activities & Approach
+            </HoveredLink>
+            <HoveredLink href="/about/why-health-systems-matter">
+              Why Health Systems Matter
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItem

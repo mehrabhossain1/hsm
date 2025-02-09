@@ -32,6 +32,7 @@ export default function RootLayout({
       >
         <SocialShare />
         <Navbar />
+
         {children}
         <Footer />
       </body>
