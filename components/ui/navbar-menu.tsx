@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const transition = {
   type: "spring",
@@ -19,17 +20,25 @@ export const MenuItem = ({
   active,
   item,
   children,
+  href,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
+  href?: string;
 }) => {
+  const router = useRouter();
+
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div
+      onClick={() => href && router.push(href)}
+      onMouseEnter={() => setActive(item)}
+      className="relative "
+    >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-xs text-white hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-sm text-white hover:opacity-[0.9] dark:text-white"
       >
         {item}
       </motion.p>

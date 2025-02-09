@@ -22,9 +22,14 @@ function Navbar({ className }: { className?: string }) {
         <Link href="/">
           <AiFillHome className="text-lg" />
         </Link>
-        <MenuItem setActive={setActive} active={active} item="ABOUT">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="ABOUT"
+          href="/about"
+        >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">About HSM</HoveredLink>
+            <HoveredLink href="/about/about-hsm">About HSM</HoveredLink>
             <HoveredLink href="/interface-design">Vision & Mission</HoveredLink>
             <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
             <HoveredLink href="/branding">Branding</HoveredLink>
@@ -62,10 +67,10 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/" className="text-xs">
+        <Link href="/" className="text-sm">
           YOUTUBE
         </Link>
-        <Link href="/" className="text-xs">
+        <Link href="/" className="text-sm">
           CONTACT
         </Link>
       </Menu>
