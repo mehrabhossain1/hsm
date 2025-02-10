@@ -1,18 +1,40 @@
 "use client";
 
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { Separator } from "@/components/ui/separator";
 
 const HeroSection = () => {
-  const words = `Knowledge for Solutions!
-  Don’t settle.
-  Better public health starts with knowledge.
-  HSM offers evidence and news within your reach.`;
-
   return (
-    <div className="grid grid-cols-2 min-h-[calc(100vh-115px)] items-center px-4 bg-[#F9F6F3] rounded-2xl">
-      <div>left</div>
-      <div>
-        <TextGenerateEffect duration={2} filter={false} words={words} />
+    <div className="grid grid-cols-5 min-h-[calc(100vh-115px)] items-center px-8 bg-[#F9F6F3] rounded-2xl">
+      <div className="col-span-2">left</div>
+      <div className="col-span-3">
+        <div className="flex items-center">
+          <h2 className="text-3xl font-bold text-center mr-7 text-[#001844]">
+            Health <br /> System
+          </h2>
+          <Separator orientation="vertical" className="h-28 w-1 bg-[#FEC53F]" />
+          <h1 className="transform -rotate-90 text-5xl mr-5 font-semibold text-green-500">
+            HUB
+          </h1>
+
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold text-red-600">
+              Knowledge for Solutions!
+            </h2>
+            <p className="text-lg text-sky-500">
+              Don&apos;t settle. Better public health starts with knowledge.
+            </p>
+            <p className="text-lg text-[#001844]">
+              <span className="bg-[#FEC53F] font-semibold ">HSM</span> offers
+              evidence and news withing your reach.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-[#001844] rounded-2xl mt-10 text-center text-2xl py-5 text-[#FEC53F] max-w-3xl mr-3">
+          Resources <span className="px-5">|</span> Insights{" "}
+          <span className="px-5">|</span> Events <span className="px-5">|</span>{" "}
+          Career
+        </div>
       </div>
     </div>
   );
