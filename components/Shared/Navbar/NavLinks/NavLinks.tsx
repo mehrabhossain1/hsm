@@ -45,6 +45,7 @@ function Navbar({ className }: { className?: string }) {
           setActive={setActive}
           active={active}
           item="RESOURCES & BOOKMARKS"
+          href="/resources-and-bookmarks"
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
