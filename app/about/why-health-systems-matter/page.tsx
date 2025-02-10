@@ -11,9 +11,7 @@ const WhyHealthSystemsMatterPage = () => {
     <div className="min-h-screen flex flex-col items-center justify-start max-w-screen-xl mx-auto p-6">
       {/* Title Section */}
       <div className="text-center py-8">
-        <h1 className="text-4xl font-bold text-gray-800">
-          Why Health Systems Matter?
-        </h1>
+        <h1 className="text-4xl font-bold text-gray-800">Why HSM ?</h1>
       </div>
 
       {/* Icon Section */}

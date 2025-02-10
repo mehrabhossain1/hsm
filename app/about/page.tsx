@@ -4,6 +4,7 @@ import { Globe, Users, BookOpen, TrendingUp, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 const AboutPage = () => {
   const router = useRouter();
@@ -11,7 +12,7 @@ const AboutPage = () => {
   const cards = [
     {
       icon: <Globe size={40} className="text-blue-500" />,
-      title: "About Health Systems Matter (HSM)",
+      title: "About HSM",
       description: `“Information is power” and “Evidence lies at the heart of public health policy.”`,
       bg: "bg-blue-100",
       route: "about-hsm",
@@ -32,7 +33,7 @@ const AboutPage = () => {
     },
     {
       icon: <TrendingUp size={40} className="text-red-500" />,
-      title: "Why Health Systems Matter ?",
+      title: "Why HSM ?",
       description:
         "Q1: What inspired the establishment of Health Systems Matter, and what is its foundational background? Sizear: Two key factors inspired me to create the HSM knowledge platform.",
       bg: "bg-red-100",
@@ -43,10 +44,10 @@ const AboutPage = () => {
   return (
     <div className="min-h-[calc(100vh-115px)] flex flex-col pb-10 max-w-screen-xl mx-auto">
       {/* Title Section (40% Height) */}
-      <div className="h-[40%] py-2 rounded-b-2xl flex justify-between px-8 items-center text-center ">
+      <div className="h-[40%] py-4 rounded-b-2xl flex justify-center gap-8 px-8 items-center text-center ">
         <h1 className="text-4xl font-bold text-gray-800">ABOUT</h1>
-
-        <p className="mt-4 text-lg max-w-2xl text-gray-700">
+        <Separator orientation="vertical" className="h-10 w-1 bg-[#FEC53F]" />
+        <p className="text-lg  text-gray-700">
           HSM is a resource hub, offering evidence-based insights, expert
           knowledge, global events, and career opportunities.
         </p>

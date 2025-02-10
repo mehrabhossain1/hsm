@@ -13,13 +13,7 @@ const AboutHSM = () => {
       <div className="min-h-screen flex flex-col items-center justify-start max-w-screen-xl mx-auto p-6">
         {/* Title Section */}
         <div className="text-center py-8">
-          <h1 className="text-4xl font-bold text-gray-800">
-            About Health Systems Matter (HSM)
-          </h1>
-          <p className="mt-4 text-xl max-w-4xl text-gray-700 mx-auto">
-            "Information is power" and "Evidence lies at the heart of public
-            health policy."
-          </p>
+          <h1 className="text-4xl font-bold text-gray-800">About HSM</h1>
         </div>
 
         {/* Icon Section */}
@@ -29,6 +23,10 @@ const AboutHSM = () => {
 
         {/* Content Section */}
         <div className="space-y-8 text-xl/9 text-gray-700 max-w-4xl mx-auto">
+          <p>
+            "Information is power" and "Evidence lies at the heart of public
+            health policy."
+          </p>
           <p>
             Inspired by the principles of valuing information and evidence,
             Health Systems Matter (HSM) offers essential resources on health
