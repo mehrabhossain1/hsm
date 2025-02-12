@@ -4,9 +4,9 @@ import Contact from "@/components/Homepage/Contact/Contact";
 // import { HeroScrollDemo } from "@/components/Homepage/HeroSection/HeroScrollDemo";
 import HeroSection from "@/components/Homepage/HeroSection/HeroSection";
 import NewsNewsletter from "@/components/Homepage/NewsNewsletter/NewsNewsletter";
-import ResourcesBookmarks from "@/components/Homepage/ResourcesBookmarks/ResourcesBookmarks";
+// import ResourcesBookmarks from "@/components/Homepage/ResourcesBookmarks/ResourcesBookmarks";
 // import Sizear from "@/components/Homepage/Sizear/Sizear";
-import { AnimatedTestimonialsDemo } from "@/components/Homepage/Testimonials/Testimonials";
+// import { AnimatedTestimonialsDemo } from "@/components/Homepage/Testimonials/Testimonials";
 import Youtube from "@/components/Homepage/Youtube/Youtube";
 
 export default function Home() {
@@ -15,13 +15,13 @@ export default function Home() {
       {/* <HeroScrollDemo /> */}
       <HeroSection />
       <AboutSection />
-      <ResourcesBookmarks />
+      {/* <ResourcesBookmarks /> */}
       <NewsNewsletter />
       <BlogInterview />
       <Youtube />
       <Contact />
       {/* <Sizear /> */}
-      <AnimatedTestimonialsDemo />
+      {/* <AnimatedTestimonialsDemo /> */}
     </>
   );
 }

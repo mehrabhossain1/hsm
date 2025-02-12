@@ -20,10 +20,10 @@ const ResourcesAndBookmarksPage = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="flex flex-wrap justify-center gap-8 mt-10 px-6">
+      <div className="flex justify-center gap-8 mt-10 px-6">
         {/* Resources Card */}
         <div
-          className="group relative bg-white shadow-lg border border-gray-200 rounded-2xl p-8 w-1/2 text-center 
+          className="group relative bg-white shadow-lg border w-1/2 border-gray-200 rounded-2xl p-8  text-center 
         hover:shadow-2xl transition duration-300 ease-in-out"
         >
           <div
@@ -58,7 +58,7 @@ const ResourcesAndBookmarksPage = () => {
 
         {/* Bookmarks Card */}
         <div
-          className="group relative bg-white shadow-lg border border-gray-200 rounded-2xl p-8 w-96 text-center 
+          className="group relative bg-white shadow-lg border w-1/2 border-gray-200 rounded-2xl p-8 text-center 
         hover:shadow-2xl transition duration-300 ease-in-out"
         >
           <div

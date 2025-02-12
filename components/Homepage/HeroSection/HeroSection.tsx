@@ -1,11 +1,15 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
+// import HeroImage from "@/public/HeroLeft.jpg";
+// import Image from "next/image";
 
 const HeroSection = () => {
   return (
     <div className="grid grid-cols-5 min-h-[calc(100vh-115px)] items-center px-8 bg-[#F9F6F3] rounded-2xl">
-      <div className="col-span-2">left</div>
+      <div className="col-span-2">
+        {/* <Image src={HeroImage} alt="Hero Image" /> */}
+      </div>
       <div className="col-span-3">
         <div className="flex items-center">
           <h2 className="text-3xl font-bold text-center mr-7 text-[#001844]">
