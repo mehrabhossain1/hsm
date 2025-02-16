@@ -38,8 +38,8 @@ const BlogAndInterviewPage = () => {
 
         {/* Section title */}
         <div className=" bg-[#E0F2FF] rounded-b-2xl">
-          <div className="h-[60vh] px-8 flex flex-col justify-center max-w-screen-xl mx-auto">
-            <h1 className="text-5xl font-[1000] text-gray-800 mb-5">
+          <div className="min-h-[calc(100vh-168px)] px-8 flex flex-col justify-center max-w-screen-xl mx-auto">
+            <h1 className="text-5xl font-[1000] text-[#001844] mb-5">
               BLOG & INTERVIEW
             </h1>
             <p className="max-w-3xl text-xl text-gray-600">
@@ -54,7 +54,7 @@ const BlogAndInterviewPage = () => {
         {/* Blog */}
         <div className="py-20">
           <div className="max-w-screen-xl mx-auto px-8 flex flex-col justify-center items-center">
-            <h2 className="text-4xl font-[1000] text-gray-800 mb-2">
+            <h2 className="text-4xl font-[1000] text-[#001844] mb-2">
               Recent Blogs
             </h2>
             <p className="text-lg text-gray-600 flex flex-col items-center font-semibold">
