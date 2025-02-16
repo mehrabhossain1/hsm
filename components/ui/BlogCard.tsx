@@ -19,7 +19,9 @@ export const BlogCard = ({
   // Determine the correct page link based on type
   const pageLink =
     item.type === "blog"
-      ? `/blogs/${item.title.replace(/\s+/g, "-").toLowerCase()}`
+      ? `/blog-and-interview/blog/${item.title
+          .replace(/[:\s]+/g, "-")
+          .toLowerCase()}`
       : `/interviews/${item.title.replace(/\s+/g, "-").toLowerCase()}`;
 
   return (
@@ -37,10 +39,10 @@ export const BlogCard = ({
           <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
             {item.title}
           </h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-sm mt-1 text-gray-500 dark:text-gray-400">
             {item.date}
           </p>
-          <p className="text-gray-600 dark:text-gray-300 mt-2 line-clamp-2">
+          <p className="text-gray-600 dark:text-gray-300 mt-2 line-clamp-3">
             {item.description}
           </p>
 

@@ -110,10 +110,12 @@ const BlogAndInterviewPage = () => {
                 }}
               />
             </div>
-            <Button className="bg-[#156DF9] text-base text-white py-6 px-5 hover:bg-[#0660EF]">
-              All Blogs{" "}
-              <ArrowRightCircle className=" size-4 bg-[#156DF9] rounded-full text-white" />
-            </Button>
+            <Link href="/blog-and-interview/blog">
+              <Button className="bg-[#156DF9] text-base text-white py-6 px-5 hover:bg-[#0660EF]">
+                All Blogs{" "}
+                <ArrowRightCircle className=" size-4 bg-[#156DF9] rounded-full text-white" />
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -176,10 +178,12 @@ const BlogAndInterviewPage = () => {
               />
             </div>
 
-            <Button className="bg-[#156DF9] text-base text-white py-6 px-5 hover:bg-[#0660EF]">
-              All Interviews{" "}
-              <ArrowRightCircle className=" size-4 bg-[#156DF9] rounded-full text-white" />
-            </Button>
+            <Link href="/blog-and-interview/interview">
+              <Button className="bg-[#156DF9] text-base text-white py-6 px-5 hover:bg-[#0660EF]">
+                All Interviews{" "}
+                <ArrowRightCircle className=" size-4 bg-[#156DF9] rounded-full text-white" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
