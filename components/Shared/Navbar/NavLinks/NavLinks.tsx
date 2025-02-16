@@ -8,7 +8,7 @@ import Link from "next/link";
 export function NavbarDemo() {
   return (
     <div className="w-full flex items-center justify-center">
-      <Navbar className="top-2 border-t-2  border-t-[#FEC53F]" />
+      <Navbar className="top-2 border-t-2 border-t-[#FEC53F]" />
     </div>
   );
 }
@@ -41,6 +41,7 @@ function Navbar({ className }: { className?: string }) {
             </HoveredLink>
           </div>
         </MenuItem>
+
         <MenuItem
           setActive={setActive}
           active={active}
@@ -66,7 +67,12 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="BLOG & INTERVIEW">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          href="/blog-and-interview"
+          item="BLOG & INTERVIEW"
+        >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
