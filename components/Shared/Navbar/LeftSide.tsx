@@ -1,24 +1,25 @@
 import Image from "next/image";
 import SizearImage from "@/public/sizearImage.jpg";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 // import { Button } from "@/components/ui/moving-border";
 
 const LeftSide = () => {
   return (
-    <div className="flex gap-2 items-center justify-center py-1 cursor-pointer">
+    <div className="flex items-center justify-center py-1 cursor-pointer">
       <Image
         src={SizearImage}
         alt="sizear"
-        className="rounded-full size-12 border-2 border-[#FEC53F]"
+        className="rounded-full size-12 border-2 border-[#FEC53F] hover:border-white"
       />
-      <Link href="/" className="text-xs">
-        {/* <Button
-          borderRadius="1.75rem"
-          className="text-[#FEC53F]"
-          borderClassName=""
+      <Link href="/" className="">
+        <Button
+          // borderRadius="1.75rem"
+          className="text-[#FEC53F] underline underline-offset-2 text-lg hover:text-white"
+          // borderClassName=""
         >
           SIZEAR
-        </Button> */}
+        </Button>
       </Link>
     </div>
   );

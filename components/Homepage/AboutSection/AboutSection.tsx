@@ -6,6 +6,7 @@ export const projects = [
     title: "About HSM",
     description:
       "A technology company that builds economic infrastructure for the internet.",
+    image: "https://via.placeholder.com/150",
     link: "https://stripe.com",
   },
   {

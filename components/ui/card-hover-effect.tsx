@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRightCircle } from "lucide-react";
 
 export const HoverEffect = ({
   items,
@@ -52,8 +52,10 @@ export const HoverEffect = ({
           </AnimatePresence>
 
           {/* Card */}
+
           <Card className="flex flex-col h-full p-4 min-h-[220px]">
             {/* Content */}
+
             <div className="flex-1">
               <CardTitle className="text-slate-800">{item.title}</CardTitle>
               <CardDescription className="text-gray-600 line-clamp-4">
@@ -64,7 +66,7 @@ export const HoverEffect = ({
             {/* Button (Sticks to Bottom) */}
             <button className="mt-auto text-sm text-black font-bold flex items-center text-left hover:text-[#156DF9]">
               Learn More{" "}
-              <ArrowRight className="ml-2 size-4 bg-[#156DF9] rounded-full text-white" />
+              <ArrowRightCircle className="ml-2 size-4 bg-[#156DF9] rounded-full text-white" />
             </button>
           </Card>
         </Link>

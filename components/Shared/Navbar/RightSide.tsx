@@ -12,9 +12,9 @@ const RightSide = () => {
       <Button className="bg-[#FEC53F] text-black hover:text-white">
         Subscribe
       </Button>
-      <Button className="bg-[#FEC53F] text-black hover:text-white">
+      {/* <Button className="bg-[#FEC53F] text-black hover:text-white">
         Get Involved
-      </Button>
+      </Button> */}
       {/* <Button>Get Involved</Button> */}
     </div>
   );

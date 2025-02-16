@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRightCircle } from "lucide-react";
 
 export const BlogCard = ({
   item,
@@ -22,10 +23,7 @@ export const BlogCard = ({
       : `/interviews/${item.title.replace(/\s+/g, "-").toLowerCase()}`;
 
   return (
-    <motion.div
-      whileHover={{ y: -10 }}
-      className="max-w-lg bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden  dark:border-gray-800 transition duration-300"
-    >
+    <motion.div className="max-w-lg overflow-hidden border rounded-sm hover:border-[#156DF9] transition-all duration-300">
       <Link href={pageLink} className="block">
         <Image
           src={item.thumbnail}
@@ -34,24 +32,24 @@ export const BlogCard = ({
           height={400}
           className="w-full h-48 object-cover"
         />
+
+        <div className="p-6">
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+            {item.title}
+          </h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            {item.date}
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mt-2 line-clamp-2">
+            {item.description}
+          </p>
+
+          <button className="mt-5 text-sm text-black font-bold flex items-center text-left hover:text-[#156DF9]">
+            Read More{" "}
+            <ArrowRightCircle className="ml-2 size-4 bg-[#156DF9] rounded-full text-white" />
+          </button>
+        </div>
       </Link>
-
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
-          {item.title}
-        </h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">{item.date}</p>
-        <p className="text-gray-600 dark:text-gray-300 mt-2 line-clamp-2">
-          {item.description}
-        </p>
-
-        <Link
-          href={pageLink}
-          className="inline-block mt-4 px-4 py-2 text-black bg-[#FEC53F] hover:bg-[#001844] hover:text-white rounded-lg font-medium transition duration-300"
-        >
-          Read More
-        </Link>
-      </div>
     </motion.div>
   );
 };
