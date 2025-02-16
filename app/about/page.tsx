@@ -4,7 +4,8 @@ import { Globe, Users, BookOpen, TrendingUp, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+
+import SectionTitle from "@/components/Shared/SectionTitle/SectionTitle";
 
 const AboutPage = () => {
   const router = useRouter();
@@ -45,12 +46,7 @@ const AboutPage = () => {
     <div className="min-h-[calc(100vh-115px)] flex flex-col pb-10 max-w-screen-xl mx-auto">
       {/* Title Section (40% Height) */}
       <div className="h-[40%] py-4 rounded-b-2xl flex justify-center gap-8 px-8 items-center text-center ">
-        <h1 className="text-4xl font-bold text-gray-800">ABOUT</h1>
-        <Separator orientation="vertical" className="h-10 w-1 bg-[#FEC53F]" />
-        <p className="text-lg  text-gray-700">
-          HSM is a resource hub, offering evidence-based insights, expert
-          knowledge, global events, and career opportunities.
-        </p>
+        <SectionTitle title="About" subTitle="HSM" />
       </div>
 
       {/* Cards Section (60% Height) */}

@@ -26,6 +26,8 @@ export default function Home() {
       <Contact />
       {/* <Sizear /> */}
       {/* <AnimatedTestimonialsDemo /> */}
+
+  
     </>
   );
 }

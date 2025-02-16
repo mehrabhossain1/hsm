@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Roboto, Roboto_Slab } from "next/font/google";
+
 import "./globals.css";
 import SocialShare from "@/components/Shared/Social/SocialShare";
 import Navbar from "@/components/Shared/Navbar";
 // import Footer from "@/components/Shared/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const roboto = Roboto({
+//   variable: "--font-roboto",
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "500", "700", "900"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const robotoSlab = Roboto_Slab({
+//   variable: "--font-roboto-slab",
+//   subsets: ["latin"],
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,10 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning={true}>
+      {/* ${roboto.variable} ${robotoSlab.variable}  */}
+      <body className={`antialiased`}>
         <SocialShare />
         <Navbar />
 

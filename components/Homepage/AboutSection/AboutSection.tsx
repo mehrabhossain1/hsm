@@ -1,3 +1,4 @@
+import SectionTitle from "@/components/Shared/SectionTitle/SectionTitle";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export const projects = [
@@ -31,15 +32,7 @@ const AboutSection = () => {
   return (
     <div className=" bg-[#E0F2FF] rounded-2xl">
       <div className="max-w-screen-xl min-h-dvh mx-auto px-8 flex flex-col justify-center items-center">
-        <div className="flex justify-between items-center w-full mb-8">
-          <h2 className="text-4xl font-semibold text-left">About</h2>{" "}
-          {/* Section Title */}
-          <p className="text-sm text-right text-gray-600">
-            HSM is a resource hub, offering evidence-based insights, expert
-            knowledge, global events, and career opportunities.
-          </p>{" "}
-          {/* Pitch Line */}
-        </div>
+        <SectionTitle title="About" subTitle="HSM" />
         <HoverEffect items={projects} />
       </div>
     </div>
@@ -47,3 +40,13 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
+<div className="flex justify-between items-center w-full mb-8">
+  <h2 className="text-4xl font-semibold text-left">About</h2>{" "}
+  {/* Section Title */}
+  <p className="text-sm text-right text-gray-600">
+    HSM is a resource hub, offering evidence-based insights, expert knowledge,
+    global events, and career opportunities.
+  </p>{" "}
+  {/* Pitch Line */}
+</div>;
