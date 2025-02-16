@@ -75,9 +75,9 @@ h2 {
   body {
     @apply bg-background text-foreground;
   }
-  /* p {
-    @apply text-ring;
-  } */
+  p {
+    @apply text-lg leading-8;
+  }
 }
 
 .no-visible-scrollbar {

@@ -63,7 +63,7 @@ const BridgingTheGapsBlogPage = () => {
               src={TasdikDip} // Replace with actual image URL
               alt="Dr. M Tasdik Hasan"
               fill // Fills the container while maintaining aspect ratio
-              className="object-cover object-top " // Ensures correct cropping
+              className="object-cover object-top" // Ensures correct cropping
             />
           </div>
 
@@ -76,9 +76,21 @@ const BridgingTheGapsBlogPage = () => {
               Digital Mental Health Researcher, Action Lab, Faculty of
               Information Technology, Monash University, Melbourne, Australia
             </p>
+            {/* Published Date */}
+            <p className="text-sm text-gray-500 mt-2">
+              Published on:{" "}
+              <span className="font-medium">February 16, 2025</span>
+            </p>
           </div>
         </div>
       </div>
+      <Image
+        src="https://media.istockphoto.com/id/1252684502/photo/professional-blogger-working-on-his-new-post-for-social-media-at-home-closeup-creative.jpg?s=612x612&w=0&k=20&c=VR7V3Hn1HKjMQdykk2zjQ-2Xjsiw3tewZFZMp6swpog="
+        alt="blog"
+        width={600}
+        height={400}
+        className="max-w-screen-lg mx-auto rounded-2xl h-96 object-cover"
+      />
 
       {/* Content Section */}
       <div className="max-w-3xl mx-auto p-6 space-y-6">

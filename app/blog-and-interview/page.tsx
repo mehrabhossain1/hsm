@@ -62,12 +62,13 @@ const BlogAndInterviewPage = () => {
               <span>– Flannery O’Connor</span>
             </p>
             {/* <HoverEffect items={projects} /> */}
-            <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-5 py-10">
               <BlogCard
                 item={{
-                  title: "React Best Practices",
+                  title:
+                    "Bridging the Gaps: Strengthening Mental Healthcare to Build a Resilient Health System in Bangladesh",
                   description:
-                    "Learn the top best practices for building scalable React apps...",
+                    "Mental health remains a critical yet often neglected aspect of Bangladesh’s healthcare system. The country faces significant challenges in addressing mental health issues, exacerbated by systemic gaps in healthcare delivery, societal stigma, and recent socio-political unrest. The tragic events of July 2024, d",
                   date: "February 8, 2025",
                   type: "blog",
                   thumbnail:
@@ -77,34 +78,12 @@ const BlogAndInterviewPage = () => {
 
               <BlogCard
                 item={{
-                  title: "My Interview Experience",
+                  title:
+                    "Overcoming Budget Bottlenecks: Ensuring Effective Health Financing for Universal Health Coverage in Bangladesh",
                   description:
-                    "I recently had an interview at XYZ company. Here’s what happened...",
-                  date: "February 8, 2025",
-                  type: "interview",
-                  thumbnail:
-                    "https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg",
-                }}
-              />
-              <BlogCard
-                item={{
-                  title: "React Best Practices",
-                  description:
-                    "Learn the top best practices for building scalable React apps...",
+                    "To achieve Universal Health Coverage and the Sustainable Development Goals, at least 15% of total budget and 4-5% of gross domestic product (GDP) should be invested in healthcare in Bangladesh. However, t",
                   date: "February 8, 2025",
                   type: "blog",
-                  thumbnail:
-                    "https://media.istockphoto.com/id/1252684502/photo/professional-blogger-working-on-his-new-post-for-social-media-at-home-closeup-creative.jpg?s=612x612&w=0&k=20&c=VR7V3Hn1HKjMQdykk2zjQ-2Xjsiw3tewZFZMp6swpog=",
-                }}
-              />
-
-              <BlogCard
-                item={{
-                  title: "My Interview Experience",
-                  description:
-                    "I recently had an interview at XYZ company. Here’s what happened...",
-                  date: "February 8, 2025",
-                  type: "interview",
                   thumbnail:
                     "https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg",
                 }}
