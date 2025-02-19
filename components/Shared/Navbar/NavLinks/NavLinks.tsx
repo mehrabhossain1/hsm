@@ -19,7 +19,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inset-x-0 mx-auto z-50 w-full border-t-2 border-[#FFBF00]",
+        "inset-x-0 mx-auto z-50 w-full border-t-2 border-[#FFCE00]",
         className
       )}
     >

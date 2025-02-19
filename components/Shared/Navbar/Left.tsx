@@ -16,7 +16,7 @@ const Left = () => {
       <Image
         src={SizearImage}
         alt="sizear"
-        className="relative z-10 rounded-full size-20 border-2 border-[#FFBF00]"
+        className="relative z-10 rounded-full size-20 border-2 border-[#FFCE00]"
       />
     </div>
   );

@@ -6,7 +6,7 @@ const Right = () => {
       {/* Background Colors */}
       <div className="absolute right-0 top-0 h-full w-full">
         {/* Top Background Color */}
-        <div className="absolute top-0 right-0 w-full h-[60%] bg-[#001844] border-b-2 border-[#FFBF00]"></div>
+        <div className="absolute top-0 right-0 w-full h-[60%] bg-[#001844] border-b-2 border-[#FFCE00]"></div>
         {/* Bottom Background Color */}
         <div className="absolute bottom-0 right-0 w-full h-[40%] bg-[#186076]"></div>
       </div>
@@ -17,7 +17,7 @@ const Right = () => {
           <Button
             size="sm"
             variant="secondary"
-            className="bg-[#FFBF00] hover:bg-[#e6b00e]"
+            className="bg-[#FFCE00] hover:bg-[#e6b00e]"
           >
             Gift
           </Button>
