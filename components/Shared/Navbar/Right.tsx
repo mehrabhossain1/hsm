@@ -17,20 +17,24 @@ const Right = () => {
           <Button
             size="sm"
             variant="secondary"
-            className="bg-[#FFCE00] hover:bg-[#e6b00e]"
+            className="bg-[#FFCE00] font-bold hover:bg-[#e6b00e]"
           >
             Gift
           </Button>
           <Button
             size="sm"
             variant="secondary"
-            className="bg-[#962D91] text-white hover:bg-[#7a2476]"
+            className="bg-[#962D91] font-bold text-white hover:bg-[#7a2476]"
           >
             Support HSM
           </Button>
         </div>
         <div>
-          <Button className="mt-3 px-4" variant="destructive" size="sm">
+          <Button
+            className="mt-3 px-4 font-bold"
+            variant="destructive"
+            size="sm"
+          >
             Subscribe
           </Button>
         </div>
