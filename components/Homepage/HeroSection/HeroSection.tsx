@@ -6,7 +6,8 @@ import { Separator } from "@/components/ui/separator";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-5 min-h-[calc(100vh-115px)] items-center px-8 bg-[#F9F6F3] rounded-2xl">
+    // bg-[#F9F6F3]
+    <div className="grid grid-cols-5 min-h-[calc(100vh-115px)] items-center px-8  rounded-2xl">
       <div className="col-span-2">
         {/* <Image src={HeroImage} alt="Hero Image" /> */}
       </div>

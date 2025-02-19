@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export function NavbarDemo() {
   return (
-    <div className="w-full flex items-center justify-center">
-      <Navbar className="top-2 border-t-2 border-t-[#FEC53F]" />
+    <div className="w-full bg-[#186076] flex items-center justify-center">
+      <Navbar className="" />
     </div>
   );
 }
@@ -17,10 +17,15 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <div className={cn("inset-x-0 mx-auto z-50 w-full", className)}>
+    <div
+      className={cn(
+        "inset-x-0 mx-auto z-50 w-full border-t-2 border-[#FFBF00]",
+        className
+      )}
+    >
       <Menu setActive={setActive}>
         <Link href="/">
-          <AiFillHome className="text-lg" />
+          <AiFillHome className="text-base" />
         </Link>
         <MenuItem
           setActive={setActive}
