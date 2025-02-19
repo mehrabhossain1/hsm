@@ -6,7 +6,7 @@ const Right = () => {
       {/* Background Colors */}
       <div className="absolute right-0 top-0 h-full w-full">
         {/* Top Background Color */}
-        <div className="absolute top-0 right-0 w-full h-[60%] bg-[#060B4D] border-b-2 border-[#FFBF00]"></div>
+        <div className="absolute top-0 right-0 w-full h-[60%] bg-[#001844] border-b-2 border-[#FFBF00]"></div>
         {/* Bottom Background Color */}
         <div className="absolute bottom-0 right-0 w-full h-[40%] bg-[#186076]"></div>
       </div>
@@ -14,11 +14,19 @@ const Right = () => {
       {/* Centered Buttons */}
       <div className="relative z-10 flex flex-col items-center justify-center gap-2">
         <div className="flex gap-2 mt-3">
-          <Button size="sm" variant="secondary" className="bg-[#FFBF00]">
+          <Button
+            size="sm"
+            variant="secondary"
+            className="bg-[#FFBF00] hover:bg-[#e6b00e]"
+          >
             Gift
           </Button>
-          <Button size="sm" variant="outline">
-            Get Involved
+          <Button
+            size="sm"
+            variant="secondary"
+            className="bg-[#962D91] text-white hover:bg-[#7a2476]"
+          >
+            Support HSM
           </Button>
         </div>
         <div>

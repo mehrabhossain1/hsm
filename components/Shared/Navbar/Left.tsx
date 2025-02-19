@@ -7,7 +7,7 @@ const Left = () => {
       {/* Left section with two background colors */}
       <div className="absolute left-0 top-0 h-full w-full">
         {/* Top color */}
-        <div className="absolute top-0 left-0 w-full h-[59%] bg-[#060B4D]"></div>
+        <div className="absolute top-0 left-0 w-full h-[59%] bg-[#001844]"></div>
         {/* Bottom color */}
         <div className="absolute bottom-0 left-0 w-full h-[41%] bg-[#186076]"></div>
       </div>

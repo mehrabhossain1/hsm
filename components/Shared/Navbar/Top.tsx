@@ -3,9 +3,9 @@ import Logo from "@/public/logo3.png";
 
 const Top = () => {
   return (
-    <div className="bg-[#060B4D] relative flex items-center p-4 h-16">
+    <div className="bg-[#001844] relative flex items-center p-4 h-16">
       {/* Left-aligned SIZEAR */}
-      <div className="text-[#FFBF00] font-bold text-xl absolute left-2">
+      <div className="text-[#FFBF00] font-bold text-base absolute left-2">
         SIZEAR
       </div>
 
