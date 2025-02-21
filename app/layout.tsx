@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html className="scroll-smooth" lang="en" suppressHydrationWarning={true}>
       {/* ${roboto.variable} ${robotoSlab.variable}  */}
       <body className={`antialiased`}>
         <SocialShare />

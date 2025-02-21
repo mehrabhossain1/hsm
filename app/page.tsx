@@ -1,4 +1,4 @@
-import AboutSection from "@/components/Homepage/AboutSection/AboutSection";
+// import AboutSection from "@/components/Homepage/AboutSection/AboutSection";
 // import BlogInterview from "@/components/Homepage/BlogInterview/BlogInterview";
 import Contact from "@/components/Homepage/Contact/Contact";
 // import { HeroScrollDemo } from "@/components/Homepage/HeroSection/HeroScrollDemo";
@@ -13,14 +13,19 @@ import Youtube from "@/components/Homepage/Youtube/Youtube";
 import ResourcesSection from "@/components/Homepage/ResourcesSection";
 import NewsNewsletterSection from "@/components/Homepage/NewsNewsletterSection";
 import BlogsInterviewsSection from "@/components/Homepage/BlogsInterviewsSection";
+import AboutSection from "@/components/Homepage/AboutSection";
 
 export default function Home() {
   return (
     <>
       {/* <HeroScrollDemo /> */}
       <HeroSection />
-      <AboutSection />
+
+      {/* <AboutSection /> */}
       {/* <AboutPage /> */}
+
+      <AboutSection />
+
       {/* <ResourcesBookmarks /> */}
       {/* <ResourcesAndBookmarksPage /> */}
 
