@@ -78,7 +78,7 @@ export default function AboutSection() {
     {
       title: "About HSM",
       description:
-        "A technology company that builds economic infrastructure for the internet.",
+        "“Information is power” and “Evidence lies at the heart of public health policy.”",
       image:
         "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "https://stripe.com",
@@ -86,7 +86,7 @@ export default function AboutSection() {
     {
       title: "Vision & Mission",
       description:
-        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+        "The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging public health professionals to become informed and confident global health advocates, dedicated to promoting public health issues and contributing to global health.",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
@@ -94,7 +94,7 @@ export default function AboutSection() {
     {
       title: "Activities & Approach",
       description:
-        "A multinational technology company that specializes in Internet-related services and products.",
+        "In order to be aligned with the vision and mission of Health Systems Matter, the specific activities are as follows",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
@@ -102,7 +102,7 @@ export default function AboutSection() {
     {
       title: "Why HSM",
       description:
-        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+        "Q1: What inspired the establishment of Health Systems Matter, and what is its foundational background?",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
