@@ -65,22 +65,22 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
   );
 };
 
-export default function ResourcesSection() {
+export default function BlogsInterviewsSection() {
   const resources = [
     {
-      title: "Resources",
+      title: "Blog",
       description:
-        "The Resources section aspire to be a repository of essential resources on health systems and global health.",
+        "This section features original blogs and insights from public health professionals while providing an opportunity for you to share your stories and ideas. Feel free to contribute—just reach out to us via email!",
       image:
-        "https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1586339949216-35c2747cc36d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
     {
-      title: "Bookmarks",
+      title: "Interview",
       description:
-        "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
+        "“An effective interview is a collaborative intellectual adventure” – Shahaduz Zaman",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
   ];
@@ -90,14 +90,14 @@ export default function ResourcesSection() {
       <div className="max-w-screen-xl mx-auto px-8">
         <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
-            RESOURCES & BOOKMARKS
+            BLOG & INTERVIEW
           </h2>
           <h3 className="text-xl max-w-xl text-gray-800 mb-8">
-            Explore the comprehensive resource hub to supercharge your knowledge
-            and complement your rewarding career journey. The Resource section
-            lets you download valuable materials with a single click, while the
-            Bookmarks section connects you to useful contents and tools crucial
-            for professional success.
+            The blog covers diverse global health topics, offering thoughtful
+            analysis from public health professionals through a health systems
+            perspective. The interview section showcases the journeys and
+            insights of global health advocates, highlighting their impactful
+            experiences and perspectives.
           </h3>
         </div>
         <div className="max-w-4xl mx-auto">

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import { Facebook, Linkedin, Copy, Mail } from "lucide-react";
+import { Facebook, Linkedin, Link, Mails } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const SocialShare = () => {
@@ -29,9 +29,9 @@ const SocialShare = () => {
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 bg-white border   hover:bg-[#FEC53F] transition"
+        className="p-2 bg-white border   hover:bg-[#FFCE00] transition"
       >
-        <Linkedin size={20} />
+        <Linkedin size={16} />
       </a>
       {/* Facebook Share */}
       <a
@@ -40,24 +40,24 @@ const SocialShare = () => {
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 bg-white border   hover:bg-[#FEC53F] transition"
+        className="p-2 bg-white border   hover:bg-[#FFCE00] transition"
       >
-        <Facebook size={20} />
+        <Facebook size={16} />
       </a>
       <a
         href={`mailto:?subject=Check%20this%20out!&body=${encodeURIComponent(
           currentUrl
         )}`}
-        className="p-2 bg-white border   hover:bg-[#FEC53F]  transition"
+        className="p-2 bg-white border   hover:bg-[#FFCE00]  transition"
       >
-        <Mail size={20} />
+        <Mails size={16} />
       </a>
       {/* Copy URL */}
       <button
         onClick={copyToClipboard}
-        className="p-2 bg-white border  hover:bg-[#FEC53F] transition"
+        className="p-2 bg-white border  hover:bg-[#FFCE00] transition"
       >
-        <Copy size={20} />
+        <Link size={16} className="transform -rotate-45" />
       </button>
     </div>
   );

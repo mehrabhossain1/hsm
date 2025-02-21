@@ -13,14 +13,14 @@ const Contact = () => {
 
   return (
     <div className=" my-20 min-h-dvh max-w-screen-xl mx-auto px-4">
-      <div className="flex justify-between items-center w-full mb-16">
-        <h2 className="text-4xl font-semibold text-left">Stay Connected</h2>{" "}
-        {/* Section Title */}
-        <p className="text-sm text-right text-gray-600">
+      <div className="flex justify-between ">
+        <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
+          STAY CONNECTED
+        </h2>
+        <h3 className="text-xl max-w-xl text-gray-800 mb-8">
           HSM is a resource hub, offering evidence-based insights, expert
           knowledge, global events, and career opportunities.
-        </p>{" "}
-        {/* Pitch Line */}
+        </h3>
       </div>
 
       <div className="max-w-3xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">

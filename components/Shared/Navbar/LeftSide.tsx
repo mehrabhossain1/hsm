@@ -10,12 +10,12 @@ const LeftSide = () => {
       <Image
         src={SizearImage}
         alt="sizear"
-        className="rounded-full size-12 border-2 border-[#FEC53F] hover:border-white"
+        className="rounded-full size-12 border-2 border-[#FFCE00] hover:border-white"
       />
       <Link href="/" className="">
         <Button
           // borderRadius="1.75rem"
-          className="text-[#FEC53F] underline underline-offset-2 text-lg hover:text-white"
+          className="text-[#FFCE00] underline underline-offset-2 text-lg hover:text-white"
           // borderClassName=""
         >
           SIZEAR

@@ -19,7 +19,7 @@ const HeroSection = () => {
     //       <h2 className="text-3xl font-bold text-center mr-7 text-[#001844]">
     //         Health <br /> System
     //       </h2>
-    //       <Separator orientation="vertical" className="h-28 w-1 bg-[#FEC53F]" />
+    //       <Separator orientation="vertical" className="h-28 w-1 bg-[#FFCE00]" />
     //       <h1 className="transform -rotate-90 text-5xl mr-5 font-semibold text-green-500">
     //         HUB
     //       </h1>
@@ -32,13 +32,13 @@ const HeroSection = () => {
     //           Don&apos;t settle. Better public health starts with knowledge.
     //         </p>
     //         <p className="text-lg text-[#001844]">
-    //           <span className="bg-[#FEC53F] font-semibold ">HSM</span> offers
+    //           <span className="bg-[#FFCE00] font-semibold ">HSM</span> offers
     //           evidence and news withing your reach.
     //         </p>
     //       </div>
     //     </div>
 
-    //     <div className="bg-[#001844] rounded-2xl mt-10 text-center text-2xl py-5 text-[#FEC53F] max-w-3xl mr-3">
+    //     <div className="bg-[#001844] rounded-2xl mt-10 text-center text-2xl py-5 text-[#FFCE00] max-w-3xl mr-3">
     //       Resources <span className="px-5">|</span> Insights{" "}
     //       <span className="px-5">|</span> Events <span className="px-5">|</span>{" "}
     //       Career

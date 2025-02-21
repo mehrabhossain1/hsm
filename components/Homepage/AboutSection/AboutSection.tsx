@@ -31,9 +31,12 @@ export const projects = [
 
 const AboutSection = () => {
   return (
-    <div className=" bg-[#E0F2FF] rounded-2xl">
+    <div className="rounded-2xl mt-5 bg-[url('/aboutbg.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="max-w-screen-xl min-h-dvh mx-auto px-8 flex flex-col justify-center items-center">
-        <SectionTitle title="About" subTitle="HSM" />
+        <SectionTitle
+          title="About"
+          subTitle="HSM is a resource hub, offering evidence-based insights, expert knowledge, global events and career opportunities."
+        />
         <HoverEffect items={projects} />
       </div>
     </div>

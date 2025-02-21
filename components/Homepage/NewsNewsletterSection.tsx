@@ -65,39 +65,37 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
   );
 };
 
-export default function ResourcesSection() {
+export default function NewsNewsletterSection() {
   const resources = [
     {
-      title: "Resources",
+      title: "News",
       description:
-        "The Resources section aspire to be a repository of essential resources on health systems and global health.",
+        "This section features Upcoming Events, which covers key global health conferences, symposiums, webinars, campaigns, and health days.",
       image:
-        "https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1586339949216-35c2747cc36d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
     {
-      title: "Bookmarks",
+      title: "Newsletter",
       description:
-        "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
+        "The Health Systems Matter Newsletter provides valuable insights and resources on global health, upcoming events, and career opportunities.",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-8">
+    <section className=" py-16 px-8">
       <div className="max-w-screen-xl mx-auto px-8">
         <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
-            RESOURCES & BOOKMARKS
+            NEWS & NEWSLETTER
           </h2>
           <h3 className="text-xl max-w-xl text-gray-800 mb-8">
-            Explore the comprehensive resource hub to supercharge your knowledge
-            and complement your rewarding career journey. The Resource section
-            lets you download valuable materials with a single click, while the
-            Bookmarks section connects you to useful contents and tools crucial
-            for professional success.
+            Visit the news section to stay informed about upcoming global health
+            events and subscribe to our periodic newsletter for regular updates
+            on public health issues
           </h3>
         </div>
         <div className="max-w-4xl mx-auto">

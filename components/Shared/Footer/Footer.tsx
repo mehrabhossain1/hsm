@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-10 bg-[#F0F4F8] text-gray-800 rounded-t-2xl">
+    <footer className="py-10 bg-[#001844] text-white rounded-t-2xl">
       <div className="max-w-[1200px] mx-auto">
         {/* Horizontal line with Back to Top button aligned right */}
         <div className="flex items-center justify-center gap-5 pb-6">
@@ -23,7 +23,7 @@ const Footer = () => {
           <motion.button
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
-            className="flex items-center space-x-2 text-lg font-semibold text-black hover:text-sky-700 transition duration-300"
+            className="flex items-center space-x-2 text-lg font-semibold text-white hover:text-[#FFCE00] transition duration-300"
             aria-label="Back to Top"
           >
             <span className="tracking-[3px]">BACK TO TOP</span>
@@ -31,20 +31,22 @@ const Footer = () => {
           </motion.button>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 px-4 mx-auto max-w-7xl md:grid-cols-3 text-sm">
+        <div className="grid grid-cols-1 gap-8 px-4 mx-auto max-w-7xl md:grid-cols-3 ">
           {/* First Grid */}
           <div className="flex flex-col items-center justify-center">
             <Image src={logo} alt="Logo" className="mb-6 w-80" />
-            <p className="pb-10 text-center">
+            <p className="pb-10 text-base text-center">
               Founded in 2024, HSM is a career development platform for public
               health professionals around the world.
             </p>
-            <p className="font-bold text-center">Health Systems Matter</p>
-            <p className="text-center">Dhaka, Bangladesh</p>
+            <p className="font-bold text-base text-center">
+              Health Systems Matter
+            </p>
+            <p className="text-center text-base">Dhaka, Bangladesh</p>
           </div>
 
           {/* Second Grid */}
-          <div className="flex flex-col text-sm">
+          <div className="flex flex-col text-base">
             <ul className="space-y-2 md:ps-24">
               <li>
                 <a href="#about" className="hover:underline">
@@ -92,7 +94,7 @@ const Footer = () => {
 
           {/* Last Grid */}
           <div className="flex flex-col items-center justify-center">
-            <blockquote className="mb-6 italic text-sky-700 text-center">
+            <blockquote className="mb-6 italic text-[#FFCE00] text-center">
               “Believe work can be better. <br /> Know deeper. Do Better.”
             </blockquote>
             <p className="font-semibold text-center">

@@ -106,7 +106,7 @@ export default function ResourcesPage() {
           </p> */}
         </div>
       </div>
-      {/* <p className="m-6 max-w-5xl mx-auto text-2xl bg-[#FEC53F] rounded-2xl text-gray-700 py-4 px-6 text-center">
+      {/* <p className="m-6 max-w-5xl mx-auto text-2xl bg-[#FFCE00] rounded-2xl text-gray-700 py-4 px-6 text-center">
         The Resources section aspire to be a repository of essential resources
         on health systems and global health. By compiling major reports, books,
         groundbreaking publications, significant policy briefs and
