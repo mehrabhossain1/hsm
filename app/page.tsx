@@ -9,7 +9,8 @@ import NewsNewsletter from "@/components/Homepage/NewsNewsletter/NewsNewsletter"
 // import { AnimatedTestimonialsDemo } from "@/components/Homepage/Testimonials/Testimonials";
 import Youtube from "@/components/Homepage/Youtube/Youtube";
 import AboutPage from "./about/page";
-import ResourcesAndBookmarksPage from "./resources-and-bookmarks/page";
+// import ResourcesAndBookmarksPage from "./resources-and-bookmarks/page";
+import ResourcesSection from "@/components/Homepage/ResourcesSection";
 
 export default function Home() {
   return (
@@ -19,15 +20,16 @@ export default function Home() {
       {/* <AboutSection /> */}
       <AboutPage />
       {/* <ResourcesBookmarks /> */}
-      <ResourcesAndBookmarksPage />
+      {/* <ResourcesAndBookmarksPage /> */}
+
+      <ResourcesSection />
+
       <NewsNewsletter />
       <BlogInterview />
       <Youtube />
       <Contact />
       {/* <Sizear /> */}
       {/* <AnimatedTestimonialsDemo /> */}
-
-  
     </>
   );
 }
