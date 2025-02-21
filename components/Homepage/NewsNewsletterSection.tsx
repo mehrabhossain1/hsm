@@ -54,7 +54,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
               e.stopPropagation(); // Prevent the card click
               // router.push(`/about/${card.route}`);
             }}
-            className="mt-auto flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
+            className="mt-auto flex bg-[#FEC53F] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
           >
             Read More
             <ArrowRight className="size-4 hover:text-white" />
