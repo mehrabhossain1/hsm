@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function NavbarDemo() {
   return (
-    <div className="w-full bg-[#186076] flex items-center justify-center">
+    <div className="w-full bg-[#2D8CBB] flex items-center justify-center">
       <Navbar className="" />
     </div>
   );
@@ -42,7 +42,7 @@ function Navbar({ className }: { className?: string }) {
               Activities & Approach
             </HoveredLink>
             <HoveredLink href="/about/why-health-systems-matter">
-              Why Health Systems Matter
+              Why HSM
             </HoveredLink>
           </div>
         </MenuItem>
@@ -54,22 +54,18 @@ function Navbar({ className }: { className?: string }) {
           href="/resources-and-bookmarks"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/web-dev">Resources</HoveredLink>
+            <HoveredLink href="/interface-design">Bookmarks</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem
           setActive={setActive}
           active={active}
-          item="NEWS & NEWSLETTERS"
+          item="NEWS & NEWSLETTER"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby">News</HoveredLink>
+            <HoveredLink href="/individual">Newsletter</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem
@@ -79,16 +75,14 @@ function Navbar({ className }: { className?: string }) {
           item="BLOG & INTERVIEW"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby">BLOG</HoveredLink>
+            <HoveredLink href="/individual">INTERVIEW</HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/" className="text-sm">
+        <Link href="/" className="text-sm font-semibold">
           YOUTUBE
         </Link>
-        <Link href="/" className="text-sm">
+        <Link href="/" className="text-sm font-semibold">
           CONTACT
         </Link>
       </Menu>

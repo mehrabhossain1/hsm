@@ -38,16 +38,19 @@ const Card: React.FC<CardProps> = ({
         alt={title}
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0"
+        className="absolute inset-0 grayscale"
       />
       <div className="absolute inset-0 transition-opacity duration-300" />
       <div
-        className="absolute bottom-0 p-6 bg-[#001844] text-white transition-all duration-300 mr-10"
-        style={{ height: hovered ? "16rem" : "10rem" }}
+        className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500 text-justify"
+        style={{
+          height: hovered ? "100%" : "10rem",
+          // clipPath: " polygon(0 19%, 100% 6%, 100% 100%, 0% 100%);",
+        }}
       >
-        <h2 className="text-xl ">{title}</h2>
+        <h2 className="text-xl font-bold">{title}</h2>
         <p
-          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 ${
+          className={`text-base mt-4 text-gray-300 transition-opacity duration-300  ${
             hovered ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -64,7 +67,7 @@ const Card: React.FC<CardProps> = ({
             }}
             className="mt-auto flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
           >
-            Read More
+            Explore
             <ArrowRight className="size-4 hover:text-white" />
           </Button>
         </a>

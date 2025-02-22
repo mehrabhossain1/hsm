@@ -9,7 +9,7 @@ const Left = () => {
         {/* Top color */}
         <div className="absolute top-0 left-0 w-full h-[59%] bg-[#001844]"></div>
         {/* Bottom color */}
-        <div className="absolute bottom-0 left-0 w-full h-[41%] bg-[#186076]"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[41%] bg-[#2D8CBB]"></div>
       </div>
 
       {/* Profile Image */}

@@ -89,7 +89,7 @@ export default function ResourcesSection() {
 
   return (
     <section className="bg-gray-100 py-16 px-8">
-      <div className="max-w-screen-xl mx-auto px-8">
+      <div className="max-w-screen-xl mx-auto px-8 ">
         {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
             RESOURCES & BOOKMARKS

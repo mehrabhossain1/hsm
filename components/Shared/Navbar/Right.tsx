@@ -8,7 +8,9 @@ const Right = () => {
         {/* Top Background Color */}
         <div className="absolute top-0 right-0 w-full h-[60%] bg-[#001844] border-b-2 border-[#FFCE00]"></div>
         {/* Bottom Background Color */}
-        <div className="absolute bottom-0 right-0 w-full h-[40%] bg-[#186076]"></div>
+
+        {/* #186076 */}
+        <div className="absolute bottom-0 right-0 w-full h-[40%] bg-[#2D8CBB]"></div>
       </div>
 
       {/* Centered Buttons */}
