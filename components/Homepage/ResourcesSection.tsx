@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
+// import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import { Separator } from "../ui/separator";
 
 interface CardProps {
   title: string;
@@ -88,7 +90,7 @@ export default function ResourcesSection() {
   return (
     <section className="bg-gray-100 py-16 px-8">
       <div className="max-w-screen-xl mx-auto px-8">
-        <div className="flex justify-between ">
+        {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
             RESOURCES & BOOKMARKS
           </h2>
@@ -99,6 +101,35 @@ export default function ResourcesSection() {
             Bookmarks section connects you to useful contents and tools crucial
             for professional success.
           </h3>
+        </div> */}
+
+        <div className="flex justify-between mb-8">
+          {/* <SectionTitle
+            title="RESOURCES & BOOKMARKS"
+            subTitle="Explore the comprehensive resource hub to supercharge your knowledge
+            and complement your rewarding career journey. The Resource section
+            lets you download valuable materials with a single click, while the
+            Bookmarks section connects you to useful contents and tools crucial
+            for professional success."
+          /> */}
+
+          <div className="flex gap-5 items-center w-full">
+            <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
+              RESOURCES & BOOKMARKS
+            </h1>
+            <Separator
+              orientation="vertical"
+              className="h-32 w-1 bg-[#FFCE00]"
+            />
+
+            <p className="text-lg text-gray-600 font-semibold">
+              Explore the comprehensive resource hub to supercharge your
+              knowledge and complement your rewarding career journey. The
+              Resource section lets you download valuable materials with a
+              single click, while the Bookmarks section connects you to useful
+              contents and tools crucial for professional success.
+            </p>
+          </div>
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">

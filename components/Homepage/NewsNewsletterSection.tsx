@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { Separator } from "../ui/separator";
 
 interface CardProps {
   title: string;
@@ -86,9 +87,9 @@ export default function NewsNewsletterSection() {
   ];
 
   return (
-    <section className=" py-16 px-8">
+    <section className=" py-16 px-8 min-h-dvh">
       <div className="max-w-screen-xl mx-auto px-8">
-        <div className="flex justify-between ">
+        {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
             NEWS & NEWSLETTER
           </h2>
@@ -97,7 +98,21 @@ export default function NewsNewsletterSection() {
             events and subscribe to our periodic newsletter for regular updates
             on public health issues
           </h3>
+        </div> */}
+
+        <div className="flex gap-5 items-center w-full mb-8">
+          <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
+            NEWS & NEWSLETTER
+          </h1>
+          <Separator orientation="vertical" className="h-10 w-1 bg-[#FFCE00]" />
+
+          <p className="text-lg text-gray-600 font-semibold">
+            Visit the news section to stay informed about upcoming global health
+            events and subscribe to our periodic newsletter for regular updates
+            on public health issues
+          </p>
         </div>
+
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             {resources.map((resource, index) => (

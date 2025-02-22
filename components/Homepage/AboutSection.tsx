@@ -114,16 +114,8 @@ export default function AboutSection() {
       <section className="bg-[url('/aboutbg.jpg')] bg-cover bg-center bg-no-repeat py-16 mt-5 px-8 min-h-dvh">
         <div className="max-w-screen-xl mx-auto px-8">
           <div className="flex justify-between mb-8">
-            {/* <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
-              ABOUT
-            </h2>
-            <h3 className="text-xl max-w-xl text-gray-800 mb-8">
-              HSM is a resource hub, offering evidence-based insights, expert
-              knowledge, global events and career opportunities.
-            </h3> */}
-
             <SectionTitle
-              title="About"
+              title="ABOUT"
               subTitle="HSM is a resource hub, offering evidence-based insights, expert knowledge, global events and career opportunities."
             />
           </div>
@@ -154,27 +146,6 @@ export default function AboutSection() {
           </div>
         </div>
       </section>
-
-      {/* <div className="rounded-2xl mt-5 bg-[url('/aboutbg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="max-w-screen-xl min-h-dvh mx-auto px-8 flex flex-col justify-center items-center">
-          <SectionTitle
-            title="About"
-            subTitle="HSM is a resource hub, offering evidence-based insights, expert knowledge, global events and career opportunities."
-          />
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {resources.map((resource, index) => (
-              <Card
-                key={index}
-                title={resource.title}
-                description={resource.description}
-                image={resource.image}
-                link={resource.link}
-              />
-            ))}
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

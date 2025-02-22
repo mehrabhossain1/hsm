@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { Separator } from "../ui/separator";
 
 interface CardProps {
   title: string;
@@ -88,7 +89,7 @@ export default function BlogsInterviewsSection() {
   return (
     <section className="bg-gray-100 py-16 px-8">
       <div className="max-w-screen-xl mx-auto px-8">
-        <div className="flex justify-between ">
+        {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
             BLOG & INTERVIEW
           </h2>
@@ -99,6 +100,22 @@ export default function BlogsInterviewsSection() {
             insights of global health advocates, highlighting their impactful
             experiences and perspectives.
           </h3>
+        </div> */}
+
+        <div className="flex gap-5 items-center w-full mb-8">
+          <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
+            BLOG & INTERVIEW
+          </h1>
+          <Separator orientation="vertical" className="h-24 w-1 bg-[#FFCE00]" />
+
+          <p className="text-lg text-gray-600 font-semibold">
+            The <span className="font-bold">blog</span> covers diverse global
+            health topics, offering thoughtful analysis from public health
+            professionals through a health systems perspective. The{" "}
+            <span className="font-bold">interview</span> section showcases the
+            journeys and insights of global health advocates, highlighting their
+            impactful experiences and perspectives.
+          </p>
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
