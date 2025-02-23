@@ -1,11 +1,12 @@
 "use client";
 
-import { FaFacebook, FaLinkedin, FaArrowUp } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "@/public/logo3.png";
 import Image from "next/image";
 // import { LinkPreview } from "@/components/ui/link-preview";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   // Function to scroll to the top
@@ -47,7 +48,7 @@ const Footer = () => {
           </div>
 
           {/* Second Grid */}
-          <div className="flex flex-col text-sm">
+          <div className="flex flex-col text-xs">
             <ul className="space-y-2 md:ps-28">
               <li>
                 <Link href="/about" className="hover:underline">
@@ -106,23 +107,25 @@ const Footer = () => {
               Scope of Collaboration and Support
             </p>
 
-            <div className="flex mt-6 space-x-4">
-              <a
-                href="https://www.facebook.com/p/health-systems-matter-61564171250656"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-[#3b5998] text-white rounded-full shadow-lg hover:shadow-xl transition"
-              >
-                <FaFacebook size={30} />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/104141138/admin/dashboard"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-[#0077b5] text-white rounded-full shadow-lg hover:shadow-xl transition"
-              >
-                <FaLinkedin size={30} />
-              </a>
+            <div className="flex space-x-2">
+              <div className="flex gap-2 mt-3 w-[100px]">
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  className="bg-[#FFCE00] w-[100px] font-bold hover:bg-[#e6b00e]"
+                >
+                  Support HSM
+                </Button>
+              </div>
+              <div>
+                <Button
+                  className="mt-3 px-4 font-bold w-[100px]"
+                  variant="destructive"
+                  size="sm"
+                >
+                  Subscribe
+                </Button>
+              </div>
             </div>
           </div>
         </div>
