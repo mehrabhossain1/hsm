@@ -88,7 +88,7 @@ export default function ResourcesSection() {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-8 min-h-[720px] flex items-center justify-center">
+    <section className="bg-gradient-to-t from-gray-50 to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
       <div className="max-w-screen-xl mx-auto px-8 ">
         {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
@@ -119,7 +119,7 @@ export default function ResourcesSection() {
             </h1>
             <Separator
               orientation="vertical"
-              className="h-32 w-1 bg-[#FFCE00]"
+              className="h-24 w-1 bg-[#FFCE00]"
             />
 
             <p className="text-lg text-gray-600 font-semibold">
