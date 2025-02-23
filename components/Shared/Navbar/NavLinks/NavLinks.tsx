@@ -11,6 +11,10 @@ import {
   Mail,
   PenSquare,
   Mic,
+  Info,
+  Eye,
+  Activity,
+  HelpCircle,
 } from "lucide-react";
 
 export function NavbarDemo() {
@@ -42,15 +46,17 @@ function Navbar({ className }: { className?: string }) {
           href="/about"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/about/about-hsm">About HSM</HoveredLink>
+            <HoveredLink href="/about/about-hsm">
+              <Info className="w-4 h-4" /> About HSM
+            </HoveredLink>
             <HoveredLink href="/about/vision-and-mission">
-              Vision & Mission
+              <Eye className="w-4 h-4" /> Vision & Mission
             </HoveredLink>
             <HoveredLink href="/about/activities-and-approach">
-              Activities & Approach
+              <Activity className="w-4 h-4" /> Activities & Approach
             </HoveredLink>
             <HoveredLink href="/about/why-health-systems-matter">
-              Why HSM
+              <HelpCircle className="w-4 h-4" /> Why HSM
             </HoveredLink>
           </div>
         </MenuItem>
