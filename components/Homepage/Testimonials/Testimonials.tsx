@@ -61,20 +61,20 @@ export function AnimatedTestimonialsDemo() {
 
   const testimonials = [
     {
-      name: "Thun Thongdee",
-      title: "Operations Director",
-      company: "Bangkok Logistics Co., Ltd.",
+      name: "Yemelaknesh Wolde",
+      title: "Senior Health Financing Advisor",
+      company: "Open Development",
       content:
-        "This document AI platform has revolutionized how we handle shipping documentation. The Thai language support is exceptional, and we've reduced processing time by 70%.",
+        "Health Systems Matter is a dynamic platform that empowers global health professionals with access to curated knowledge, career opportunities, and capacity-building initiatives. By providing timely resources and actionable insights, it creates a space for professionals to grow, collaborate, and drive meaningful change in public health.",
       image:
         "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "Isabella Schmidt",
-      title: "Head of Digital Transformation",
-      company: "Deutsche Tech GmbH",
+      name: "Dr. Zarif Rasul",
+      title: "Water Specialist",
+      company: "World Bank",
       content:
-        "The enterprise features are impressive. We process thousands of documents daily across multiple departments, and the AI accuracy is remarkable. The team collaboration tools are excellent.",
+        "For someone not directly involved with the health sector, Health System Matters is a great platform to stay updated on major policies and other developments in the sector. I particularly enjoy learning about leading experts and their contributions. This is an excellent resource for anyone working in the policy and development space. ",
       image:
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -122,13 +122,11 @@ export function AnimatedTestimonialsDemo() {
           </h1>
           <Separator orientation="vertical" className="h-24 w-1 bg-[#FFCE00]" />
 
-          <p className="text-lg text-gray-600 font-semibold">
-            The <span className="font-bold">blog</span> covers diverse global
-            health topics, offering thoughtful analysis from public health
-            professionals through a health systems perspective. The{" "}
-            <span className="font-bold">interview</span> section showcases the
-            journeys and insights of global health advocates, highlighting their
-            impactful experiences and perspectives.
+          <p className="text-lg text-gray-600 font-semibold text-justify">
+            Users have shared their experiences, underscoring the value of the
+            Health Systems Matter platform. We are truly honored to receive such
+            positive feedback and extend our heartfelt gratitude to everyone who
+            has shared their appreciation.
           </p>
         </div>
         {/* <AnimatedTestimonials testimonials={testimonials} autoplay /> */}
@@ -201,8 +199,8 @@ export function AnimatedTestimonialsDemo() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-12 border-0 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800" />
-            <CarouselNext className="hidden md:flex -right-12 border-0 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800" />
+            <CarouselPrevious className="hidden md:flex -left-12 border-0 bg-white/80 hover:bg-[#001844]  dark:bg-gray-800/80 dark:hover:bg-gray-800" />
+            <CarouselNext className="hidden md:flex -right-12 border-0 bg-white/80 hover:bg-[#001844] dark:bg-gray-800/80 dark:hover:bg-gray-800" />
           </Carousel>
           <div className="flex justify-center gap-2 mt-8">
             {testimonials.map((_: any, index: number) => (

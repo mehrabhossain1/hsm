@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
       >
         <h2 className="text-5xl ">{title}</h2>
         <p
-          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 ${
+          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 text-justify ${
             hovered ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -71,7 +71,7 @@ export default function BlogsInterviewsSection() {
     {
       title: "Blog",
       description:
-        "This section features original blogs and insights from public health professionals while providing an opportunity for you to share your stories and ideas. Feel free to contribute—just reach out to us via email!",
+        "The blog covers diverse global health topics, offering thoughtful analysis from public health professionals through a health systems perspective.",
       image:
         "https://images.unsplash.com/photo-1586339949216-35c2747cc36d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
@@ -79,7 +79,7 @@ export default function BlogsInterviewsSection() {
     {
       title: "Interview",
       description:
-        "“An effective interview is a collaborative intellectual adventure” – Shahaduz Zaman",
+        "The interview section showcases the journeys and insights of global health advocates, highlighting their impactful experiences and perspectives.",
       image:
         "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
@@ -108,13 +108,10 @@ export default function BlogsInterviewsSection() {
           </h1>
           <Separator orientation="vertical" className="h-24 w-1 bg-[#FFCE00]" />
 
-          <p className="text-lg text-gray-600 font-semibold">
-            The <span className="font-bold">blog</span> covers diverse global
-            health topics, offering thoughtful analysis from public health
-            professionals through a health systems perspective. The{" "}
-            <span className="font-bold">interview</span> section showcases the
-            journeys and insights of global health advocates, highlighting their
-            impactful experiences and perspectives.
+          <p className="text-lg text-gray-600 font-semibold text-justify">
+            The Blog and Interview section is an exciting section of the Health
+            Systems Matter platform, offering original content and insights from
+            public health professionals worldwide.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">

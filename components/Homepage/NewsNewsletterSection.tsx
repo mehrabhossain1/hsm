@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
       >
         <h2 className="text-5xl ">{title}</h2>
         <p
-          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 ${
+          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 text-justify ${
             hovered ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -106,7 +106,7 @@ export default function NewsNewsletterSection() {
           </h1>
           <Separator orientation="vertical" className="h-10 w-1 bg-[#FFCE00]" />
 
-          <p className="text-lg text-gray-600 font-semibold">
+          <p className="text-lg text-gray-600 font-semibold text-justify">
             Visit the news section to stay informed about upcoming global health
             events and subscribe to our periodic newsletter for regular updates
             on public health issues

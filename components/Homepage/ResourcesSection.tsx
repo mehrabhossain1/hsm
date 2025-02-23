@@ -36,12 +36,12 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
       />
       <div className="absolute inset-0 transition-opacity duration-300" />
       <div
-        className="absolute bottom-0 p-6 bg-[#001844] text-white transition-all duration-300 mr-10"
-        style={{ height: hovered ? "16rem" : "10rem" }}
+        className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500 "
+        style={{ height: hovered ? "100%" : "10rem" }}
       >
-        <h2 className="text-5xl ">{title}</h2>
+        <h2 className="text-5xl font-semibold">{title}</h2>
         <p
-          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 ${
+          className={`text-base mt-4 text-gray-300 transition-opacity duration-300 text-justify ${
             hovered ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -56,7 +56,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
               e.stopPropagation(); // Prevent the card click
               // router.push(`/about/${card.route}`);
             }}
-            className="mt-auto flex bg-[#FEC53F] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
+            className="mt-auto text-base flex bg-[#FEC53F] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
           >
             Explore
             <ArrowRight className="size-4 hover:text-white" />
@@ -122,7 +122,7 @@ export default function ResourcesSection() {
               className="h-24 w-1 bg-[#FFCE00]"
             />
 
-            <p className="text-lg text-gray-600 font-semibold">
+            <p className="text-lg text-gray-600 font-semibold text-justify">
               Explore the comprehensive resource hub to supercharge your
               knowledge and complement your rewarding career journey. The
               Resource section lets you download valuable materials with a

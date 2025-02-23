@@ -132,20 +132,22 @@ const Footer = () => {
 
         {/* Improved Copyright Section */}
         <div className="pt-6 mt-10 text- border-t border-gray-400">
-          <p className="text-sm tracking-wide text-center text-">
+          <p className="text-sm tracking-wide text-center flex items-center justify-center gap-2">
+            <Image
+              src="/circle-logo-transparent.png" // Replace with your actual image path
+              alt="Logo"
+              width={20} // Adjust size as needed
+              height={20}
+              className="inline-block"
+            />
             &copy; {new Date().getFullYear()} Monaemul Islam Sizear. All rights
             reserved.{" "}
-            {/* <LinkPreview
-              url="https://tailwindcss.com"
-              className="font-bold underline text-blue-500"
-            > */}
             <Link
               href="/privacy-policy-and-terms-of-use"
               className="font-bold underline text-blue-500"
             >
               Privacy Policy and Terms of use.
             </Link>
-            {/* </LinkPreview>{" "} */}
           </p>
         </div>
       </div>
