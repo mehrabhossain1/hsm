@@ -45,32 +45,34 @@ const Card: React.FC<CardProps> = ({
         className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500 text-justify"
         style={{
           height: hovered ? "100%" : "10rem",
-          // clipPath: " polygon(0 19%, 100% 6%, 100% 100%, 0% 100%);",
+          // clipPath: "polygon(0 19%, 100% 6%, 100% 100%, 0% 100%)",
         }}
       >
-        <h2 className="text-xl font-bold">{title}</h2>
-        <p
-          className={`text-base mt-4 text-gray-300 transition-opacity duration-300  ${
-            hovered ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          {description}
-        </p>
-        <a
-          href={link}
-          className="absolute bottom-4 right-4 flex items-center text-blue-400 hover:text-blue-300"
-        >
-          <Button
-            onClick={(e) => {
-              e.stopPropagation(); // Prevent the card click
-              // router.push(`/about/${card.route}`);
-            }}
-            className="mt-auto flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
+        <div className="">
+          <h2 className="text-xl font-bold">{title}</h2>
+          <p
+            className={`text-base mt-4 text-gray-300 transition-opacity duration-300  ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
           >
-            Explore
-            <ArrowRight className="size-4 hover:text-white" />
-          </Button>
-        </a>
+            {description}
+          </p>
+          <a
+            href={link}
+            className="absolute bottom-4 right-4 flex items-center text-blue-400 hover:text-blue-300"
+          >
+            <Button
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent the card click
+                // router.push(`/about/${card.route}`);
+              }}
+              className="mt-auto flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
+            >
+              Explore
+              <ArrowRight className="size-4 hover:text-white" />
+            </Button>
+          </a>
+        </div>
       </div>
     </motion.div>
   );

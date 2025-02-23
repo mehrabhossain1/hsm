@@ -21,15 +21,15 @@ const Right = () => {
             variant="secondary"
             className="bg-[#FFCE00] font-bold hover:bg-[#e6b00e]"
           >
-            Gift
+            Support HSM
           </Button>
-          <Button
+          {/* <Button
             size="sm"
             variant="secondary"
             className="bg-[#962D91] font-bold text-white hover:bg-[#7a2476]"
           >
-            Support HSM
-          </Button>
+            
+          </Button> */}
         </div>
         <div>
           <Button

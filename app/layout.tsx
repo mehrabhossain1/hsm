@@ -5,6 +5,7 @@ import "./globals.css";
 import SocialShare from "@/components/Shared/Social/SocialShare";
 import Navbar from "@/components/Shared/Navbar";
 import Footer from "@/components/Shared/Footer/Footer";
+import GiftButton from "@/components/Shared/Social/GiftButton";
 
 // const roboto = Roboto({
 //   variable: "--font-roboto",
@@ -33,6 +34,7 @@ export default function RootLayout({
       {/* ${roboto.variable} ${robotoSlab.variable}  */}
       <body className={`antialiased`}>
         <SocialShare />
+        <GiftButton />
         <Navbar />
 
         {children}

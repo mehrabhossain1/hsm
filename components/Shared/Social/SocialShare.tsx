@@ -3,6 +3,8 @@
 
 import { Facebook, Linkedin, Link, Mails } from "lucide-react";
 import { useEffect, useState } from "react";
+import { FaFacebookF, FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const SocialShare = () => {
   const [currentUrl, setCurrentUrl] = useState("");
@@ -31,7 +33,7 @@ const SocialShare = () => {
         rel="noopener noreferrer"
         className="p-2 bg-white border   hover:bg-[#FFCE00] transition"
       >
-        <Linkedin size={16} />
+        <FaLinkedinIn size={16} />
       </a>
       {/* Facebook Share */}
       <a
@@ -42,7 +44,7 @@ const SocialShare = () => {
         rel="noopener noreferrer"
         className="p-2 bg-white border   hover:bg-[#FFCE00] transition"
       >
-        <Facebook size={16} />
+        <FaFacebookF size={16} />
       </a>
       <a
         href={`mailto:?subject=Check%20this%20out!&body=${encodeURIComponent(
@@ -50,14 +52,14 @@ const SocialShare = () => {
         )}`}
         className="p-2 bg-white border   hover:bg-[#FFCE00]  transition"
       >
-        <Mails size={16} />
+        <MdEmail size={16} />
       </a>
       {/* Copy URL */}
       <button
         onClick={copyToClipboard}
         className="p-2 bg-white border  hover:bg-[#FFCE00] transition"
       >
-        <Link size={16} className="transform -rotate-45" />
+        <Link size={16} className="transform -rotate-45 " />
       </button>
     </div>
   );
