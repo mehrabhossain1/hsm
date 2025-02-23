@@ -38,9 +38,11 @@ export default function Home() {
       <BlogsInterviewsSection />
 
       <Youtube />
-      <Contact />
+
       {/* <Sizear /> */}
       <AnimatedTestimonialsDemo />
+
+      <Contact />
     </>
   );
 }

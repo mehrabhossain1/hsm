@@ -116,7 +116,7 @@ export default function AboutSection() {
 
   return (
     <>
-      <section className="bg-[url('/aboutbg.jpg')] bg-cover bg-center bg-no-repeat py-16 mt-5 px-8 min-h-dvh">
+      <section className="bg-[url('/aboutbg.jpg')] bg-cover bg-center bg-no-repeat py-16 px-8 min-h-[700px] flex items-center justify-center">
         <div className="max-w-screen-xl mx-auto px-8">
           <div className="flex justify-between mb-8">
             <SectionTitle

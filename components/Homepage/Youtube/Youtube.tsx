@@ -1,11 +1,15 @@
 import Image from "next/image";
 import bg from "@/public/bg.jpeg";
+import { Separator } from "@/components/ui/separator";
 
 const Youtube = () => {
   return (
-    <section className="bg-[#001844]" id="youtube">
-      <div className="flex flex-col gap-10 min-h-dvh px-8 items-center justify-center max-w-screen-xl mx-auto overflow-x-hidden lg:flex-row">
-        {/* Text Section */}
+    <section
+      className="bg-[#001844]  min-h-[720px] flex items-center justify-center"
+      id="youtube"
+    >
+      {/* <div className="flex flex-col gap-10 min-h-dvh px-8 items-center justify-center max-w-screen-xl mx-auto overflow-x-hidden lg:flex-row">
+      
         <div className="mb-8 lg:w-1/2 lg:mb-0 lg:pr-8">
           <div className="flex flex-row items-center gap-10 pb-10">
             <h1 className="text-4xl font-[1000] text-white whitespace-nowrap">
@@ -24,8 +28,31 @@ const Youtube = () => {
           </p>
         </div>
 
+        
+      </div> */}
+
+      <div className="max-w-screen-xl mx-auto px-8 py-16">
+        <div className="flex justify-between mb-8">
+          <div className="flex gap-5 items-center w-full">
+            <h1 className="text-4xl font-[1000] text-white">YOUTUBE</h1>
+            <Separator
+              orientation="vertical"
+              className="h-[96px] w-1 bg-[#FFCE00]"
+            />
+
+            <p className="text-lg text-gray-300 font-semibold text-justify">
+              Health Systems Matter plans to launch a YouTube channel dedicated
+              to exploring global health system issues and documenting expert
+              knowledge through interviews. This initiative is currently in the
+              planning phase and is scheduled for implementation next year. To
+              stay informed about the channel&apos;s launch, please remain
+              engaged with the site. Subscribe to our newsletter and follow our
+              social media pages to receive updates.
+            </p>
+          </div>
+        </div>
         {/* Image Section */}
-        <div className="lg:w-1/2">
+        <div className="flex justify-center items-center max-w-3xl mx-auto">
           <Image
             src={bg}
             alt="YouTube Channel"

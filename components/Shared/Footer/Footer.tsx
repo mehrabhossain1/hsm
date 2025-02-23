@@ -4,7 +4,8 @@ import { FaFacebook, FaLinkedin, FaArrowUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "@/public/logo3.png";
 import Image from "next/image";
-import { LinkPreview } from "@/components/ui/link-preview";
+// import { LinkPreview } from "@/components/ui/link-preview";
+import Link from "next/link";
 
 const Footer = () => {
   // Function to scroll to the top
@@ -13,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-10 bg-[#001844] text-white rounded-t-2xl">
+    <footer className="py-10 bg-[#001844] text-white">
       <div className="max-w-[1200px] mx-auto">
         {/* Horizontal line with Back to Top button aligned right */}
         <div className="flex items-center justify-center gap-5 pb-6">
@@ -47,7 +48,7 @@ const Footer = () => {
 
           {/* Second Grid */}
           <div className="flex flex-col text-base">
-            <ul className="space-y-2 md:ps-24">
+            <ul className="space-y-2 md:ps-28">
               <li>
                 <a href="#about" className="hover:underline">
                   About
@@ -127,13 +128,17 @@ const Footer = () => {
           <p className="text-sm tracking-wide text-center text-">
             &copy; {new Date().getFullYear()} Monaemul Islam Sizear. All rights
             reserved.{" "}
-            <LinkPreview
+            {/* <LinkPreview
               url="https://tailwindcss.com"
               className="font-bold underline text-blue-500"
+            > */}
+            <Link
+              href="/privacy-policy-and-terms-of-use"
+              className="font-bold underline text-blue-500"
             >
-              Privacy Policy
-            </LinkPreview>{" "}
-            and Terms of use.
+              Privacy Policy and Terms of use.
+            </Link>
+            {/* </LinkPreview>{" "} */}
           </p>
         </div>
       </div>
