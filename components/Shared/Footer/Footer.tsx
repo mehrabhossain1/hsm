@@ -47,48 +47,52 @@ const Footer = () => {
           </div>
 
           {/* Second Grid */}
-          <div className="flex flex-col text-base">
+          <div className="flex flex-col text-sm">
             <ul className="space-y-2 md:ps-28">
               <li>
-                <a href="#about" className="hover:underline">
-                  About
-                </a>
+                <Link href="/about" className="hover:underline">
+                  ABOUT
+                </Link>
               </li>
               <li>
-                <a href="#resources" className="hover:underline">
-                  Resources
-                </a>
+                <Link href="/resources" className="hover:underline">
+                  RESOURCES
+                </Link>
               </li>
               <li>
-                <a href="#bookmarks" className="hover:underline">
-                  Bookmarks
-                </a>
+                <Link href="/bookmarks" className="hover:underline">
+                  BOOKMARKS
+                </Link>
               </li>
               <li>
-                <a href="#newsletter" className="hover:underline">
-                  Newsletter
-                </a>
+                <Link href="/news" className="hover:underline">
+                  NEWS
+                </Link>
               </li>
               <li>
-                <a href="#newsroom" className="hover:underline">
-                  Newsroom
-                </a>
-              </li>
-
-              <li>
-                <a href="#youtube" className="hover:underline">
-                  YouTube
-                </a>
+                <Link href="/newsletter" className="hover:underline">
+                  NEWSLETTER
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:underline">
-                  Contact
-                </a>
+                <Link href="/blog" className="hover:underline">
+                  BLOG
+                </Link>
               </li>
               <li>
-                <a href="#about-sizear" className="hover:underline">
-                  About Sizear
-                </a>
+                <Link href="/interview" className="hover:underline">
+                  INTERVIEW
+                </Link>
+              </li>
+              <li>
+                <Link href="/youtube" className="hover:underline">
+                  YOUTUBE
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:underline">
+                  CONTACT
+                </Link>
               </li>
             </ul>
           </div>

@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 const Youtube = () => {
   return (
     <section
-      className="bg-gradient-to-b from-[#001844] to-[#001844c2]  min-h-[720px] flex items-center justify-center"
+      className="bg-[#001844]  min-h-[720px] flex items-center justify-center"
       id="youtube"
     >
       {/* <div className="flex flex-col gap-10 min-h-dvh px-8 items-center justify-center max-w-screen-xl mx-auto overflow-x-hidden lg:flex-row">

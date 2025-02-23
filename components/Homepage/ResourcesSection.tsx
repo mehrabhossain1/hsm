@@ -58,7 +58,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
             }}
             className="mt-auto flex bg-[#FEC53F] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
           >
-            Read More
+            Explore
             <ArrowRight className="size-4 hover:text-white" />
           </Button>
         </a>

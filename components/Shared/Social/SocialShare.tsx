@@ -31,7 +31,7 @@ const SocialShare = () => {
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 bg-white border   hover:bg-[#FFCE00] transition"
+        className="p-2 bg-white border border-black hover:bg-[#FFCE00] transition"
       >
         <FaLinkedinIn size={16} />
       </a>
@@ -42,22 +42,22 @@ const SocialShare = () => {
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 bg-white border   hover:bg-[#FFCE00] transition"
+        className="p-2 bg-white border-x border-b border-black  hover:bg-[#FFCE00] transition"
       >
-        <FaFacebookF size={16} />
+        <Facebook size={16} />
       </a>
       <a
         href={`mailto:?subject=Check%20this%20out!&body=${encodeURIComponent(
           currentUrl
         )}`}
-        className="p-2 bg-white border   hover:bg-[#FFCE00]  transition"
+        className="p-2 bg-white border-x border-b border-black   hover:bg-[#FFCE00]  transition"
       >
-        <MdEmail size={16} />
+        <Mails size={16} />
       </a>
       {/* Copy URL */}
       <button
         onClick={copyToClipboard}
-        className="p-2 bg-white border  hover:bg-[#FFCE00] transition"
+        className="p-2 bg-white border-x border-b border-black  hover:bg-[#FFCE00] transition"
       >
         <Link size={16} className="transform -rotate-45 " />
       </button>

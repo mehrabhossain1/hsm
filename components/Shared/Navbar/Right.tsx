@@ -15,25 +15,18 @@ const Right = () => {
 
       {/* Centered Buttons */}
       <div className="relative z-10 flex flex-col items-center justify-center gap-2">
-        <div className="flex gap-2 mt-3">
+        <div className="flex gap-2 mt-3 w-[100px]">
           <Button
             size="sm"
             variant="secondary"
-            className="bg-[#FFCE00] font-bold hover:bg-[#e6b00e]"
+            className="bg-[#FFCE00] w-[100px] font-bold hover:bg-[#e6b00e]"
           >
             Support HSM
           </Button>
-          {/* <Button
-            size="sm"
-            variant="secondary"
-            className="bg-[#962D91] font-bold text-white hover:bg-[#7a2476]"
-          >
-            
-          </Button> */}
         </div>
         <div>
           <Button
-            className="mt-3 px-4 font-bold"
+            className="mt-3 px-4 font-bold w-[100px]"
             variant="destructive"
             size="sm"
           >

@@ -53,7 +53,7 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-[#2D8CBB]/95 dark:bg-black backdrop-blur-sm overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-[#2D8CBB]/95 dark:bg-black backdrop-blur-sm overflow-hidden  dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
@@ -127,7 +127,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-white font-semibold dark:text-neutral-200 hover:text-slate-200"
+      className="text-white font-semibold hover:text-slate-200 flex items-center gap-1"
       onClick={handleClick} // Stop event propagation here
     >
       {children}

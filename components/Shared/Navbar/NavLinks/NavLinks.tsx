@@ -4,6 +4,14 @@ import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { AiFillHome } from "react-icons/ai";
 import Link from "next/link";
+import {
+  BookOpen,
+  Bookmark,
+  Newspaper,
+  Mail,
+  PenSquare,
+  Mic,
+} from "lucide-react";
 
 export function NavbarDemo() {
   return (
@@ -54,8 +62,13 @@ function Navbar({ className }: { className?: string }) {
           href="/resources-and-bookmarks"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Resources</HoveredLink>
-            <HoveredLink href="/interface-design">Bookmarks</HoveredLink>
+            <HoveredLink href="/resources">
+              <BookOpen className="w-4 h-4" /> RESOURCES
+            </HoveredLink>
+            <HoveredLink href="/bookmarks">
+              {" "}
+              <Bookmark className="w-4 h-4" /> BOOKMARKS
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItem
@@ -64,8 +77,12 @@ function Navbar({ className }: { className?: string }) {
           item="NEWS & NEWSLETTER"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">News</HoveredLink>
-            <HoveredLink href="/individual">Newsletter</HoveredLink>
+            <HoveredLink href="/news">
+              <Newspaper className="w-4 h-4" /> NEWS
+            </HoveredLink>
+            <HoveredLink href="/newsletter">
+              <Mail className="w-4 h-4" /> NEWSLETTER
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItem
@@ -75,8 +92,12 @@ function Navbar({ className }: { className?: string }) {
           item="BLOG & INTERVIEW"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">BLOG</HoveredLink>
-            <HoveredLink href="/individual">INTERVIEW</HoveredLink>
+            <HoveredLink href="/blog">
+              <PenSquare className="w-4 h-4" /> BLOG
+            </HoveredLink>
+            <HoveredLink href="/interview">
+              <Mic className="w-4 h-4" /> INTERVIEW
+            </HoveredLink>
           </div>
         </MenuItem>
         <Link href="/" className="text-sm font-semibold">
