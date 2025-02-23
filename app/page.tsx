@@ -14,6 +14,7 @@ import ResourcesSection from "@/components/Homepage/ResourcesSection";
 import NewsNewsletterSection from "@/components/Homepage/NewsNewsletterSection";
 import BlogsInterviewsSection from "@/components/Homepage/BlogsInterviewsSection";
 import AboutSection from "@/components/Homepage/AboutSection";
+import ContactSection from "@/components/Homepage/ContactSection";
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
 
       {/* <Sizear /> */}
       <AnimatedTestimonialsDemo />
+
+      <ContactSection />
 
       {/* <Contact /> */}
     </>

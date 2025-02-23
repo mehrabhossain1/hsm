@@ -35,8 +35,8 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
       />
       <div className="absolute inset-0 transition-opacity duration-300" />
       <div
-        className="absolute bottom-0 p-6 bg-[#001844] text-white transition-all duration-300 mr-10"
-        style={{ height: hovered ? "16rem" : "10rem" }}
+        className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500"
+        style={{ height: hovered ? "100%" : "10rem" }}
       >
         <h2 className="text-5xl ">{title}</h2>
         <p
@@ -55,7 +55,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
               e.stopPropagation(); // Prevent the card click
               // router.push(`/about/${card.route}`);
             }}
-            className="mt-auto flex bg-[#FEC53F] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
+            className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
           >
             Explore
             <ArrowRight className="size-4 hover:text-white" />

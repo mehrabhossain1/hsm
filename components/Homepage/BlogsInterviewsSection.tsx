@@ -35,8 +35,8 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
       />
       <div className="absolute inset-0 transition-opacity duration-300" />
       <div
-        className="absolute bottom-0 p-6 bg-[#001844] text-white transition-all duration-300 mr-10"
-        style={{ height: hovered ? "16rem" : "10rem" }}
+        className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500"
+        style={{ height: hovered ? "100%" : "10rem" }}
       >
         <h2 className="text-5xl ">{title}</h2>
         <p
@@ -55,7 +55,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
               e.stopPropagation(); // Prevent the card click
               // router.push(`/about/${card.route}`);
             }}
-            className="mt-auto flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
+            className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
           >
             Explore
             <ArrowRight className="size-4 hover:text-white" />
@@ -73,7 +73,7 @@ export default function BlogsInterviewsSection() {
       description:
         "The blog covers diverse global health topics, offering thoughtful analysis from public health professionals through a health systems perspective.",
       image:
-        "https://images.unsplash.com/photo-1586339949216-35c2747cc36d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
     {
@@ -81,7 +81,7 @@ export default function BlogsInterviewsSection() {
       description:
         "The interview section showcases the journeys and insights of global health advocates, highlighting their impactful experiences and perspectives.",
       image:
-        "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1565728744382-61accd4aa148?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
   ];
@@ -106,7 +106,7 @@ export default function BlogsInterviewsSection() {
           <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
             BLOG & INTERVIEW
           </h1>
-          <Separator orientation="vertical" className="h-24 w-1 bg-[#FFCE00]" />
+          <Separator orientation="vertical" className="h-10 w-1 bg-[#FFCE00]" />
 
           <p className="text-lg text-gray-600 font-semibold text-justify">
             The Blog and Interview section is an exciting section of the Health
