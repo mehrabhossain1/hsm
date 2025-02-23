@@ -39,6 +39,7 @@ function Navbar({ className }: { className?: string }) {
         <Link href="/">
           <AiFillHome className="text-base" />
         </Link>
+
         <MenuItem
           setActive={setActive}
           active={active}

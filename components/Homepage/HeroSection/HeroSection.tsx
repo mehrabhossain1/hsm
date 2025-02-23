@@ -45,7 +45,7 @@ const HeroSection = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="relative w-full h-[520px] max-w-screen-2xl min-h-dvh mx-auto mb-8">
+    <div className="relative w-full max-w-screen-2xl min-h-dvh mx-auto mb-8">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
