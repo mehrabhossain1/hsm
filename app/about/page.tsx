@@ -14,7 +14,7 @@ interface CardProps {
   index: number;
 }
 
-export const Card: React.FC<CardProps> = ({
+const Card: React.FC<CardProps> = ({
   title,
   description,
   image,
