@@ -1,7 +1,7 @@
 "use client";
 
 import { Card } from "@/components/Homepage/AboutSection";
-import Image from "next/image";
+// import Image from "next/image";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -44,13 +44,13 @@ const AboutPage = () => {
     <div>
       {/* Page Title with Full-Width Background Image */}
       <div className="relative w-full h-[180px] border-t-2 border-[#FFCE00]">
-        <Image
-          // src="https://images.pexels.com/photos/2330507/pexels-photo-2330507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" // Replace with your image path
+        {/* <Image
+          src="https://images.pexels.com/photos/2330507/pexels-photo-2330507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" // Replace with your image path
           alt="About Page"
           layout="fill"
           objectFit="cover"
           className="w-full h-full"
-        />
+        /> */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30  flex items-center ">
           <div className="max-w-screen-xl mx-auto w-full px-8">
             <h1 className="text-5xl font-[1000] text-white ">About</h1>
