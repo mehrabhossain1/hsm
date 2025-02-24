@@ -19,9 +19,9 @@ const GiftButton = () => {
       {/* Gift Icon */}
       <button
         onClick={handleGiftClick}
-        className="px-2 py-1 border  border-black bg-white hover:bg-[#FFCE00] transition"
+        className="px-2 py-1 border border-black bg-white hover:bg-[#FFCE00] transition"
       >
-        <Gift size={20} />
+        <Gift size={24} className="w-full" />
       </button>
     </div>
   );
