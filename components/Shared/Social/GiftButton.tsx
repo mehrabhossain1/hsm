@@ -13,15 +13,15 @@ const GiftButton = () => {
   return (
     <div className="fixed z-50 top-1/2 left-0 transform -translate-y-1/2 flex flex-col items-center cursor-pointer">
       {/* Gift Text */}
-      <span className="mb-0.5 text-xs font-[1000] text-black bg-[#FFCE00] px-2 py-1 rounded-t">
+      <span className="mb-0.5 text-xs font-[1000] text-[#001844] bg-[#FFCE00] px-2 py-1 rounded-t">
         GIFT
       </span>
       {/* Gift Icon */}
       <button
         onClick={handleGiftClick}
-        className="px-2 py-1 border border-black bg-white hover:bg-[#FFCE00] transition"
+        className="px-2 py-1 border w-full border-[#001844] bg-white hover:bg-[#FFCE00] transition"
       >
-        <Gift size={24} className="w-full" />
+        <Gift size={24} className="text-[#001844]" />
       </button>
     </div>
   );
