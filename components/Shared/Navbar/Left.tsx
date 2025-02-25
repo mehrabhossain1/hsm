@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SizearImage from "@/public/sizearImage.webp";
+import Link from "next/link";
 
 const Left = () => {
   return (
@@ -13,11 +14,13 @@ const Left = () => {
       </div>
 
       {/* Profile Image */}
-      <Image
-        src={SizearImage}
-        alt="sizear"
-        className="relative z-10 rounded-full size-20 border-2 border-[#FFCE00]"
-      />
+      <Link href="/sizear">
+        <Image
+          src={SizearImage}
+          alt="sizear"
+          className="relative z-10 rounded-full size-20 border-2 border-[#FFCE00]"
+        />
+      </Link>
     </div>
   );
 };
