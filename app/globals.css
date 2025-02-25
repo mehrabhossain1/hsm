@@ -88,7 +88,7 @@ h2 {
     @apply bg-background text-foreground;
   }
   p {
-    @apply text-lg;
+    @apply text-base;
   }
 }
 

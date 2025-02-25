@@ -8,7 +8,7 @@ const Sizear = () => {
           {/* Text Section - Left Side (55%) */}
           <div className="space-y-6 order-2 lg:order-1 text-justify px-8">
             <header className="space-y-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              <h2 className="text-3xl md:text-3xl font-bold text-gray-800">
                 Monaemul Islam Sizear
               </h2>
               <p className="text-lg text-gray-600">
@@ -88,12 +88,12 @@ const Sizear = () => {
           {/* Image Section - Right Side (45%) */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:h-auto lg:max-w-full group">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
               <Image
                 src="/sizearImage.webp"
                 alt="Monaemul Islam Sizear"
                 fill
-                className="object-cover shadow-xl border-8 border-white transform z-10 rounded-xl hover:border-[#FFCE00]"
+                className="object-cover shadow-xl border-8 border-white transform z-10  hover:border-[#FFCE00]"
                 sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
                 priority
               />
