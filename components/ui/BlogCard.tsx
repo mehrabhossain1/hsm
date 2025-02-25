@@ -36,7 +36,7 @@ export const BlogCard = ({
         />
 
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-white hover:underline hover:text-[#156DF9]">
             {item.title}
           </h3>
           <p className="text-sm mt-1 text-gray-500 dark:text-gray-400">
@@ -46,7 +46,7 @@ export const BlogCard = ({
             {item.description}
           </p>
 
-          <button className="mt-5 text-sm text-black font-bold flex items-center text-left hover:text-[#156DF9]">
+          <button className="mt-5 text-sm text-black font-bold flex items-center text-left hover:text-[#156DF9] hover:underline">
             Read More{" "}
             <ArrowRightCircle className="ml-2 size-4 bg-[#156DF9] rounded-full text-white" />
           </button>

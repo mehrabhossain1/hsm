@@ -93,7 +93,7 @@ const BridgingTheGapsBlogPage = () => {
       />
 
       {/* Content Section */}
-      <div className="max-w-3xl mx-auto p-6 space-y-6">
+      <div className="max-w-4xl mx-auto p-6 space-y-6 mt-8">
         {/* Introduction */}
         {/* <p className="text-lg text-gray-700 leading-relaxed">
           Mental health remains a critical yet often neglected aspect of
@@ -104,11 +104,11 @@ const BridgingTheGapsBlogPage = () => {
         </p> */}
 
         {/* Key Issue Section */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold text-[#001844]">
+        <div className="bg-white p-8 text-justify ">
+          <h2 className="text-2xl font-bold text-[#001844] text-left">
             Unseen Wounds: The Mental Health Crisis Bangladesh
           </h2>
-          <p className="text-gray-700 mt-2">
+          <p className="text-gray-700 mt-4">
             Mental health remains a critical yet often neglected aspect of
             Bangladesh’s healthcare system. The country faces significant
             challenges in addressing mental health issues, exacerbated by
@@ -122,46 +122,42 @@ const BridgingTheGapsBlogPage = () => {
             than ever to mental health challenges.
           </p>
 
-          <blockquote className="border-l-4 border-[#001844] pl-4 italic text-gray-600 mt-4">
-            "The mental healthcare system in Bangladesh is characterized by a
+          <p className="text-gray-700 mt-4">
+            The mental healthcare system in Bangladesh is characterized by a
             lack of integration within the broader health services, leading to
             fragmented care pathways. Current mental health services are not
             adequately incorporated into the universal health coverage
             framework, disproportionately affecting rural populations, who often
-            face high out-of-pocket expenses for private care." (Koly, 2024).
-          </blockquote>
-          <blockquote className="border-l-4 border-[#001844] pl-4 italic text-gray-600 mt-4">
-            "This issue is further compounded by a shortage of qualified mental
-            health professionals and an insufficient number of public mental
-            health facilities. According to recent research, Bangladesh has only
-            four hospital beds per 10,000 people available for mental health
-            patients, highlighting a severe gap in service provision." (Hasan et
+            face high out-of-pocket expenses for private care (Koly, 2024). This
+            issue is further compounded by a shortage of qualified mental health
+            professionals and an insufficient number of public mental health
+            facilities. According to recent research, Bangladesh has only four
+            hospital beds per 10,000 people available for mental health
+            patients, highlighting a severe gap in service provision (Hasan et
             al., 2021).
-          </blockquote>
-          <blockquote className="border-l-4 border-[#001844] pl-4 italic text-gray-600 mt-4">
-            "Additionally, the absence of a structured referral system
+          </p>
+          <p className="text-gray-700 mt-4">
+            Additionally, the absence of a structured referral system
             complicates access to care, as patients often seek services based on
-            convenience rather than clinical need." (Nuri et al., 2018).
-          </blockquote>
-          <blockquote className="border-l-4 border-[#001844] pl-4 italic text-gray-600 mt-4">
-            "Societal stigma surrounding mental health remains a formidable
-            barrier, preventing individuals from seeking help. This stigma is
-            deeply ingrained in cultural perceptions that frame mental illness
-            as a personal failing rather than a medical condition. As a result,
-            many individuals, particularly young people, suffer in silence,
-            leading to the worsening of their mental health conditions. The
+            convenience rather than clinical need (Nuri et al., 2018). Societal
+            stigma surrounding mental health remains a formidable barrier,
+            preventing individuals from seeking help. This stigma is deeply
+            ingrained in cultural perceptions that frame mental illness as a
+            personal failing rather than a medical condition. As a result, many
+            individuals, particularly young people, suffer in silence, leading
+            to the worsening of their mental health conditions. The
             psychological impact of these challenges is profound, often
             manifesting as heightened anxiety, depression, and post-traumatic
-            stress disorder among affected individuals." (Islam & Biswas, 2015).
-          </blockquote>
+            stress disorder among affected individuals (Islam & Biswas, 2015).
+          </p>
         </div>
 
         {/* Call to Action Section */}
-        <div className="bg-[#e5f2ff] p-6 rounded-lg">
+        <div className="bg-white p-6 rounded-lg">
           <h2 className="text-2xl font-bold text-[#001844]">
             Addressing the Gaps: A Call for Systemic Change
           </h2>
-          <p className="text-gray-700 mt-2">
+          <p className="text-gray-700 mt-4">
             A multifaceted approach is required to address these persistent
             challenges. Firstly, there is an urgent need for policy reforms that
             elevate mental health as a national priority. Integrating mental
@@ -172,7 +168,7 @@ const BridgingTheGapsBlogPage = () => {
             necessary to recognize and effectively treat mental health
             conditions (Hasan et al., 2021).
           </p>
-          <p className="text-gray-700 mt-2">
+          <p className="text-gray-700 mt-4">
             Beyond clinical care, community-based mental health initiatives can
             play a pivotal role in reducing stigma and increasing awareness.
             Engaging local leaders, influencers, and educators in mental health
@@ -182,7 +178,7 @@ const BridgingTheGapsBlogPage = () => {
             innovative social media campaigns, and co-designed digital support
             tools, can also broaden mental health outreach and education.
           </p>
-          <p className="text-gray-700 mt-2">
+          <p className="text-gray-700 mt-4">
             Collaboration between the government, non-governmental
             organizations, and international partners is essential to creating
             supportive environments that foster mental well-being. This is
@@ -191,11 +187,12 @@ const BridgingTheGapsBlogPage = () => {
             readily available for affected individuals.
           </p>
         </div>
-        <div className="bg-[#e5f2ff] p-6 rounded-lg">
+
+        <div className="bg-white p-6 rounded-lg">
           <h2 className="text-2xl font-bold text-[#001844]">
             The Urgency of Reform
           </h2>
-          <p className="text-gray-700 mt-2">
+          <p className="text-gray-700 mt-4">
             The mental health landscape in Bangladesh is fraught with challenges
             that demand immediate and systemic intervention. The tragic loss of
             young lives, unprecedented systemic violence, and the countless
@@ -205,7 +202,7 @@ const BridgingTheGapsBlogPage = () => {
             Mental Health Strategic Plan 2020–2030—are critical steps toward
             achieving a more inclusive and responsive mental healthcare system.
           </p>
-          <p className="text-gray-700 mt-2">
+          <p className="text-gray-700 mt-4">
             By strengthening professional training, expanding community-based
             mental health initiatives, integrating digital mental health
             solutions, and fostering cross-sector collaborations, Bangladesh can
@@ -219,8 +216,8 @@ const BridgingTheGapsBlogPage = () => {
         {/* References Section */}
 
         <div className="bg-gray-200 p-4 rounded-md text-sm">
-          <h2 className="text-2xl font-bold text-[#001844]">References</h2>
-          <p>
+          <h2 className="text-xl font-bold text-[#001844]">References</h2>
+          <p className="text-sm text-gray-700 mt-2">
             Hasan, M., Anwar, T., Christopher, E., Hossain, S., Hossain, M.,
             Koly, K., … & Hossain, S. (2021). The current state of mental
             healthcare in bangladesh: part 1 – an updated country profile.
@@ -233,7 +230,7 @@ const BridgingTheGapsBlogPage = () => {
               Read more
             </a>
           </p>
-          <p>
+          <p className="text-sm text-gray-700 mt-2">
             Islam, A. and Biswas, T. (2015). Mental health and the health system
             in bangladesh: situation analysis of a neglected domain. American
             Journal of Psychiatry and Neuroscience, 3(4), 57.
@@ -244,7 +241,7 @@ const BridgingTheGapsBlogPage = () => {
               Read more
             </a>
           </p>
-          <p>
+          <p className="text-sm text-gray-700 mt-2">
             Koly, K. (2024). Stakeholder perspectives of mental healthcare
             services in bangladesh, its challenges and opportunities: a
             qualitative study. Cambridge Prisms Global Mental Health, 11.
@@ -255,7 +252,7 @@ const BridgingTheGapsBlogPage = () => {
               Read more
             </a>
           </p>
-          <p>
+          <p className="text-sm text-gray-700 mt-2">
             Nuri, N., Sarker, M., Ahmed, H., Hossain, M., Beiersmann, C., &
             Jahn, A. (2018). Pathways to care of patients with mental health
             problems in bangladesh. International Journal of Mental Health
