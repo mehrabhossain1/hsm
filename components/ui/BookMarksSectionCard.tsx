@@ -23,20 +23,20 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
   Icon,
 }) => {
   return (
-    <Card className="border border-[#01748D] hover:border-[#F18A00] h-full hover:bg-white p-4 transition-transform transform rounded-none shadow-sm bg-[#F4F3F0] hover:shadow-md ">
+    <Card className="border w-full border-[#01748D] hover:border-[#F18A00] h-full hover:bg-white p-4 transition-transform transform rounded-none shadow-sm bg-[#F4F3F0] hover:shadow-md ">
       <CardHeader className="flex flex-col items-center justify-center space-y-2">
         {/* Icon at the top, smaller size */}
-        <Icon className="text-6xl text-[#01748D] mb-4" />
+        <Icon className="text-6xl text-[#01748D] mb-2" />
 
         {/* Title */}
-        <CardTitle className="text-xl font-semibold mb-2 text-center text-gray-700 underline-offset-4 hover:decoration-[#F18A00]">
+        <CardTitle className="text-2xl font-semibold mb-2 text-center text-gray-700 underline-offset-4 hover:decoration-[#F18A00]">
           <Link href={href} className="hover:underline ">
             {title}
           </Link>
         </CardTitle>
 
         {/* Description */}
-        <CardDescription className="mt-1 text-base line-clamp-4 text-justify text-gray-600 ">
+        <CardDescription className="mt-2 text-base line-clamp-4 text-justify text-gray-600 ">
           {description}
         </CardDescription>
       </CardHeader>
