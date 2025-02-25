@@ -1,21 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+// import {
+//   Breadcrumb,
+//   BreadcrumbItem,
+//   BreadcrumbList,
+//   BreadcrumbPage,
+//   BreadcrumbSeparator,
+// } from "@/components/ui/breadcrumb";
+// import Link from "next/link";
 import Image from "next/image";
-import Link from "next/link";
 import TasdikDip from "@/public/TasdikDip.jpg";
 
 const BridgingTheGapsBlogPage = () => {
   return (
     <div className="">
-      <div className="">
+      {/* <div className="">
         <Breadcrumb className="py-4 px-8 max-w-screen-xl mx-auto">
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -46,11 +46,11 @@ const BridgingTheGapsBlogPage = () => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-      </div>
+      </div> */}
 
       <div className="text-center py-5 px-8 max-w-5xl mx-auto">
         {/* Title */}
-        <h1 className="text-4xl font-extrabold text-[#001844] leading-snug">
+        <h1 className="text-3xl font-semibold text-[#001844] leading-snug ">
           Bridging the Gaps: Strengthening Mental Healthcare to Build a
           Resilient Health System in Bangladesh
         </h1>
@@ -89,7 +89,7 @@ const BridgingTheGapsBlogPage = () => {
         alt="blog"
         width={600}
         height={400}
-        className="max-w-screen-lg mx-auto rounded-2xl h-96 object-cover"
+        className="max-w-screen-lg mx-auto h-96 object-cover"
       />
 
       {/* Content Section */}
@@ -105,7 +105,7 @@ const BridgingTheGapsBlogPage = () => {
 
         {/* Key Issue Section */}
         <div className="bg-white p-8 text-justify ">
-          <h2 className="text-2xl font-bold text-[#001844] text-left">
+          <h2 className="text-2xl font-semibold text-[#001844] text-left">
             Unseen Wounds: The Mental Health Crisis Bangladesh
           </h2>
           <p className="text-gray-700 mt-4">
@@ -153,7 +153,7 @@ const BridgingTheGapsBlogPage = () => {
         </div>
 
         {/* Call to Action Section */}
-        <div className="bg-white p-6 rounded-lg">
+        <div className="bg-white p-6 rounded-lg text-justify">
           <h2 className="text-2xl font-bold text-[#001844]">
             Addressing the Gaps: A Call for Systemic Change
           </h2>
@@ -188,7 +188,7 @@ const BridgingTheGapsBlogPage = () => {
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-lg">
+        <div className="bg-white p-6 rounded-lg text-justify">
           <h2 className="text-2xl font-bold text-[#001844]">
             The Urgency of Reform
           </h2>
@@ -215,13 +215,13 @@ const BridgingTheGapsBlogPage = () => {
 
         {/* References Section */}
 
-        <div className="bg-gray-200 p-4 rounded-md text-sm">
+        <div className="bg-gray-200 p-4 rounded-md text-sm text-justify">
           <h2 className="text-xl font-bold text-[#001844]">References</h2>
           <p className="text-sm text-gray-700 mt-2">
             Hasan, M., Anwar, T., Christopher, E., Hossain, S., Hossain, M.,
             Koly, K., … & Hossain, S. (2021). The current state of mental
             healthcare in bangladesh: part 1 – an updated country profile.
-            Bjpsych International, 18(4), 78-82.
+            Bjpsych International, 18(4), 78-82.{" "}
             <a
               href="https://doi.org/10.1192/bji.2021.41"
               target="_blank"
@@ -233,7 +233,7 @@ const BridgingTheGapsBlogPage = () => {
           <p className="text-sm text-gray-700 mt-2">
             Islam, A. and Biswas, T. (2015). Mental health and the health system
             in bangladesh: situation analysis of a neglected domain. American
-            Journal of Psychiatry and Neuroscience, 3(4), 57.
+            Journal of Psychiatry and Neuroscience, 3(4), 57.{" "}
             <a
               href="https://doi.org/10.11648/j.ajpn.20150304.11"
               className="text-blue-600 underline"
@@ -244,7 +244,7 @@ const BridgingTheGapsBlogPage = () => {
           <p className="text-sm text-gray-700 mt-2">
             Koly, K. (2024). Stakeholder perspectives of mental healthcare
             services in bangladesh, its challenges and opportunities: a
-            qualitative study. Cambridge Prisms Global Mental Health, 11.
+            qualitative study. Cambridge Prisms Global Mental Health, 11.{" "}
             <a
               href="https://doi.org/10.1017/gmh.2024.30"
               className="text-blue-600 underline"
@@ -256,7 +256,7 @@ const BridgingTheGapsBlogPage = () => {
             Nuri, N., Sarker, M., Ahmed, H., Hossain, M., Beiersmann, C., &
             Jahn, A. (2018). Pathways to care of patients with mental health
             problems in bangladesh. International Journal of Mental Health
-            Systems, 12(1).
+            Systems, 12(1).{" "}
             <a
               href="https://doi.org/10.1186/s13033-018-0218-y"
               className="text-blue-600 underline"
