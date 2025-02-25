@@ -75,7 +75,7 @@ export default function ResourcesSection() {
         "The Resources section aspire to be a repository of essential resources on health systems and global health.",
       image:
         "https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/resources",
     },
     {
       title: "Bookmarks",
@@ -83,7 +83,7 @@ export default function ResourcesSection() {
         "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/bookmarks",
     },
   ];
 

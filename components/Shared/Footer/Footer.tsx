@@ -37,14 +37,14 @@ const Footer = () => {
           {/* First Grid */}
           <div className="flex flex-col items-center justify-center">
             <Image src={logo} alt="Logo" className="mb-6 w-80" />
-            <p className="pb-10 text-base text-center">
+            <p className="pb-10  text-xs text-center">
               Founded in 2024, HSM is a career development platform for public
               health professionals around the world.
             </p>
-            <p className="font-bold text-base text-center">
+            <p className="font-bold  text-xs text-center">
               Health Systems Matter
             </p>
-            <p className="text-center text-base">Dhaka, Bangladesh</p>
+            <p className="text-center  text-xs ">Bangladesh</p>
           </div>
 
           {/* Second Grid */}
@@ -133,13 +133,6 @@ const Footer = () => {
         {/* Improved Copyright Section */}
         <div className="pt-6 mt-10 text- border-t border-gray-400">
           <p className="text-sm tracking-wide text-center flex items-center justify-center gap-2">
-            <Image
-              src="/circle-logo-transparent.png" // Replace with your actual image path
-              alt="Logo"
-              width={20} // Adjust size as needed
-              height={20}
-              className="inline-block"
-            />
             &copy; {new Date().getFullYear()} Monaemul Islam Sizear. All rights
             reserved.{" "}
             <Link
