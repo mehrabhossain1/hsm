@@ -52,7 +52,7 @@ const ResourcesSectionCard: React.FC<ResourcesSectionCardProps> = ({
             <CardHeader>
               <Link href={href}>
                 <CardTitle className="relative text-xl group">
-                  <span className="line-clamp-1 underline-offset-4 font-medium cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#F18A00]">
+                  <span className="underline-offset-4 font-medium cursor-pointer transition-colors duration-200 group-hover:underline group-hover:text-[#F18A00]">
                     {title}
                   </span>
                 </CardTitle>

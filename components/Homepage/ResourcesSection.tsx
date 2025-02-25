@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 // import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -47,7 +48,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
         >
           {description}
         </p>
-        <a
+        <Link
           href={link}
           className="absolute bottom-4 right-4 flex items-center text-blue-400 hover:text-blue-300"
         >
@@ -61,7 +62,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
             Explore
             <ArrowRight className="size-4 hover:text-white" />
           </Button>
-        </a>
+        </Link>
       </div>
     </motion.div>
   );
