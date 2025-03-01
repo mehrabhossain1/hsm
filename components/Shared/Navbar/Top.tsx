@@ -14,13 +14,16 @@ const Top = () => {
       </Link>
 
       {/* Centered Logo and Slogan */}
-      <div className="absolute top-0 left-[51%] transform -translate-x-1/2 flex flex-col items-center">
+      <Link
+        href="/"
+        className="absolute top-0 left-[51%] transform -translate-x-1/2 flex flex-col items-center"
+      >
         <Image className="" src={Logo} width={400} alt="hsm logo" />
 
         <div className="text-[#FFCE00] text-right absolute text-xs top-10 right-6 tracking-wider">
           Becoming a better global health leader
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

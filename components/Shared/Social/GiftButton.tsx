@@ -13,7 +13,7 @@ const GiftButton = () => {
   return (
     <div className="fixed z-50 top-1/2 left-0 transform -translate-y-1/2 flex flex-col items-center cursor-pointer">
       {/* Gift Text */}
-      <span className="mb-0.5 text-xs font-[1000] text-[#001844] bg-[#FFCE00] px-2 py-1 rounded-t">
+      <span className="mb-0.5 text-xs font-[1000] text-white bg-[#001844] px-2 py-1 rounded-t">
         GIFT
       </span>
       {/* Gift Icon */}

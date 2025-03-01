@@ -114,7 +114,7 @@ export function AnimatedTestimonialsDemo() {
   }, [api]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white py-16 px-8">
+    <div className="bg-[#E2E4F0] to-white py-16 px-8">
       <div className="max-w-screen-xl mx-auto px-8 ">
         <div className="flex gap-5 items-center w-full mb-8">
           <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">

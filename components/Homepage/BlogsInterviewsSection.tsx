@@ -87,7 +87,7 @@ export default function BlogsInterviewsSection() {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+    <section className="bg-[#E1F0DB] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
       <div className="max-w-screen-xl mx-auto px-8">
         {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">

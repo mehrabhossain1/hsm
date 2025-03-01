@@ -83,6 +83,58 @@ h2 {
 @layer base {
   * {
     @apply box-border;
+
+    /* HTML: <div class="arrow"></div> */
+    .arrow-bg {
+      position: relative;
+      display: inline-block;
+      padding: 0.75rem 2rem; /* Adjust padding for text spacing */
+      font-weight: bold;
+      color: white;
+    }
+
+    .arrow-bg::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 150px; /* Adjust size as needed */
+      aspect-ratio: 3/2;
+      background: #033649;
+      clip-path: polygon(
+        0 calc(50% - var(--t) / 2),
+        calc(100% - var(--h)) calc(50% - var(--t) / 2),
+        calc(100% - var(--h)) 0,
+        100% 50%,
+        calc(100% - var(--h)) 100%,
+        calc(100% - var(--h)) calc(50% + var(--t) / 2),
+        0 calc(50% + var(--t) / 2)
+      );
+      --t: 45%; /* Control the tail part */
+      --h: 40%; /* Control the head part */
+      z-index: -1;
+    }
+
+    .clip-left {
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    .clip-middle {
+      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+
+    .clip-right {
+      clip-path: polygon(
+        0% 20%,
+        60% 20%,
+        60% 0%,
+        100% 50%,
+        60% 100%,
+        60% 80%,
+        0% 80%
+      );
+    }
   }
   body {
     @apply bg-background text-foreground;
