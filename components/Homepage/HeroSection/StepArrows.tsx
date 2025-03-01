@@ -17,7 +17,7 @@ export default function StepArrows() {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="bg-[#46B0E0] text-white font-semibold px-6 py-6 clip-right mx-5"
+        className="bg-[#001844] text-white font-semibold px-6 py-6 clip-right mx-5"
       >
         HSM Offers
       </motion.div>

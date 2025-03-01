@@ -49,18 +49,18 @@ const HeroSection = () => {
     //   </div>
     // </div>
 
-    <div className="max-w-screen-2xl mx-auto px-8 min-h-[calc(100vh-115px)]  mb-10">
-      <div className="flex items-center h-[400px] px-4 ">
+    <div className="max-w-screen-2xl mx-auto px-8 mb-20">
+      <div className="flex items-center h-[380px] px-4 ">
         <div className="w-[65%]">
-          <div className="flex items-center">
-            <h2 className="text-4xl font-bold text-center mr-4 text-orange-500">
+          <div className="flex items-center justify-center ps-12">
+            <h2 className="text-3xl font-bold text-center mr-4 text-orange-500">
               Health <br /> System{" "}
             </h2>{" "}
             <Separator
               orientation="vertical"
               className="h-20 w-1 bg-green-500"
             />{" "}
-            <h1 className="transform -rotate-90 text-4xl mr-5 font-semibold text-[#2D8CBB]">
+            <h1 className="transform -rotate-90 text-3xl mr-5 font-semibold text-[#2D8CBB]">
               {" "}
               HUB{" "}
             </h1>
@@ -81,7 +81,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center mt-4">
+          <div className="flex items-center justify-end mt-4">
             {/* <div className="bg-[#001844] rounded-2xl mt-10 text-center text-2xl py-5 text-[#FFCE00] max-w-3xl mr-3">
             Resources <span className="px-5">|</span> Insights{" "}
             <span className="px-5">|</span> Events{" "}
@@ -91,7 +91,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="w-[35%] h-full overflow-hidden">
+        <div className="w-[35%] h-[90%] overflow-hidden">
           <Image
             src={HeroImg}
             alt="Hero Image"
@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#001844]  text-white text-center font-semibold  text-xl py-4  max-w-4xl mx-auto">
+      <div className="bg-[#001844] max-w-xl ms-40 text-white text-center font-semibold text-lg py-4">
         Do not settle.{" "}
         <span className="text-[#FFCE00]">
           Better public health starts with knowledge.
