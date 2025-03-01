@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#001844] max-w-xl ms-40 text-white text-center font-semibold text-lg py-4">
+      <div className="bg-[#001844] max-w-xl ms-40 -mt-4 text-white text-center font-semibold text-lg py-4">
         Do not settle.{" "}
         <span className="text-[#FFCE00]">
           Better public health starts with knowledge.
