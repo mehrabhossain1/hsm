@@ -49,8 +49,8 @@ const HeroSection = () => {
     //   </div>
     // </div>
 
-    <div className="max-w-screen-2xl  mx-auto px-8 min-h-[calc(100vh-115px)] mb-10">
-      <div className="flex items-center h-[400px] px-4">
+    <div className="max-w-screen-2xl mx-auto px-8 min-h-[calc(100vh-115px)]  mb-10">
+      <div className="flex items-center h-[400px] px-4 ">
         <div className="w-[65%]">
           <div className="flex items-center">
             <h2 className="text-4xl font-bold text-center mr-4 text-orange-500">
