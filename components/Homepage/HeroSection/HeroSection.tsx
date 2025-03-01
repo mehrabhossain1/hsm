@@ -49,11 +49,11 @@ const HeroSection = () => {
     //   </div>
     // </div>
 
-    <div className="max-w-screen-2xl mx-auto px-8 min-h-[calc(100vh-115px)] mb-10">
+    <div className="max-w-screen-2xl  mx-auto px-8 min-h-[calc(100vh-115px)] mb-10">
       <div className="flex items-center h-[400px] px-4">
         <div className="w-[65%]">
           <div className="flex items-center">
-            <h2 className="text-4xl font-bold text-center mr-7 text-orange-500">
+            <h2 className="text-4xl font-bold text-center mr-4 text-orange-500">
               Health <br /> System{" "}
             </h2>{" "}
             <Separator
@@ -68,11 +68,15 @@ const HeroSection = () => {
               <h2 className="text-3xl font-bold text-[#001844] text-center mb-4">
                 Knowledge for Solutions
               </h2>
-              <p className="text-justify text-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Blanditiis aspernatur ipsa neque nisi in consectetur! Optio
-                magni perspiciatis hic animi est nobis, nihil laboriosam ut
-                beatae ratione iste atque cumque?
+              <p className="text-justify text-base">
+                <span className="font-semibold">
+                  Health Systems Matter (HSM)
+                </span>{" "}
+                is a knowledge platform that covers global health issues. HSM
+                empowers professionals by providing resources, insights, career
+                opportunities, and news. It serves as a hub for staying informed
+                and confident in the ever eveloving global health industry,
+                where knowledge matters.
               </p>
             </div>
           </div>
@@ -96,7 +100,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#001844] mt-2 text-white text-center font-semibold  text-2xl py-4  max-w-4xl mx-auto">
+      <div className="bg-[#001844]  text-white text-center font-semibold  text-xl py-4  max-w-4xl mx-auto">
         Do not settle.{" "}
         <span className="text-[#FFCE00]">
           Better public health starts with knowledge.
