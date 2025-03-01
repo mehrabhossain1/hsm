@@ -91,12 +91,12 @@ const HeroSection = () => {
           <Image
             src={HeroImg}
             alt="Hero Image"
-            className="scale-125 w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
 
-      <div className="bg-[#001844] mt-8 text-white text-center font-semibold  text-2xl py-4  max-w-4xl mx-auto">
+      <div className="bg-[#001844] mt-2 text-white text-center font-semibold  text-2xl py-4  max-w-4xl mx-auto">
         Do not settle.{" "}
         <span className="text-[#FFCE00]">
           Better public health starts with knowledge.
