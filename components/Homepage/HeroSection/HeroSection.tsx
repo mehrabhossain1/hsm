@@ -49,8 +49,8 @@ const HeroSection = () => {
     //   </div>
     // </div>
 
-    <div className="max-w-screen-xl mx-auto py-20 px-8 min-h-[calc(100vh-115px)]">
-      <div className="flex items-center">
+    <div className="max-w-screen-2xl mx-auto px-8 min-h-[calc(100vh-115px)] mb-10">
+      <div className="flex items-center h-[400px] px-4">
         <div className="w-[65%]">
           <div className="flex items-center">
             <h2 className="text-4xl font-bold text-center mr-7 text-orange-500">
@@ -96,7 +96,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#001844] mt-16 text-white text-center font-semibold  text-2xl py-4  max-w-4xl mx-auto">
+      <div className="bg-[#001844] mt-8 text-white text-center font-semibold  text-2xl py-4  max-w-4xl mx-auto">
         Do not settle.{" "}
         <span className="text-[#FFCE00]">
           Better public health starts with knowledge.
