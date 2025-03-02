@@ -91,16 +91,20 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="w-[35%] h-[90%] overflow-hidden">
+        <div className="w-[35%] h-[110%] overflow-hidden">
           <Image
             src={HeroImg}
             alt="Hero Image"
             className="w-full h-full object-cover"
+            priority
+            quality={100}
+            width={1000}
+            height={300}
           />
         </div>
       </div>
 
-      <div className="bg-[#001844] max-w-xl ms-40 -mt-4 text-white text-center font-semibold text-lg py-4">
+      <div className="bg-[#001844] max-w-3xl mx-auto text-white text-center font-semibold text-lg py-4">
         Do not settle.{" "}
         <span className="text-[#FFCE00]">
           Better public health starts with knowledge.
