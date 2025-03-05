@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Right = () => {
   return (
@@ -15,7 +16,7 @@ const Right = () => {
 
       {/* Centered Buttons */}
       <div className="relative z-10 flex flex-col items-center justify-center gap-2">
-        <div className="flex gap-2 mt-3 w-[100px]">
+        <Link href="/support-hsm" className="flex gap-2 mt-3 w-[100px]">
           <Button
             size="sm"
             variant="secondary"
@@ -23,7 +24,7 @@ const Right = () => {
           >
             Support HSM
           </Button>
-        </div>
+        </Link>
         <div>
           <Button
             className="mt-3 px-4 font-bold w-[100px]"
