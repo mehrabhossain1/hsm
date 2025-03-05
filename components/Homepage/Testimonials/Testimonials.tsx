@@ -21,6 +21,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import ZarifImg from "@/public/testimonials/Zarif.jpeg";
 import YemeImg from "@/public/testimonials/Yemi.jpg";
+import Link from "next/link";
 
 export function AnimatedTestimonialsDemo() {
   // const testimonials = [
@@ -64,6 +65,7 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       name: "Yemelaknesh Wolde",
+      link: "https://www.linkedin.com/in/yemelaknesh-yemi-wolde-md-msc-a3143b45/",
       title: "Senior Health Financing Advisor",
       company: "Open Development",
       content:
@@ -72,6 +74,7 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       name: "Dr. Zarif Rasul",
+      link: "https://www.linkedin.com/in/zarif-rasul/",
       title: "Water Specialist",
       company: "World Bank",
       content:
@@ -149,9 +152,12 @@ export function AnimatedTestimonialsDemo() {
                             className="w-24 h-24 rounded-full border-2 border-[#FFCE00] "
                           />
                           <div>
-                            <div className="font-semibold text-gray-900 dark:text-white text-lg">
+                            <Link
+                              href={testimonial.link}
+                              className="font-semibold text-gray-900 dark:text-white text-lg hover:underline"
+                            >
                               {testimonial.name}
-                            </div>
+                            </Link>
                             <div className="text-sm text-gray-600 dark:text-gray-400">
                               {testimonial.title}
                             </div>
