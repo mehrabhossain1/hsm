@@ -2,8 +2,10 @@ import Image from "next/image";
 
 const Sizear = () => {
   return (
-    <section className="bg-gradient-to-b from-[#F9F6F3] to-white py-16 px-12 min-h-[calc(100vh-115px)] flex items-center">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    // min-h-[calc(100vh-115px)]
+    <section className="bg-gradient-to-b from-[#F9F6F3] to-white py-16 px-12">
+      {/* Top section */}
+      <div className="max-w-screen-xl border mx-auto flex items-center px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-4 lg:gap-6">
           {/* Text Section - Left Side (55%) */}
           <div className="space-y-6 order-2 lg:order-1 text-justify px-8">
@@ -89,18 +91,28 @@ const Sizear = () => {
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:h-auto lg:max-w-full group">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+
               <Image
                 src="/sizearImage.webp"
                 alt="Monaemul Islam Sizear"
-                fill
+                // fill
                 className="object-cover shadow-xl border-8 border-white transform z-10  hover:border-[#FFCE00]"
-                sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+                // sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
                 priority
+                width={1000}
+                height={500}
               />
             </div>
           </div>
         </div>
       </div>
+      {/* Top section */}
+
+      {/* More About Me */}
+      <div className="max-w-screen-xl mx-auto border sm:px-6 lg:px-16 py-16 ">
+        More About Me
+      </div>
+      {/* More About Me */}
     </section>
   );
 };

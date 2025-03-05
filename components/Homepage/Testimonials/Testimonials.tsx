@@ -19,6 +19,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import ZarifImg from "@/public/testimonials/Zarif.jpeg";
+import YemeImg from "@/public/testimonials/Yemi.jpg";
 
 export function AnimatedTestimonialsDemo() {
   // const testimonials = [
@@ -66,8 +68,7 @@ export function AnimatedTestimonialsDemo() {
       company: "Open Development",
       content:
         "Health Systems Matter is a dynamic platform that empowers global health professionals with access to curated knowledge, career opportunities, and capacity-building initiatives. By providing timely resources and actionable insights, it creates a space for professionals to grow, collaborate, and drive meaningful change in public health.",
-      image:
-        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: YemeImg,
     },
     {
       name: "Dr. Zarif Rasul",
@@ -75,26 +76,7 @@ export function AnimatedTestimonialsDemo() {
       company: "World Bank",
       content:
         "For someone not directly involved with the health sector, Health System Matters is a great platform to stay updated on major policies and other developments in the sector. I particularly enjoy learning about leading experts and their contributions. This is an excellent resource for anyone working in the policy and development space. ",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Marie-Claire Dubois",
-      title: "Academic Director",
-      company: "Institut Supérieur de Paris",
-      content:
-        "As an educational institution, we needed a solution that could handle multiple languages and complex academic documents. This platform exceeds our expectations.",
-      image:
-        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Apinya Srisuk",
-      title: "Financial Controller",
-      company: "Siam Commercial Group",
-      content:
-        "The automatic data extraction from Thai financial documents is incredibly accurate. We've integrated it with our existing systems, and the time saved is substantial.",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: ZarifImg,
     },
   ];
 
@@ -164,7 +146,7 @@ export function AnimatedTestimonialsDemo() {
                             alt={testimonial.name}
                             width={100}
                             height={100}
-                            className="w-20 h-20 rounded-full border-2 border-[#FFCE00] "
+                            className="w-24 h-24 rounded-full border-2 border-[#FFCE00] "
                           />
                           <div>
                             <div className="font-semibold text-gray-900 dark:text-white text-lg">
