@@ -3,6 +3,7 @@ import AreaOfFocus from "@/components/Sizear/AreaOfFocus";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 import ProfessionalMembership from "@/components/Sizear/ProfessionalMembership";
+import ProfessionalTraining from "@/components/Sizear/ProfessionalTraining";
 
 const Sizear = () => {
   return (
@@ -28,6 +29,10 @@ const Sizear = () => {
       {/* Professional Membership and Engagement  */}
       <ProfessionalMembership />
       {/* Professional Membership and Engagement  */}
+
+      {/* Professional Training / Job-related Training Received */}
+      <ProfessionalTraining />
+      {/* Professional Training / Job-related Training Received */}
     </section>
   );
 };

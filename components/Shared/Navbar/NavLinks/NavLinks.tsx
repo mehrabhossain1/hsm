@@ -24,13 +24,13 @@ export function NavbarDemo() {
   // Define different background & text colors for specific routes
   const routeStyles: Record<string, { bg: string; text: string }> = {
     "/": { bg: "bg-[#2D8CBB]", text: "text-white" },
-    "/about": { bg: "bg-green-600", text: "text-gray-100" },
+    "/about": { bg: "bg-green-600", text: "text-gray-800" },
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
-    "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
+    // "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
     "/resources/essential-reading-list": {
       bg: "bg-blue-700/90",
-      text: "text-gray-500",
+      text: "text-white",
     },
   };
 
@@ -58,7 +58,7 @@ function Navbar({ className }: { className?: string }) {
       )}
     >
       <Menu setActive={setActive}>
-        <Link href="/">
+        <Link href="/" className={className}>
           <AiFillHome className="text-base" />
         </Link>
 

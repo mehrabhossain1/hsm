@@ -13,7 +13,7 @@ const Left = () => {
     "/about": { bg: "bg-green-600", text: "text-gray-100" },
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
-    "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
+    // "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
     "/resources/essential-reading-list": {
       bg: "bg-blue-700/90",
       text: "text-gray-500",
