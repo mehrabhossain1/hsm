@@ -15,6 +15,7 @@ import NewsNewsletterSection from "@/components/Homepage/NewsNewsletterSection";
 import BlogsInterviewsSection from "@/components/Homepage/BlogsInterviewsSection";
 import AboutSection from "@/components/Homepage/AboutSection";
 import ContactSection from "@/components/Homepage/ContactSection";
+// import SubscribeNewsletter from "@/components/Homepage/SubscribeNewsletter";
 
 export default function Home() {
   return (
@@ -42,6 +43,8 @@ export default function Home() {
 
       {/* <Sizear /> */}
       <AnimatedTestimonialsDemo />
+
+      {/* <SubscribeNewsletter /> */}
 
       <ContactSection />
 
