@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaUniversity } from "react-icons/fa";
+import Image from "next/image";
 import { SiGooglescholar, SiResearchgate, SiOrcid } from "react-icons/si";
 
 const AreaOfFocus = () => {
   return (
-    <div className="bg-[#6ACBD4]">
+    <div className="bg-[#6ACBD4]/10">
       <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 py-16">
-        <h2 className="text-2xl md:text-2xl font-bold text-white  underline underline-offset-4">
+        <h2 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4">
           Area of Focus and Research
         </h2>
 
@@ -16,26 +16,33 @@ const AreaOfFocus = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-6 bg-transparent shadow-lg rounded-lg p-8 border-l-4 border-green-800"
+          className="mt-6 bg-transparent  rounded-lg p-8 border-l-4 border-[#6ACBD4]"
         >
-          <div className="flex items-center justify-center mb-4 space-x-3 ">
-            <FaUniversity className="text-green-800 text-8xl" />
+          <div className="flex items-center justify-center mb-4 gap-5 flex-row-reverse ">
+            {/* <FaUniversity className="text-green-800 text-8xl" /> */}
+            <Image
+              src="https://img.freepik.com/free-vector/editorial-commission-concept-illustration_114360-7751.jpg"
+              alt="research"
+              width={500}
+              height={500}
+              className="mix-blend-darken"
+            />
             {/* <h3 className="text-xl font-semibold text-gray-900">
             Evidence-Based Research & Advocacy
           </h3> */}
+            <p className="text-gray-500 leading-relaxed text-justify max-w-3xl mx-auto text-lg">
+              My research and professional interests encompass health systems
+              and financing, environmental health, and health-seeking behavior.
+              In the context of growing urbanization and increasingly complex
+              health service delivery, my work emphasizes public financial
+              management, the role of the private sector, and human-centered
+              design. These elements are critical for rethinking and formulating
+              comprehensive urban health policies aimed at building sustainable
+              and resilient health systems. I also engage in research to
+              understand complex health sector challenges and generate evidence
+              to support government initiatives through targeted advocacy.&quot;
+            </p>
           </div>
-          <p className="text-white leading-relaxed text-justify">
-            My research and professional interests encompass health systems and
-            financing, environmental health, and health-seeking behavior. In the
-            context of growing urbanization and increasingly complex health
-            service delivery, my work emphasizes public financial management,
-            the role of the private sector, and human-centered design. These
-            elements are critical for rethinking and formulating comprehensive
-            urban health policies aimed at building sustainable and resilient
-            health systems. I also engage in research to understand complex
-            health sector challenges and generate evidence to support government
-            initiatives through targeted advocacy.&quot;
-          </p>
         </motion.div>
 
         {/* Research Profiles Section */}
