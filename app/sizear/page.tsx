@@ -1,4 +1,5 @@
 import AboutSizear from "@/components/Sizear/AboutSizear";
+import AreaOfFocus from "@/components/Sizear/AreaOfFocus";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 
@@ -18,6 +19,10 @@ const Sizear = () => {
       {/* Career Trajectory / Employment Journey  */}
       <CareerTrajectory />
       {/* Career Trajectory / Employment Journey  */}
+
+      {/* Area of Focus and Research */}
+      <AreaOfFocus />
+      {/* Area of Focus and Research */}
     </section>
   );
 };

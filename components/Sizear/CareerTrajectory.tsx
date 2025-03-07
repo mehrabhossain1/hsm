@@ -71,8 +71,8 @@ const CareerTrajectory = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 ">
-      <h2 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4">
+    <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16">
+      <h2 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-4">
         Career Trajectory / Employment Journey
       </h2>
 
@@ -88,12 +88,12 @@ const CareerTrajectory = () => {
             <div className="absolute -left-[37px] top-2 bg-blue-500 w-12 h-12 flex items-center justify-center rounded-full">
               <FaBriefcase className="text-white text-xl" />
             </div>
-            <div className="bg-white p-8 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900">
+            <div className="bg-blue-50 p-8 shadow-sm rounded-md flex justify-between">
+              <h3 className="text-lg font-semibold text-gray-600">
                 {exp.title}, {exp.company}
               </h3>
               {/* <p className="text-gray-700 text-xl">{exp.company}</p> */}
-              <p className=" text-gray-500 text-xl">{exp.date}</p>
+              <p className=" text-gray-500 text-lg">{exp.date}</p>
             </div>
           </motion.div>
         ))}
