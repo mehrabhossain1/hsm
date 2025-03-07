@@ -16,11 +16,29 @@ import {
   Activity,
   HelpCircle,
 } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export function NavbarDemo() {
+  const pathname = usePathname();
+
+  // Define different background & text colors for specific routes
+  const routeStyles: Record<string, { bg: string; text: string }> = {
+    "/": { bg: "bg-[#2D8CBB]", text: "text-white" },
+    "/about": { bg: "bg-green-600", text: "text-gray-100" },
+    "/contact": { bg: "bg-red-600", text: "text-white" },
+    "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
+    "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
+  };
+
+  // Default colors if route not specified
+  const { bg, text } = routeStyles[pathname] || {
+    bg: "bg-[#2D8CBB]", // Default background
+    text: "text-white", // Default text color
+  };
+
   return (
-    <div className="w-full bg-[#2D8CBB] flex items-center justify-center">
-      <Navbar className="" />
+    <div className={`w-full ${bg} flex items-center justify-center`}>
+      <Navbar className={`${text}`} />
     </div>
   );
 }

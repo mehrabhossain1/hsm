@@ -1,8 +1,28 @@
+"use client";
 import Image from "next/image";
 import SizearImage from "@/public/sizearImage.webp";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Left = () => {
+  const pathname = usePathname();
+
+  // Define different background & text colors for specific routes
+  const routeStyles: Record<string, { bg: string; text: string }> = {
+    "/": { bg: "bg-[#2D8CBB]", text: "text-white" },
+    "/about": { bg: "bg-green-600", text: "text-gray-100" },
+    "/contact": { bg: "bg-red-600", text: "text-white" },
+    "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
+    "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
+  };
+
+  // Default colors if route not specified
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { bg, text } = routeStyles[pathname] || {
+    bg: "bg-[#2D8CBB]", // Default background
+    text: "text-white", // Default text color
+  };
+
   return (
     <div className="relative flex items-center h-30 ps-4">
       {/* Left section with two background colors */}
@@ -10,7 +30,7 @@ const Left = () => {
         {/* Top color */}
         <div className="absolute top-0 left-0 w-full h-[59%] bg-[#001844]"></div>
         {/* Bottom color */}
-        <div className="absolute bottom-0 left-0 w-full h-[41%] bg-[#2D8CBB]"></div>
+        <div className={`absolute bottom-0 left-0 w-full h-[41%] ${bg}`}></div>
       </div>
 
       {/* Profile Image */}
