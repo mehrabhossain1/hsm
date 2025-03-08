@@ -68,10 +68,8 @@ const HeroSection = () => {
                 <h2 className="text-3xl font-bold text-[#001844] text-center mb-4">
                   Knowledge for Solutions
                 </h2>
-                <p className="text-justify text-base">
-                  <span className="font-semibold">
-                    Health Systems Matter (HSM)
-                  </span>{" "}
+                <p className="text-justify text-base font-medium text-gray-600">
+                  <span className="font-bold">Health Systems Matter (HSM)</span>{" "}
                   is a knowledge platform that covers global health issues. HSM
                   empowers professionals by providing resources, insights,
                   career opportunities, and news. It serves as a hub for staying
