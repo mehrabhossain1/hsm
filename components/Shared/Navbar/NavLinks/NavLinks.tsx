@@ -24,7 +24,7 @@ export function NavbarDemo() {
   // Define different background & text colors for specific routes
   const routeStyles: Record<string, { bg: string; text: string }> = {
     "/": { bg: "bg-[#2D8CBB]", text: "text-white" },
-    "/about": { bg: "bg-green-600", text: "text-gray-800" },
+    "/about/about-hsm": { bg: "bg-[#00DFC0]", text: "text-gray-800" },
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
     // "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
@@ -67,6 +67,7 @@ function Navbar({ className }: { className?: string }) {
           active={active}
           item="ABOUT"
           href="/about"
+          className={className}
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/about/about-hsm">
@@ -88,7 +89,8 @@ function Navbar({ className }: { className?: string }) {
           setActive={setActive}
           active={active}
           item="RESOURCES & BOOKMARKS"
-          // href="/resources-and-bookmarks"
+          className={className}
+          href="/resources-and-bookmarks"
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/resources">
@@ -104,6 +106,8 @@ function Navbar({ className }: { className?: string }) {
           setActive={setActive}
           active={active}
           item="NEWS & NEWSLETTER"
+          className={className}
+          href="/news-and-newsletter"
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/news">
@@ -117,8 +121,9 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem
           setActive={setActive}
           active={active}
-          // href="/blog-and-interview"
+          href="/blog-and-interview"
           item="BLOG & INTERVIEW"
+          className={className}
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/blog">
@@ -129,11 +134,11 @@ function Navbar({ className }: { className?: string }) {
             </HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/youtube" className="text-sm font-semibold">
-          YOUTUBE
+        <Link href="/youtube" className={className}>
+          <p className="text-sm font-semibold">YOUTUBE</p>
         </Link>
-        <Link href="/contact" className="text-sm font-semibold">
-          CONTACT
+        <Link href="/contact" className={className}>
+          <p className="text-sm font-semibold">CONTACT</p>
         </Link>
       </Menu>
     </div>

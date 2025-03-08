@@ -21,12 +21,14 @@ export const MenuItem = ({
   item,
   children,
   href,
+  className,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
   href?: string;
+  className?: string;
 }) => {
   const router = useRouter();
 
@@ -38,7 +40,7 @@ export const MenuItem = ({
     >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-sm font-semibold text-white hover:opacity-[0.9] dark:text-white"
+        className={`cursor-pointer text-sm font-semibold ${className} hover:opacity-[0.9] dark:text-white`}
       >
         {item}
       </motion.p>
