@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({
         alt={title}
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0 grayscale"
+        className="absolute inset-0"
       />
       <div className="absolute inset-0 transition-opacity duration-300" />
       <div
@@ -104,7 +104,7 @@ export default function AboutSection() {
       description:
         "Q1: What inspired the establishment of Health Systems Matter, and what is its foundational background?",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://img.freepik.com/premium-vector/hand-drawn-flat-illustration-people-thinking-asking-daydreaming_584524-252.jpg?w=740",
       link: "/about/why-health-systems-matter",
     },
   ];

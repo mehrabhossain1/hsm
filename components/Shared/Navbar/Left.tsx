@@ -16,6 +16,10 @@ const Left = () => {
       bg: "bg-[#8EDBED]",
       text: "text-gray-800",
     },
+    "/about/why-health-systems-matter": {
+      bg: "bg-[#943AD8]",
+      text: "text-white",
+    },
 
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },

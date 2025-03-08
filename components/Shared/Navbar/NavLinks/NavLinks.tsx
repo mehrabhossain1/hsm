@@ -32,6 +32,10 @@ export function NavbarDemo() {
       bg: "bg-[#8EDBED]",
       text: "text-gray-800",
     },
+    "/about/why-health-systems-matter": {
+      bg: "bg-[#943AD8]",
+      text: "text-white",
+    },
     // About
 
     "/contact": { bg: "bg-red-600", text: "text-white" },
