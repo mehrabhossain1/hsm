@@ -2,7 +2,14 @@
 "use client";
 
 import Image from "next/image";
-
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import Link from "next/link";
 const ActivitiesAndApproachPage = () => {
   return (
     <div>
@@ -10,12 +17,41 @@ const ActivitiesAndApproachPage = () => {
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
         <div className="absolute inset-0 bg-gradient-to-l from-[#8EDBED] to-[#8DDEF1] flex items-center px-16">
           <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-8 flex-wrap gap-6">
-            <h1 className="text-5xl font-bold text-gray-800">
+            <h1 className="text-4xl font-bold text-gray-800">
               Activities and Approach
             </h1>
             <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
           </div>
         </div>
+      </div>
+
+      <div className="bg-[#DCF0F9]">
+        <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              {/* <BreadcrumbLink> */}
+              <Link href="/" className="hover:underline ">
+                HOME
+              </Link>
+              {/* </BreadcrumbLink> */}
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              {/* <BreadcrumbLink> */}
+              <Link href="/about" className="hover:underline ">
+                ABOUT
+              </Link>
+              {/* </BreadcrumbLink> */}
+            </BreadcrumbItem>
+
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="hover:underline cursor-pointer">
+                Activities and Approach
+              </BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
       </div>
 
       <div className="bg-[#DCF0F9] py-16">

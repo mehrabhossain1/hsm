@@ -47,14 +47,14 @@ const Card: React.FC<CardProps> = ({
         href={link}
         className="w-full md:w-2/3 p-6 px-12 flex flex-col justify-center text-gray-800"
       >
-        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+        <h2 className="text-2xl font-semibold mb-2 hover:underline">{title}</h2>
         <p className="text-base text-gray-600 mb-4 line-clamp-4 text-justify">
           {description}
         </p>
 
         {/* Explore Button */}
         <div className="inline-flex justify-end items-center text-blue-600 hover:text-blue-500">
-          <Button className="text-xl flex bg-[#FFCE00] text-black hover:bg-[#001844] hover:text-white">
+          <Button className="text-base flex bg-[#FFCE00] text-black hover:bg-[#2D8CBB] hover:text-white">
             Explore
             <ArrowRight className="ml-2 size-5" />
           </Button>
@@ -71,7 +71,7 @@ const AboutPage = () => {
       description:
         "Information is power and evidence lies at the heart of public health policy. Inspired by the principles of valuing information and evidence, Health Systems Matter (HSM) offers essential resources on health systems, public health events, and career opportunities. HSM serves as an independent, comprehensive global health resource, providing updates on public health issues and career opportunities. The site hunts crucial reports, current information, and scholarly articles from global entities, ensuring proper referencing. ",
       image:
-        "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?q=80&w=1470&auto=format&fit=crop",
+        "https://img.freepik.com/free-vector/about-us-concept-illustration_114360-639.jpg?t=st=1741458983~exp=1741462583~hmac=b3e2408e08a16945b7b4c73f6b7107ed7ed245ab86ac724907dd0b62f99806a2&w=740",
       link: "/about/about-hsm",
     },
     {
@@ -79,24 +79,24 @@ const AboutPage = () => {
       description:
         "The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging public health professionals to become informed and confident global health advocates.",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop",
-      link: "#",
+        "https://img.freepik.com/free-vector/hand-drawn-business-strategy-concept_52683-75726.jpg?t=st=1741462040~exp=1741465640~hmac=89953c04640531a7d2fc98e95e016ef5f83f0b77545ea41b3d17140d5e43ed83&w=740",
+      link: "/about/vision-and-mission",
     },
     {
       title: "Activities & Approach",
       description:
         "In order to be aligned with the vision and mission of Health Systems Matter, the specific activities are as follows.",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop",
-      link: "#",
+        "https://img.freepik.com/free-photo/team-teamwork-collaboration-corporate-concept_53876-15857.jpg?t=st=1741462633~exp=1741466233~hmac=8536886850402ccc626221209dc4e604ff017de5e678a4cf1d4894d446061ba3&w=826",
+      link: "/about/activities-and-approach",
     },
     {
       title: "Why HSM",
       description:
         "Q1: What inspired the establishment of Health Systems Matter, and what is its foundational background?",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop",
-      link: "#",
+        "https://img.freepik.com/premium-vector/hand-drawn-flat-illustration-people-thinking-asking-daydreaming_584524-252.jpg?w=740",
+      link: "/about/why-health-systems-matter",
     },
   ];
 
@@ -106,8 +106,8 @@ const AboutPage = () => {
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center px-16">
           <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-8 flex-wrap gap-6">
-            <h1 className="text-5xl font-[1000] text-white">About</h1>
-            <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
+            <h1 className="text-4xl font-[1000] text-white">About</h1>
+            <p className="text-xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
               HSM is a resource hub, offering evidence-based insights, expert
               knowledge, global events, and career opportunities.
             </p>
@@ -116,7 +116,7 @@ const AboutPage = () => {
       </div>
 
       {/* New Left Image - Right Content Layout */}
-      <div className="max-w-screen-lg py-16 mx-auto px-8">
+      <div className="max-w-screen-md py-16 mx-auto px-8">
         <motion.div
           className="flex flex-col gap-8"
           initial="hidden"
