@@ -8,11 +8,11 @@ const SectionTitle = ({
 }: {
   title: string;
   subTitle: string;
-  href: string;
+  href?: string;
 }) => {
   return (
     <div className="flex gap-5 items-center w-full">
-      <Link href={href} className="text-4xl font-[1000] text-[#001844]">
+      <Link href={href || "#"} className="text-4xl font-[1000] text-[#001844]">
         {title}
       </Link>
       <Separator orientation="vertical" className="h-10 w-1 bg-[#FFCE00]" />

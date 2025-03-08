@@ -104,6 +104,7 @@ const BlogAndInterviewPage = () => {
             <SectionTitle
               title="Recent Interviews"
               subTitle="“An effective interview is a collaborative intellectual adventure”– Shahaduz Zaman"
+              href="/blog-and-interview/interview"
             />
 
             {/* <HoverEffect items={projects} /> */}
