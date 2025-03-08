@@ -55,7 +55,7 @@ const InterviewPage = () => {
           {interviews.map((interview) => (
             <div
               key={interview.id}
-              className="bg-white border overflow-hidden transition-transform duration-300 hover:border border-[#2D8CBB]"
+              className="bg-white border overflow-hidden transition-transform duration-300 hover:border-r-4 hover:border-b-4 border-[#2D8CBB] hover:shadow-md"
             >
               <Link href={`/interview/${interview.slug}`}>
                 <Image
@@ -63,7 +63,7 @@ const InterviewPage = () => {
                   alt={interview.title}
                   width={500}
                   height={300}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-56 object-cover hover:scale-105 hover:opacity-90 transition-transform duration-300"
                 />
               </Link>
               <div className="p-6">
