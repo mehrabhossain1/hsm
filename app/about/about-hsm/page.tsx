@@ -46,7 +46,7 @@ const AboutHSM = () => {
 
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="hover:underline cursor-pointer">
+              <BreadcrumbPage className="underline cursor-pointer">
                 About HSM
               </BreadcrumbPage>
             </BreadcrumbItem>

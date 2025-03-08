@@ -46,7 +46,7 @@ const VisionAndMissionPage = () => {
 
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="hover:underline cursor-pointer">
+              <BreadcrumbPage className="underline cursor-pointer">
                 Vision and Mission
               </BreadcrumbPage>
             </BreadcrumbItem>

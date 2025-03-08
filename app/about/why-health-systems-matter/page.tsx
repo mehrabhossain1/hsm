@@ -44,7 +44,7 @@ const WhyHealthSystemsMatterPage = () => {
 
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="hover:underline cursor-pointer">
+              <BreadcrumbPage className="underline cursor-pointer">
                 Why HSM ?
               </BreadcrumbPage>
             </BreadcrumbItem>
