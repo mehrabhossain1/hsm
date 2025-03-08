@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <motion.div
-      className="relative w-full flex flex-col md:flex-row bg-white shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+      className="relative w-full flex flex-col md:flex-row bg-white shadow-lg overflow-hidden transition-transform transform border hover:scale-105 hover:border-r-4 hover:border-b-4 border-[#2D8CBB] hover:shadow-md duration-300"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -47,7 +47,7 @@ const Card: React.FC<CardProps> = ({
         href={link}
         className="w-full md:w-2/3 p-6 px-12 flex flex-col justify-center text-gray-800"
       >
-        <h2 className="text-4xl font-semibold mb-2">{title}</h2>
+        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
         <p className="text-base text-gray-600 mb-4 line-clamp-4 text-justify">
           {description}
         </p>
@@ -101,11 +101,11 @@ const AboutPage = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       {/* Page Title Section */}
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
-          <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16 flex-wrap gap-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center px-16">
+          <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-8 flex-wrap gap-6">
             <h1 className="text-5xl font-[1000] text-white">About</h1>
             <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
               HSM is a resource hub, offering evidence-based insights, expert
@@ -116,7 +116,7 @@ const AboutPage = () => {
       </div>
 
       {/* New Left Image - Right Content Layout */}
-      <div className="max-w-screen-xl py-16 mx-auto px-16">
+      <div className="max-w-screen-lg py-16 mx-auto px-8">
         <motion.div
           className="flex flex-col gap-8"
           initial="hidden"

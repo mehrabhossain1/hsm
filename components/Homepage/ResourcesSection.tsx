@@ -116,9 +116,12 @@ export default function ResourcesSection() {
           /> */}
 
           <div className="flex gap-5 items-center w-full">
-            <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
+            <Link
+              href="/resources-and-bookmarks"
+              className="text-4xl font-[1000] text-[#001844] whitespace-nowrap"
+            >
               RESOURCES & BOOKMARKS
-            </h1>
+            </Link>
             <Separator
               orientation="vertical"
               className="h-24 w-1 bg-[#FFCE00]"

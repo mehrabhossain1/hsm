@@ -34,7 +34,7 @@ export const MenuItem = ({
     <div
       onClick={() => href && router.push(href)}
       onMouseEnter={() => setActive(item)}
-      className="relative "
+      className="relative"
     >
       <motion.p
         transition={{ duration: 0.3 }}

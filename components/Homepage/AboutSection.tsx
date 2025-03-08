@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -57,21 +58,15 @@ const Card: React.FC<CardProps> = ({
           >
             {description}
           </p>
-          <a
+          <Link
             href={link}
             className="absolute bottom-4 right-4 flex items-center text-blue-400 hover:text-blue-300"
           >
-            <Button
-              onClick={(e) => {
-                e.stopPropagation(); // Prevent the card click
-                // router.push(`/about/${card.route}`);
-              }}
-              className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
-            >
+            <Button className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]">
               Explore
               <ArrowRight className="size-4 hover:text-white" />
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>
@@ -86,7 +81,7 @@ export default function AboutSection() {
         "“Information is power” and “Evidence lies at the heart of public health policy.”",
       image:
         "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "https://stripe.com",
+      link: "/about/about-hsm",
     },
     {
       title: "Vision & Mission",
@@ -94,7 +89,7 @@ export default function AboutSection() {
         "The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging public health professionals to become informed and confident global health advocates, dedicated to promoting public health issues and contributing to global health.",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/about/vision-and-mission",
     },
     {
       title: "Activities & Approach",
@@ -102,7 +97,7 @@ export default function AboutSection() {
         "In order to be aligned with the vision and mission of Health Systems Matter, the specific activities are as follows",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/about/activities-and-approach",
     },
     {
       title: "Why HSM",
@@ -110,7 +105,7 @@ export default function AboutSection() {
         "Q1: What inspired the establishment of Health Systems Matter, and what is its foundational background?",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/about/why-health-systems-matter",
     },
   ];
 
@@ -122,6 +117,7 @@ export default function AboutSection() {
             <SectionTitle
               title="ABOUT"
               subTitle="HSM is a resource hub, offering evidence-based insights, expert knowledge, global events and career opportunities."
+              href="/about"
             />
           </div>
           <div className=" mx-auto">

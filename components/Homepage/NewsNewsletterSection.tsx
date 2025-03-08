@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -101,9 +102,12 @@ export default function NewsNewsletterSection() {
         </div> */}
 
         <div className="flex gap-5 items-center w-full mb-8">
-          <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
+          <Link
+            href="/news-and-newsletter"
+            className="text-4xl font-[1000] text-[#001844] whitespace-nowrap"
+          >
             NEWS & NEWSLETTER
-          </h1>
+          </Link>
           <Separator orientation="vertical" className="h-10 w-1 bg-[#FFCE00]" />
 
           <p className="text-lg text-gray-600 font-semibold text-justify">
