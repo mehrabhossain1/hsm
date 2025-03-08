@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -46,21 +47,21 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
         >
           {description}
         </p>
-        <a
+        <Link
           href={link}
           className="absolute bottom-4 right-4 flex items-center text-blue-400 hover:text-blue-300"
         >
           <Button
-            onClick={(e) => {
-              e.stopPropagation(); // Prevent the card click
-              // router.push(`/about/${card.route}`);
-            }}
+            // onClick={(e) => {
+            //   e.stopPropagation();
+            //   router.push(`/about/${card.route}`);
+            // }}
             className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FFCE00]"
           >
             Explore
             <ArrowRight className="size-4 hover:text-white" />
           </Button>
-        </a>
+        </Link>
       </div>
     </motion.div>
   );
@@ -82,7 +83,7 @@ export default function BlogsInterviewsSection() {
         "The interview section showcases the journeys and insights of global health advocates, highlighting their impactful experiences and perspectives.",
       image:
         "https://images.unsplash.com/photo-1565728744382-61accd4aa148?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/interview",
     },
   ];
 
