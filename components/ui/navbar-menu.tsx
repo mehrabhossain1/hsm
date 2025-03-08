@@ -40,7 +40,7 @@ export const MenuItem = ({
     >
       <motion.p
         transition={{ duration: 0.3 }}
-        className={`cursor-pointer text-sm font-semibold ${className} hover:opacity-[0.9] dark:text-white`}
+        className={`cursor-pointer text-sm font-bold ${className} hover:opacity-[0.9] dark:text-white`}
       >
         {item}
       </motion.p>

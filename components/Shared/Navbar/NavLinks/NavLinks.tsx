@@ -28,6 +28,10 @@ export function NavbarDemo() {
     // About
     "/about/about-hsm": { bg: "bg-[#00DFC0]", text: "text-gray-800" },
     "/about/vision-and-mission": { bg: "bg-[#01CAC2]", text: "text-gray-800" },
+    "/about/activities-and-approach": {
+      bg: "bg-[#8EDBED]",
+      text: "text-gray-800",
+    },
     // About
 
     "/contact": { bg: "bg-red-600", text: "text-white" },
@@ -140,10 +144,10 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
         <Link href="/youtube" className={className}>
-          <p className="text-sm font-semibold">YOUTUBE</p>
+          <p className="text-sm font-bold">YOUTUBE</p>
         </Link>
         <Link href="/contact" className={className}>
-          <p className="text-sm font-semibold">CONTACT</p>
+          <p className="text-sm font-bold">CONTACT</p>
         </Link>
       </Menu>
     </div>

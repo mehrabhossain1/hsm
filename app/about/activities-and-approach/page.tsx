@@ -1,64 +1,78 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import { BookOpen } from "lucide-react";
-import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const ActivitiesAndApproachPage = () => {
-  const router = useRouter();
-
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start max-w-screen-xl mx-auto p-6">
-      {/* Title Section */}
-      <div className="text-center py-8">
-        <h1 className="text-4xl font-bold text-gray-800">
-          Activities and Approach
-        </h1>
+    <div>
+      {/* Page Title Section */}
+      <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
+        <div className="absolute inset-0 bg-gradient-to-l from-[#8EDBED] to-[#8DDEF1] flex items-center px-16">
+          <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-8 flex-wrap gap-6">
+            <h1 className="text-5xl font-bold text-gray-800">
+              Activities and Approach
+            </h1>
+            <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
+          </div>
+        </div>
       </div>
 
-      {/* Icon Section */}
-      <div className="flex justify-center items-center mb-8">
-        <BookOpen size={60} className="text-yellow-500" />
-      </div>
+      <div className="bg-[#DCF0F9] py-16">
+        <div className="max-w-screen-xl mx-auto px-8">
+          <div className="flex flex-col-reverse md:flex-row-reverse items-start gap-12 px-6">
+            {/* Content Section (Left) */}
+            <div className="w-full md:w-1/2 space-y-6 text-gray-700 py-16 text-justify">
+              {/* Activities & Approach Section */}
+              <div className="space-y-4 text-justify">
+                <h2 className="text-xl font-semibold text-gray-800">
+                  In order to be aligned with the vision and mission of Health
+                  Systems Matter, the specific activities are as follows:
+                </h2>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>
+                    Showcasing health systems and global health documents daily.
+                  </li>
+                  <li>
+                    Generating and regenerating demand for impactful documents.
+                  </li>
+                  <li>
+                    Disseminating major public health events and milestones.
+                  </li>
+                  <li>
+                    Promoting pages and events focused on health systems and
+                    global health.
+                  </li>
+                  <li>
+                    Introducing individuals in the health systems field
+                    dedicated to enhancing global health.
+                  </li>
+                  <li>
+                    Highlighting organizations working on public health agendas.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-      {/* Content Section */}
-      <div className="space-y-8 text-xl/9 text-gray-700 max-w-4xl mx-auto">
-        <p>
-          In order to be aligned with the vision and mission of Health Systems
-          Matter, the specific activities are as follows:
-        </p>
-
-        <ul className="list-disc pl-6 space-y-4">
-          <li>Showcasing health systems and global health documents daily.</li>
-          <li>Generating and regenerating demand for impactful documents.</li>
-          <li>Disseminating major public health events and milestones.</li>
-          <li>
-            Promoting pages and events focused on health systems and global
-            health.
-          </li>
-          <li>
-            Introducing individuals in the health systems field dedicated to
-            enhancing global health.
-          </li>
-          <li>Highlighting organizations working on public health agendas.</li>
-        </ul>
-
-        <p>
-          To carry out these activities, the site systematically documents and
-          showcases resources, creatively posts on social media to reach users,
-          ensuring proper credit to organizations. The focus is on topics rather
-          than organizations, promoting news without bias or political agenda.
-        </p>
-      </div>
-
-      {/* Back Button Section */}
-      <div className="mt-8 text-center">
-        <motion.button
-          className="px-6 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition duration-200"
-          onClick={() => router.push("/about")}
-        >
-          Back to About Page
-        </motion.button>
+            {/* Image Section (Right) */}
+            <div className="w-full md:w-1/2 self-start">
+              <Image
+                src="https://img.freepik.com/free-photo/team-teamwork-collaboration-corporate-concept_53876-15857.jpg?t=st=1741462633~exp=1741466233~hmac=8536886850402ccc626221209dc4e604ff017de5e678a4cf1d4894d446061ba3&w=826"
+                alt="Activities and Approach"
+                width={1000}
+                height={300}
+                className="w-full h-auto object-cover mix-blend-darken"
+              />
+            </div>
+          </div>
+          <p className="text-xl max-w-screen-lg  mx-auto text-gray-800 font-semibold pt-16 text-justify">
+            To carry out these activities, the site systematically documents and
+            showcases resources, creatively posts on social media to reach
+            users, ensuring proper credit to organizations. The focus is on
+            topics rather than organizations, promoting news without bias or
+            political agenda.
+          </p>
+        </div>
       </div>
     </div>
   );
