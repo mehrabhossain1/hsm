@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import DrMadhukarPaiBio from "./DrMadhukarPaiBio";
 
 const PublicHealthInsightsPage = () => {
   return (
@@ -142,7 +143,99 @@ const PublicHealthInsightsPage = () => {
             </a>
           </p>
         </div>
+
+        {/* Question 4 */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-[#2D8CBB] ">
+            4. What is the most pressing global public health challenge, and how
+            would we address it with limited resources?
+          </h2>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+            In a world increasingly threatened by climate crisis, conflicts,
+            pandemics, and widening economic inequities, we are not dealing with
+            one pressing issue. We are dealing with polycrisis.
+          </p>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+            In these difficult times, I{" "}
+            <a
+              href="https://www.nature.com/articles/d41586-024-03413-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline font-medium"
+            >
+              see
+            </a>{" "}
+            young people as a huge source of hope. Young people have great moral
+            clarity. In fact, climate activism, gun control, Black Lives Matter,
+            Decolonizing Global Health, and many other social movements today
+            are mostly led by youth.
+          </p>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+            So, anything we can do to back young people and open leadership
+            opportunities would be very impactful.
+          </p>
+        </div>
+
+        {/* Question 5 */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-[#2D8CBB] ">
+            5. What are the top three skills essential for success in public
+            health?
+          </h2>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6">
+            <strong>1.</strong> Strong training in a specific area, ability to
+            strategically think about what needs to be done and how to execute
+          </p>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6">
+            <strong>2.</strong> Good communication
+          </p>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6">
+            <strong>3.</strong> Ability to work with teams
+          </p>
+        </div>
+
+        {/* Question 6 */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-[#2D8CBB] ">
+            6. How has your perspective on public health evolved over the years,
+            and what message would you offer to someone beginning their journey
+            in this field?
+          </h2>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+            Over the years, I have grown to realize that the field of global
+            health is neither diverse nor truly global. Every aspect of global
+            health is dominated by individuals and institutions in the Global
+            North. Global South scientists struggle to even get visas to attend
+            international conferences. They struggle to pay article processing
+            charges, and they are rarely invited to serve on editorial boards.
+            Their knowledge is mostly invisible.
+          </p>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+            Global public health cannot be a pursuit or passion of the most
+            privileged. It needs to firmly center on people with the greatest
+            lived experience. As my colleagues and I wrote in a{" "}
+            <a
+              href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)02323-7/abstract"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline font-medium"
+            >
+              commentary
+            </a>{" "}
+            published recently, this will require leadership by the Global South
+            and allyship by the Global North.
+          </p>
+          <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+            For young people starting their careers, I would encourage them to
+            find their “purpose” in life, their passion. Once they find it, they
+            will find a way to become impactful.
+          </p>
+        </div>
       </div>
+
+      {/* Footer */}
+      {/* Bio of Dr. Madhukar pai */}
+      <DrMadhukarPaiBio />
     </div>
   );
 };
