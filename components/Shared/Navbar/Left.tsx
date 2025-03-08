@@ -11,6 +11,8 @@ const Left = () => {
   const routeStyles: Record<string, { bg: string; text: string }> = {
     "/": { bg: "bg-[#2D8CBB]", text: "text-white" },
     "/about/about-hsm": { bg: "bg-[#00DFC0]", text: "text-gray-600" },
+    "/about/vision-and-mission": { bg: "bg-[#01CAC2]", text: "text-gray-800" },
+
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
     // "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },

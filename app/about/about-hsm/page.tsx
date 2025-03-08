@@ -33,7 +33,7 @@ const AboutHSM = () => {
             </div>
 
             {/* Content Section */}
-            <div className="w-full md:w-1/2 space-y-6 text-gray-700 py-16">
+            <div className="w-full md:w-1/2 space-y-6 text-gray-700 py-16 text-justify">
               <p>
                 <strong>"Information is power"</strong> and{" "}
                 <strong>

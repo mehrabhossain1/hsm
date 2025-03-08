@@ -101,7 +101,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="">
+    <div className=" bg-gray-100">
       {/* Page Title Section */}
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center px-16">
