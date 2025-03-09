@@ -6,6 +6,7 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import Image from "next/image";
 
 const EssentialReadingList = () => {
   // Sample PDF data
@@ -20,16 +21,61 @@ const EssentialReadingList = () => {
       filePath:
         "/resources/Essential-Reading-List/Alma-Ata-Conference-Report-on-PHC_WHO-1978.pdf",
     },
-    // {
-    //   title: "Epidemiology Insights",
-    //   description: "A comprehensive overview of epidemiology and its impact.",
-    //   link: "/pdfs/epidemiology-insights.pdf",
-    // },
-    // {
-    //   title: "Healthcare Systems Report",
-    //   description: "An in-depth analysis of global healthcare systems.",
-    //   link: "/pdfs/healthcare-systems-report.pdf",
-    // },
+    {
+      title: "Basic Epidemiology_WHO 2006",
+      filePath:
+        "/resources/Essential-Reading-List/Basic Epidemiology_WHO 2006.pdf",
+    },
+    {
+      title: "Delivering Quality Health Services_WHO 2018",
+      filePath:
+        "/resources/Essential-Reading-List/Delivering Quality Health Services_WHO 2018.pdf",
+    },
+    {
+      title: "Everybody's Business- Strengthening Health Systems_WHo 2007",
+      filePath:
+        "/resources/Essential-Reading-List/Everybody's Business- Strengthening Health Systems_WHo 2007.pdf",
+    },
+    {
+      title: "Guns, Germs and Steel - Jared Diamond_1997",
+      filePath:
+        "/resources/Essential-Reading-List/Guns, Germs and Steel - Jared Diamond_1997.pdf",
+    },
+    {
+      title: "Health Systems - Improving Performance_WHO_2000",
+      filePath:
+        "/resources/Essential-Reading-List/Health Systems - Improving Performance_WHO_2000.pdf",
+    },
+    {
+      title: "Health Systems Building Blocks_WHO 2010",
+      filePath:
+        "/resources/Essential-Reading-List/Health Systems Building Blocks_WHO 2010.pdf",
+    },
+    {
+      title: "Health Systems Financing_WHO 2010",
+      filePath:
+        "/resources/Essential-Reading-List/Health Systems Financing_WHO 2010.pdf",
+    },
+    {
+      title: "International Profiles of Health Care Systems_2020",
+      filePath:
+        "/resources/Essential-Reading-List/International Profiles of Health Care Systems_2020.pdf",
+    },
+    {
+      title: "Investing in Health_WDR 1993",
+      filePath:
+        "/resources/Essential-Reading-List/Investing in Health_WDR 1993.pdf",
+    },
+    {
+      title: "Now More Than Ever-PHC_WHO 2008",
+      filePath:
+        "/resources/Essential-Reading-List/Now More Than Ever-PHC_WHO 2008.pdf",
+    },
+    {
+      title: "Tracking Universal health Coverage_WHO 2015",
+      filePath:
+        "/resources/Essential-Reading-List/Tracking Universal health Coverage_WHO 2015.pdf",
+    },
   ];
 
   return (
@@ -47,7 +93,7 @@ const EssentialReadingList = () => {
 
       {/* Breadcrumbs */}
       {/* Breadcrumbs */}
-      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
+      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto border-b">
         <BreadcrumbList>
           <BreadcrumbItem>
             <Link href="/" className="text-gray-500">
@@ -80,14 +126,37 @@ const EssentialReadingList = () => {
         </BreadcrumbList>
       </Breadcrumb>
 
+      <div className="flex max-w-screen-xl mx-auto flex-col md:flex-row-reverse justify-between w-full px-6 md:px-16 gap-8 pb-16 pt-8">
+        {/* Image Section */}
+        <div className="w-full">
+          <Image
+            src="https://img.freepik.com/premium-photo/close-up-books-table_1048944-20420341.jpg?w=1060"
+            alt="Overview"
+            width={1000}
+            height={1000}
+            className="w-full brightness-75  h-56 "
+          />
+        </div>
+
+        {/* Description Section */}
+        <div className="w-full text-gray-700  text-justify">
+          <p className="text-xl/9">
+            Reading preferences and needs vary widely yet certain resources are
+            considered essential for global health professionals. Explore this
+            curated reading list to discover materials that can enrich your
+            knowledge and support your professional growth.
+          </p>
+        </div>
+      </div>
       {/* Content Section with Sidebar */}
-      <div className="max-w-screen-xl mx-auto px-6 md:px-16 flex flex-col md:flex-row gap-8">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-16 pb-16 flex flex-col md:flex-row gap-8">
         {/* Main Content */}
+
         <div className="flex-1">
           {pdfs.map((pdf, index) => (
             <div
               key={index}
-              className="bg-white  p-6 mb-2 flex items-center gap-4 border border-gray-200"
+              className="bg-white shadow-sm p-6 mb-2 flex items-center gap-4 border border-gray-200"
             >
               <p>{index + 1}.</p>{" "}
               <FaFilePdf className="text-red-500 text-4xl" />
@@ -127,7 +196,7 @@ const EssentialReadingList = () => {
         </div>
 
         {/* Sidebar Section */}
-        <aside className="w-full md:w-1/4 bg-white shadow-lg p-6 border border-gray-200">
+        <aside className="w-full md:w-1/4 bg-white shadow-sm p-6 border border-gray-200">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             Featured Resources
           </h2>
