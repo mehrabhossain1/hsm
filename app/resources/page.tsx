@@ -31,7 +31,7 @@ const bookmarksData = [
     title: "Essential Reading List",
     href: "/resources/essential-reading-list",
     description:
-      "Reading preferences and needs vary widely yet certain resources are considered essential for global health professionals.",
+      "Reading preferences and needs vary widely yet certain resources are considered essential for global health professionals. ",
     Icon: "https://img.freepik.com/premium-photo/close-up-books-table_1048944-20420341.jpg?w=1060",
   },
   {
@@ -53,36 +53,36 @@ const bookmarksData = [
   //   description: "",
   //   Icon: FaBook,
   // },
-  // {
-  //   title: "Books",
-  //   href: "/resources/books",
-  //   description:
-  //     "The PDF books provided are significant works by renowned public health professionals, offering valuable insights into global health and health systems.",
-  //   Icon: FaInfoCircle,
-  // },
+  {
+    title: "Books",
+    href: "/resources/books",
+    description:
+      "The PDF books provided are significant works by renowned public health professionals, offering valuable insights into global health and health systems.",
+    Icon: "https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?t=st=1741542459~exp=1741546059~hmac=065a1337b7ed63131b7e4b32ade319b8ed9291b1347a1b1dca3d5d5eed9f25b5&w=1060",
+  },
 
-  // {
-  //   title: "Policy Briefs",
-  //   href: "/resources/policy-briefs",
-  //   description:
-  //     "The section provided are significant works by renowned public health professionals, offering valuable insights into global health and health systems. ",
-  //   Icon: FaBook,
-  // },
-  // {
-  //   title: "Presentations",
-  //   href: "/resources/presentations",
-  //   description:
-  //     "The section provided are significant works by renowned public health professionals, offering valuable insights into global health and health systems. ",
-  //   Icon: FaYoutube,
-  // },
+  {
+    title: "Policy Briefs",
+    href: "/resources/policy-briefs",
+    description:
+      "The section provided are significant works by renowned public health professionals, offering valuable insights into global health and health systems. ",
+    Icon: "https://img.freepik.com/free-photo/cropped-view-businesswomen-reading-document_74855-4169.jpg?t=st=1741542642~exp=1741546242~hmac=40d95cb4c5a2187fcd5400a6fa2230b51dfc0ee15f0ff5054998ca790ecaa561&w=1060",
+  },
+  {
+    title: "Presentations",
+    href: "/resources/presentations",
+    description:
+      "The section provided are significant works by renowned public health professionals, offering valuable insights into global health and health systems. ",
+    Icon: "https://img.freepik.com/premium-photo/effective-team-collaboration-leadership-strategies-successful-business-presentations-discussions_209190-259778.jpg?w=1380",
+  },
 
-  // {
-  //   title: "Interview and Insights",
-  //   href: "/resources/interview-and-insights",
-  //   description:
-  //     "This section features insightful interviews with global health and development professionals, covering critical issues, scholarly work, leadership, career development, and more. Explore and gain inspiration from their experiences and perspectives.",
-  //   Icon: FaBook,
-  // },
+  {
+    title: "Interview and Insights",
+    href: "/resources/interview-and-insights",
+    description:
+      "This section features insightful interviews with global health and development professionals, covering critical issues, scholarly work, leadership, career development, and more. Explore and gain inspiration from their experiences and perspectives.",
+    Icon: "https://img.freepik.com/premium-photo/female-broadcaster-interviewing-her-guest-studio_53876-149537.jpg?w=1060",
+  },
   // {
   //   title: "Recorded Interviews",
   //   href: "/resources/recorded-interviews",
