@@ -134,7 +134,7 @@ const EssentialReadingList = () => {
             alt="Overview"
             width={1000}
             height={1000}
-            className="w-full brightness-75  h-56 "
+            className="w-full brightness-75 h-44 "
           />
         </div>
 
@@ -167,7 +167,7 @@ const EssentialReadingList = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="text-xl font-semibold text-gray-900 hover:underline">
+                  <p className="text-base font-semibold text-gray-900 hover:underline">
                     {pdf.title}
                   </p>
                 </a>
