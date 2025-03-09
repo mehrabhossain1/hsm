@@ -25,7 +25,7 @@ const AboutHSM = () => {
         </div>
       </div>
 
-      <div className=" bg-slate-100">
+      <div className="bg-slate-100">
         <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
           <BreadcrumbList>
             <BreadcrumbItem>
