@@ -9,7 +9,7 @@
 // } from "@/components/ui/breadcrumb";
 // import Link from "next/link";
 import Image from "next/image";
-import TasdikDip from "@/public/TasdikDip.jpg";
+import ShahPoran from "@/public/blogs/ShahParan.jpg";
 
 const OvercomingBudgetBottleNeckPage = () => {
   return (
@@ -60,10 +60,10 @@ const OvercomingBudgetBottleNeckPage = () => {
             {/* Author Image - Force Square Aspect Ratio */}
             <div className="relative w-24 h-24 overflow-hidden rounded-full border-4 border-[#001844] shadow-lg">
               <Image
-                src={TasdikDip} // Replace with actual image URL
-                alt="Dr. M Tasdik Hasan"
+                src={ShahPoran} // Replace with actual image URL
+                alt="Dr. Shah Poran"
                 fill // Fills the container while maintaining aspect ratio
-                className="object-cover object-top" // Ensures correct cropping
+                className="object-cover" // Ensures correct cropping
               />
             </div>
 
