@@ -9,6 +9,14 @@ import img3 from "@/public/resources/reports.jpeg";
 // import img8 from "@/resources/blogs.jfif";
 // import img9 from "@/resources/tools.jfif";
 import ResourcesSectionCard from "@/components/ui/ResourcesSectionCard";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import Link from "next/link";
 
 const resourcesSubLinks = [
   {
@@ -170,6 +178,35 @@ const ResourcesPage = () => {
           </div>
         </div>
       </div>
+
+      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <Link href="/" className="text-gray-500">
+              HOME
+            </Link>
+          </BreadcrumbItem>
+
+          <BreadcrumbSeparator className="text-gray-600" />
+          <BreadcrumbItem>
+            <Link href="/resources-and-bookmarks" className="text-gray-500">
+              RESOURCES & BOOKMARKS
+            </Link>
+          </BreadcrumbItem>
+
+          <BreadcrumbSeparator className="text-gray-600" />
+          <BreadcrumbItem>
+            <Link href="/bookmarks" className="text-gray-800 underline">
+              Bookmarks
+            </Link>
+          </BreadcrumbItem>
+
+          <BreadcrumbSeparator className="text-gray-100" />
+          <BreadcrumbItem>
+            <BreadcrumbPage className="text-white">BLOG</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
 
       {/* Contents */}
       <div className="max-w-screen-xl mx-auto py-16 px-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
