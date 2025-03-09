@@ -12,7 +12,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
@@ -140,11 +139,6 @@ const BookmarksPage = () => {
             >
               Resources
             </Link>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator className="text-gray-100" />
-          <BreadcrumbItem>
-            <BreadcrumbPage className="text-white">BLOG</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
