@@ -12,10 +12,13 @@ const EssentialReadingList = () => {
   const pdfs = [
     {
       title: "A System of Health Accounts 2011",
-      description:
-        "An essential guide covering the basics of public health policies.",
       filePath:
-        "/resources/Essential-Reading-List/A-System-of-Health-Accounts-2011.pdf", // Path to the file inside "public"
+        "/resources/Essential-Reading-List/A-System-of-Health-Accounts-2011.pdf",
+    },
+    {
+      title: "Alma Ata Conference Report on PHC_WHO 1978",
+      filePath:
+        "/resources/Essential-Reading-List/Alma-Ata-Conference-Report-on-PHC_WHO-1978.pdf",
     },
     // {
     //   title: "Epidemiology Insights",
@@ -84,8 +87,9 @@ const EssentialReadingList = () => {
           {pdfs.map((pdf, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg p-6 mb-6 flex items-center gap-4 border border-gray-200"
+              className="bg-white  p-6 mb-2 flex items-center gap-4 border border-gray-200"
             >
+              <p>{index + 1}.</p>{" "}
               <FaFilePdf className="text-red-500 text-4xl" />
               <div className="flex-1">
                 {/* Clickable Title with Hover Underline */}
@@ -98,9 +102,9 @@ const EssentialReadingList = () => {
                     {pdf.title}
                   </p>
                 </a>
-                <p className="text-gray-700 text-sm">{pdf.description}</p>
+                {/* <p className="text-gray-700 text-sm">{pdf.description}</p> */}
               </div>
-
+              {/*  */}
               {/* Read Button */}
               <a
                 href={pdf.filePath}
@@ -110,7 +114,6 @@ const EssentialReadingList = () => {
               >
                 <FaBookOpen /> Read
               </a>
-
               {/* Download Button */}
               <a
                 href={pdf.filePath}
