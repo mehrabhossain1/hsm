@@ -4,7 +4,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
@@ -12,21 +11,22 @@ const EssentialReadingList = () => {
   // Sample PDF data
   const pdfs = [
     {
-      title: "Public Health Guide",
+      title: "A System of Health Accounts 2011",
       description:
         "An essential guide covering the basics of public health policies.",
-      link: "/pdfs/public-health-guide.pdf",
+      filePath:
+        "/resources/Essential-Reading-List/A-System-of-Health-Accounts-2011.pdf", // Path to the file inside "public"
     },
-    {
-      title: "Epidemiology Insights",
-      description: "A comprehensive overview of epidemiology and its impact.",
-      link: "/pdfs/epidemiology-insights.pdf",
-    },
-    {
-      title: "Healthcare Systems Report",
-      description: "An in-depth analysis of global healthcare systems.",
-      link: "/pdfs/healthcare-systems-report.pdf",
-    },
+    // {
+    //   title: "Epidemiology Insights",
+    //   description: "A comprehensive overview of epidemiology and its impact.",
+    //   link: "/pdfs/epidemiology-insights.pdf",
+    // },
+    // {
+    //   title: "Healthcare Systems Report",
+    //   description: "An in-depth analysis of global healthcare systems.",
+    //   link: "/pdfs/healthcare-systems-report.pdf",
+    // },
   ];
 
   return (
@@ -34,8 +34,8 @@ const EssentialReadingList = () => {
       {/* Page Title Section */}
       <div className="relative w-full h-[150px] border-t-2 border-yellow-400">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-700/90 to-blue-500/40 flex items-center">
-          <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 gap-4">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white">
+          <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-16 gap-4">
+            <h1 className="text-4xl md:text-4xl font-bold text-white">
               Essential Reading List
             </h1>
           </div>
@@ -43,30 +43,36 @@ const EssentialReadingList = () => {
       </div>
 
       {/* Breadcrumbs */}
-      <Breadcrumb className="py-6 px-6 md:px-16 max-w-screen-xl mx-auto text-sm md:text-base">
-        <BreadcrumbList className="flex flex-wrap gap-2">
+      {/* Breadcrumbs */}
+      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
+        <BreadcrumbList>
           <BreadcrumbItem>
-            <Link
-              href="/"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Home
+            <Link href="/" className="text-gray-500">
+              HOME
             </Link>
           </BreadcrumbItem>
+
           <BreadcrumbSeparator className="text-gray-600" />
           <BreadcrumbItem>
-            <Link
-              href="/resources"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
+            <Link href="/resources-and-bookmarks" className="text-gray-500">
+              RESOURCES & BOOKMARKS
+            </Link>
+          </BreadcrumbItem>
+
+          <BreadcrumbSeparator className="text-gray-600" />
+          <BreadcrumbItem>
+            <Link href="/resources" className="text-gray-600 ">
               Resources
             </Link>
           </BreadcrumbItem>
           <BreadcrumbSeparator className="text-gray-600" />
           <BreadcrumbItem>
-            <BreadcrumbPage className="text-blue-800 font-semibold">
-              Essential Reading
-            </BreadcrumbPage>
+            <Link
+              href="/resources/essential-reading-list"
+              className="text-gray-800 underline"
+            >
+              Essential Reading List
+            </Link>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
@@ -78,17 +84,36 @@ const EssentialReadingList = () => {
           {pdfs.map((pdf, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg p-6 mb-6 flex items-center gap-4 border border-gray-200"
+              className="bg-white shadow-lg p-6 mb-6 flex items-center gap-4 border border-gray-200"
             >
               <FaFilePdf className="text-red-500 text-4xl" />
               <div className="flex-1">
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {pdf.title}
-                </h2>
+                {/* Clickable Title with Hover Underline */}
+                <a
+                  href={pdf.filePath}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="text-xl font-semibold text-gray-900 hover:underline">
+                    {pdf.title}
+                  </p>
+                </a>
                 <p className="text-gray-700 text-sm">{pdf.description}</p>
               </div>
+
+              {/* Read Button */}
               <a
-                href={pdf.link}
+                href={pdf.filePath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-300"
+              >
+                <FaBookOpen /> Read
+              </a>
+
+              {/* Download Button */}
+              <a
+                href={pdf.filePath}
                 download
                 className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-300"
               >
@@ -99,36 +124,57 @@ const EssentialReadingList = () => {
         </div>
 
         {/* Sidebar Section */}
-        <aside className="w-full md:w-1/3 bg-white shadow-lg rounded-lg p-6 border border-gray-200">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            Recommended Reads
+        <aside className="w-full md:w-1/4 bg-white shadow-lg p-6 border border-gray-200">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">
+            Featured Resources
           </h2>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3">
-              <FaBookOpen className="text-blue-600" />
+          <ul className="space-y-4">
+            <li>
               <Link
-                href="/resources/reports/healthcare-trends"
-                className="text-blue-700 hover:underline"
+                href="/resources/overview"
+                className="text-blue-700 hover:text-[#F18A00] transition"
               >
-                Healthcare Trends 2024
+                🌎 Overview
               </Link>
             </li>
-            <li className="flex items-center gap-3">
-              <FaBookOpen className="text-blue-600" />
+            <li>
               <Link
-                href="/resources/reports/global-research"
-                className="text-blue-700 hover:underline"
+                href="/resource-2"
+                className="text-blue-700 hover:text-[#F18A00] transition"
               >
-                Global Research Compilation
+                📑 Reports
               </Link>
             </li>
-            <li className="flex items-center gap-3">
-              <FaBookOpen className="text-blue-600" />
+            <li>
               <Link
-                href="/resources/reports/medical-advancements"
-                className="text-blue-700 hover:underline"
+                href="/resource-3"
+                className="text-blue-700 hover:text-[#F18A00] transition"
               >
-                Medical Advancements Overview
+                📚 Books
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/resource-4"
+                className="text-blue-700 hover:text-[#F18A00] transition"
+              >
+                📜 Policy Briefs
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/resource-5"
+                className="text-blue-700 hover:text-[#F18A00] transition"
+              >
+                📊 Presentations
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/resource-5"
+                className="text-blue-700 hover:text-[#F18A00] transition"
+              >
+                🎙️ Interview and Insights
               </Link>
             </li>
           </ul>

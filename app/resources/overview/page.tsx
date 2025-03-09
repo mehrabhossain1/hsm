@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -59,7 +58,7 @@ const ResourcesOverview = () => {
 
       {/* Content Section with Sidebar */}
       <div className="bg-white">
-        <div className="max-w-screen-xl mx-auto px-16 py-16">
+        <div className="max-w-screen-xl mx-auto px-16 pb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Left Content Section */}
             <div className="md:col-span-2 flex flex-col gap-8">
