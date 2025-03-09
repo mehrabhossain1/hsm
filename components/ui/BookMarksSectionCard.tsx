@@ -35,20 +35,20 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
               alt={title}
               height={1000}
               width={1000}
-              className="object-cover w-full h-full hover:scale-110 transition-transform transform duration-300 ease-in-out"
+              className="object-cover w-full h-full hover:scale-110  hover:opacity-75 transition-transform transform duration-300 ease-in-out"
             />
           </div>
         </Link>
 
         {/* Title */}
-        <CardTitle className="text-2xl font-semibold mb-4 text-center text-gray-700 underline-offset-4 hover:decoration-[#F18A00]">
-          <Link href={href} className="hover:underline">
+        <CardTitle className="text-2xl font-semibold pt-1 text-center text-gray-700 underline-offset-4 hover:decoration-[#F18A00]">
+          <Link href={href} className="hover:underline ">
             {title}
           </Link>
         </CardTitle>
 
         {/* Description */}
-        <CardDescription className="mt-4 px-6 text-base line-clamp-4 text-justify text-gray-600">
+        <CardDescription className="pt-1 px-6 text-base line-clamp-4 text-justify text-gray-600">
           {description}
         </CardDescription>
       </CardHeader>
