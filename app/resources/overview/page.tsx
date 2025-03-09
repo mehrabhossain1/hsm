@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const ResourcesOverview = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="">
       {/* Page Title Section */}
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-800/90 to-blue-500/30 flex items-center">
@@ -23,7 +23,7 @@ const ResourcesOverview = () => {
       </div>
 
       {/* Breadcrumbs */}
-      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
+      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto border-b">
         <BreadcrumbList>
           <BreadcrumbItem>
             <Link href="/" className="text-gray-500">
@@ -58,7 +58,7 @@ const ResourcesOverview = () => {
 
       {/* Content Section with Sidebar */}
       <div className="bg-white">
-        <div className="max-w-screen-xl mx-auto px-16 py-16">
+        <div className="max-w-screen-xl mx-auto px-16 pt-8 pb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Left Content Section */}
             <div className="md:col-span-2 flex flex-col gap-8">
@@ -106,7 +106,7 @@ const ResourcesOverview = () => {
                 </li>
                 <li>
                   <Link
-                    href="/resource-2"
+                    href="/resource/reports"
                     className="text-blue-800 hover:text-[#F18A00] transition"
                   >
                     📑 Reports
@@ -114,7 +114,7 @@ const ResourcesOverview = () => {
                 </li>
                 <li>
                   <Link
-                    href="/resource-3"
+                    href="/resources/books"
                     className="text-blue-800 hover:text-[#F18A00] transition"
                   >
                     📚 Books
@@ -122,7 +122,7 @@ const ResourcesOverview = () => {
                 </li>
                 <li>
                   <Link
-                    href="/resource-4"
+                    href="/resources/policy-briefs"
                     className="text-blue-800 hover:text-[#F18A00] transition"
                   >
                     📜 Policy Briefs
@@ -130,7 +130,7 @@ const ResourcesOverview = () => {
                 </li>
                 <li>
                   <Link
-                    href="/resource-5"
+                    href="/resources/presentations"
                     className="text-blue-800 hover:text-[#F18A00] transition"
                   >
                     📊 Presentations
@@ -138,7 +138,7 @@ const ResourcesOverview = () => {
                 </li>
                 <li>
                   <Link
-                    href="/resource-6"
+                    href="/resources/interview-and-insights"
                     className="text-blue-800 hover:text-[#F18A00] transition"
                   >
                     🎙️ Interview and Insights

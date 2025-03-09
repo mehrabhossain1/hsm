@@ -211,7 +211,7 @@ const EssentialReadingList = () => {
             </li>
             <li>
               <Link
-                href="/resource-2"
+                href="/resources/reports"
                 className="text-blue-700 hover:text-[#F18A00] transition"
               >
                 📑 Reports
@@ -219,7 +219,7 @@ const EssentialReadingList = () => {
             </li>
             <li>
               <Link
-                href="/resource-3"
+                href="/resources/books"
                 className="text-blue-700 hover:text-[#F18A00] transition"
               >
                 📚 Books
@@ -227,7 +227,7 @@ const EssentialReadingList = () => {
             </li>
             <li>
               <Link
-                href="/resource-4"
+                href="/resources/policy-briefs"
                 className="text-blue-700 hover:text-[#F18A00] transition"
               >
                 📜 Policy Briefs
@@ -235,7 +235,7 @@ const EssentialReadingList = () => {
             </li>
             <li>
               <Link
-                href="/resource-5"
+                href="/resources/presentations"
                 className="text-blue-700 hover:text-[#F18A00] transition"
               >
                 📊 Presentations
@@ -243,7 +243,7 @@ const EssentialReadingList = () => {
             </li>
             <li>
               <Link
-                href="/resource-6"
+                href="/resources/interview-and-insights"
                 className="text-blue-700 hover:text-[#F18A00] transition"
               >
                 🎙️ Interview and Insights

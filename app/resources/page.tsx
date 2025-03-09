@@ -119,7 +119,7 @@ const BookmarksPage = () => {
         </div>
       </div>
 
-      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
+      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto border-b">
         <BreadcrumbList>
           <BreadcrumbItem>
             <Link href="/" className="text-gray-500">
@@ -144,7 +144,7 @@ const BookmarksPage = () => {
       </Breadcrumb>
 
       {/* Content */}
-      <div className="max-w-screen-xl mx-auto py-16 px-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="max-w-screen-xl mx-auto pt-8 pb-16 px-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {bookmarksData.map((bookmark, index) => (
           <motion.div
             key={index}
