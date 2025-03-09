@@ -1,7 +1,7 @@
 "use client";
 import { FaBook, FaHeartbeat, FaUniversity } from "react-icons/fa";
 import { motion } from "framer-motion";
-import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
+// import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
 
 const bookmarksData = [
   {
@@ -57,12 +57,12 @@ const NewsletterPage = () => {
             viewport={{ once: true, amount: 0.2 }} // Adjusts when animation triggers
             transition={{ duration: 0.2, delay: index * 0.1 }} // Staggered effect
           >
-            <BookMarksSectionCard
+            {/* <BookMarksSectionCard
               title={bookmark.title}
               description={bookmark.description}
               href={bookmark.href}
               Icon={bookmark.Icon}
-            />
+            /> */}
           </motion.div>
         ))}
       </div>
