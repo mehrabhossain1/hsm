@@ -52,13 +52,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
           href={link}
           className="absolute bottom-4 right-4 flex items-center text-blue-400 hover:text-blue-300"
         >
-          <Button
-            onClick={(e) => {
-              e.stopPropagation(); // Prevent the card click
-              // router.push(`/about/${card.route}`);
-            }}
-            className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]"
-          >
+          <Button className="mt-auto text-base flex bg-[#FFCE00] text-black hover:text-white hover:bg-[#001844] hover:border hover:border-[#FEC53F]">
             Explore
             <ArrowRight className="size-4 hover:text-white" />
           </Button>
@@ -75,7 +69,7 @@ export default function ResourcesSection() {
       description:
         "The Resources section aspire to be a repository of essential resources on health systems and global health.",
       image:
-        "https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://img.freepik.com/free-photo/close-up-businessman-with-digital-tablet_1098-549.jpg?t=st=1741538159~exp=1741541759~hmac=b3ffe57c1f19b6cb99789c3cb587844550a0c0f4b393408d93cbfca4f95f2021&w=1060",
       link: "/resources",
     },
     {
@@ -83,7 +77,7 @@ export default function ResourcesSection() {
       description:
         "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
       image:
-        "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://img.freepik.com/free-photo/high-angle-bookmark-book-arrangement_23-2149894430.jpg?t=st=1741538268~exp=1741541868~hmac=708a478df8a3365c52765b4d69b8ede7e3df58021777326bed961629431e1027&w=1060",
       link: "/bookmarks",
     },
   ];

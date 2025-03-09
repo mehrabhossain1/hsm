@@ -88,10 +88,10 @@ const ResourcesAndBookmarksPage = () => {
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB] to-[#2D8CBB]/30 flex items-center ">
           <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16">
-            <h1 className="text-4xl font-bold text-gray-700">
+            <h1 className="text-4xl font-bold text-white">
               Resources & Bookmarks
             </h1>
-            <p className="text-base max-w-xl text-gray-700 font-semibold my-8 text-justify w-full md:w-auto">
+            <p className="text-base max-w-xl text-slate-700 font-semibold my-8 text-justify w-full md:w-auto">
               Explore the comprehensive resource hub to supercharge your
               knowledge and complement your rewarding career journey. The
               Resource section lets you download valuable materials with a

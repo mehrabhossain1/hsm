@@ -97,7 +97,7 @@ const HeroSection = () => {
               priority
               quality={100}
               width={1000}
-              height={300}
+              height={1000}
             />
           </div>
         </div>
