@@ -43,6 +43,7 @@ export function NavbarDemo() {
     // resources-and-bookmarks
 
     // resources
+    "/resources": { bg: "bg-[#01748D]", text: "text-white" },
     "/resources/overview": { bg: "bg-blue-800", text: "text-white" },
 
     // resources
