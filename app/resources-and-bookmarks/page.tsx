@@ -1,92 +1,128 @@
+"use client";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
-const ResourcesAndBookmarksPage = () => {
+interface CardProps {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  index: number;
+}
+
+const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  image,
+  link,
+  index,
+}) => {
   return (
-    <div className="min-h-[calc(100vh-115px)] flex flex-col pb-10 max-w-screen-xl mx-auto">
-      {/* Title Section (30% Height) */}
-      <div className="h-[40%] pt-4 py-2 rounded-b-2xl flex flex-col justify-between px-8 items-center text-center ">
-        <h1 className="text-4xl font-bold text-gray-800">
-          RESOURCES & BOOKMARKS
-        </h1>
+    <motion.div
+      className="relative w-full flex flex-col md:flex-row bg-white shadow-lg overflow-hidden transition-transform transform border hover:scale-105 hover:border-r-4 hover:border-b-4 border-[#2D8CBB] hover:shadow-md duration-300"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.2 }}
+    >
+      {/* Image Section (Left) */}
+      <Link
+        href={link}
+        className="w-full md:w-1/3 h-64 relative hover:scale-110 transition-all duration-300 ease-in-out"
+      >
+        <Image
+          src={image}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+          className=""
+        />
+      </Link>
 
-        <p className="mt-4 text-lg max-w-4xl text-gray-700">
-          Explore the comprehensive resource hub to supercharge your knowledge
-          and complement your rewarding career journey. The{" "}
-          <span className="font-bold">Resource</span> section lets you download
-          valuable materials with a single click, while the{" "}
-          <span className="font-bold">Bookmarks</span> section connects you to
-          useful contents and tools crucial for professional success.
+      {/* Content Section (Right) */}
+      <Link
+        href={link}
+        className="w-full md:w-2/3 p-6 px-12 flex flex-col justify-center text-gray-800"
+      >
+        <h2 className="text-2xl font-semibold mb-2 hover:underline">{title}</h2>
+        <p className="text-base text-gray-600 mb-4 line-clamp-4 text-justify">
+          {description}
         </p>
-      </div>
 
-      {/* Cards Section */}
-      <div className="flex justify-center gap-8 mt-10 px-6">
-        {/* Resources Card */}
-        <div
-          className="group relative bg-white shadow-lg border w-1/2 border-gray-200 rounded-2xl p-8  text-center 
-        hover:shadow-2xl transition duration-300 ease-in-out"
-        >
-          <div
-            className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-600 text-white flex 
-          items-center justify-center rounded-full shadow-lg"
-          >
-            📘
-          </div>
-          <h2 className="mt-6 text-2xl font-semibold text-gray-800">
-            Resources
-          </h2>
-          <p className="mt-3 text-gray-600">
-            The Resources section aspire to be a repository of essential
-            resources on health systems and global health. By compiling major
-            reports, books, groundbreaking publications, significant policy
-            briefs and presentations, thought-provoking interviews, and
-            insightful analyses, it supports public health professionals and
-            beyond in their pursuit of knowledge and professional development.
-            Resources are organized by topic to facilitate systematic access.
-            Each resource is sourced from esteemed organizations, with due
-            credit given to acknowledge their invaluable contributions.
-          </p>
-          <Link href="/resources-and-bookmarks/resources">
-            <button
-              className="mt-5 px-5 py-2.5 w-full bg-blue-600 text-white rounded-lg font-medium shadow-md 
-          hover:bg-blue-700 hover:shadow-lg transition duration-300"
-            >
-              Explore Resources
-            </button>
-          </Link>
+        {/* Explore Button */}
+        <div className="inline-flex justify-end items-center text-blue-600 hover:text-blue-500">
+          <Button className="text-base flex bg-[#FFCE00] text-black hover:bg-[#2D8CBB] hover:text-white">
+            Explore
+            <ArrowRight className="ml-2 size-5" />
+          </Button>
         </div>
+      </Link>
+    </motion.div>
+  );
+};
 
-        {/* Bookmarks Card */}
-        <div
-          className="group relative bg-white shadow-lg border w-1/2 border-gray-200 rounded-2xl p-8 text-center 
-        hover:shadow-2xl transition duration-300 ease-in-out"
-        >
-          <div
-            className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-green-600 text-white flex 
-          items-center justify-center rounded-full shadow-lg"
-          >
-            🔖
+const ResourcesAndBookmarksPage = () => {
+  const resources = [
+    {
+      title: "Resources",
+      description:
+        "Information is power and evidence lies at the heart of public health policy. Inspired by the principles of valuing information and evidence, Health Systems Matter (HSM) offers essential resources on health systems, public health events, and career opportunities. HSM serves as an independent, comprehensive global health resource, providing updates on public health issues and career opportunities. The site hunts crucial reports, current information, and scholarly articles from global entities, ensuring proper referencing. ",
+      image:
+        "https://img.freepik.com/free-vector/about-us-concept-illustration_114360-639.jpg?t=st=1741458983~exp=1741462583~hmac=b3e2408e08a16945b7b4c73f6b7107ed7ed245ab86ac724907dd0b62f99806a2&w=740",
+      link: "/resources",
+    },
+    {
+      title: "Bookmarks",
+      description:
+        "The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging public health professionals to become informed and confident global health advocates.",
+      image:
+        "https://img.freepik.com/free-vector/hand-drawn-business-strategy-concept_52683-75726.jpg?t=st=1741462040~exp=1741465640~hmac=89953c04640531a7d2fc98e95e016ef5f83f0b77545ea41b3d17140d5e43ed83&w=740",
+      link: "bookmarks",
+    },
+  ];
+
+  return (
+    <div>
+      <div className="relative w-full h-[150px] border-t-2 ">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FDEBDF] to-[#FDEBDF]/30 flex items-center px-16">
+          <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-8 flex-wrap gap-6">
+            <h1 className="text-4xl font-bold text-gray-700">
+              Resources & Bookmarks
+            </h1>
+            <p className="text-xl  text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
           </div>
-          <h2 className="mt-6 text-2xl font-semibold text-gray-800">
-            Bookmarks
-          </h2>
-          <p className="mt-3 text-gray-600">
-            The Global Health Bookmarks section indicates the resources either
-            document, entities, courses, career, podcast and so on pertained
-            with the global health and health systems are covered. The section
-            offers a comprehensive list of resources that may enrich one global
-            health professionals’ career. If these given resources are well
-            utilized, anyone can attain the knowledge of the contemporary trend
-            of the global health and health systems challenges.
-          </p>
-          <Link href="/resources-and-bookmarks/bookmarks">
-            <button
-              className="mt-5 px-5 py-2.5 w-full bg-green-600 text-white rounded-lg font-medium shadow-md 
-          hover:bg-green-700 hover:shadow-lg transition duration-300"
-            >
-              View Bookmarks
-            </button>
-          </Link>
+        </div>
+      </div>
+      <div className="min-h-[calc(100vh-115px)] flex flex-col pb-10 max-w-screen-xl mx-auto">
+        {/* Title Section (30% Height) */}
+        {/* Page Title Section */}
+
+        {/* Cards Section */}
+
+        {/* New Left Image - Right Content Layout */}
+        <div className="max-w-screen-md py-16 mx-auto px-8">
+          <motion.div
+            className="flex flex-col gap-8"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+            }}
+          >
+            {resources.map((resource, index) => (
+              <Card
+                key={index}
+                title={resource.title}
+                description={resource.description}
+                image={resource.image}
+                link={resource.link}
+                index={index}
+              />
+            ))}
+          </motion.div>
         </div>
       </div>
     </div>

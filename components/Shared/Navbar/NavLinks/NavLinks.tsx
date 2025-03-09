@@ -38,6 +38,10 @@ export function NavbarDemo() {
     },
     // About
 
+    // resources-and-bookmarks
+    "/resources-and-bookmarks": { bg: "bg-[#FDEBDF]", text: "text-gray-800" },
+    // resources-and-bookmarks
+
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
     // "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
