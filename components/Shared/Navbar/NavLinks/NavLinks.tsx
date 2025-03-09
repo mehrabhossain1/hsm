@@ -39,8 +39,13 @@ export function NavbarDemo() {
     // About
 
     // resources-and-bookmarks
-    "/resources-and-bookmarks": { bg: "bg-[#FDEBDF]", text: "text-gray-800" },
+    "/resources-and-bookmarks": { bg: "bg-[#2D8CBB]", text: "text-white" },
     // resources-and-bookmarks
+
+    // resources
+    "/resources/overview": { bg: "bg-blue-800", text: "text-white" },
+
+    // resources
 
     "/contact": { bg: "bg-red-600", text: "text-white" },
     "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },

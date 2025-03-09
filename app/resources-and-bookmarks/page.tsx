@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({
       {/* Image Section (Left) */}
       <Link
         href={link}
-        className="w-full md:w-1/3 h-64 relative hover:scale-110 transition-all duration-300 ease-in-out"
+        className="w-full md:w-1/3 relative hover:scale-110 transition-all duration-300 ease-in-out"
       >
         <Image
           src={image}
@@ -44,10 +44,10 @@ const Card: React.FC<CardProps> = ({
       {/* Content Section (Right) */}
       <Link
         href={link}
-        className="w-full md:w-2/3 p-6 px-12 flex flex-col justify-center text-gray-800"
+        className="w-full md:w-2/3 p-6 flex flex-col justify-center text-gray-800"
       >
         <h2 className="text-2xl font-semibold mb-2 hover:underline">{title}</h2>
-        <p className="text-base text-gray-600 mb-4 line-clamp-4 text-justify">
+        <p className="text-base text-gray-600 mb-4 line-clamp-3 text-justify">
           {description}
         </p>
 
@@ -68,43 +68,49 @@ const ResourcesAndBookmarksPage = () => {
     {
       title: "Resources",
       description:
-        "Information is power and evidence lies at the heart of public health policy. Inspired by the principles of valuing information and evidence, Health Systems Matter (HSM) offers essential resources on health systems, public health events, and career opportunities. HSM serves as an independent, comprehensive global health resource, providing updates on public health issues and career opportunities. The site hunts crucial reports, current information, and scholarly articles from global entities, ensuring proper referencing. ",
+        "The Resources section aspire to be a repository of essential resources on health systems and global health.",
       image:
-        "https://img.freepik.com/free-vector/about-us-concept-illustration_114360-639.jpg?t=st=1741458983~exp=1741462583~hmac=b3e2408e08a16945b7b4c73f6b7107ed7ed245ab86ac724907dd0b62f99806a2&w=740",
+        "https://img.freepik.com/free-photo/close-up-businessman-with-digital-tablet_1098-549.jpg?t=st=1741538159~exp=1741541759~hmac=b3ffe57c1f19b6cb99789c3cb587844550a0c0f4b393408d93cbfca4f95f2021&w=1060",
       link: "/resources",
     },
     {
       title: "Bookmarks",
       description:
-        "The vision of Health Systems Matter is to create an evidence-based platform that empowers emerging public health professionals to become informed and confident global health advocates.",
+        "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
       image:
-        "https://img.freepik.com/free-vector/hand-drawn-business-strategy-concept_52683-75726.jpg?t=st=1741462040~exp=1741465640~hmac=89953c04640531a7d2fc98e95e016ef5f83f0b77545ea41b3d17140d5e43ed83&w=740",
+        "https://img.freepik.com/free-photo/high-angle-bookmark-book-arrangement_23-2149894430.jpg?t=st=1741538268~exp=1741541868~hmac=708a478df8a3365c52765b4d69b8ede7e3df58021777326bed961629431e1027&w=1060",
       link: "bookmarks",
     },
   ];
 
   return (
     <div>
-      <div className="relative w-full h-[150px] border-t-2 ">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FDEBDF] to-[#FDEBDF]/30 flex items-center px-16">
-          <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-8 flex-wrap gap-6">
+      <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB] to-[#2D8CBB]/30 flex items-center ">
+          <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16">
             <h1 className="text-4xl font-bold text-gray-700">
               Resources & Bookmarks
             </h1>
-            <p className="text-xl  text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
+            <p className="text-base max-w-xl text-gray-700 font-semibold my-8 text-justify w-full md:w-auto">
+              Explore the comprehensive resource hub to supercharge your
+              knowledge and complement your rewarding career journey. The
+              Resource section lets you download valuable materials with a
+              single click, while the Bookmarks section connects you to useful
+              contents and tools crucial for professional success.
+            </p>
           </div>
         </div>
       </div>
-      <div className="min-h-[calc(100vh-115px)] flex flex-col pb-10 max-w-screen-xl mx-auto">
+      <div className=" flex flex-col  max-w-screen-xl mx-auto">
         {/* Title Section (30% Height) */}
         {/* Page Title Section */}
 
         {/* Cards Section */}
 
         {/* New Left Image - Right Content Layout */}
-        <div className="max-w-screen-md py-16 mx-auto px-8">
+        <div className="max-w-screen-xl py-16 mx-auto px-16">
           <motion.div
-            className="flex flex-col gap-8"
+            className="flex gap-8"
             initial="hidden"
             animate="visible"
             variants={{

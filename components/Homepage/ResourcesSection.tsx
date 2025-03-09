@@ -129,10 +129,11 @@ export default function ResourcesSection() {
 
             <p className="text-lg text-gray-600 font-semibold text-justify">
               Explore the comprehensive resource hub to supercharge your
-              knowledge and complement your rewarding career journey. The
-              Resource section lets you download valuable materials with a
-              single click, while the Bookmarks section connects you to useful
-              contents and tools crucial for professional success.
+              knowledge and complement your rewarding career journey. The{" "}
+              <strong>Resource</strong> section lets you download valuable
+              materials with a single click, while the{" "}
+              <strong>Bookmarks</strong> section connects you to useful contents
+              and tools crucial for professional success.
             </p>
           </div>
         </div>
