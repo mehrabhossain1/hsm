@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const ResourcesOverview = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50">
       {/* Page Title Section */}
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-800/90 to-blue-500/30 flex items-center">
@@ -58,7 +58,7 @@ const ResourcesOverview = () => {
 
       {/* Content Section with Sidebar */}
       <div className="bg-white">
-        <div className="max-w-screen-xl mx-auto px-16 pb-16">
+        <div className="max-w-screen-xl mx-auto px-16 py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Left Content Section */}
             <div className="md:col-span-2 flex flex-col gap-8">
@@ -91,7 +91,7 @@ const ResourcesOverview = () => {
             </div>
 
             {/* Right Featured Resources Section */}
-            <div className="bg-gray-100 p-6 ">
+            <div className="bg-gray-100 p-6 border border-gray-200 shadow-sm self-start">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Featured Resources
               </h2>
@@ -138,7 +138,7 @@ const ResourcesOverview = () => {
                 </li>
                 <li>
                   <Link
-                    href="/resource-5"
+                    href="/resource-6"
                     className="text-blue-800 hover:text-[#F18A00] transition"
                   >
                     🎙️ Interview and Insights

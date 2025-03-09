@@ -32,7 +32,7 @@ const bookmarksData = [
     href: "/resources/essential-reading-list",
     description:
       "Reading preferences and needs vary widely yet certain resources are considered essential for global health professionals. ",
-    Icon: "https://img.freepik.com/premium-photo/close-up-books-table_1048944-20420341.jpg?w=1060",
+    Icon: "https://australiainstitute.org.au/wp-content/uploads/2021/11/0_-P20RegfYHGeARz5.jpg",
   },
   {
     title: "Reports",

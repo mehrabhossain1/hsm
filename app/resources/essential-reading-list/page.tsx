@@ -130,17 +130,17 @@ const EssentialReadingList = () => {
         {/* Image Section */}
         <div className="w-full">
           <Image
-            src="https://img.freepik.com/premium-photo/close-up-books-table_1048944-20420341.jpg?w=1060"
-            alt="Overview"
+            src="https://australiainstitute.org.au/wp-content/uploads/2021/11/0_-P20RegfYHGeARz5.jpg"
+            alt="Essential reading list"
             width={1000}
             height={1000}
-            className="w-full brightness-75 h-44 "
+            className="w-full h-44 object-cover"
           />
         </div>
 
         {/* Description Section */}
-        <div className="w-full text-gray-700  text-justify">
-          <p className="text-xl/9">
+        <div className="w-full text-gray-900 italic text-justify">
+          <p className="text-lg/9">
             Reading preferences and needs vary widely yet certain resources are
             considered essential for global health professionals. Explore this
             curated reading list to discover materials that can enrich your
@@ -196,7 +196,7 @@ const EssentialReadingList = () => {
         </div>
 
         {/* Sidebar Section */}
-        <aside className="w-full md:w-1/4 bg-white shadow-sm p-6 border border-gray-200">
+        <aside className="w-full md:w-1/4 bg-white shadow-sm p-6 border border-gray-200 self-start">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             Featured Resources
           </h2>
@@ -243,7 +243,7 @@ const EssentialReadingList = () => {
             </li>
             <li>
               <Link
-                href="/resource-5"
+                href="/resource-6"
                 className="text-blue-700 hover:text-[#F18A00] transition"
               >
                 🎙️ Interview and Insights
