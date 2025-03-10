@@ -1,6 +1,7 @@
 import AboutSizear from "@/components/Sizear/AboutSizear";
 import AreaOfFocus from "@/components/Sizear/AreaOfFocus";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
+import EducationalBackground from "@/components/Sizear/EducationalBackground";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 import ProfessionalMembership from "@/components/Sizear/ProfessionalMembership";
 import ProfessionalTraining from "@/components/Sizear/ProfessionalTraining";
@@ -33,6 +34,11 @@ const Sizear = () => {
       {/* Professional Training / Job-related Training Received */}
       <ProfessionalTraining />
       {/* Professional Training / Job-related Training Received */}
+
+      {/* Educational Background / Academic Training  */}
+      {/* Educational Background / Academic Training  */}
+      <EducationalBackground />
+      {/* Educational Background / Academic Training  */}
     </section>
   );
 };
