@@ -88,8 +88,8 @@ export default function NewsNewsletterSection() {
   ];
 
   return (
-    <section className=" bg-[#F1D2E2] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
-      <div className="max-w-screen-xl mx-auto px-8">
+    <section className=" bg-[#F1D2E2] to-white py-16 min-h-[720px] flex items-center justify-center">
+      <div className="max-w-screen-xl mx-auto px-16">
         {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
             NEWS & NEWSLETTER
@@ -106,7 +106,7 @@ export default function NewsNewsletterSection() {
             href="/news-and-newsletter"
             className="text-4xl font-[1000] text-[#001844] whitespace-nowrap"
           >
-            NEWS & NEWSLETTER
+            <h2>NEWS & NEWSLETTER</h2>
           </Link>
           <Separator orientation="vertical" className="h-10 w-1 bg-[#FFCE00]" />
 

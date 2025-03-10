@@ -58,12 +58,15 @@ const BridgingTheGapsBlogPage = () => {
         {/* Author Section */}
         <div className="flex flex-col sm:flex-row items-center justify-center mt-6 gap-5">
           {/* Author Image - Force Square Aspect Ratio */}
-          <div className="relative w-24 h-24 overflow-hidden rounded-full border-4 border-[#001844] shadow-lg">
+          <div className="relative w-24 h-24 overflow-hidden rounded-full border-4 border-gray-700 shadow-md">
             <Image
               src={TasdikDip} // Replace with actual image URL
               alt="Dr. M Tasdik Hasan"
-              fill // Fills the container while maintaining aspect ratio
-              className="object-cover object-top" // Ensures correct cropping
+              width={1000} // Explicit width (matches w-24)
+              height={1000} // Explicit height (matches h-24)
+              quality={100} // Ensures best resolution
+              priority // Loads faster
+              className="object-cover "
             />
           </div>
 

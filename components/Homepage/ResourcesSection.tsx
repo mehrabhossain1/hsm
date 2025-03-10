@@ -83,9 +83,9 @@ export default function ResourcesSection() {
   ];
 
   return (
-    <section className="bg-[#FDEBDF] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+    <section className="bg-[#FDEBDF] to-white py-16  min-h-[720px] flex items-center justify-center">
       {/* <section className="bg-gradient-to-t from-gray-50 to-white py-16 px-8 min-h-[720px] flex items-center justify-center"> */}
-      <div className="max-w-screen-xl mx-auto px-8 ">
+      <div className="max-w-screen-xl mx-auto px-16 ">
         {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
             RESOURCES & BOOKMARKS
@@ -114,7 +114,7 @@ export default function ResourcesSection() {
               href="/resources-and-bookmarks"
               className="text-4xl font-[1000] text-[#001844] whitespace-nowrap"
             >
-              RESOURCES & BOOKMARKS
+              <h2>RESOURCES & BOOKMARKS</h2>
             </Link>
             <Separator
               orientation="vertical"

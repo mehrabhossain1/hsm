@@ -31,7 +31,7 @@ const Youtube = () => {
         
       </div> */}
 
-      <div className="max-w-screen-xl mx-auto px-8 py-16">
+      <div className="max-w-screen-xl mx-auto px-16 py-16">
         <div className="flex justify-between mb-8">
           <div className="flex gap-5 items-center w-full">
             <h1 className="text-4xl font-[1000] text-white">YOUTUBE</h1>

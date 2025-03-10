@@ -62,8 +62,11 @@ const OvercomingBudgetBottleNeckPage = () => {
               <Image
                 src={ShahPoran} // Replace with actual image URL
                 alt="Dr. Shah Poran"
-                fill // Fills the container while maintaining aspect ratio
-                className="object-cover" // Ensures correct cropping
+                width={1000} // Matches w-24
+                height={1000} // Matches h-24
+                quality={100} // Ensures high resolution
+                priority // Loads faster
+                className="object-cover "
               />
             </div>
 
