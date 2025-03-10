@@ -71,10 +71,10 @@ const CareerTrajectory = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16">
-      <h2 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-4">
+    <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 pb-16">
+      <h3 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-4">
         Career Trajectory / Employment Journey
-      </h2>
+      </h3>
 
       <div className="relative max-w-3xl mx-auto pt-4">
         {experiences.map((exp, index) => (
@@ -83,12 +83,12 @@ const CareerTrajectory = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="mb-6 relative"
+            className="mb-6 relative border border-blue-500 hover:border-b-2 hover:border-r-2 shadow-sm rounded-md"
           >
             <div className="absolute -left-[37px] top-2 bg-blue-500 w-12 h-12 flex items-center justify-center rounded-full">
               <FaBriefcase className="text-white text-xl" />
             </div>
-            <div className="bg-blue-50 p-8 shadow-sm rounded-md flex justify-between">
+            <div className="bg-slate-50 p-8 shadow-sm rounded-md flex justify-between">
               <h3 className="text-lg font-semibold text-gray-600">
                 {exp.title}, {exp.company}
               </h3>

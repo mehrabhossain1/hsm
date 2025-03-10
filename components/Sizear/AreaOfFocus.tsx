@@ -8,9 +8,9 @@ const AreaOfFocus = () => {
   return (
     <div className="bg-[#6ACBD4]/10">
       <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 py-16">
-        <h2 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4">
+        <h3 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4">
           Area of Focus and Research
-        </h2>
+        </h3>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutSizear = () => {
   return (
-    <div className="max-w-screen-xl  mx-auto flex items-center px-4 sm:px-6 lg:px-8 w-full">
+    <div className="max-w-screen-xl  mx-auto flex items-center px-4 sm:px-6 lg:px-8 w-full py-16">
       <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-4 lg:gap-6">
         {/* Text Section - Left Side (55%) */}
         <div className="space-y-6 order-2 lg:order-1 text-justify px-8">

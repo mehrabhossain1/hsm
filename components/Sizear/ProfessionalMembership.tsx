@@ -45,23 +45,22 @@ const memberships = [
 
 export default function ProfessionalMemberships() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 text-center mb-8">
-        Professional Membership & Engagement
-        <span className="block w-24 h-1 bg-blue-500 mx-auto mt-2 rounded-full"></span>
-      </h2>
+    <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 py-16">
+      <h3 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-8">
+        Professional Membership and Engagement
+      </h3>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="space-y-6"
+        className="space-y-6 max-w-5xl mx-auto"
       >
         {memberships.map((item, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.03 }}
-            className="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500 flex items-center space-x-6"
+            whileHover={{ borderColor: "#FFCE00" }}
+            className="bg-white border shadow-sm rounded-md p-6 border-l-4 border-blue-500 flex items-center space-x-6"
           >
             <div className="flex-shrink-0">{item.icon}</div>
             <div className="flex w-full justify-between items-start">
