@@ -35,7 +35,7 @@ const BookSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className=" max-w-4xl mx-auto flex gap-12 items-center justify-center pt-8"
+            className=" max-w-4xl mx-auto flex gap-12 items-center justify-center "
           >
             {/* Book Image with link */}
             <a
@@ -47,14 +47,14 @@ const BookSection = () => {
               <Image
                 src={bookDetails.imageUrl}
                 alt={bookDetails.title}
-                className="w-72 h-96 object-cover  mb-6 rounded-md shadow-lg  hover:border-r-4 hover:border-b-4 hover:border-blue-500"
+                className="w-72 h-96 object-cover  mb-6 rounded-md shadow-sm  hover:border-r-4 hover:border-b-4 hover:border-blue-500  transition-all duration-100"
                 width={1000}
                 height={1000}
               />
             </a>
 
             {/* Book and Author Links */}
-            <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-md shadow-sm border-2 hover:border-r-4 hover:border-b-4 hover:border-blue-600 transition-all duration-300">
+            <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-md shadow-sm hover:border-r-4 hover:border-b-4 hover:border-blue-600 transition-all duration-100">
               <div className="flex items-center space-x-4">
                 <a
                   href={bookDetails.bookLink}
