@@ -5,6 +5,7 @@ import EducationalBackground from "@/components/Sizear/EducationalBackground";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 import ProfessionalMembership from "@/components/Sizear/ProfessionalMembership";
 import ProfessionalTraining from "@/components/Sizear/ProfessionalTraining";
+import WritingsAndPublications from "@/components/Sizear/WritingsAndPublications";
 
 const Sizear = () => {
   return (
@@ -39,6 +40,10 @@ const Sizear = () => {
       {/* Educational Background / Academic Training  */}
       <EducationalBackground />
       {/* Educational Background / Academic Training  */}
+
+      {/* Writings and Publications */}
+      <WritingsAndPublications />
+      {/* Writings and Publications */}
     </section>
   );
 };
