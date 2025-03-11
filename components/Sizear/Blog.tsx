@@ -8,18 +8,22 @@ const Blog = () => {
       year: "2024",
       title: "Building a Sustainable Health Sector Ecosystem",
       organization: "OPEN Development",
+      titleLink:
+        "https://www.opendevelopment.co/latest/building-a-sustainable-health-sector-ecosystem", // Update this with the actual blog title link
     },
     {
       year: "2024",
       title:
         "Increasing Impact of Climate Change on Tuberculosis in Bangladesh",
       organization: "PHFBD",
+      titleLink:
+        "https://publichealthfoundation.org.bd/increasing-impact-of-climate-change-on-tuberculosis-in-bangladesh/", // Update this with the actual blog title link
     },
   ];
 
   return (
     <div className="pt-16">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-8">
+      <h3 className="text-2xl md:text-2xl font-bold text-gray-600 underline underline-offset-4 mb-8">
         Blog
       </h3>
 
@@ -42,9 +46,14 @@ const Blog = () => {
               </h3>
             </div>
             <div className="w-3/4">
-              <p className="text-md font-semibold text-gray-800">
+              <a
+                href={blog.titleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-md font-semibold text-gray-800 hover:underline hover:bg-green-500 hover:text-white transition duration-200  rounded"
+              >
                 {blog.title}
-              </p>
+              </a>
               <p className="text-gray-600 text-sm">{blog.organization}</p>
             </div>
           </motion.div>

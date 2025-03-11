@@ -3,6 +3,7 @@ import AreaOfFocus from "@/components/Sizear/AreaOfFocus";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
 import EducationalBackground from "@/components/Sizear/EducationalBackground";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
+import NewspaperColumns from "@/components/Sizear/NewspaperColumns";
 import ProfessionalMembership from "@/components/Sizear/ProfessionalMembership";
 import ProfessionalTraining from "@/components/Sizear/ProfessionalTraining";
 import WritingsAndPublications from "@/components/Sizear/WritingsAndPublications";
@@ -44,6 +45,10 @@ const Sizear = () => {
       {/* Writings and Publications */}
       <WritingsAndPublications />
       {/* Writings and Publications */}
+
+      {/* Newspaper Columns */}
+      <NewspaperColumns />
+      {/* Newspaper Columns */}
     </section>
   );
 };

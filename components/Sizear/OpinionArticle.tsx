@@ -8,11 +8,12 @@ const OpinionArticle = () => {
       "Urgent need to address increasing caesarean section rates in lower-middle-income countries like Bangladesh",
     journal: "Frontiers in Global Women’s Health, Volume 5",
     link: "https://doi.org/10.3389/fgwh.2024.1365504",
+    titleLink: "#", // Update this with the actual title link
   };
 
   return (
     <div className="pt-16">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-8">
+      <h3 className="text-2xl md:text-2xl font-bold text-gray-600 underline underline-offset-4 mb-8">
         Opinion Article
       </h3>
 
@@ -30,17 +31,22 @@ const OpinionArticle = () => {
           </h3>
         </div>
         <div className="w-3/4">
-          <p className="text-md font-semibold text-gray-800">
+          <a
+            href={opinionArticle.titleLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-md font-semibold text-gray-800 hover:underline hover:bg-blue-500 hover:text-white transition duration-200 rounded"
+          >
             {opinionArticle.title}
-          </p>
+          </a>
           <p className="text-gray-600 text-sm">{opinionArticle.journal}</p>
           <a
             href={opinionArticle.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline text-sm"
+            className="text-blue-500 hover:underline text-sm"
           >
-            Read More
+            {opinionArticle.link}
           </a>
         </div>
       </motion.div>
