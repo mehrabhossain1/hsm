@@ -17,7 +17,7 @@ const BookSection = () => {
   };
 
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-50">
       <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 py-16">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 text-center">
           Book

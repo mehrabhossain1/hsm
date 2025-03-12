@@ -7,6 +7,7 @@ import EducationalBackground from "@/components/Sizear/EducationalBackground";
 import MediaFeaturesandPresence from "@/components/Sizear/MediaFeaturesandPresence";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 import NewspaperColumns from "@/components/Sizear/NewspaperColumns";
+import ProfessionalJourney from "@/components/Sizear/ProfessionalJourney";
 import ProfessionalMembership from "@/components/Sizear/ProfessionalMembership";
 import ProfessionalTraining from "@/components/Sizear/ProfessionalTraining";
 import WritingsAndPublications from "@/components/Sizear/WritingsAndPublications";
@@ -64,6 +65,10 @@ const Sizear = () => {
       {/* Media Features and Presence */}
       <MediaFeaturesandPresence />
       {/* Media Features and Presence */}
+
+      {/* Personal Journey/ Life Beyond Profession  */}
+      <ProfessionalJourney />
+      {/* Personal Journey/ Life Beyond Profession  */}
     </section>
   );
 };

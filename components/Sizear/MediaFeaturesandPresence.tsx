@@ -51,7 +51,7 @@ const articles = [
 const MediaFeatures = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50 p-8 rounded-md shadow-sm">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 text-center mb-8">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 text-center mb-8 mt-8">
         🎥 Media Features and Presence
         <span className="block w-24 h-1 bg-blue-500 mx-auto mt-2 rounded-full"></span>
       </h2>
