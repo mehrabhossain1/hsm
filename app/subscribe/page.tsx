@@ -23,7 +23,7 @@ export default function SubscribePage() {
 
   return (
     <div className="flex justify-center items-center min-h-[calc(100vh-115px)] bg-gradient-to-r from-sky-50 via-white to-sky-50 p-6">
-      <div className="max-w-2xl w-full bg-white p-8 rounded-lg shadow-md text-center">
+      <div className="max-w-2xl w-full  p-8  text-center">
         <motion.h3
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ export default function SubscribePage() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-lg font-medium text-sky-700 hover:text-sky-900 transition-all duration-300"
             >
-              <FaLinkedinIn size={22} className="text-sky-600" /> LinkedIn
+              <FaLinkedinIn size={22} className="text-blue-600" /> LinkedIn
             </a>
             <a
               href="https://www.facebook.com/monaemul.sizear"
@@ -90,7 +90,7 @@ export default function SubscribePage() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-lg font-medium text-blue-700 hover:text-sky-900 transition-all duration-300"
             >
-              <Facebook size={22} className="text-sky-600" /> Facebook
+              <Facebook size={22} className="text-blue-600" /> Facebook
             </a>
           </div>
         </motion.div>

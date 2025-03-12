@@ -6,7 +6,7 @@ import { Heart, Gift } from "lucide-react";
 
 export default function SupportHSM() {
   return (
-    <div className="min-h-[calc(100vh-115px)] flex flex-col items-center justify-center bg-gradient-to-r from-blue-50 via-white to-blue-50 p-8 text-center">
+    <div className="min-h-[calc(100vh-115px)] flex flex-col items-center justify-center bg-gradient-to-r from-pink-50 via-white to-pink-50 p-8 text-center">
       {/* Hero Section */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -15,7 +15,7 @@ export default function SupportHSM() {
         className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
       >
         ❤️ Support{" "}
-        <span className="text-blue-600">Health Systems Matter (HSM)</span>
+        <span className="text-pink-600">Health Systems Matter (HSM)</span>
       </motion.h1>
       <p className="text-gray-600 max-w-2xl mx-auto mb-8">
         We deeply value your support for Health Systems Matter—an impact-driven
