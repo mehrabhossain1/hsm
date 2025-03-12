@@ -4,6 +4,8 @@ import AwardsandAchievements from "@/components/Sizear/AwardsandAchievements";
 import BookSection from "@/components/Sizear/Book";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
 import EducationalBackground from "@/components/Sizear/EducationalBackground";
+import Family from "@/components/Sizear/Family";
+import Hobby from "@/components/Sizear/Hobby";
 import MediaFeaturesandPresence from "@/components/Sizear/MediaFeaturesandPresence";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 import NewspaperColumns from "@/components/Sizear/NewspaperColumns";
@@ -69,6 +71,14 @@ const Sizear = () => {
       {/* Personal Journey/ Life Beyond Profession  */}
       <ProfessionalJourney />
       {/* Personal Journey/ Life Beyond Profession  */}
+
+      {/* Hobby/Leisure Time Activities:  */}
+      <Hobby />
+      {/* Hobby/Leisure Time Activities:  */}
+
+      {/* Family */}
+      <Family />
+      {/* Family */}
     </section>
   );
 };
