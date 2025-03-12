@@ -71,13 +71,15 @@ const Right = () => {
           </Button>
         </Link>
         <div>
-          <Button
-            className="mt-3 px-4 font-bold w-[100px]"
-            variant="destructive"
-            size="sm"
-          >
-            Subscribe
-          </Button>
+          <Link href="/subscribe">
+            <Button
+              className="mt-3 px-4 font-bold w-[100px]"
+              variant="destructive"
+              size="sm"
+            >
+              Subscribe
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

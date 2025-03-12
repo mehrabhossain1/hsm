@@ -99,7 +99,7 @@ export default function KnowledgeGiftSection() {
           className="mt-8"
         >
           <a
-            href="/Knowledge_Gift.pdf"
+            href="/knowledge-gift/KnowledgeGift.pdf"
             download="Knowledge_Gift.pdf"
             className="inline-flex items-center gap-3 bg-red-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-red-700 transition-all duration-300 shadow-sm"
           >
