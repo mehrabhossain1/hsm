@@ -4,6 +4,7 @@ import AwardsandAchievements from "@/components/Sizear/AwardsandAchievements";
 import BookSection from "@/components/Sizear/Book";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
 import EducationalBackground from "@/components/Sizear/EducationalBackground";
+import MediaFeaturesandPresence from "@/components/Sizear/MediaFeaturesandPresence";
 import MoreAboutMe from "@/components/Sizear/MoreAboutMe";
 import NewspaperColumns from "@/components/Sizear/NewspaperColumns";
 import ProfessionalMembership from "@/components/Sizear/ProfessionalMembership";
@@ -59,6 +60,10 @@ const Sizear = () => {
       {/* Awards and Achievements  */}
       <AwardsandAchievements />
       {/* Awards and Achievements  */}
+
+      {/* Media Features and Presence */}
+      <MediaFeaturesandPresence />
+      {/* Media Features and Presence */}
     </section>
   );
 };
