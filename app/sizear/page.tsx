@@ -1,5 +1,6 @@
 import AboutSizear from "@/components/Sizear/AboutSizear";
 import AreaOfFocus from "@/components/Sizear/AreaOfFocus";
+import AwardsandAchievements from "@/components/Sizear/AwardsandAchievements";
 import BookSection from "@/components/Sizear/Book";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
 import EducationalBackground from "@/components/Sizear/EducationalBackground";
@@ -54,6 +55,10 @@ const Sizear = () => {
       {/* Book */}
       <BookSection />
       {/* Book */}
+
+      {/* Awards and Achievements  */}
+      <AwardsandAchievements />
+      {/* Awards and Achievements  */}
     </section>
   );
 };
