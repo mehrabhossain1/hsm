@@ -3,6 +3,7 @@ import AreaOfFocus from "@/components/Sizear/AreaOfFocus";
 import AwardsandAchievements from "@/components/Sizear/AwardsandAchievements";
 import BookSection from "@/components/Sizear/Book";
 import CareerTrajectory from "@/components/Sizear/CareerTrajectory";
+import ConnectandContact from "@/components/Sizear/ConnectandContact";
 import EducationalBackground from "@/components/Sizear/EducationalBackground";
 import Family from "@/components/Sizear/Family";
 import Hobby from "@/components/Sizear/Hobby";
@@ -79,6 +80,10 @@ const Sizear = () => {
       {/* Family */}
       <Family />
       {/* Family */}
+
+      {/* Connect and Contact */}
+      <ConnectandContact />
+      {/* Connect and Contact */}
     </section>
   );
 };
