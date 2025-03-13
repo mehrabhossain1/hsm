@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,6 +11,27 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
+
+const bookmarksData = [
+  {
+    title: "General Reports",
+    href: "/resources/reports/general-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
+  },
+  {
+    title: "Topic wise reports",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
+  },
+];
+
+// Define animation variants
+// const itemVariants = {
+//   hidden: { opacity: 0, y: 10 },
+//   visible: { opacity: 1, y: 0 },
+// };
 
 const Reports = () => {
   return (
@@ -64,49 +90,28 @@ const Reports = () => {
             a systematic and accessible resource.
           </p>
 
-          {/* Call to Action */}
-          <div className="text-center mt-10">
-            <Link
-              href="/resources/reports/all"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium text-lg px-6 py-3 rounded-lg shadow-md transition duration-300"
-            >
-              Browse Reports
-            </Link>
+          {/* general and topic wise reports */}
+
+          <div className="max-w-screen-lg mx-auto pt-8 pb-16 px-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
+            {bookmarksData.map((bookmark, index) => (
+              <motion.div
+                key={index}
+                // variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }} // Adjusts when animation triggers
+                transition={{ duration: 0.2, delay: index * 0.1 }} // Staggered effect
+              >
+                <BookMarksSectionCard
+                  title={bookmark.title}
+                  description={bookmark.description}
+                  href={bookmark.href}
+                  Icon={bookmark.Icon}
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
-
-        {/* Sidebar Section */}
-        <aside className="w-full md:w-1/3 bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            Featured Reports
-          </h2>
-          <ul className="space-y-3">
-            <li>
-              <Link
-                href="/resources/reports/annual-2024"
-                className="text-blue-700 hover:underline"
-              >
-                Annual Development Report 2024
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/resources/reports/global-impact"
-                className="text-blue-700 hover:underline"
-              >
-                Global Impact Report
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/resources/reports/policy-trends"
-                className="text-blue-700 hover:underline"
-              >
-                Policy Trends and Analysis
-              </Link>
-            </li>
-          </ul>
-        </aside>
       </div>
     </div>
   );

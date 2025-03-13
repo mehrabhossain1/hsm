@@ -7,7 +7,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
-  // BreadcrumbPage,
+  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
@@ -81,7 +81,7 @@ const pdfs = [
   },
 ];
 
-const Books = () => {
+const GeneralReports = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Page Title Section */}
@@ -89,7 +89,7 @@ const Books = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-blue-700/90 to-blue-500/40 flex items-center">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-              Books
+              General Reports
             </h1>
           </div>
         </div>
@@ -118,18 +118,18 @@ const Books = () => {
           <BreadcrumbSeparator className="text-gray-600" />
           <BreadcrumbItem>
             <Link
-              href="/resources/books"
+              href="/resources/reports"
               className="text-gray-700 hover:underline hover:text-blue-700"
             >
-              Books
+              Reports
             </Link>
           </BreadcrumbItem>
-          {/* <BreadcrumbSeparator className="text-gray-600" />
+          <BreadcrumbSeparator className="text-gray-600" />
           <BreadcrumbItem>
             <BreadcrumbPage className="text-blue-800 font-semibold">
               General Reports
             </BreadcrumbPage>
-          </BreadcrumbItem> */}
+          </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
 
@@ -137,11 +137,15 @@ const Books = () => {
       <div className="max-w-screen-xl mx-auto px-6 md:px-16 flex flex-col md:flex-row gap-8">
         {/* Main Content */}
         <div className="flex-1">
-          <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-light mb-6 text-justify">
-            The PDF books provided are significant works by renowned public
-            health professionals, offering valuable insights into global health
-            and health systems
-          </p>
+          {/* <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-light mb-6 text-justify">
+            Reports are a fundamental output of interventions and initiatives,
+            serving as a cornerstone for organizations in the global development
+            sector. Given the mandatory and periodic nature of these
+            publications, the volume of reports continues to grow rapidly. This
+            section organizes reports by topic, including organizational
+            reports, key policy briefs, and presentations, providing users with
+            a systematic and accessible resource.
+          </p> */}
 
           {/* general and topic wise reports */}
 
@@ -197,4 +201,4 @@ const Books = () => {
   );
 };
 
-export default Books;
+export default GeneralReports;

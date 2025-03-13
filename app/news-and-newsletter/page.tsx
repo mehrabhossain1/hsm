@@ -63,23 +63,23 @@ const Card: React.FC<CardProps> = ({
   );
 };
 
-const ResourcesAndBookmarksPage = () => {
+const NewsAndNewsletterPage = () => {
   const resources = [
     {
-      title: "Resources",
+      title: "News",
       description:
         "The Resources section aspire to be a repository of essential resources on health systems and global health.",
       image:
         "https://img.freepik.com/free-photo/close-up-businessman-with-digital-tablet_1098-549.jpg?t=st=1741538159~exp=1741541759~hmac=b3ffe57c1f19b6cb99789c3cb587844550a0c0f4b393408d93cbfca4f95f2021&w=1060",
-      link: "/resources",
+      link: "/news",
     },
     {
-      title: "Bookmarks",
+      title: "Newsletter",
       description:
         "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
       image:
         "https://img.freepik.com/free-photo/high-angle-bookmark-book-arrangement_23-2149894430.jpg?t=st=1741538268~exp=1741541868~hmac=708a478df8a3365c52765b4d69b8ede7e3df58021777326bed961629431e1027&w=1060",
-      link: "/bookmarks",
+      link: "/newsletter",
     },
   ];
 
@@ -88,15 +88,13 @@ const ResourcesAndBookmarksPage = () => {
       <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB] to-[#2D8CBB]/30 flex items-center ">
           <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16">
-            <h1 className="text-4xl font-bold text-white">
-              Resources & Bookmarks
-            </h1>
+            <h1 className="text-4xl font-bold text-white">News & Newsletter</h1>
             <p className="text-base max-w-xl text-slate-700 font-semibold my-8 text-justify w-full md:w-auto">
-              Explore the comprehensive resource hub to supercharge your
+              {/* Explore the comprehensive resource hub to supercharge your
               knowledge and complement your rewarding career journey. The
               Resource section lets you download valuable materials with a
               single click, while the Bookmarks section connects you to useful
-              contents and tools crucial for professional success.
+              contents and tools crucial for professional success. */}
             </p>
           </div>
         </div>
@@ -135,4 +133,4 @@ const ResourcesAndBookmarksPage = () => {
   );
 };
 
-export default ResourcesAndBookmarksPage;
+export default NewsAndNewsletterPage;
