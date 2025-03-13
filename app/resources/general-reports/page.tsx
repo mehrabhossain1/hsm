@@ -4,21 +4,21 @@ import Link from "next/link";
 const GeneralReports = () => {
   const reports = [
     {
-      title: "Annual Development Report 2024",
-      description:
-        "A comprehensive review of this year's key developmental progress.",
-      link: "/pdfs/annual-development-2024.pdf",
+      title: "Asian Development Outlook-2024",
+      // description:
+      //   "A comprehensive review of this year's key developmental progress.",
+      link: "/public/resources/GeneralReports/Asian Development Outlook-2024.pdf",
     },
     {
       title: "Global Impact Report",
-      description:
-        "An analysis of global trends and their impact on various sectors.",
-      link: "/pdfs/global-impact.pdf",
+      // description:
+      //   "An analysis of global trends and their impact on various sectors.",
+      link: "/public/resources/GeneralReports/Child, Food and Nutrition.pdf",
     },
     {
       title: "Policy Trends and Analysis",
-      description: "Insights into emerging policy trends shaping the future.",
-      link: "/pdfs/policy-trends.pdf",
+      // description: "Insights into emerging policy trends shaping the future.",
+      link: "/public/resources/GeneralReports/Cost Effectiveness of Health Aid 2024.pdf",
     },
   ];
 
@@ -49,7 +49,7 @@ const GeneralReports = () => {
                 <h3 className="text-lg font-semibold text-gray-800">
                   {report.title}
                 </h3>
-                <p className="text-sm text-gray-600">{report.description}</p>
+                {/* <p className="text-sm text-gray-600">{report.description}</p> */}
               </div>
               <Link
                 href={report.link}
