@@ -98,10 +98,10 @@ const bookmarksData = [
 ];
 
 // Define animation variants
-const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
+// const itemVariants = {
+//   hidden: { opacity: 0, y: 10 },
+//   visible: { opacity: 1, y: 0 },
+// };
 
 const BookmarksPage = () => {
   return (
@@ -148,11 +148,11 @@ const BookmarksPage = () => {
         {bookmarksData.map((bookmark, index) => (
           <motion.div
             key={index}
-            variants={itemVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }} // Adjusts when animation triggers
-            transition={{ duration: 0.2, delay: index * 0.1 }} // Staggered effect
+            // variants={itemVariants}
+            // initial="hidden"
+            // whileInView="visible"
+            // viewport={{ once: true, amount: 0.2 }}
+            // transition={{ duration: 0.2, delay: index * 0.1 }}
           >
             <BookMarksSectionCard
               title={bookmark.title}

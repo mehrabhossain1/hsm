@@ -23,7 +23,7 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
   Icon,
 }) => {
   return (
-    <Card className="border w-full border-[#01748D] hover:border-[#F18A00] hover:border-r-4 hover:border-b-4 h-full hover:bg-white  transition-transform transform rounded-none shadow-sm bg-[#F4F3F0] hover:shadow-md">
+    <Card className="border w-full border-[#01748D] hover:border-[#F18A00] hover:border-r-4 hover:border-b-4 h-full hover:bg-white rounded-none shadow-sm bg-[#F4F3F0] hover:shadow-md">
       <CardHeader className="flex p-0 flex-col items-center justify-center space-y-2">
         {/* Image at the top */}
         <Link href={href} className="w-full h-full mb-4">
