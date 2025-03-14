@@ -15,69 +15,72 @@ import { FaFilePdf, FaDownload, FaBookOpen } from "react-icons/fa";
 
 const pdfs = [
   {
-    title: "A System of Health Accounts 2011",
-    filePath:
-      "/resources/Essential-Reading-List/A-System-of-Health-Accounts-2011.pdf",
+    title: "Asian Development Outlook-2024",
+    filePath: "/resources/GeneralReports/Asian Development Outlook-2024.pdf",
   },
   {
-    title: "Alma Ata Conference Report on PHC_WHO 1978",
-    filePath:
-      "/resources/Essential-Reading-List/Alma-Ata-Conference-Report-on-PHC_WHO-1978.pdf",
+    title: "Child, Food and Nutrition",
+    filePath: "/resources/GeneralReports/Child, Food and Nutrition.pdf",
   },
   {
-    title: "Basic Epidemiology_WHO 2006",
+    title: "Cost Effectiveness of Health Aid 2024",
     filePath:
-      "/resources/Essential-Reading-List/Basic Epidemiology_WHO 2006.pdf",
+      "/resources/GeneralReports/Cost Effectiveness of Health Aid 2024.pdf",
   },
   {
-    title: "Delivering Quality Health Services_WHO 2018",
-    filePath:
-      "/resources/Essential-Reading-List/Delivering Quality Health Services_WHO 2018.pdf",
+    title: "Finance and Prosperity 2024",
+    filePath: "/resources/GeneralReports/Finance and Prosperity 2024.pdf",
   },
   {
-    title: "Everybody's Business- Strengthening Health Systems_WHo 2007",
-    filePath:
-      "/resources/Essential-Reading-List/Everybody's Business- Strengthening Health Systems_WHo 2007.pdf",
+    title: "Global Tuberculosis Report 2024",
+    filePath: "/resources/GeneralReports/Global Tuberculosis Report 2024.pdf",
   },
   {
-    title: "Guns, Germs and Steel - Jared Diamond_1997",
+    title: "Health & Climate Change_Lancet Countdown 2024",
     filePath:
-      "/resources/Essential-Reading-List/Guns, Germs and Steel - Jared Diamond_1997.pdf",
+      "/resources/GeneralReports/Health & Climate Change_Lancet Countdown 2024.pdf",
   },
   {
-    title: "Health Systems - Improving Performance_WHO_2000",
-    filePath:
-      "/resources/Essential-Reading-List/Health Systems - Improving Performance_WHO_2000.pdf",
+    title: "Humanitarian Action Overview 2024",
+    filePath: "/resources/GeneralReports/Humanitarian Action Overview 2024.pdf",
   },
   {
-    title: "Health Systems Building Blocks_WHO 2010",
+    title: "Impact of Climate Change on Human Health_2024",
     filePath:
-      "/resources/Essential-Reading-List/Health Systems Building Blocks_WHO 2010.pdf",
+      "/resources/GeneralReports/Impact of Climate Change on Human Health_2024.pdf",
   },
   {
-    title: "Health Systems Financing_WHO 2010",
-    filePath:
-      "/resources/Essential-Reading-List/Health Systems Financing_WHO 2010.pdf",
+    title: "International Debt Report 2024",
+    filePath: "/resources/GeneralReports/International Debt Report 2024.pdf",
   },
   {
-    title: "International Profiles of Health Care Systems_2020",
-    filePath:
-      "/resources/Essential-Reading-List/International Profiles of Health Care Systems_2020.pdf",
+    title: "Pathways out of the Polycrisis",
+    filePath: "/resources/GeneralReports/Pathways out of the Polycrisis.pdf",
   },
   {
-    title: "Investing in Health_WDR 1993",
+    title: "Sustainable Development Report 2024",
     filePath:
-      "/resources/Essential-Reading-List/Investing in Health_WDR 1993.pdf",
+      "/resources/GeneralReports/Sustainable Development Report 2024.pdf",
   },
   {
-    title: "Now More Than Ever-PHC_WHO 2008",
-    filePath:
-      "/resources/Essential-Reading-List/Now More Than Ever-PHC_WHO 2008.pdf",
+    title: "The Global Risks Report 2024",
+    filePath: "/resources/GeneralReports/The Global Risks Report 2024.pdf",
   },
   {
-    title: "Tracking Universal health Coverage_WHO 2015",
-    filePath:
-      "/resources/Essential-Reading-List/Tracking Universal health Coverage_WHO 2015.pdf",
+    title: "World Bank in Bangladesh 2024",
+    filePath: "/resources/GeneralReports/World Bank in Bangladesh 2024.pdf",
+  },
+  {
+    title: "World Development Report 2024",
+    filePath: "/resources/GeneralReports/World Development Report 2024.pdf",
+  },
+  {
+    title: "World Hapiness Report 2024",
+    filePath: "/resources/GeneralReports/World Hapiness Report 2024.pdf",
+  },
+  {
+    title: "World Health Statistics 2024",
+    filePath: "/resources/GeneralReports/World Health Statistics 2024.pdf",
   },
 ];
 
