@@ -15,79 +15,114 @@ import { FaFilePdf, FaDownload, FaBookOpen } from "react-icons/fa";
 
 const pdfs = [
     {
-        title: "Climate Afflictions 2021_WB",
+        title: "Bangladesh Health Financing Context Analysis revised October 2019 (clean)",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Climate Afflictions 2021_WB.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Bangladesh Health Financing Context Analysis revised October 2019 (clean).docx",
     },
     {
-        title: "Climate Change Impacts on Human Health and the Health Sector 2022_USAID",
+        title: "Budget Matters for Health 2018_WHO",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Climate Change Impacts on Human Health and the Health Sector 2022_USAID.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Budget Matters for Health 2018_WHO.pdf",
     },
     {
-        title: "Climate Finance Guide 2020",
+        title: "Costing of Covid-19 Vaccine in bangladesh - TW_2024",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Climate Finance Guide 2020.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Costing of Covid-19 Vaccine in bangladesh - TW_2024.pdf",
     },
     {
-        title: "Climate Finance in Bangladesh 2017_USAID",
+        title: "Crowd Funding in Health Research 2021_WHO",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Climate Finance in Bangladesh 2017_USAID.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Crowd Funding in Health Research 2021_WHO.pdf",
     },
     {
-        title: "Climate Financing for Sustainable Development of Bangladesh 2023_MOF",
+        title: "Domestic Co-financing policy in Global health 2024_CGD",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Climate Financing for Sustainable Development of Bangladesh 2023_MOF.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Domestic Co-financing policy in Global health 2024_CGD.pdf",
     },
     {
-        title: "Estimates of the Impact of Climate Change on Extreme Poverty 2020_WB",
+        title: "Financing Global Health 2021",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Estimates of the Impact of Climate Change on Extreme Poverty 2020_WB.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Financing Global Health 2021.pdf",
     },
     {
-        title: "Handbook on Climate Chnage Impact 2024",
+        title: "Financing TB -USAID 2022",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Handbook on Climate Chnage Impact 2024.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Financing TB -USAID 2022.pdf",
     },
     {
-        title: "Health and Climate Change_Lancet Countdown 2022",
+        title: "Financing the Future- 2024_IDA",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Health and Climate Change_Lancet Countdown 2022.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Financing the Future- 2024_IDA.pdf",
     },
     {
-        title: "IDU08d9e0a9203ad50400d09a6e078489562e7e8",
+        title: "Global Expenditure on Health 2021_WHO",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/IDU08d9e0a9203ad50400d09a6e078489562e7e8.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Global Expenditure on Health 2021_WHO.pdf",
     },
     {
-        title: "Impacts of climate change on health in Bangladesh Policy brief 2023",
+        title: "Health care Financing in LMICs",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Impacts of climate change on health in Bangladesh Policy brief 2023.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Health care Financing in LMICs.pdf",
     },
     {
-        title: "People in a Changing Climate 2024_WB",
+        title: "Health Financing Challenges for NCDs 2024",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/People in a Changing Climate 2024_WB.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Health Financing Challenges for NCDs 2024.pdf",
     },
     {
-        title: "Quantifying the Impact of Climate Change 2024_WB",
+        title: "Health Financing in a Time of Global Shock 2023-WB",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Quantifying the Impact of Climate Change 2024_WB.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Health Financing in a Time of Global Shock 2023-WB.pdf",
     },
     {
-        title: "Socioeconomic Impact on Climate Change Developing-Countries Next Decades 2024_CGD",
+        title: "Health Financing in Times of Uncertainty 2021_WHO",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/Socioeconomic Impact on Climate Change Developing-Countries Next Decades 2024_CGD.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Health Financing in Times of Uncertainty 2021_WHO.pdf",
     },
     {
-        title: "The Impact of Heat on Health and the Economy of Bangladesh 2024_WB",
+        title: "Health Financing Policy 2016_WB",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/The Impact of Heat on Health and the Economy of Bangladesh 2024_WB.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Health Financing Policy 2016_WB.pdf",
     },
     {
-        title: "What Can I Do about the Climate Emergency",
+        title: "Health Financing Policy Guidance 2008_WHO",
         filePath:
-            "/resources/TopicWiseReports/Climate-change-and-public-health/What Can I Do about the Climate Emergency.pdf",
+            "/resources/TopicWiseReports/Health-Financing/Health Financing Policy Guidance 2008_WHO.pdf",
+    },
+    {
+        title: "Health Financing Practitionars' Guide 2006_WB",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/Health Financing Practitionars' Guide 2006_WB.pdf",
+    },
+    {
+        title: "Health Financing Progress Matrix of Bangladesh 2021_WHO",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/Health Financing Progress Matrix of Bangladesh 2021_WHO.pdf",
+    },
+    {
+        title: "Health-Financing Designing 2001_DFID",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/Health-Financing Designing 2001_DFID.pdf",
+    },
+    {
+        title: "Health-Financing Trends in Sub-Saharan Africa 2012_OPM",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/Health-Financing Trends in Sub-Saharan Africa 2012_OPM.pdf",
+    },
+    {
+        title: "National Health Financing Strategy 2017_WHO",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/National Health Financing Strategy 2017_WHO.pdf",
+    },
+    {
+        title: "Political Economy Analysis for Health Financing - 2024_WHO",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/Political Economy Analysis for Health Financing - 2024_WHO.pdf",
+    },
+    {
+        title: "Public health Expenditure Review of Bangladesh- HEU_2021",
+        filePath:
+            "/resources/TopicWiseReports/Health-Financing/Public health Expenditure Review of Bangladesh- HEU_2021.pdf",
     },
 ];
 
