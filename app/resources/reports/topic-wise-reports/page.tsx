@@ -1,85 +1,155 @@
 "use client";
 
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 // import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
-  BreadcrumbPage,
+  // BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
-import { FaFilePdf, FaDownload, FaBookOpen } from "react-icons/fa";
+import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
+// import { FaFilePdf, FaDownload, FaBookOpen } from "react-icons/fa";
 
-const pdfs = [
+const bookmarksData = [
   {
-    title: "A System of Health Accounts 2011",
-    filePath:
-      "/resources/Essential-Reading-List/A-System-of-Health-Accounts-2011.pdf",
+    title: "Climate change and public health",
+    href: "/resources/reports/topic-wise-reports/climate-change-and-public-health",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Alma Ata Conference Report on PHC_WHO 1978",
-    filePath:
-      "/resources/Essential-Reading-List/Alma-Ata-Conference-Report-on-PHC_WHO-1978.pdf",
+    title: "Health Financing",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Basic Epidemiology_WHO 2006",
-    filePath:
-      "/resources/Essential-Reading-List/Basic Epidemiology_WHO 2006.pdf",
+    title: "Health Policy & Analysis",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Delivering Quality Health Services_WHO 2018",
-    filePath:
-      "/resources/Essential-Reading-List/Delivering Quality Health Services_WHO 2018.pdf",
+    title: "Health workers & human resources",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Everybody's Business- Strengthening Health Systems_WHo 2007",
-    filePath:
-      "/resources/Essential-Reading-List/Everybody's Business- Strengthening Health Systems_WHo 2007.pdf",
+    title: "Maternal and child health",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Guns, Germs and Steel - Jared Diamond_1997",
-    filePath:
-      "/resources/Essential-Reading-List/Guns, Germs and Steel - Jared Diamond_1997.pdf",
+    title: "Mental Health",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Health Systems - Improving Performance_WHO_2000",
-    filePath:
-      "/resources/Essential-Reading-List/Health Systems - Improving Performance_WHO_2000.pdf",
+    title: "NCDs",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Health Systems Building Blocks_WHO 2010",
-    filePath:
-      "/resources/Essential-Reading-List/Health Systems Building Blocks_WHO 2010.pdf",
+    title: "Nutrition",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Health Systems Financing_WHO 2010",
-    filePath:
-      "/resources/Essential-Reading-List/Health Systems Financing_WHO 2010.pdf",
+    title: "Primary health care",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "International Profiles of Health Care Systems_2020",
-    filePath:
-      "/resources/Essential-Reading-List/International Profiles of Health Care Systems_2020.pdf",
+    title: "Strategic Purchasing in Health",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
   {
-    title: "Investing in Health_WDR 1993",
-    filePath:
-      "/resources/Essential-Reading-List/Investing in Health_WDR 1993.pdf",
-  },
-  {
-    title: "Now More Than Ever-PHC_WHO 2008",
-    filePath:
-      "/resources/Essential-Reading-List/Now More Than Ever-PHC_WHO 2008.pdf",
-  },
-  {
-    title: "Tracking Universal health Coverage_WHO 2015",
-    filePath:
-      "/resources/Essential-Reading-List/Tracking Universal health Coverage_WHO 2015.pdf",
+    title: "Universal Health Coverage",
+    href: "/resources/reports/topic-wise-reports",
+    description: "",
+    Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
   },
 ];
+
+// const pdfs = [
+//   {
+//     title: "A System of Health Accounts 2011",
+//     filePath:
+//       "/resources/Essential-Reading-List/A-System-of-Health-Accounts-2011.pdf",
+//   },
+//   {
+//     title: "Alma Ata Conference Report on PHC_WHO 1978",
+//     filePath:
+//       "/resources/Essential-Reading-List/Alma-Ata-Conference-Report-on-PHC_WHO-1978.pdf",
+//   },
+//   {
+//     title: "Basic Epidemiology_WHO 2006",
+//     filePath:
+//       "/resources/Essential-Reading-List/Basic Epidemiology_WHO 2006.pdf",
+//   },
+//   {
+//     title: "Delivering Quality Health Services_WHO 2018",
+//     filePath:
+//       "/resources/Essential-Reading-List/Delivering Quality Health Services_WHO 2018.pdf",
+//   },
+//   {
+//     title: "Everybody's Business- Strengthening Health Systems_WHo 2007",
+//     filePath:
+//       "/resources/Essential-Reading-List/Everybody's Business- Strengthening Health Systems_WHo 2007.pdf",
+//   },
+//   {
+//     title: "Guns, Germs and Steel - Jared Diamond_1997",
+//     filePath:
+//       "/resources/Essential-Reading-List/Guns, Germs and Steel - Jared Diamond_1997.pdf",
+//   },
+//   {
+//     title: "Health Systems - Improving Performance_WHO_2000",
+//     filePath:
+//       "/resources/Essential-Reading-List/Health Systems - Improving Performance_WHO_2000.pdf",
+//   },
+//   {
+//     title: "Health Systems Building Blocks_WHO 2010",
+//     filePath:
+//       "/resources/Essential-Reading-List/Health Systems Building Blocks_WHO 2010.pdf",
+//   },
+//   {
+//     title: "Health Systems Financing_WHO 2010",
+//     filePath:
+//       "/resources/Essential-Reading-List/Health Systems Financing_WHO 2010.pdf",
+//   },
+//   {
+//     title: "International Profiles of Health Care Systems_2020",
+//     filePath:
+//       "/resources/Essential-Reading-List/International Profiles of Health Care Systems_2020.pdf",
+//   },
+//   {
+//     title: "Investing in Health_WDR 1993",
+//     filePath:
+//       "/resources/Essential-Reading-List/Investing in Health_WDR 1993.pdf",
+//   },
+//   {
+//     title: "Now More Than Ever-PHC_WHO 2008",
+//     filePath:
+//       "/resources/Essential-Reading-List/Now More Than Ever-PHC_WHO 2008.pdf",
+//   },
+//   {
+//     title: "Tracking Universal health Coverage_WHO 2015",
+//     filePath:
+//       "/resources/Essential-Reading-List/Tracking Universal health Coverage_WHO 2015.pdf",
+//   },
+// ];
 
 const TopicWiseReports = () => {
   return (
@@ -96,39 +166,35 @@ const TopicWiseReports = () => {
       </div>
 
       {/* Breadcrumbs */}
-      <Breadcrumb className="py-6 px-6 md:px-16 max-w-screen-xl mx-auto text-sm md:text-base">
-        <BreadcrumbList className="flex flex-wrap gap-2">
+      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto border-b">
+        <BreadcrumbList>
           <BreadcrumbItem>
-            <Link
-              href="/"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Home
+            <Link href="/" className="text-gray-500">
+              HOME
             </Link>
           </BreadcrumbItem>
+
           <BreadcrumbSeparator className="text-gray-600" />
           <BreadcrumbItem>
-            <Link
-              href="/resources"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
+            <Link href="/resources-and-bookmarks" className="text-gray-500">
+              RESOURCES & BOOKMARKS
+            </Link>
+          </BreadcrumbItem>
+
+          <BreadcrumbSeparator className="text-gray-600" />
+          <BreadcrumbItem>
+            <Link href="/resources" className="text-gray-800">
               Resources
             </Link>
           </BreadcrumbItem>
           <BreadcrumbSeparator className="text-gray-600" />
           <BreadcrumbItem>
             <Link
-              href="/resources/reports"
-              className="text-gray-700 hover:underline hover:text-blue-700"
+              href="/resources/topic-wise-reports"
+              className="text-gray-800 underline"
             >
-              Reports
+              Topic Wise Reports
             </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <BreadcrumbPage className="text-blue-800 font-semibold">
-              Topic wise Reports
-            </BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
@@ -149,51 +215,24 @@ const TopicWiseReports = () => {
 
           {/* general and topic wise reports */}
 
-          <div className="max-w-screen-xl mx-auto px-6 md:px-16 pb-16 flex flex-col md:flex-row gap-8">
-            {/* Main Content */}
-
-            <div className="flex-1">
-              {pdfs.map((pdf, index) => (
-                <div
-                  key={index}
-                  className="bg-white shadow-sm p-6 mb-2 flex items-center gap-4 border border-gray-200"
-                >
-                  <p>{index + 1}.</p>{" "}
-                  <FaFilePdf className="text-red-500 text-4xl" />
-                  <div className="flex-1">
-                    {/* Clickable Title with Hover Underline */}
-                    <a
-                      href={pdf.filePath}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <p className="text-base font-semibold text-gray-900 hover:underline">
-                        {pdf.title}
-                      </p>
-                    </a>
-                    {/* <p className="text-gray-700 text-sm">{pdf.description}</p> */}
-                  </div>
-                  {/*  */}
-                  {/* Read Button */}
-                  <a
-                    href={pdf.filePath}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-300"
-                  >
-                    <FaBookOpen /> Read
-                  </a>
-                  {/* Download Button */}
-                  <a
-                    href={pdf.filePath}
-                    download
-                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-300"
-                  >
-                    <FaDownload /> Download
-                  </a>
-                </div>
-              ))}
-            </div>
+          <div className="max-w-screen-xl mx-auto pt-8 pb-16 px-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {bookmarksData.map((bookmark, index) => (
+              <motion.div
+                key={index}
+                // variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }} // Adjusts when animation triggers
+                transition={{ duration: 0.2, delay: index * 0.1 }} // Staggered effect
+              >
+                <BookMarksSectionCard
+                  title={bookmark.title}
+                  description={bookmark.description}
+                  href={bookmark.href}
+                  Icon={bookmark.Icon}
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
