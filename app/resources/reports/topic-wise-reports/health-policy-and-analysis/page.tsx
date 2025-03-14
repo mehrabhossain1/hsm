@@ -15,123 +15,48 @@ import { FaFilePdf, FaDownload, FaBookOpen } from "react-icons/fa";
 
 const pdfs = [
     {
-        title: "Bangladesh Health Financing Context Analysis revised October 2019 (clean)",
+        title: "2018_RTI",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Bangladesh Health Financing Context Analysis revised October 2019 (clean).docx",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/2018_RTI.pdf",
     },
     {
-        title: "Budget Matters for Health 2018_WHO",
+        title: "Disease control policy in developing countires 2006_WB",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Budget Matters for Health 2018_WHO.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/Disease control policy in developing countires 2006_WB.pdf",
     },
     {
-        title: "Costing of Covid-19 Vaccine in bangladesh - TW_2024",
+        title: "Health in All Policies 2015_WHO",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Costing of Covid-19 Vaccine in bangladesh - TW_2024.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/Health in All Policies 2015_WHO.pdf",
     },
     {
-        title: "Crowd Funding in Health Research 2021_WHO",
+        title: "Health policy Analysis 2008",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Crowd Funding in Health Research 2021_WHO.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/Health policy Analysis 2008.pdf",
     },
     {
-        title: "Domestic Co-financing policy in Global health 2024_CGD",
+        title: "Health policy analysis for MIC 2018_WHO",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Domestic Co-financing policy in Global health 2024_CGD.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/Health policy analysis for MIC 2018_WHO.pdf",
     },
     {
-        title: "Financing Global Health 2021",
+        title: "Health policy Challenges 2023",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Financing Global Health 2021.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/Health policy Challenges 2023.pdf",
     },
     {
-        title: "Financing TB -USAID 2022",
+        title: "Health Policy Handbook_2023",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Financing TB -USAID 2022.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/Health Policy Handbook_2023.pdf",
     },
     {
-        title: "Financing the Future- 2024_IDA",
+        title: "International Health Regulations 2015_WHO",
         filePath:
-            "/resources/TopicWiseReports/Health-Financing/Financing the Future- 2024_IDA.pdf",
-    },
-    {
-        title: "Funding by Neglected Disease 2023",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Funding by Neglected Disease 2023.pdf",
-    },
-    {
-        title: "Global Expenditure on Health 2021_WHO",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Global Expenditure on Health 2021_WHO.pdf",
-    },
-    {
-        title: "Health care Financing in LMICs",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health care Financing in LMICs.pdf",
-    },
-    {
-        title: "Health Financing Challenges for NCDs 2024",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing Challenges for NCDs 2024.pdf",
-    },
-    {
-        title: "Health Financing in a Time of Global Shock 2023-WB",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing in a Time of Global Shock 2023-WB.pdf",
-    },
-    {
-        title: "Health Financing in Times of Uncertainty 2021_WHO",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing in Times of Uncertainty 2021_WHO.pdf",
-    },
-    {
-        title: "Health Financing Policy 2016_WB",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing Policy 2016_WB.pdf",
-    },
-    {
-        title: "Health Financing Policy Guidance 2008_WHO",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing Policy Guidance 2008_WHO.pdf",
-    },
-    {
-        title: "Health Financing Practitionars' Guide 2006_WB",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing Practitionars' Guide 2006_WB.pdf",
-    },
-    {
-        title: "Health Financing Progress Matrix of Bangladesh 2021_WHO",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health Financing Progress Matrix of Bangladesh 2021_WHO.pdf",
-    },
-    {
-        title: "Health-Financing Designing 2001_DFID",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health-Financing Designing 2001_DFID.pdf",
-    },
-    {
-        title: "Health-Financing Trends in Sub-Saharan Africa 2012_OPM",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Health-Financing Trends in Sub-Saharan Africa 2012_OPM.pdf",
-    },
-    {
-        title: "National Health Financing Strategy 2017_WHO",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/National Health Financing Strategy 2017_WHO.pdf",
-    },
-    {
-        title: "Political Economy Analysis for Health Financing - 2024_WHO",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Political Economy Analysis for Health Financing - 2024_WHO.pdf",
-    },
-    {
-        title: "Public health Expenditure Review of Bangladesh- HEU_2021",
-        filePath:
-            "/resources/TopicWiseReports/Health-Financing/Public health Expenditure Review of Bangladesh- HEU_2021.pdf",
+            "/resources/TopicWiseReports/Health-Policy-and-Analysis/International Health Regulations 2015_WHO.pdf",
     },
 ];
 
-const HealthFincancing = () => {
+const HealthPolicyAndAnalysis = () => {
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Page Title Section */}
@@ -139,7 +64,7 @@ const HealthFincancing = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/40 flex items-center">
                     <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-16 gap-4">
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-                            Health Financing
+                            Health Policy and Analysis
                         </h1>
                     </div>
                 </div>
@@ -191,10 +116,10 @@ const HealthFincancing = () => {
                     <BreadcrumbSeparator className="text-gray-600" />
                     <BreadcrumbItem>
                         <Link
-                            href="/resources/reports/topic-wise-reports/health-financing"
+                            href="/resources/reports/topic-wise-reports/health-policy-and-analysis"
                             className="text-gray-800 underline"
                         >
-                            Health Financing
+                            Health Policy and Analysis
                         </Link>
                     </BreadcrumbItem>
                 </BreadcrumbList>
@@ -268,4 +193,4 @@ const HealthFincancing = () => {
     );
 };
 
-export default HealthFincancing;
+export default HealthPolicyAndAnalysis;
