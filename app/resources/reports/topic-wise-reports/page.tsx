@@ -47,13 +47,13 @@ const bookmarksData = [
     },
     {
         title: "Mental Health",
-        href: "/resources/reports/topic-wise-reports",
+        href: "/resources/reports/topic-wise-reports/mental-health",
         description: "",
         Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
     },
     {
         title: "NCDs",
-        href: "/resources/reports/topic-wise-reports",
+        href: "/resources/reports/topic-wise-reports/ncds",
         description: "",
         Icon: "https://img.freepik.com/free-photo/business-leader-trader-searching-new-investment-solution_482257-116895.jpg?t=st=1741540814~exp=1741544414~hmac=00e99ff43576506148314d093bc85b7a592b6e0b4b18d00a2a9aad1ffba7795e&w=1060",
     },
