@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({
             {/* Image Section (Left) */}
             <Link
                 href={link}
-                className="w-full md:w-1/3 h-80 relative overflow-hidden hover:scale-110 transition-all duration-300 ease-in-out"
+                className="w-full md:w-1/3 h-64 relative overflow-hidden hover:scale-110 transition-all duration-300 ease-in-out"
             >
                 <Image
                     src={image}
@@ -54,7 +54,7 @@ const Card: React.FC<CardProps> = ({
                 <h2 className="text-2xl font-semibold mb-2 hover:underline">
                     {title}
                 </h2>
-                <p className="text-base text-gray-600 mb-4 text-justify">
+                <p className="text-sm leading-6 text-gray-600 mb-4 text-justify">
                     {description}
                 </p>
 
@@ -111,7 +111,7 @@ const AboutPage = () => {
                         <h1 className="text-4xl font-[1000] text-white">
                             About
                         </h1>
-                        <p className="text-lg max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
+                        <p className="text-md max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
                             HSM is a resource hub, offering evidence-based
                             insights, expert knowledge, global events, and
                             career opportunities.
@@ -121,7 +121,7 @@ const AboutPage = () => {
             </div>
 
             {/* New Left Image - Right Content Layout */}
-            <div className="max-w-screen-lg py-8 mx-auto px-16">
+            <div className="max-w-screen-xl py-8 mx-auto px-16">
                 <motion.div
                     className="flex flex-col gap-8"
                     initial="hidden"
