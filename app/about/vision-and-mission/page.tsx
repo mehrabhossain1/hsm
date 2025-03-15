@@ -64,7 +64,7 @@ const VisionAndMissionPage = () => {
                             alt="Vision"
                             width={1000}
                             height={500}
-                            className="mix-blend-darken object-cover w-80"
+                            className="mix-blend-darken object-cover w-72 "
                         />
                     </div>
 
