@@ -144,7 +144,7 @@ const BookmarksPage = () => {
                     <BreadcrumbItem>
                         <Link
                             href="/resources"
-                            className="text-gray-800 underline"
+                            className="bg-[#FFCE00] text-black px-2 rounded-sm py-1 underline"
                         >
                             Resources
                         </Link>
