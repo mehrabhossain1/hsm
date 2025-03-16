@@ -121,7 +121,7 @@ const AboutPage = () => {
             </div>
 
             {/* New Left Image - Right Content Layout */}
-            <div className="max-w-screen-xl py-8 mx-auto px-16">
+            <div className="max-w-screen-lg py-8 mx-auto px-16">
                 <motion.div
                     className="flex flex-col gap-8"
                     initial="hidden"
