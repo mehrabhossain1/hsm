@@ -48,7 +48,7 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
                 </CardTitle>
 
                 {/* Description */}
-                <CardDescription className="pt-1 px-6 text-base line-clamp-4 text-justify text-gray-600">
+                <CardDescription className="pt-1 px-6 text-sm  text-justify text-gray-600">
                     {description}
                 </CardDescription>
             </CardHeader>
