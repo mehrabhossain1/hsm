@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
     return (
         <motion.div
-            className="relative w-full flex justify-center items-center flex-col md:flex-row bg-white shadow-lg overflow-hidden transition-transform transform border hover:scale-105 hover:border-r-4 hover:border-b-4 border-[#2D8CBB] hover:shadow-md duration-300"
+            className="relative w-full flex flex-col md:flex-row bg-white shadow-lg overflow-hidden transition-transform transform border hover:scale-105 hover:border-r-4 hover:border-b-4 border-[#2D8CBB] hover:shadow-md duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -33,28 +33,26 @@ const Card: React.FC<CardProps> = ({
             {/* Image Section (Left) */}
             <Link
                 href={link}
-                className="w-full md:w-1/3 h-64 relative overflow-hidden hover:scale-110 transition-all duration-300 ease-in-out"
+                className="w-full md:w-1/3 relative hover:scale-110 transition-all duration-300 ease-in-out"
             >
                 <Image
                     src={image}
                     alt={title}
-                    // layout="fill"
-                    // objectFit="cover"
-                    height={1000}
-                    width={1000}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    layout="fill"
+                    objectFit="cover"
+                    className=""
                 />
             </Link>
 
             {/* Content Section (Right) */}
             <Link
                 href={link}
-                className="w-full md:w-2/3 p-6 px-12 flex flex-col justify-center text-gray-800"
+                className="w-full md:w-2/3 p-6 flex flex-col justify-center text-gray-800"
             >
                 <h2 className="text-2xl font-semibold mb-2 hover:underline">
                     {title}
                 </h2>
-                <p className="text-sm leading-6 text-gray-600 mb-4 text-justify">
+                <p className="text-sm text-gray-600 mb-4 text-justify">
                     {description}
                 </p>
 

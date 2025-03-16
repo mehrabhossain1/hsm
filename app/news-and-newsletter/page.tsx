@@ -49,7 +49,7 @@ const Card: React.FC<CardProps> = ({
                 <h2 className="text-2xl font-semibold mb-2 hover:underline">
                     {title}
                 </h2>
-                <p className="text-base text-gray-600 mb-4 line-clamp-3 text-justify">
+                <p className="text-sm text-gray-600 mb-4 text-justify">
                     {description}
                 </p>
 
@@ -70,14 +70,14 @@ const NewsAndNewsletterPage = () => {
         {
             title: "News",
             description:
-                "The Resources section aspire to be a repository of essential resources on health systems and global health.",
+                "This section features Upcoming Events, which covers key global health conferences, symposiums, webinars, campaigns, and health days. On the other hand, Headline News cover current major global health issues demanding global attention. Meanwhile, the Do You Know highlights significant public health milestones and fascinating facts. Explore a curated list of notable health days and activities focused on global health.",
             image: "https://img.freepik.com/free-photo/close-up-businessman-with-digital-tablet_1098-549.jpg?t=st=1741538159~exp=1741541759~hmac=b3ffe57c1f19b6cb99789c3cb587844550a0c0f4b393408d93cbfca4f95f2021&w=1060",
             link: "/news",
         },
         {
             title: "Newsletter",
             description:
-                "The Global Health Bookmarks section indicates the resources either document, entities, courses, career, podcast and so on pertained with the global health and health systems are covered.",
+                "The Health Systems Matter Newsletter provides valuable insights and resources on global health, upcoming events, and career opportunities. Subscribers receive periodic emails, preferably monthly, featuring highlights from our recent social media posts, new blogs, interviews, and more. The newsletter also covers significant global health topics and news from around the world, keeping you updated and informed.",
             image: "https://img.freepik.com/free-photo/high-angle-bookmark-book-arrangement_23-2149894430.jpg?t=st=1741538268~exp=1741541868~hmac=708a478df8a3365c52765b4d69b8ede7e3df58021777326bed961629431e1027&w=1060",
             link: "/newsletter",
         },
@@ -91,7 +91,7 @@ const NewsAndNewsletterPage = () => {
                         <h1 className="text-4xl font-bold text-white">
                             News & Newsletter
                         </h1>
-                        <p className="text-base max-w-xl text-slate-700 font-semibold my-8 text-justify w-full md:w-auto">
+                        <p className="text-base max-w-xl text-slate-100 font-semibold my-8 text-justify w-full md:w-auto">
                             Visit the news section to stay informed about
                             upcoming global health events and subscribe to our
                             periodic newsletter for regular updates on public
@@ -100,7 +100,7 @@ const NewsAndNewsletterPage = () => {
                     </div>
                 </div>
             </div>
-            <div className=" flex flex-col  max-w-screen-xl mx-auto">
+            <div className="flex flex-col max-w-screen-xl mx-auto">
                 {/* Title Section (30% Height) */}
                 {/* Page Title Section */}
 
