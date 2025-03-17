@@ -38,9 +38,9 @@ const GiftForU = () => {
                 </h3>
             </div>
 
-            <div className="max-w-screen-lg pb-8 mx-auto text-justify flex flex-col md:flex-row items-center gap-6">
+            <div className="max-w-screen-lg pb-8 mt-8 mx-auto text-justify flex flex-col md:flex-row items-center gap-6">
                 {/* Left: Gift Box Form */}
-                <div className="w-full md:w-1/2 bg-white shadow-md rounded-lg p-6 border border-gray-200">
+                <div className="w-full md:w-1/2 bg-white ">
                     <h3 className="text-2xl font-bold text-gray-900">
                         Gift Box
                     </h3>
@@ -81,7 +81,7 @@ const GiftForU = () => {
                     <img
                         src="/your-image.jpg"
                         alt="Gift Image"
-                        className="w-full h-auto rounded-lg shadow-md"
+                        className="w-full h-auto "
                     />
                 </div>
             </div>
