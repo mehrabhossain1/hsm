@@ -1,8 +1,63 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 // import KnowledgeGiftSection from "@/components/GiftForU/KnowledgeGiftSection";
 import React from "react";
+import knowledgeImage from "@/public/knowledge-gift/knowledgegift.webp";
+
+import { useState } from "react";
+import Image from "next/image";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+
+import { Button } from "@/components/ui/button";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import {
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+
+const formSchema = z.object({
+    fullName: z
+        .string()
+        .min(2, { message: "Name must be at least 2 characters." }),
+    email: z.string().email({ message: "Please enter a valid email address." }),
+});
 
 const GiftForU = () => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+            fullName: "",
+            email: "",
+        },
+    });
+
+    function onSubmit(values: z.infer<typeof formSchema>) {
+        setIsSubmitting(true);
+        // Simulate form submission
+        setTimeout(() => {
+            console.log(values);
+            setIsSubmitting(false);
+            setIsSuccess(true);
+        }, 1000);
+    }
+
     return (
         // className="bg-gradient-to-r from-[#01748D]/10 via-white to-[#01748D]/10"
         <div>
@@ -13,15 +68,9 @@ const GiftForU = () => {
                         <h1 className="text-2xl md:text-4xl font-bold text-white">
                             Gift 4 U / Knowledge Gift
                         </h1>
-                        {/* <p className="text-xl max-w-3xl text-gray-100 font-semibold my-8 text-justify w-full md:w-auto">
-                            The Resources section aspire to be a repository of
-                            essential resources on health systems and global
-                            health.
-                        </p> */}
                     </div>
                 </div>
             </div>
-
             {/* Content */}
             <div className="max-w-screen-lg py-8 mx-auto text-justify">
                 <h3 className="text-xl">
@@ -38,53 +87,149 @@ const GiftForU = () => {
                 </h3>
             </div>
 
-            <div className="max-w-screen-lg pb-8 mt-8 mx-auto text-justify flex flex-col md:flex-row items-center gap-6">
-                {/* Left: Gift Box Form */}
-                <div className="w-full md:w-1/2 bg-white ">
-                    <h3 className="text-2xl font-bold text-gray-900">
-                        Gift Box
-                    </h3>
-                    <p className="text-gray-700 mb-4">
-                        Fields marked with an{" "}
-                        <span className="text-red-500">*</span> are required.
-                    </p>
-
-                    <div className="mb-4">
-                        <label className="block text-gray-800 font-medium">
-                            Full Name<span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            type="text"
-                            className="w-full border p-2 rounded-md focus:ring-2 focus:ring-blue-500 outline-none"
-                            required
-                        />
+            <section className="max-w-screen-lg mx-auto w-full pb-16 bg-gradient-to-b from-background to-muted/30">
+                <div className="container mx-auto">
+                    <div className="grid gap-8 md:grid-cols-2 items-center">
+                        <Card className="">
+                            <CardHeader className="px-0">
+                                <CardTitle className="text-3xl font-bold text-red-500">
+                                    Gift Box
+                                </CardTitle>
+                                <CardDescription>
+                                    Complete the form below to request your gift
+                                    box. Fields marked with an{" "}
+                                    <span className="text-destructive">*</span>{" "}
+                                    are required.
+                                </CardDescription>
+                            </CardHeader>
+                            <CardContent className="px-0">
+                                {isSuccess ? (
+                                    <div className="flex flex-col items-center justify-center py-8 text-center space-y-4">
+                                        <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                className="text-primary w-8 h-8"
+                                            >
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                                <polyline points="22 4 12 14.01 9 11.01" />
+                                            </svg>
+                                        </div>
+                                        <h3 className="text-xl font-semibold">
+                                            Thank You!
+                                        </h3>
+                                        <p className="text-muted-foreground">
+                                            Your gift box request has been
+                                            submitted successfully. Please check
+                                            your email for the gift box.
+                                        </p>
+                                        <Button
+                                            variant="outline"
+                                            onClick={() => setIsSuccess(false)}
+                                        >
+                                            Submit Another Request
+                                        </Button>
+                                    </div>
+                                ) : (
+                                    <Form {...form}>
+                                        <form
+                                            onSubmit={form.handleSubmit(
+                                                onSubmit
+                                            )}
+                                            className="space-y-6"
+                                        >
+                                            <FormField
+                                                control={form.control}
+                                                name="fullName"
+                                                render={({ field }) => (
+                                                    <FormItem>
+                                                        <FormLabel>
+                                                            Full Name
+                                                            <span className="text-destructive ml-1">
+                                                                *
+                                                            </span>
+                                                        </FormLabel>
+                                                        <FormControl>
+                                                            <Input
+                                                                placeholder="Enter your full name"
+                                                                {...field}
+                                                            />
+                                                        </FormControl>
+                                                        <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+                                            <FormField
+                                                control={form.control}
+                                                name="email"
+                                                render={({ field }) => (
+                                                    <FormItem>
+                                                        <FormLabel>
+                                                            Email
+                                                            <span className="text-destructive ml-1">
+                                                                *
+                                                            </span>
+                                                        </FormLabel>
+                                                        <FormControl>
+                                                            <Input
+                                                                placeholder="Enter your email address"
+                                                                type="email"
+                                                                {...field}
+                                                            />
+                                                        </FormControl>
+                                                        <FormDescription>
+                                                            We'll never share
+                                                            your email with
+                                                            anyone else.
+                                                        </FormDescription>
+                                                        <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+                                            <Button
+                                                type="submit"
+                                                variant="destructive"
+                                                className="w-full"
+                                                disabled={isSubmitting}
+                                            >
+                                                {isSubmitting
+                                                    ? "Submitting..."
+                                                    : "Submit"}
+                                            </Button>
+                                        </form>
+                                    </Form>
+                                )}
+                            </CardContent>
+                        </Card>
+                        <div className="relative h-[400px] overflow-hidden order-first md:order-last">
+                            <Image
+                                src={knowledgeImage}
+                                alt="Gift Box"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                priority
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+                                <h3 className="text-2xl font-bold text-white mb-2">
+                                    Premium Gift Box
+                                </h3>
+                                <p className="text-white/90">
+                                    Our carefully curated gift boxes contain
+                                    premium items selected just for you.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className="mb-4">
-                        <label className="block text-gray-800 font-medium">
-                            Email<span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            type="email"
-                            className="w-full border p-2 rounded-md focus:ring-2 focus:ring-blue-500 outline-none"
-                            required
-                        />
-                    </div>
-
-                    <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
-                        Submit
-                    </button>
                 </div>
-
-                {/* Right: Image */}
-                <div className="w-full md:w-1/2">
-                    <img
-                        src="/your-image.jpg"
-                        alt="Gift Image"
-                        className="w-full h-auto "
-                    />
-                </div>
-            </div>
+            </section>
         </div>
     );
 };
