@@ -102,7 +102,10 @@ const WhyHealthSystemsMatterPage = () => {
                     <p>
                         There is an opportunity for individuals or organizations
                         to{" "}
-                        <a className="underline text-blue-500" href="">
+                        <a
+                            className="underline text-blue-500"
+                            href="/support-hsm"
+                        >
                             support{" "}
                         </a>
                         if they find this initiative valuable. We have ambitious
@@ -188,7 +191,7 @@ const WhyHealthSystemsMatterPage = () => {
                                 alt="Why Health Systems Matter"
                                 width={300}
                                 height={150}
-                                className="max-w-full h-auto object-contain rounded-lg mix-blend-darken"
+                                className="max-w-full h-auto object-contain mix-blend-darken"
                             />
                         </div>
                     </div>
@@ -219,7 +222,7 @@ const WhyHealthSystemsMatterPage = () => {
                 </Breadcrumb>
             </div>
 
-            <div className="max-w-screen-lg flex flex-col items-center justify-start mx-auto pt-8 px-4 md:px-8 pb-16">
+            <div className="max-w-screen-lg flex flex-col items-center justify-start mx-auto pt-8 px-4 md:px-8 pb-8">
                 <Accordion
                     type="multiple"
                     value={openItems}
@@ -229,7 +232,7 @@ const WhyHealthSystemsMatterPage = () => {
                         <AccordionItem
                             key={item.id}
                             value={item.id}
-                            className={`mb-4 rounded-lg overflow-hidden ${item.bgColor} border border-gray-200 shadow-sm`}
+                            className={`mb-4  overflow-hidden ${item.bgColor} `}
                         >
                             <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-opacity-80 text-left">
                                 <div className="flex items-start">
