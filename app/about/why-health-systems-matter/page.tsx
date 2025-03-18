@@ -232,7 +232,7 @@ const WhyHealthSystemsMatterPage = () => {
                         <AccordionItem
                             key={item.id}
                             value={item.id}
-                            className={`mb-4  overflow-hidden ${item.bgColor} `}
+                            className={`mb-4 rounded-sm overflow-hidden ${item.bgColor} `}
                         >
                             <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-opacity-80 text-left">
                                 <div className="flex items-start">
@@ -241,7 +241,7 @@ const WhyHealthSystemsMatterPage = () => {
                                     </span>
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent className="px-6 py-4 text-gray-700 text-base">
+                            <AccordionContent className="px-8 py-6 text-gray-700 text-base text-justify">
                                 {item.answer}
                             </AccordionContent>
                         </AccordionItem>
