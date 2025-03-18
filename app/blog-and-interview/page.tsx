@@ -163,7 +163,7 @@ const BlogAndInterviewPage = () => {
                                     damping: 17,
                                 }}
                             >
-                                <span className="text-[#01748D] font-bold">
+                                <span className="text-[#01748D] font-bold uppercase text-2xl">
                                     Explore All Blogs
                                 </span>
                                 <svg
