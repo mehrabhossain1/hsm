@@ -55,7 +55,7 @@ const BlogAndInterviewPage = () => {
                     {/* Content Section */}
                     <div className="relative z-10 min-h-[calc(100vh-115px)]  py-12 flex items-center justify-start max-w-screen-xl mx-auto">
                         <div className="max-w-3xl">
-                            <h1 className="text-4xl md:text-5xl font-[1000] text-[#001844] mb-5 px-4 md:px-20">
+                            <h1 className="text-4xl md:text-5xl font-[1000] text-[#001844] mb-5 text-center md:px-20 md:text-left">
                                 INTERVIEW & BLOG
                             </h1>
                             <p className="text-lg md:text-xl text-slate-600 font-medium shadow-xl rounded-xl px-20 py-4 text-justify">
