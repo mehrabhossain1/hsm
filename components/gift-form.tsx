@@ -224,7 +224,7 @@ export default function GiftForm({ image }: GiftFormProps) {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
                     <h3 className="text-2xl font-bold text-white mb-2">
                         Premium Gift Box
                     </h3>
@@ -232,7 +232,7 @@ export default function GiftForm({ image }: GiftFormProps) {
                         Our carefully curated gift boxes contain premium items
                         selected just for you.
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     );

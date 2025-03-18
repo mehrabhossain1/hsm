@@ -35,9 +35,20 @@ export default function GiftForU() {
                 </h3>
             </div>
 
-            <section className="max-w-screen-lg mx-auto w-full pb-16 px-4">
+            <section className="max-w-screen-lg mx-auto w-full px-4">
                 <GiftForm image={knowledgeImage} />
             </section>
+
+            <div className="max-w-screen-lg pb-16 text-center mx-auto py-8 px-4">
+                <h3 className="text-xl mt-4">
+                    Follow <strong>Health Systems Matter</strong> on LinkedIn
+                    and Facebook for the latest resources and updates.
+                </h3>
+                <h3 className="text-xl mt-4">
+                    Subscribe to the Health Systems Matter Newsletter for
+                    periodic insights and news in your email.
+                </h3>
+            </div>
         </div>
     );
 }
