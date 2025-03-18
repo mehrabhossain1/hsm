@@ -152,15 +152,15 @@ function Navbar({ className }: { className?: string }) {
                     setActive={setActive}
                     active={active}
                     href="/blog-and-interview"
-                    item="BLOG & INTERVIEW"
+                    item="INTERVIEW & BLOG"
                     className={className}
                 >
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/blog">
-                            <PenSquare className="w-4 h-4" /> BLOG
-                        </HoveredLink>
                         <HoveredLink href="/interview">
                             <Mic className="w-4 h-4" /> INTERVIEW
+                        </HoveredLink>
+                        <HoveredLink href="/blog">
+                            <PenSquare className="w-4 h-4" /> BLOG
                         </HoveredLink>
                     </div>
                 </MenuItem>
