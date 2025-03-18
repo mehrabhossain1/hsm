@@ -77,7 +77,7 @@ export function AnimatedTestimonialsDemo() {
             name: "Yemelaknesh Wolde",
             link: "https://www.linkedin.com/in/yemelaknesh-yemi-wolde-md-msc-a3143b45/",
             title: "Health Financing and Systems Strengthening Expert",
-            company: "Open Development",
+            // company: "Open Development",
             content:
                 "Health Systems Matter is a dynamic platform that empowers global health professionals with access to curated knowledge, career opportunities, and capacity-building initiatives. By providing timely resources and actionable insights, it creates a space for professionals to grow, collaborate, and drive meaningful change in public health.",
             image: YemeImg,
@@ -146,7 +146,7 @@ export function AnimatedTestimonialsDemo() {
                                         className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2 pt-1 pb-4"
                                     >
                                         <div className="h-full">
-                                            <Card className="bg-[#E1F0DB]/50 dark:bg-gray-800 hover:shadow-xl transition-all duration-300 h-full border-0 shadow-lg hover:scale-[1.02] dark:shadow-gray-900/30">
+                                            <Card className="bg-[#6BCBD5]/50 dark:bg-gray-800  transition-all duration-300 h-full hover:scale-[1.01] dark:shadow-gray-900/30">
                                                 <CardContent className="p-8 h-full flex flex-col">
                                                     {/* Profile Image */}
                                                     <div className="flex items-center gap-4 mb-6">

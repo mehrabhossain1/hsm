@@ -67,6 +67,9 @@ export function NavbarDemo() {
     };
 
     return (
+        // <div className={`w-full ${bg} flex items-center justify-center`}>
+        //     <Navbar className={`${text}`} />
+        // </div>
         <div className={`w-full ${bg} flex items-center justify-center`}>
             <Navbar className={`${text}`} />
         </div>
