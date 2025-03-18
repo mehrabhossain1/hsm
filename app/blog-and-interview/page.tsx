@@ -155,7 +155,7 @@ const BlogAndInterviewPage = () => {
                         {/* View All Blogs Button */}
                         <Link href="/blog">
                             <motion.div
-                                className="border border-[#01748D] hover:border-b-2 hover:border-r-2 px-4 py-2 rounded-lg flex items-center gap-2"
+                                className="border border-[#01748D] hover:border-b-4 hover:border-r-4 px-4 py-2 rounded-lg flex items-center gap-2"
                                 // animate={{ x: isHovered ? 0 : 5 }}
                                 transition={{
                                     type: "spring",
