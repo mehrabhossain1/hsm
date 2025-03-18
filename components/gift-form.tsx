@@ -1,6 +1,6 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -26,7 +26,7 @@ import {
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/hooks/use-toast";
+// import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
     fullName: z
@@ -40,10 +40,10 @@ interface GiftFormProps {
 }
 
 export default function GiftForm({ image }: GiftFormProps) {
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
-    const [error, setError] = useState<string | null>(null);
-    const { toast } = useToast();
+    // const [error, setError] = useState<string | null>(null);
+    // const { toast } = useToast();
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -53,47 +53,47 @@ export default function GiftForm({ image }: GiftFormProps) {
         },
     });
 
-    async function onSubmit(values: z.infer<typeof formSchema>) {
-        setIsSubmitting(true);
-        setError(null);
+    // async function onSubmit(values: z.infer<typeof formSchema>) {
+    //     setIsSubmitting(true);
+    //     setError(null);
 
-        try {
-            const response = await fetch("/api/send-gift", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(values),
-            });
+    //     try {
+    //         const response = await fetch("/api/send-gift", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify(values),
+    //         });
 
-            const data = await response.json();
+    //         const data = await response.json();
 
-            if (!response.ok) {
-                throw new Error(
-                    data.error || data.details || "Failed to send email"
-                );
-            }
+    //         if (!response.ok) {
+    //             throw new Error(
+    //                 data.error || data.details || "Failed to send email"
+    //             );
+    //         }
 
-            setIsSuccess(true);
-            form.reset();
-            toast({
-                title: "Success!",
-                description: "Your Knowledge Gift has been sent to your email.",
-            });
-        } catch (err) {
-            console.error("Error:", err);
-            const errorMessage =
-                err instanceof Error ? err.message : "Unknown error occurred";
-            setError(errorMessage);
-            toast({
-                title: "Error",
-                description: errorMessage,
-                variant: "destructive",
-            });
-        } finally {
-            setIsSubmitting(false);
-        }
-    }
+    //         setIsSuccess(true);
+    //         form.reset();
+    //         toast({
+    //             title: "Success!",
+    //             description: "Your Knowledge Gift has been sent to your email.",
+    //         });
+    //     } catch (err) {
+    //         console.error("Error:", err);
+    //         const errorMessage =
+    //             err instanceof Error ? err.message : "Unknown error occurred";
+    //         setError(errorMessage);
+    //         toast({
+    //             title: "Error",
+    //             description: errorMessage,
+    //             variant: "destructive",
+    //         });
+    //     } finally {
+    //         setIsSubmitting(false);
+    //     }
+    // }
 
     return (
         <div className="grid gap-8 md:grid-cols-2 items-center">
@@ -147,14 +147,14 @@ export default function GiftForm({ image }: GiftFormProps) {
                     ) : (
                         <Form {...form}>
                             <form
-                                onSubmit={form.handleSubmit(onSubmit)}
+                                // onSubmit={form.handleSubmit(onSubmit)}
                                 className="space-y-6"
                             >
-                                {error && (
+                                {/* {error && (
                                     <div className="bg-destructive/10 text-destructive p-3 rounded-md text-sm">
                                         {error}
                                     </div>
-                                )}
+                                )} */}
                                 <FormField
                                     control={form.control}
                                     name="fullName"
@@ -206,9 +206,9 @@ export default function GiftForm({ image }: GiftFormProps) {
                                     type="submit"
                                     variant="destructive"
                                     className="w-full"
-                                    disabled={isSubmitting}
+                                    // disabled={isSubmitting}
                                 >
-                                    {isSubmitting ? "Submitting..." : "Submit"}
+                                    {/* {isSubmitting ? "Submitting..." : "Submit"} */}
                                 </Button>
                             </form>
                         </Form>
