@@ -238,7 +238,7 @@ const BlogAndInterviewPage = () => {
                                     intellectual adventure”
                                 </p>
                                 <span className="text-lg font-bold text-[#2D8CBB] tracking-wide">
-                                    — DR. SHAHADUZ ZAMANinterview{" "}
+                                    — DR. SHAHADUZ ZAMAN{" "}
                                     <span className="text-sm text-gray-600 font-normal">
                                         | Medical Anthropologist and Bangladeshi
                                         Writer
