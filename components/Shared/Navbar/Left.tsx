@@ -34,7 +34,8 @@ const Left = () => {
 
         // resources
 
-        "/contact": { bg: "bg-red-600", text: "text-white" },
+        "/contact": { bg: "bg-[#CDEDEC]", text: "text-gray-900" },
+
         "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
         // "/sizear": { bg: "bg-[#6ACBD4]", text: "text-gray-500" },
         "/resources/essential-reading-list": {
