@@ -237,8 +237,12 @@ const BlogAndInterviewPage = () => {
                                     “An effective interview is a collaborative
                                     intellectual adventure”
                                 </p>
-                                <span className="text-lg font-bold text-[#2D8CBB] uppercase tracking-wide">
-                                    — Dr. Shahaduz Zaman
+                                <span className="text-lg font-bold text-[#2D8CBB] tracking-wide">
+                                    — DR. SHAHADUZ ZAMANinterview{" "}
+                                    <span className="text-sm text-gray-600 font-normal">
+                                        | Medical Anthropologist and Bangladeshi
+                                        Writer
+                                    </span>
                                 </span>
                             </div>
                         </div>
