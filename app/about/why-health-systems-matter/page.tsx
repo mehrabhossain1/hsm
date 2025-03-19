@@ -30,33 +30,32 @@ const WhyHealthSystemsMatterPage = () => {
             answer: (
                 <>
                     <p className="mb-2">
-                        <span className="font-semibold">HSM:</span> Two key
-                        factors inspired me to create the HSM knowledge
-                        platform.
+                        <span className="font-bold">HSM :</span> Two key factors
+                        inspired me to create the HSM knowledge platform.
                     </p>
                     <p className="mb-2">
-                        <span className="font-semibold">First,</span> early in
-                        my career in public health, I faced significant
-                        challenges in accessing relevant documents on the
-                        Bangladesh health system. Understanding its complexities
-                        and gaining a comprehensive overview was difficult due
-                        to the absence of a centralized resource. This
-                        experience underscored the need for a dedicated platform
-                        that systematically compiles both local and global
-                        health system insights. Recognizing this gap, I
-                        envisioned HSM as a continuously updated resource hub,
-                        ensuring professionals have easy access to the latest
-                        records in a well-documented manner.
+                        <span className="font-bold">First,</span> early in my
+                        career in public health, I faced significant challenges
+                        in accessing relevant documents on the Bangladesh health
+                        system. Understanding its complexities and gaining a
+                        comprehensive overview was difficult due to the absence
+                        of a centralized resource. This experience underscored
+                        the need for a dedicated platform that systematically
+                        compiles both local and global health system insights.
+                        Recognizing this gap, I envisioned HSM as a continuously
+                        updated resource hub, ensuring professionals have easy
+                        access to the latest records in a well-documented
+                        manner.
                     </p>
                     <p className="mb-2">
-                        <span className="font-semibold">Second,</span> over
-                        time, I gained access to a wealth of resources,
-                        empirical experiences, expert interactions, and
-                        participation in conferences and seminars. This exposure
-                        enriched my understanding and made me resourceful. I
-                        realized that developing a knowledge platform could
-                        benefit both emerging and established professionals by
-                        addressing their information needs.
+                        <span className="font-bold">Second,</span> over time, I
+                        gained access to a wealth of resources, empirical
+                        experiences, expert interactions, and participation in
+                        conferences and seminars. This exposure enriched my
+                        understanding and made me resourceful. I realized that
+                        developing a knowledge platform could benefit both
+                        emerging and established professionals by addressing
+                        their information needs.
                     </p>
                     <p>
                         This realization led to the creation of HSM, with the
@@ -73,14 +72,14 @@ const WhyHealthSystemsMatterPage = () => {
                 "What is the primary mission and long-term vision of the platform?",
             answer: (
                 <p>
-                    <span className="font-semibold">HSM:</span> My primary goal
-                    is to help public health and development professionals
-                    become more knowledgeable and confident. I want this
-                    platform to be a reliable source of information. In the long
-                    run, I aim to sustain HSM and make it a widely recognized
-                    knowledge hub. My vision is for HSM to be a trusted resource
-                    for evidence-based insights and expertise in public health
-                    and development.
+                    <span className="font-bold">HSM :</span> My primary goal is
+                    to help public health and development professionals become
+                    more knowledgeable and confident. I want this platform to be
+                    a reliable source of information. In the long run, I aim to
+                    sustain HSM and make it a widely recognized knowledge hub.
+                    My vision is for HSM to be a trusted resource for
+                    evidence-based insights and expertise in public health and
+                    development.
                 </p>
             ),
             bgColor: "bg-green-50",
@@ -92,7 +91,7 @@ const WhyHealthSystemsMatterPage = () => {
             answer: (
                 <>
                     <p className="mb-2">
-                        <span className="font-semibold">HSM:</span> Funding is
+                        <span className="font-bold">HSM :</span> Funding is
                         always a challenge. So far, we have not received
                         external funding, nor have we actively pursued it. My
                         priority has been to first assess the platform's impact
@@ -103,11 +102,11 @@ const WhyHealthSystemsMatterPage = () => {
                         There is an opportunity for individuals or organizations
                         to{" "}
                         <a
-                            className="underline text-blue-500"
+                            className="underline text-blue-500 font-semibold"
                             href="/support-hsm"
                         >
-                            support{" "}
-                        </a>
+                            support
+                        </a>{" "}
                         if they find this initiative valuable. We have ambitious
                         plans and will explore funding opportunities in the
                         future. However, we remain committed to continuing this
@@ -125,8 +124,8 @@ const WhyHealthSystemsMatterPage = () => {
                 "What are the strategic goals and future development plans for Health Systems Matter?",
             answer: (
                 <p>
-                    <span className="font-semibold">HSM:</span> I aim to make
-                    HSM a valuable and reliable platform for global health
+                    <span className="font-bold">HSM :</span> I aim to make HSM a
+                    valuable and reliable platform for global health
                     professionals. To achieve this, we continuously adapt to
                     user needs by providing top public health resources, event
                     updates, and career opportunities. Regular updates ensure
@@ -144,7 +143,7 @@ const WhyHealthSystemsMatterPage = () => {
             answer: (
                 <>
                     <p className="mb-2">
-                        <span className="font-semibold">HSM:</span> This is a
+                        <span className="font-bold">HSM :</span> This is a
                         tricky and tough question to answer, as my experience
                         has been mixed—mostly positive, with a few less
                         encouraging moments. However, I see value in all
@@ -234,11 +233,11 @@ const WhyHealthSystemsMatterPage = () => {
                         <AccordionItem
                             key={item.id}
                             value={item.id}
-                            className={`mb-4 rounded-sm overflow-hidden ${item.bgColor} `}
+                            className={`mb-4 overflow-hidden shadow-none border-none ${item.bgColor} `}
                         >
-                            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-opacity-80 text-left">
+                            <AccordionTrigger className="px-8 py-6 hover:no-underline hover:bg-opacity-80 text-left">
                                 <div className="flex items-start">
-                                    <span className="text-xl font-semibold pr-8 text-[#001844]">
+                                    <span className="text-xl font-semibold pr-8 text-[#001844] text-justify">
                                         {item.question}
                                     </span>
                                 </div>
