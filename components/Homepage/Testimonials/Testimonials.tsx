@@ -22,7 +22,7 @@ import Image from "next/image";
 import ZarifImg from "@/public/testimonials/Zarif.jpeg";
 import YemeImg from "@/public/testimonials/Yemi.jpg";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export function AnimatedTestimonialsDemo() {
     // const testimonials = [
@@ -146,7 +146,7 @@ export function AnimatedTestimonialsDemo() {
                                         className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2 pt-1 pb-4"
                                     >
                                         <div className="h-full">
-                                            <Card className="bg-[#6BCBD5]/50 dark:bg-gray-800  transition-all duration-300 h-full hover:scale-[1.01] dark:shadow-gray-900/30">
+                                            <Card className="bg-[#6BCBD5]/50 hover:bg-[#6BCBD5] dark:bg-gray-800  transition-all duration-300 h-full hover:scale-[1.01] dark:shadow-gray-900/30">
                                                 <CardContent className="p-8 h-full flex flex-col">
                                                     {/* Profile Image */}
                                                     <div className="flex items-center gap-4 mb-6">
@@ -186,9 +186,9 @@ export function AnimatedTestimonialsDemo() {
                                                                 href={
                                                                     testimonial.link
                                                                 }
-                                                                className="text-sm text-[#0073B1] font-medium cursor-pointer"
+                                                                className="text-sm font-medium cursor-pointer"
                                                             >
-                                                                <FaLinkedin className="w-6 h-6" />{" "}
+                                                                <FaLinkedinIn className="w-6 h-6" />{" "}
                                                                 {/* {
                                                                     testimonial.link
                                                                 } */}

@@ -171,10 +171,11 @@ const WhyHealthSystemsMatterPage = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-r from-[#6ACBD4]/10 via-white to-[#6ACBD4]/10">
+        // <div className="bg-gradient-to-r from-[#6ACBD4]/10 via-white to-[#6ACBD4]/10">
+        <div className="bg-white">
             {/* Page Title Section */}
             <div className="relative w-full border-t-2  bg-gradient-to-b from-[#6ACBD4]/90 to-[#6ACBD4]/30 py-8">
-                <div className="max-w-screen-xl mx-auto px-4 md:px-16">
+                <div className="max-w-screen-lg mx-auto px-4 md:px-16">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div className="w-full md:w-1/2 text-left">
                             <h1 className="text-4xl font-bold text-gray-800">
@@ -189,16 +190,17 @@ const WhyHealthSystemsMatterPage = () => {
                             <Image
                                 src={whyHsmImg || "/placeholder.svg"}
                                 alt="Why Health Systems Matter"
-                                width={300}
-                                height={150}
-                                className="max-w-full h-auto object-contain mix-blend-darken"
+                                width={200}
+                                height={350}
+                                className="max-w-full h-auto object-contain"
                             />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#6ACBD4]/10 via-white to-[#6ACBD4]/10">
+            {/* <div className="bg-gradient-to-r from-[#6ACBD4]/10 via-white to-[#6ACBD4]/10"> */}
+            <div className="bg-white">
                 <Breadcrumb className="py-4 px-4 md:px-16 max-w-screen-xl mx-auto">
                     <BreadcrumbList>
                         <BreadcrumbItem>
@@ -236,7 +238,7 @@ const WhyHealthSystemsMatterPage = () => {
                         >
                             <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-opacity-80 text-left">
                                 <div className="flex items-start">
-                                    <span className="text-xl font-semibold pr-8">
+                                    <span className="text-xl font-semibold pr-8 text-[#001844]">
                                         {item.question}
                                     </span>
                                 </div>

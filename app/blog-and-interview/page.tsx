@@ -87,13 +87,13 @@ const BlogAndInterviewPage = () => {
                                 INTERVIEW & BLOG
                             </h1>
                             <p className="text-lg md:text-xl text-slate-600 font-medium shadow-xl rounded-xl px-20 py-4 text-justify">
-                                The blog covers diverse global health topics,
-                                offering thoughtful analysis from public health
-                                professionals through a health systems
-                                perspective. The interview section showcases the
-                                journeys and insights of global health
-                                advocates, highlighting their impactful
-                                experiences and perspectives.
+                                The interview section showcases the journeys and
+                                insights of global health advocates,
+                                highlighting their impactful experiences and
+                                perspectives. The blog covers diverse global
+                                health topics, offering thoughtful analysis from
+                                public health professionals through a health
+                                systems perspective.
                             </p>
                         </div>
                     </div>
@@ -118,97 +118,6 @@ const BlogAndInterviewPage = () => {
                 </div> */}
 
                 {/* Blog */}
-                <div className="py-20 bg-[#01748D]/5">
-                    <div className="max-w-screen-xl mx-auto px-8 flex flex-col justify-center items-center">
-                        {/* Section Title */}
-                        <h2 className="text-5xl font-bold text-[#001844] pb-8 bg-gradient-to-r from-[#001844] to-gray-700 text-transparent bg-clip-text">
-                            Global Health System Blogs
-                        </h2>
-
-                        {/* Quote & Author Section */}
-                        <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 text-center md:text-left">
-                            {/* Author Image */}
-                            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#01748D] shadow-md">
-                                <Image
-                                    src={OConnorImage}
-                                    alt="Flannery O’Connor"
-                                    width={128}
-                                    height={128}
-                                    className="object-cover w-full h-full"
-                                />
-                            </div>
-
-                            {/* Quote & Author Name */}
-                            <div>
-                                <p className="text-xl font-semibold text-gray-700 italic font-serif leading-relaxed">
-                                    “I write to discover what I know.”
-                                </p>
-                                <span className="text-lg font-bold text-[#01748D] uppercase tracking-wide">
-                                    — Flannery O’Connor
-                                </span>
-                            </div>
-                        </div>
-
-                        {/* Blog Cards */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-16">
-                            <BlogCard
-                                item={{
-                                    title: "Bridging the Gaps: Strengthening Mental Healthcare to Build a Resilient Health System in Bangladesh",
-                                    description:
-                                        "Mental health remains a critical yet often neglected aspect of Bangladesh’s healthcare system. The country faces significant challenges in addressing mental health issues, exacerbated by systemic gaps in healthcare delivery, societal stigma, and recent socio-political unrest...",
-                                    date: "February 8, 2025",
-                                    type: "blog",
-                                    // thumbnail: blog1,
-                                    thumbnail: author1,
-                                }}
-                            />
-
-                            <BlogCard
-                                item={{
-                                    title: "Overcoming Budget Bottlenecks: Ensuring Effective Health Financing for Universal Health Coverage in Bangladesh",
-                                    description:
-                                        "To achieve Universal Health Coverage and the Sustainable Development Goals, at least 15% of the total budget and 4-5% of gross domestic product (GDP) should be invested in healthcare in Bangladesh. However...",
-                                    date: "February 8, 2025",
-                                    type: "blog",
-                                    // thumbnail: blog2,
-                                    thumbnail: author2,
-                                }}
-                            />
-                        </div>
-
-                        {/* View All Blogs Button */}
-                        <Link href="/blog">
-                            <motion.div
-                                className="border border-[#01748D] hover:border-b-4 hover:border-r-4 px-4 py-2 rounded-lg flex items-center gap-2"
-                                // animate={{ x: isHovered ? 0 : 5 }}
-                                transition={{
-                                    type: "spring",
-                                    stiffness: 400,
-                                    damping: 17,
-                                }}
-                            >
-                                <span className="text-[#01748D] font-bold uppercase text-2xl">
-                                    Explore All Blogs
-                                </span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="text-[#01748D]"
-                                >
-                                    <path d="M5 12h14"></path>
-                                    <path d="m12 5 7 7-7 7"></path>
-                                </svg>
-                            </motion.div>
-                        </Link>
-                    </div>
-                </div>
 
                 {/* Interview */}
                 <div className="py-20 bg-[#2D8CBB]/5">
@@ -312,6 +221,98 @@ const BlogAndInterviewPage = () => {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     className="text-[#2D8CBB]"
+                                >
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </motion.div>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="py-20 bg-[#01748D]/5">
+                    <div className="max-w-screen-xl mx-auto px-8 flex flex-col justify-center items-center">
+                        {/* Section Title */}
+                        <h2 className="text-5xl font-bold text-[#001844] pb-8 bg-gradient-to-r from-[#001844] to-gray-700 text-transparent bg-clip-text">
+                            Global Health System Blogs
+                        </h2>
+
+                        {/* Quote & Author Section */}
+                        <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 text-center md:text-left">
+                            {/* Author Image */}
+                            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#01748D] shadow-md">
+                                <Image
+                                    src={OConnorImage}
+                                    alt="Flannery O’Connor"
+                                    width={128}
+                                    height={128}
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+
+                            {/* Quote & Author Name */}
+                            <div>
+                                <p className="text-xl font-semibold text-gray-700 italic font-serif leading-relaxed">
+                                    “I write to discover what I know.”
+                                </p>
+                                <span className="text-lg font-bold text-[#01748D] uppercase tracking-wide">
+                                    — Flannery O’Connor
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Blog Cards */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-16">
+                            <BlogCard
+                                item={{
+                                    title: "Bridging the Gaps: Strengthening Mental Healthcare to Build a Resilient Health System in Bangladesh",
+                                    description:
+                                        "Mental health remains a critical yet often neglected aspect of Bangladesh’s healthcare system. The country faces significant challenges in addressing mental health issues, exacerbated by systemic gaps in healthcare delivery, societal stigma, and recent socio-political unrest...",
+                                    date: "February 8, 2025",
+                                    type: "blog",
+                                    // thumbnail: blog1,
+                                    thumbnail: author1,
+                                }}
+                            />
+
+                            <BlogCard
+                                item={{
+                                    title: "Overcoming Budget Bottlenecks: Ensuring Effective Health Financing for Universal Health Coverage in Bangladesh",
+                                    description:
+                                        "To achieve Universal Health Coverage and the Sustainable Development Goals, at least 15% of the total budget and 4-5% of gross domestic product (GDP) should be invested in healthcare in Bangladesh. However...",
+                                    date: "February 8, 2025",
+                                    type: "blog",
+                                    // thumbnail: blog2,
+                                    thumbnail: author2,
+                                }}
+                            />
+                        </div>
+
+                        {/* View All Blogs Button */}
+                        <Link href="/blog">
+                            <motion.div
+                                className="border border-[#01748D] hover:border-b-4 hover:border-r-4 px-4 py-2 rounded-lg flex items-center gap-2"
+                                // animate={{ x: isHovered ? 0 : 5 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 400,
+                                    damping: 17,
+                                }}
+                            >
+                                <span className="text-[#01748D] font-bold uppercase text-2xl">
+                                    Explore All Blogs
+                                </span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="text-[#01748D]"
                                 >
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
