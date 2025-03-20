@@ -167,7 +167,7 @@ export function AnimatedTestimonialsDemo() {
                                                                 href={
                                                                     testimonial.link
                                                                 }
-                                                                className="font-semibold text-gray-900 dark:text-white text-2xl hover:underline"
+                                                                className="font-semibold text-gray-900 dark:text-white text-xl hover:underline"
                                                             >
                                                                 {
                                                                     testimonial.name
