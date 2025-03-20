@@ -8,17 +8,16 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const OvercomingBudgetBottleNeckPage = () => {
     return (
-        <div>
-            <div className="text-center py-5 px-8 max-w-5xl mx-auto">
+        <div className="bg-gray-50 min-h-screen">
+            <div className="">
                 {/* Title */}
-                <h1 className="text-3xl font-semibold text-[#001844] leading-snug">
+                <h1 className="max-w-4xl text-center mx-auto py-5 text-3xl font-semibold text-[#001844] leading-snug">
                     Overcoming Budget Bottlenecks: Ensuring Effective Health
                     Financing for Universal Health Coverage in Bangladesh
                 </h1>
 
                 {/* Author Section */}
-                <div className="flex flex-col sm:flex-row items-center justify-center mt-6 gap-5">
-                    {/* Author Image - Larger */}
+                {/* <div className="flex flex-col sm:flex-row items-center justify-center mt-6 gap-5">
                     <div className="relative w-32 h-32 overflow-hidden rounded-full border-4 border-[#001844] shadow-lg">
                         <Image
                             src={ShahPoran || "/placeholder.svg"}
@@ -31,7 +30,6 @@ const OvercomingBudgetBottleNeckPage = () => {
                         />
                     </div>
 
-                    {/* Author Details with Social Icons */}
                     <div className="text-center sm:text-left">
                         <p className="text-lg text-gray-800 font-semibold">
                             Md. Shah Paran
@@ -39,14 +37,12 @@ const OvercomingBudgetBottleNeckPage = () => {
                         <p className="text-md text-gray-600 max-w-md">
                             Health Financing Specialist
                         </p>
-                        {/* Published Date */}
                         <p className="text-sm text-gray-500 mt-1">
                             Published on:{" "}
                             <span className="font-medium">
                                 February 16, 2025
                             </span>
                         </p>
-                        {/* Social Icons */}
                         <div className="flex items-center gap-3 mt-2">
                             <a
                                 href="mailto:shahparan@example.com"
@@ -66,13 +62,68 @@ const OvercomingBudgetBottleNeckPage = () => {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+                <section className="relative w-full bg-white">
+                    <div className="bg-[#001844] py-10 px-4 sm:px-8 lg:px-16">
+                        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:items-center gap-8">
+                            {/* Circular Image */}
+                            <div className="w-44 h-44 shrink-0 rounded-full overflow-hidden ">
+                                <Image
+                                    src={ShahPoran || "/placeholder.svg"}
+                                    alt="Md. Shah Paran"
+                                    width={500}
+                                    height={500}
+                                    quality={100}
+                                    priority
+                                    className="object-cover"
+                                />
+                            </div>
+
+                            <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
+                                <div className="text-center sm:text-left">
+                                    <p className="text-lg text-gray-800 font-semibold">
+                                        Md. Shah Paran
+                                    </p>
+                                    <p className="text-md text-gray-800 max-w-md">
+                                        Health Financing Specialist
+                                    </p>
+                                    <p className="text-sm text-gray-500 mt-1">
+                                        Published on:{" "}
+                                        <span className="font-medium">
+                                            February 16, 2025
+                                        </span>
+                                    </p>
+                                    <div className="flex items-center gap-3 mt-2">
+                                        <a
+                                            href="mailto:shahparan@example.com"
+                                            className="text-gray-700 hover:text-[#001844] transition-colors"
+                                            aria-label="Email Md. Shah Paran"
+                                        >
+                                            <Mail className="w-5 h-5" />
+                                        </a>
+                                        <a
+                                            href="https://www.linkedin.com/in/shahparan"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-gray-700 hover:text-[#001844] transition-colors"
+                                            aria-label="LinkedIn profile of Md. Shah Paran"
+                                        >
+                                            <FaLinkedinIn className="w-5 h-5" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <Image
                 src={blog2 || "/placeholder.svg"}
                 alt="Health budget and financing"
-                width={600}
+                width={800}
                 height={400}
+                quality={100}
                 className="max-w-screen-lg mx-auto h-96 object-cover"
             />
 

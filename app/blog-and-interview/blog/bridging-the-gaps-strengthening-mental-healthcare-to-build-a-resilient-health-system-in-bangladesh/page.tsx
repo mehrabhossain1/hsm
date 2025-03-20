@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const BridgingTheGapsBlogPage = () => {
     return (
-        <div className="bg-gray-50 min-h-screen ">
+        <div className="bg-gray-50 min-h-screen">
             <div className="">
                 {/* Title */}
                 <h1 className="max-w-4xl text-center mx-auto py-5 text-3xl font-semibold text-[#001844] leading-snug">
