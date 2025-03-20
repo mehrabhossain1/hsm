@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
                 className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500"
                 style={{ height: hovered ? "100%" : "10rem" }}
             >
-                <h2 className="text-5xl ">{title}</h2>
+                <h2 className="text-3xl font-semibold">{title}</h2>
                 <p
                     className={`text-base mt-4 text-gray-300 transition-opacity duration-300 text-justify ${
                         hovered ? "opacity-100" : "opacity-0"
