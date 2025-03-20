@@ -22,7 +22,7 @@ import Image from "next/image";
 import ZarifImg from "@/public/testimonials/Zarif.jpeg";
 import YemeImg from "@/public/testimonials/Yemi.jpg";
 import Link from "next/link";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export function AnimatedTestimonialsDemo() {
     // const testimonials = [
@@ -188,7 +188,7 @@ export function AnimatedTestimonialsDemo() {
                                                                 }
                                                                 className="text-sm font-medium cursor-pointer"
                                                             >
-                                                                <FaLinkedinIn className="w-5 h-5" />{" "}
+                                                                <FaLinkedin className="w-5 h-5" />{" "}
                                                                 {/* {
                                                                     testimonial.link
                                                                 } */}
