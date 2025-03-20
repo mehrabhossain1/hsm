@@ -43,7 +43,7 @@ const DevelopmentPerspective = () => {
                                 alt="Zarif-Rasul.jpg"
                                 width={500}
                                 height={500}
-                                className="object-cover w-full h-full object-right"
+                                className="object-cover w-full h-full object-right scale-150"
                             />
                         </div>
 
