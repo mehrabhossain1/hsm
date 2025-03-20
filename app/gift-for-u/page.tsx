@@ -41,12 +41,37 @@ export default function GiftForU() {
 
             <div className="max-w-screen-lg pb-16 text-center mx-auto py-8 px-4">
                 <h3 className="text-xl mt-4">
-                    Follow <strong>Health Systems Matter</strong> on LinkedIn
-                    and Facebook for the latest resources and updates.
+                    Follow <strong>Health Systems Matter</strong> on{" "}
+                    <a
+                        href="https://www.linkedin.com/company/healthsystemsmatter" // Replace with actual LinkedIn URL
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://www.facebook.com/healthsystemsmatter" // Replace with actual Facebook URL
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>{" "}
+                    for the latest resources and updates.
                 </h3>
                 <h3 className="text-xl mt-4">
-                    Subscribe to the Health Systems Matter Newsletter for
-                    periodic insights and news in your email.
+                    Subscribe to the Health Systems Matter{" "}
+                    <a
+                        href="https://newsletter.healthsystemsmatter.com" // Replace with actual Newsletter URL
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Newsletter
+                    </a>{" "}
+                    for periodic insights and news in your email.
                 </h3>
             </div>
         </div>
