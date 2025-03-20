@@ -37,7 +37,7 @@ export const BlogCard = ({
             {/* Background shape */}
             <div className="absolute -inset-1 bg-gradient-to-r from-[#01748D] to-[#01748D]/70 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
 
-            <Link href={pageLink} className="block relative">
+            <Link href={pageLink} className=" relative">
                 <div className="relative bg-white/95 dark:bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-all duration-300">
                     {/* Corner accent */}
                     <div className="absolute top-0 right-0 w-20 h-20 bg-[#01748D] transform rotate-45 translate-x-10 -translate-y-10 z-10"></div>
@@ -67,13 +67,13 @@ export const BlogCard = ({
                     {/* Content area */}
                     <div className="p-6 pt-5 relative">
                         {/* Description */}
-                        <p className="text-2xl font-bold transition-transform duration-300 group-hover:translate-y-1 text-[#01748D] mb-12 hover:underline text-justify">
+                        <p className="text-2xl pb-4 transition-transform duration-300 group-hover:translate-y-1 text-[#01748D] mb-12 hover:underline text-justify">
                             {item.title}
                         </p>
 
                         {/* Read more button */}
                         <motion.div
-                            className="absolute bottom-6 right-6 flex items-center gap-2 hover:underline"
+                            className="absolute bottom-6 right-6 border px-4 py-3  bg-[#01748D] rounded-md text-white flex items-center gap-2 hover:bg-[#FFCE00] hover:text-[#01748D] transition-all duration-300"
                             animate={{ x: isHovered ? 0 : 5 }}
                             transition={{
                                 type: "spring",
@@ -81,9 +81,7 @@ export const BlogCard = ({
                                 damping: 17,
                             }}
                         >
-                            <span className="text-[#01748D] font-bold">
-                                Read More
-                            </span>
+                            <span className=" font-bold">Read More</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -94,7 +92,7 @@ export const BlogCard = ({
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                className="text-[#01748D]"
+                                // className="text-[#01748D]"
                             >
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
