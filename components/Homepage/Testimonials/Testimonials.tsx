@@ -188,7 +188,7 @@ export function AnimatedTestimonialsDemo() {
                                                                 }
                                                                 className="text-sm font-medium cursor-pointer"
                                                             >
-                                                                <FaLinkedinIn className="w-6 h-6" />{" "}
+                                                                <FaLinkedinIn className="w-5 h-5" />{" "}
                                                                 {/* {
                                                                     testimonial.link
                                                                 } */}
