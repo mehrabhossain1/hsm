@@ -3,6 +3,7 @@
 // import DrMadhukarPaiBio from "../public-health-insights/DrMadhukarPaiBio";
 import Image from "next/image";
 import BioOfZarif from "./BiofOfZarifRasul";
+import { FaLinkedin } from "react-icons/fa";
 // import Image from "next/image";
 // import DrMadhukarPaiBio from "./DrMadhukarPaiBio";
 
@@ -51,8 +52,16 @@ const DevelopmentPerspective = () => {
                         </div>
 
                         <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
-                            <p className="text-xl font-semibold text-gray-800 mb-3">
-                                — Water Specialist, World Bank
+                            <p className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-4">
+                                — Dr. Zarif Rasul, Water Specialist, World Bank
+                                <a
+                                    href="https://www.linkedin.com/in/zarifrasul" // Replace with the correct URL
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className=""
+                                >
+                                    <FaLinkedin />
+                                </a>
                             </p>
 
                             <p className="text-[30px]  font-base leading-relaxed text-justify">

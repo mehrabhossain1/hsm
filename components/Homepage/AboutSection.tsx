@@ -108,8 +108,7 @@ export default function AboutSection() {
 
     return (
         <>
-            {/* <section className="relative bg-[#C1E2E5] to-white  bg-cover bg-center bg-no-repeat py-16 px-8 min-h-[680px] flex items-center justify-center"> */}
-            <section className="relative bg-[#beceeb] to-white  bg-cover bg-center bg-no-repeat py-16 px-8 min-h-[680px] flex items-center justify-center">
+            <section className="relative bg-[#C1E2E5] to-white  bg-cover bg-center bg-no-repeat py-16 px-8 min-h-[680px] flex items-center justify-center">
                 <div className="max-w-screen-xl mx-auto px-8">
                     <div className="flex justify-between mb-8">
                         <SectionTitle

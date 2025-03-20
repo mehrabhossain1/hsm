@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function TedrosQuote() {
     return (
@@ -17,8 +18,16 @@ export default function TedrosQuote() {
                     </div>
 
                     <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
-                        <p className="text-xl font-semibold text-gray-800 mb-3">
-                            — Prof Madhukar Pai, McGill University
+                        <p className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-4">
+                            — Prof Madhukar Pai, McGill University{" "}
+                            <a
+                                href="https://www.linkedin.com/in/zarifrasul" // Replace with the correct URL
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className=""
+                            >
+                                <FaLinkedin />
+                            </a>
                         </p>
 
                         <p className="text-[30px] font-base leading-relaxed text-justify">

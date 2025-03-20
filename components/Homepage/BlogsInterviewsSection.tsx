@@ -86,8 +86,7 @@ export default function BlogsInterviewsSection() {
     ];
 
     return (
-        // <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
-        <section className="bg-[#beceeb] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+        <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
             <div className="max-w-screen-xl mx-auto px-8">
                 {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
@@ -111,7 +110,7 @@ export default function BlogsInterviewsSection() {
                         className="h-10 w-1 bg-[#FFCE00]"
                     />
 
-                    <p className="text-lg text-gray-600 font-semibold text-justify">
+                    <p className="text-lg text-[#001844] font-semibold text-justify">
                         The Blog and Interview section is an exciting section of
                         the Health Systems Matter platform, offering original
                         content and insights from public health professionals

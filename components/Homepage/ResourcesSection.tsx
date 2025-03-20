@@ -81,8 +81,7 @@ export default function ResourcesSection() {
     ];
 
     return (
-        // <section className="bg-[#E1F0DB] to-white py-16  min-h-[720px] flex items-center justify-center">
-        <section className="bg-[#beceeb] to-white py-16  min-h-[720px] flex items-center justify-center">
+        <section className="bg-[#E1F0DB] to-white py-16  min-h-[720px] flex items-center justify-center">
             {/* <section className="bg-gradient-to-t from-gray-50 to-white py-16 px-8 min-h-[720px] flex items-center justify-center"> */}
             <div className="max-w-screen-xl mx-auto px-16 ">
                 {/* <div className="flex justify-between ">
@@ -120,7 +119,7 @@ export default function ResourcesSection() {
                             className="h-24 w-1 bg-[#FFCE00]"
                         />
 
-                        <p className="text-lg text-gray-600 font-semibold text-justify">
+                        <p className="text-lg text-[#001844] font-semibold text-justify">
                             Explore the comprehensive resource hub to
                             supercharge your knowledge and complement your
                             rewarding career journey. The{" "}

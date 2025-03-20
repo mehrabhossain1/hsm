@@ -122,8 +122,7 @@ const ContactSection = () => {
     ];
 
     return (
-        // <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
-        <section className="bg-[#beceeb] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+        <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
             <div className="max-w-screen-xl mx-auto px-8">
                 <div className="flex gap-5 items-center w-full mb-8">
                     <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
@@ -134,7 +133,7 @@ const ContactSection = () => {
                         className="h-12 w-1 bg-[#FFCE00]"
                     />
 
-                    <p className="text-lg text-gray-600 font-semibold text-justify">
+                    <p className="text-lg text-[#001844] font-semibold text-justify">
                         The Blog and Interview section is an exciting section of
                         the Health Systems Matter platform, offering original
                         content and insights from public health professionals

@@ -86,8 +86,7 @@ export default function NewsNewsletterSection() {
     ];
 
     return (
-        // <section className=" bg-[#6BCBD5] to-white py-16 min-h-[720px] flex items-center justify-center">
-        <section className=" bg-[#beceeb] to-white py-16 min-h-[720px] flex items-center justify-center">
+        <section className=" bg-[#6BCBD5] to-white py-16 min-h-[720px] flex items-center justify-center">
             <div className="max-w-screen-xl mx-auto px-16">
                 {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
@@ -112,7 +111,7 @@ export default function NewsNewsletterSection() {
                         className="h-10 w-1 bg-[#FFCE00]"
                     />
 
-                    <p className="text-lg text-gray-600 font-semibold text-justify">
+                    <p className="text-lg text-[#001844] font-semibold text-justify">
                         Visit the news section to stay informed about upcoming
                         global health events and subscribe to our periodic
                         newsletter for regular updates on public health issues

@@ -100,8 +100,7 @@ export function AnimatedTestimonialsDemo() {
     }, [api]);
 
     return (
-        // <div className="bg-[#E2E4F0] to-white py-16 px-8">
-        <div className="bg-[#beceeb] to-white py-16 px-8">
+        <div className="bg-[#E2E4F0] to-white py-16 px-8">
             <div className="max-w-screen-xl mx-auto px-8 ">
                 <div className="flex gap-5 items-center w-full mb-8">
                     <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
@@ -112,7 +111,7 @@ export function AnimatedTestimonialsDemo() {
                         className="h-24 w-1 bg-[#FFCE00]"
                     />
 
-                    <p className="text-lg text-gray-600 font-semibold text-justify">
+                    <p className="text-lg text-[#001844] font-semibold text-justify">
                         Users have shared their experiences, underscoring the
                         value of the Health Systems Matter platform. We are
                         truly honored to receive such positive feedback and
