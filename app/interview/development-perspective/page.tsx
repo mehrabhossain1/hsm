@@ -13,7 +13,7 @@ const DevelopmentPerspective = () => {
             <div className="relative w-full h-[120px] border-t-2">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 px-8 to-[#2D8CBB]/30 flex items-center">
                     <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-16 flex-wrap">
-                        <h1 className="text-3xl font-bold text-center text-white">
+                        <h1 className="text-2xl font-bold text-center text-white">
                             Development Perspective with{" "}
                             <span className="text-[#001844] underline">
                                 Dr. Zarif Rasul:
