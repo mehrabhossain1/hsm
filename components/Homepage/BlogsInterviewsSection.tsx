@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
                 className="absolute bottom-0 p-6 bg-[#001844]/90 text-white transition-all duration-500"
                 style={{ height: hovered ? "100%" : "10rem" }}
             >
-                <h2 className="text-5xl ">{title}</h2>
+                <h2 className="text-3xl ">{title}</h2>
                 <p
                     className={`text-base mt-4 text-gray-300 transition-opacity duration-300 text-justify ${
                         hovered ? "opacity-100" : "opacity-0"
@@ -86,7 +86,7 @@ export default function BlogsInterviewsSection() {
     ];
 
     return (
-        <section className="bg-[#6BCBD5] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+        <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
             <div className="max-w-screen-xl mx-auto px-8">
                 {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -17,7 +17,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import whyHsmImg from "@/public/about/why-hsm.jpg";
+// import whyHsmImg from "@/public/about/why-hsm.jpg";
 
 const WhyHealthSystemsMatterPage = () => {
     const [openItems, setOpenItems] = useState<string[]>([""]);
@@ -174,11 +174,11 @@ const WhyHealthSystemsMatterPage = () => {
         <div className="bg-white">
             {/* Page Title Section */}
             <div className="relative w-full border-t-2  bg-gradient-to-b from-[#6ACBD4]/90 to-[#6ACBD4]/30 py-8">
-                <div className="max-w-screen-lg mx-auto px-4 md:px-16">
+                <div className="max-w-screen-lg mx-auto px-10 ">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="w-full md:w-1/2 text-left">
+                        <div className="w-full  text-left">
                             <h1 className="text-4xl font-bold text-gray-800">
-                                Why HSM ?
+                                Why Health Systems Matter?
                             </h1>
                             {/* <p className="mt-4 text-lg text-gray-700">
                                 Understanding the importance of health systems
@@ -186,13 +186,13 @@ const WhyHealthSystemsMatterPage = () => {
                             </p> */}
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <Image
+                            {/* <Image
                                 src={whyHsmImg || "/placeholder.svg"}
                                 alt="Why Health Systems Matter"
                                 width={200}
                                 height={350}
                                 className="max-w-full h-auto object-contain"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>

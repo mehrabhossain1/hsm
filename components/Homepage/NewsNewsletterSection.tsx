@@ -86,7 +86,7 @@ export default function NewsNewsletterSection() {
     ];
 
     return (
-        <section className=" bg-[#CDEDEC] to-white py-16 min-h-[720px] flex items-center justify-center">
+        <section className=" bg-[#6BCBD5] to-white py-16 min-h-[720px] flex items-center justify-center">
             <div className="max-w-screen-xl mx-auto px-16">
                 {/* <div className="flex justify-between ">
           <h2 className="text-3xl text-gray-600 underline underline-offset-8 border-gray-400 inline-block">
