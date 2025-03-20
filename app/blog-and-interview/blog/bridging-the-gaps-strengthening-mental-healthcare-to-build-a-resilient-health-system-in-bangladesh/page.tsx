@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Mail, ArrowRight, BookText, BookOpen } from "lucide-react";
+import { ArrowRight, BookText, BookOpen } from "lucide-react";
 import TasdikDip from "@/public/interview-and-blogs/TasdikDip.jpg";
 import blog1 from "@/public/interview-and-blogs/blog1.jpg";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const BridgingTheGapsBlogPage = () => {
     return (
@@ -68,7 +68,7 @@ const BridgingTheGapsBlogPage = () => {
 
                 <section className="relative w-full bg-white">
                     <div className="bg-[#001844] py-10 px-4 sm:px-8 lg:px-16">
-                        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:items-center gap-8">
+                        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:items-center gap-8">
                             {/* Circular Image */}
                             <div className="w-52 h-52 shrink-0 rounded-full overflow-hidden ">
                                 <Image
@@ -82,9 +82,9 @@ const BridgingTheGapsBlogPage = () => {
                                 />
                             </div>
 
-                            <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
+                            <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-4xl">
                                 <div className="text-center sm:text-left">
-                                    <p className="text-lg text-gray-800 font-semibold">
+                                    <p className="text-xl text-gray-800 font-semibold">
                                         Dr. M Tasdik Hasan
                                     </p>
                                     <p className="text-md text-gray-800 max-w-md">
@@ -99,13 +99,13 @@ const BridgingTheGapsBlogPage = () => {
                                         </span>
                                     </p>
                                     <div className="flex items-center gap-3 mt-2">
-                                        <a
+                                        {/* <a
                                             href="mailto:mtasdik.hasan@monash.edu"
                                             className="text-gray-700 hover:text-[#001844] transition-colors"
                                             aria-label="Email Dr. M Tasdik Hasan"
                                         >
                                             <Mail className="w-5 h-5" />
-                                        </a>
+                                        </a> */}
                                         <a
                                             href="https://www.linkedin.com/in/tasdikdip"
                                             target="_blank"
@@ -113,7 +113,7 @@ const BridgingTheGapsBlogPage = () => {
                                             className="text-gray-700 hover:text-[#001844] transition-colors"
                                             aria-label="LinkedIn profile of Dr. M Tasdik Hasan"
                                         >
-                                            <FaLinkedinIn className="w-5 h-5" />
+                                            <FaLinkedin className="w-8 h-8" />
                                         </a>
                                     </div>
                                 </div>
@@ -123,17 +123,8 @@ const BridgingTheGapsBlogPage = () => {
                 </section>
             </div>
 
-            <Image
-                src={blog1 || "/placeholder.svg"}
-                alt="blog"
-                width={800}
-                height={400}
-                quality={100}
-                className="max-w-screen-lg mx-auto h-96 object-cover"
-            />
-
             {/* Content Section - Reduced paragraph spacing */}
-            <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-50 rounded-lg shadow-sm ">
+            <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-50 rounded-lg shadow-sm text-justify">
                 {/* Key Issue Section */}
                 <div className="bg-white p-6 rounded-lg shadow-sm mb-6 border-l-4 border-[#001844]">
                     <div className="flex items-center mb-4">
@@ -229,6 +220,15 @@ const BridgingTheGapsBlogPage = () => {
                         </p>
                     </div>
                 </div>
+
+                <Image
+                    src={blog1 || "/placeholder.svg"}
+                    alt="blog"
+                    width={800}
+                    height={400}
+                    quality={100}
+                    className="max-w-screen-lg mx-auto h-96 object-cover"
+                />
 
                 {/* Call to Action Section */}
                 <div className="bg-white p-6 rounded-lg shadow-sm mb-6 border-l-4 border-[#3B82F6]">

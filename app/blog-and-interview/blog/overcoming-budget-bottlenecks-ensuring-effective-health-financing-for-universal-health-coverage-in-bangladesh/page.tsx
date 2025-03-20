@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Mail, DollarSign, BarChart3, LightbulbIcon } from "lucide-react";
+import { DollarSign, BarChart3, LightbulbIcon } from "lucide-react";
 import ShahPoran from "@/public/interview-and-blogs/ShahParan.jpg";
 import blog2 from "@/public/interview-and-blogs/blog2.jpg";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -95,13 +95,13 @@ const OvercomingBudgetBottleNeckPage = () => {
                                         </span>
                                     </p>
                                     <div className="flex items-center gap-3 mt-2">
-                                        <a
+                                        {/* <a
                                             href="mailto:shahparan@example.com"
                                             className="text-gray-700 hover:text-[#001844] transition-colors"
                                             aria-label="Email Md. Shah Paran"
                                         >
                                             <Mail className="w-5 h-5" />
-                                        </a>
+                                        </a> */}
                                         <a
                                             href="https://www.linkedin.com/in/shahparan"
                                             target="_blank"

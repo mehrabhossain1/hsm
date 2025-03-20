@@ -310,7 +310,10 @@ const BlogAndInterviewPage = () => {
                                     <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
                                         <div className="text-center sm:text-left">
                                             <span className="text-lg font-bold text-[#01748D] uppercase tracking-wide">
-                                                — Flannery O’Connor
+                                                — Flannery O’Connor{" "}
+                                                <span className="text-sm text-gray-600 font-normal">
+                                                    | American Writer
+                                                </span>
                                             </span>
                                             <p className="text-xl font-semibold text-gray-700 leading-relaxed pt-2">
                                                 “I write to discover what I

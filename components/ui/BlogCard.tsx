@@ -67,7 +67,7 @@ export const BlogCard = ({
                     {/* Content area */}
                     <div className="p-6 pt-5 relative">
                         {/* Description */}
-                        <p className="text-xl font-bold transition-transform duration-300 group-hover:translate-y-1 text-[#01748D] mb-12 hover:underline">
+                        <p className="text-2xl font-bold transition-transform duration-300 group-hover:translate-y-1 text-[#01748D] mb-12 hover:underline text-justify">
                             {item.title}
                         </p>
 

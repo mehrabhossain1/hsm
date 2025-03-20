@@ -8,11 +8,11 @@ const DrMadhukarPaiBio = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
-        <div className="max-w-screen-lg mx-auto py-12 relative">
+        <div className="max-w-screen-lg mx-auto py-12 relative bg-teal-50">
             {/* Title */}
             <h2
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="cursor-pointer text-3xl md:text-4xl font-extrabold text-gray-800 text-center mb-8"
+                className="cursor-pointer text-3xl md:text-4xl font-extrabold text-[#001844] text-center "
             >
                 Bio of Dr. Madhukar Pai
                 <span className="block w-24 h-1 bg-[#FFCE00] mx-auto mt-2 rounded-full"></span>
@@ -101,7 +101,7 @@ const DrMadhukarPaiBio = () => {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="mt-4 font-bold text-xl bg-[#FFCE00] text-black px-4 py-2 hover:text-white hover:bg-[#2D8CBB]   transition ease-in-out duration-200"
                 >
-                    {isExpanded ? "Less" : "More"}
+                    {isExpanded ? "Next Interview" : "Next Interview"}
                 </button>
             </div>
         </div>
