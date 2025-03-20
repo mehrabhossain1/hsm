@@ -128,8 +128,7 @@ const BlogAndInterviewPage = () => {
                         </h2>
 
                         {/* Quote & Author Section */}
-                        <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 text-center md:text-left">
-                            {/* Author Image */}
+                        {/* <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 text-center md:text-left">
                             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#2D8CBB] shadow-md">
                                 <Image
                                     src={Shahiduz}
@@ -140,7 +139,6 @@ const BlogAndInterviewPage = () => {
                                 />
                             </div>
 
-                            {/* Quote & Author Name */}
                             <div>
                                 <p className="text-xl font-semibold text-gray-700 italic font-serif leading-relaxed">
                                     “An effective interview is a collaborative
@@ -154,7 +152,41 @@ const BlogAndInterviewPage = () => {
                                     </span>
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
+
+                        <section className="relative w-full bg-white">
+                            <div className="bg-[#001844] py-10 px-4 sm:px-8 lg:px-16">
+                                <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:items-center gap-8">
+                                    {/* Circular Image */}
+                                    <div className="w-44 h-44 shrink-0 rounded-full overflow-hidden ">
+                                        <Image
+                                            src={Shahiduz}
+                                            alt="Flannery O’Connor"
+                                            width={128}
+                                            height={128}
+                                            className="object-cover w-full h-full"
+                                        />
+                                    </div>
+
+                                    <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
+                                        <div className="text-center sm:text-left">
+                                            <span className="text-lg font-bold text-[#2D8CBB] tracking-wide text-justify">
+                                                — DR. SHAHADUZ ZAMAN{" "}
+                                                <span className="text-sm text-gray-600 font-normal">
+                                                    | Medical Anthropologist and
+                                                    Bangladeshi Writer
+                                                </span>
+                                            </span>
+                                            <p className="text-xl font-semibold text-gray-700 leading-relaxed text-justify pt-2">
+                                                “An effective interview is a
+                                                collaborative intellectual
+                                                adventure”
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
                         {/* Blog Cards */}
                         <div className="max-w-screen-xl mx-auto px-16 py-12">
@@ -238,8 +270,8 @@ const BlogAndInterviewPage = () => {
                         </h2>
 
                         {/* Quote & Author Section */}
-                        <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 text-center md:text-left">
-                            {/* Author Image */}
+                        {/* <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 text-center md:text-left">
+                
                             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#01748D] shadow-md">
                                 <Image
                                     src={OConnorImage}
@@ -250,7 +282,7 @@ const BlogAndInterviewPage = () => {
                                 />
                             </div>
 
-                            {/* Quote & Author Name */}
+                   
                             <div>
                                 <p className="text-xl font-semibold text-gray-700 italic font-serif leading-relaxed">
                                     “I write to discover what I know.”
@@ -259,7 +291,36 @@ const BlogAndInterviewPage = () => {
                                     — Flannery O’Connor
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
+
+                        <section className="relative w-full bg-white">
+                            <div className="bg-[#001844] py-10 px-4 sm:px-8 lg:px-16">
+                                <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:items-center gap-8">
+                                    {/* Circular Image */}
+                                    <div className="w-40 h-40 shrink-0 rounded-full overflow-hidden ">
+                                        <Image
+                                            src={OConnorImage}
+                                            alt="Flannery O’Connor"
+                                            width={128}
+                                            height={128}
+                                            className="object-cover w-full h-full object-top"
+                                        />
+                                    </div>
+
+                                    <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
+                                        <div className="text-center sm:text-left">
+                                            <span className="text-lg font-bold text-[#01748D] uppercase tracking-wide">
+                                                — Flannery O’Connor
+                                            </span>
+                                            <p className="text-xl font-semibold text-gray-700 leading-relaxed pt-2">
+                                                “I write to discover what I
+                                                know.”
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
                         {/* Blog Cards */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-16">
