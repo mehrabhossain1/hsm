@@ -81,7 +81,8 @@ export default function ResourcesSection() {
     ];
 
     return (
-        <section className="bg-[#E1F0DB] to-white py-16  min-h-[720px] flex items-center justify-center">
+        // <section className="bg-[#E1F0DB] to-white py-16  min-h-[720px] flex items-center justify-center">
+        <section className="bg-[#beceeb] to-white py-16  min-h-[720px] flex items-center justify-center">
             {/* <section className="bg-gradient-to-t from-gray-50 to-white py-16 px-8 min-h-[720px] flex items-center justify-center"> */}
             <div className="max-w-screen-xl mx-auto px-16 ">
                 {/* <div className="flex justify-between ">

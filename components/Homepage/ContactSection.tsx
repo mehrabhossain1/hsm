@@ -122,7 +122,8 @@ const ContactSection = () => {
     ];
 
     return (
-        <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+        // <section className="bg-[#CDEDEC] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
+        <section className="bg-[#beceeb] to-white py-16 px-8 min-h-[720px] flex items-center justify-center">
             <div className="max-w-screen-xl mx-auto px-8">
                 <div className="flex gap-5 items-center w-full mb-8">
                     <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
