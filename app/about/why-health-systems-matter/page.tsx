@@ -30,7 +30,7 @@ const WhyHealthSystemsMatterPage = () => {
             answer: (
                 <>
                     <p className="mb-2">
-                        <span className="font-bold">HSM :</span> Two key factors
+                        <span className="font-bold">HSM:</span> Two key factors
                         inspired me to create the HSM knowledge platform.
                     </p>
                     <p className="mb-2">
@@ -72,7 +72,7 @@ const WhyHealthSystemsMatterPage = () => {
                 "What is the primary mission and long-term vision of the platform?",
             answer: (
                 <p>
-                    <span className="font-bold">HSM :</span> My primary goal is
+                    <span className="font-bold">HSM:</span> My primary goal is
                     to help public health and development professionals become
                     more knowledgeable and confident. I want this platform to be
                     a reliable source of information. In the long run, I aim to
@@ -91,7 +91,7 @@ const WhyHealthSystemsMatterPage = () => {
             answer: (
                 <>
                     <p className="mb-2">
-                        <span className="font-bold">HSM :</span> Funding is
+                        <span className="font-bold">HSM:</span> Funding is
                         always a challenge. So far, we have not received
                         external funding, nor have we actively pursued it. My
                         priority has been to first assess the platform's impact
@@ -124,7 +124,7 @@ const WhyHealthSystemsMatterPage = () => {
                 "What are the strategic goals and future development plans for Health Systems Matter?",
             answer: (
                 <p>
-                    <span className="font-bold">HSM :</span> I aim to make HSM a
+                    <span className="font-bold">HSM:</span> I aim to make HSM a
                     valuable and reliable platform for global health
                     professionals. To achieve this, we continuously adapt to
                     user needs by providing top public health resources, event
@@ -143,17 +143,16 @@ const WhyHealthSystemsMatterPage = () => {
             answer: (
                 <>
                     <p className="mb-2">
-                        <span className="font-bold">HSM :</span> This is a
-                        tricky and tough question to answer, as my experience
-                        has been mixed—mostly positive, with a few less
-                        encouraging moments. However, I see value in all
-                        responses, as they offer valuable insights and
-                        appreciation. When I reach out to experts for technical
-                        contributions to HSM, they are generally welcoming and
-                        supportive, not just of me but of the platform's
-                        purpose. Many, even those I have never met personally,
-                        have responded positively, offering their commitment and
-                        expertise.
+                        <span className="font-bold">HSM:</span> This is a tricky
+                        and tough question to answer, as my experience has been
+                        mixed—mostly positive, with a few less encouraging
+                        moments. However, I see value in all responses, as they
+                        offer valuable insights and appreciation. When I reach
+                        out to experts for technical contributions to HSM, they
+                        are generally welcoming and supportive, not just of me
+                        but of the platform's purpose. Many, even those I have
+                        never met personally, have responded positively,
+                        offering their commitment and expertise.
                     </p>
                     <p>
                         My key takeaway is that meaningful initiatives attract
@@ -223,7 +222,7 @@ const WhyHealthSystemsMatterPage = () => {
                 </Breadcrumb>
             </div>
 
-            <div className="max-w-screen-lg flex flex-col items-center justify-start mx-auto pt-8 px-4 md:px-8 pb-8">
+            <div className="max-w-screen-lg flex flex-col items-center justify-start mx-auto px-4 md:px-8 pb-8">
                 <Accordion
                     type="multiple"
                     value={openItems}
@@ -235,14 +234,14 @@ const WhyHealthSystemsMatterPage = () => {
                             value={item.id}
                             className={`mb-4 overflow-hidden shadow-none border-none ${item.bgColor} `}
                         >
-                            <AccordionTrigger className="px-8 py-6 hover:no-underline hover:bg-opacity-80 text-left">
+                            <AccordionTrigger className="px-8 hover:no-underline hover:bg-opacity-80 text-left">
                                 <div className="flex items-start">
                                     <span className="text-xl font-semibold pr-8 text-[#001844] text-justify">
                                         {item.question}
                                     </span>
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent className="px-8 py-6 text-gray-700 text-base text-justify">
+                            <AccordionContent className="px-8  text-gray-700 text-base text-justify">
                                 {item.answer}
                             </AccordionContent>
                         </AccordionItem>

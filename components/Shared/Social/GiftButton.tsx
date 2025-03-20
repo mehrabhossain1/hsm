@@ -23,7 +23,7 @@ const GiftButton = () => {
             {/* Gift Icon */}
             <button
                 // onClick={handleGiftClick}
-                className="px-2 py-1 border w-full border-[#001844] hover:bg-[#FFCE00] transition"
+                className="px-2 py-1 border w-full border-[#001844] hover:bg-[#FFCE00] transition bg-white"
             >
                 <Gift size={24} className="text-[#001844] w-full" />
             </button>
