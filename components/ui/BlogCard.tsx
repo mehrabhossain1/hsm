@@ -73,7 +73,7 @@ export const BlogCard = ({
 
                         {/* Read more button */}
                         <motion.div
-                            className="absolute bottom-6 right-6 border px-4 py-3  bg-[#01748D] rounded-md text-white flex items-center gap-2 hover:bg-[#FFCE00] hover:text-[#01748D] transition-all duration-300"
+                            className="absolute bottom-6 right-6 border px-4 py-2 bg-[#01748D] rounded-md text-white flex items-center gap-2 hover:bg-[#FFCE00] hover:text-[#01748D] transition-all duration-300"
                             animate={{ x: isHovered ? 0 : 5 }}
                             transition={{
                                 type: "spring",
