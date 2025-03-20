@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const OvercomingBudgetBottleNeckPage = () => {
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-gray-50 py-8 min-h-screen">
             <div className="">
                 {/* Title */}
                 <h1 className="max-w-4xl text-center mx-auto py-5 text-3xl font-semibold text-[#001844] leading-snug">
@@ -118,14 +118,6 @@ const OvercomingBudgetBottleNeckPage = () => {
                     </div>
                 </section>
             </div>
-            <Image
-                src={blog2 || "/placeholder.svg"}
-                alt="Health budget and financing"
-                width={800}
-                height={400}
-                quality={100}
-                className="max-w-screen-lg mx-auto h-96 object-cover"
-            />
 
             {/* Content Section */}
             <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-50 rounded-lg shadow-sm my-8">
@@ -201,7 +193,14 @@ const OvercomingBudgetBottleNeckPage = () => {
                         </div> */}
                     </div>
                 </div>
-
+                <Image
+                    src={blog2 || "/placeholder.svg"}
+                    alt="Health budget and financing"
+                    width={800}
+                    height={400}
+                    quality={100}
+                    className="max-w-screen-lg mx-auto h-96 object-cover"
+                />
                 {/* Barriers Section */}
                 <div className="bg-white p-6 rounded-lg shadow-sm mb-6 border-l-4 border-[#3B82F6]">
                     <div className="flex items-center mb-4">
