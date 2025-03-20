@@ -36,6 +36,14 @@ const BlogAndInterviewPage = () => {
             image: "/interview/madhukar.jpg", // Ensure you have this image in the public folder
             slug: "public-health-insights",
         },
+        {
+            id: 2,
+            title: "Development Perspective with Dr. Zarif Rasul: Insights from A Global Water Specialist",
+            description:
+                "Dr. Zarif shares insights from his inspiring academic and professional journey toward becoming a global development expert.",
+            image: "/interview/Zarif-Rasul.jpg", // Ensure you have this image in the public folder
+            slug: "development-perspective",
+        },
         // {
         //   id: 2,
         //   title: "The Future of Global Health with Dr. XYZ",
