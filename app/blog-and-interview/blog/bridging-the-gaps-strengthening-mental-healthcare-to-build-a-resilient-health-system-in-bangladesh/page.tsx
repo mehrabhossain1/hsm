@@ -8,17 +8,16 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const BridgingTheGapsBlogPage = () => {
     return (
-        <div className="">
-            <div className="text-center py-5 px-8 max-w-5xl mx-auto">
+        <div className="bg-gray-50 min-h-screen ">
+            <div className="">
                 {/* Title */}
-                <h1 className="text-3xl font-semibold text-[#001844] leading-snug">
+                <h1 className="max-w-4xl text-center mx-auto py-5 text-3xl font-semibold text-[#001844] leading-snug">
                     Bridging the Gaps: Strengthening Mental Healthcare to Build
                     a Resilient Health System in Bangladesh
                 </h1>
 
                 {/* Author Section - Improved */}
-                <div className="flex flex-col sm:flex-row items-center justify-center mt-6 gap-5">
-                    {/* Author Image - Larger */}
+                {/* <div className="flex flex-col sm:flex-row items-center justify-center mt-6 gap-5">
                     <div className="relative w-32 h-32 overflow-hidden rounded-full border-4 border-gray-700 shadow-md">
                         <Image
                             src={TasdikDip || "/placeholder.svg"}
@@ -31,7 +30,6 @@ const BridgingTheGapsBlogPage = () => {
                         />
                     </div>
 
-                    {/* Author Details with Social Icons */}
                     <div className="text-center sm:text-left">
                         <p className="text-lg text-gray-800 font-semibold">
                             Dr. M Tasdik Hasan
@@ -41,14 +39,12 @@ const BridgingTheGapsBlogPage = () => {
                             Faculty of Information Technology, Monash
                             University, Melbourne, Australia
                         </p>
-                        {/* Published Date */}
                         <p className="text-sm text-gray-500 mt-1">
                             Published on:{" "}
                             <span className="font-medium">
                                 February 16, 2025
                             </span>
                         </p>
-                        {/* Social Icons */}
                         <div className="flex items-center gap-3 mt-2">
                             <a
                                 href="mailto:mtasdik.hasan@monash.edu"
@@ -68,30 +64,76 @@ const BridgingTheGapsBlogPage = () => {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+                <section className="relative w-full bg-white">
+                    <div className="bg-[#001844] py-10 px-4 sm:px-8 lg:px-16">
+                        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:items-center gap-8">
+                            {/* Circular Image */}
+                            <div className="w-52 h-52 shrink-0 rounded-full overflow-hidden ">
+                                <Image
+                                    src={TasdikDip || "/placeholder.svg"}
+                                    alt="Dr. M Tasdik Hasan"
+                                    width={500}
+                                    height={500}
+                                    quality={100}
+                                    priority
+                                    className="object-cover"
+                                />
+                            </div>
+
+                            <div className="bg-[#FFCE00] text-black p-4 sm:p-6 rounded-md shadow-md max-w-3xl">
+                                <div className="text-center sm:text-left">
+                                    <p className="text-lg text-gray-800 font-semibold">
+                                        Dr. M Tasdik Hasan
+                                    </p>
+                                    <p className="text-md text-gray-800 max-w-md">
+                                        Digital Mental Health Researcher, Action
+                                        Lab, Faculty of Information Technology,
+                                        Monash University, Melbourne, Australia
+                                    </p>
+                                    <p className="text-sm text-gray-500 mt-1">
+                                        Published on:{" "}
+                                        <span className="font-medium">
+                                            February 16, 2025
+                                        </span>
+                                    </p>
+                                    <div className="flex items-center gap-3 mt-2">
+                                        <a
+                                            href="mailto:mtasdik.hasan@monash.edu"
+                                            className="text-gray-700 hover:text-[#001844] transition-colors"
+                                            aria-label="Email Dr. M Tasdik Hasan"
+                                        >
+                                            <Mail className="w-5 h-5" />
+                                        </a>
+                                        <a
+                                            href="https://www.linkedin.com/in/tasdikdip"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-gray-700 hover:text-[#001844] transition-colors"
+                                            aria-label="LinkedIn profile of Dr. M Tasdik Hasan"
+                                        >
+                                            <FaLinkedinIn className="w-5 h-5" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
+
             <Image
                 src={blog1 || "/placeholder.svg"}
                 alt="blog"
-                width={600}
+                width={800}
                 height={400}
+                quality={100}
                 className="max-w-screen-lg mx-auto h-96 object-cover"
             />
 
             {/* Content Section - Reduced paragraph spacing */}
-            <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-50 rounded-lg shadow-sm my-8">
-                {/* Reading progress indicator */}
-                {/* <div className="sticky top-0 z-10 bg-gray-50 pt-2 pb-4 mb-6">
-                    <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-1/3 h-full bg-[#001844]"></div>
-                    </div>
-                    <div className="flex justify-between text-xs text-gray-500 mt-1">
-                        <span>Introduction</span>
-                        <span>Middle</span>
-                        <span>Conclusion</span>
-                    </div>
-                </div> */}
-
+            <div className="max-w-4xl mx-auto p-4 md:p-6 bg-gray-50 rounded-lg shadow-sm ">
                 {/* Key Issue Section */}
                 <div className="bg-white p-6 rounded-lg shadow-sm mb-6 border-l-4 border-[#001844]">
                     <div className="flex items-center mb-4">
