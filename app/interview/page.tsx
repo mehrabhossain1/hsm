@@ -12,6 +12,14 @@ const interviews = [
         image: "/interview/madhukar.jpg", // Ensure you have this image in the public folder
         slug: "public-health-insights",
     },
+    {
+        id: 2,
+        title: "Development Perspective with Dr. Zarif Rasul: Insights from A Global Water Specialist",
+        description:
+            "Dr. Madhukar Pai shares his journey, inspiration, and thoughts on the biggest global health challenges.",
+        image: "/interview/Zarif-Rasul.jpg", // Ensure you have this image in the public folder
+        slug: "development-perspective",
+    },
     // {
     //   id: 2,
     //   title: "The Future of Global Health with Dr. XYZ",
@@ -72,11 +80,11 @@ const InterviewPage = () => {
                             <div className="p-6">
                                 <Link
                                     href={`/interview/${interview.slug}`}
-                                    className="text-xl font-bold text-gray-800 hover:underline"
+                                    className="text-xl font-bold text-gray-800 hover:underline text-justify"
                                 >
                                     {interview.title}
                                 </Link>
-                                <p className="text-gray-600 mt-2">
+                                <p className="text-gray-600 mt-2 text-justify">
                                     {interview.description}
                                 </p>
                                 <Link href={`/interview/${interview.slug}`}>

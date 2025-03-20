@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
+// import Image from "next/image";
 import DrMadhukarPaiBio from "./DrMadhukarPaiBio";
+import TedrosQuote from "@/components/Shared/SectionTitle/TedrosQuote";
 
 const PublicHealthInsightsPage = () => {
     return (
@@ -18,7 +19,7 @@ const PublicHealthInsightsPage = () => {
             </div>
 
             {/* Hero Section with Image */}
-            <div className="max-w-3xl mx-auto  h-[300px] relative">
+            {/* <div className="max-w-3xl mx-auto  h-[300px] relative">
                 <Image
                     src="/interview/madhukar.jpg"
                     alt="Interview Section"
@@ -26,7 +27,8 @@ const PublicHealthInsightsPage = () => {
                     objectFit="cover"
                     className="brightness-75"
                 />
-            </div>
+            </div> */}
+            <TedrosQuote />
 
             {/* Interview Content */}
             <div className="max-w-screen-md mx-auto px-8 py-8 bg-white ">
