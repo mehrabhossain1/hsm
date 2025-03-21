@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // import Image from "next/image";
+import Link from "next/link";
 import DrMadhukarPaiBio from "./DrMadhukarPaiBio";
 import TedrosQuote from "@/components/Shared/SectionTitle/TedrosQuote";
 
@@ -259,6 +260,16 @@ const PublicHealthInsightsPage = () => {
                         become impactful.
                     </p>
                 </div>
+
+                <p className="text-gray-700 mt-2 leading-relaxed text-justify italic">
+                    Interview conducted by{" "}
+                    <Link
+                        href="/sizear"
+                        className="text-blue-600 font-medium hover:underline "
+                    >
+                        Monaemul Islam Sizear
+                    </Link>
+                </p>
             </div>
 
             {/* Footer */}

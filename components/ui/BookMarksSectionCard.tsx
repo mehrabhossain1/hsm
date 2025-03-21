@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import {
     Card,
     CardDescription,
@@ -13,7 +13,7 @@ interface BookMarksSectionCardProps {
     title: string;
     description: string;
     href: string;
-    Icon: string; // Replacing Icon with imageSrc
+    Icon: string | StaticImageData; // Replacing Icon with imageSrc
 }
 
 const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
@@ -48,7 +48,7 @@ const BookMarksSectionCard: React.FC<BookMarksSectionCardProps> = ({
                 </CardTitle>
 
                 {/* Description */}
-                <CardDescription className="pt-1 px-6 text-sm  text-justify text-gray-600">
+                <CardDescription className="pt-1 px-6 text-base  text-justify text-gray-600">
                     {description}
                 </CardDescription>
             </CardHeader>

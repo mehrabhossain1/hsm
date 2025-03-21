@@ -4,6 +4,7 @@
 import Image from "next/image";
 import BioOfZarif from "./BiofOfZarifRasul";
 import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 // import Image from "next/image";
 // import DrMadhukarPaiBio from "./DrMadhukarPaiBio";
 
@@ -219,6 +220,8 @@ const DevelopmentPerspective = () => {
                         exacerbate water contamination.
                     </p>
                 </div>
+
+                {/* 7 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
                         7. Reflecting on your career, what has brought you the
@@ -239,6 +242,8 @@ const DevelopmentPerspective = () => {
                         formulation.
                     </p>
                 </div>
+
+                {/* 8 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
                         8. What are the top three skills essential for success
@@ -256,6 +261,16 @@ const DevelopmentPerspective = () => {
                         crucial for success.
                     </p>
                 </div>
+
+                <p className="text-gray-700 mt-2 leading-relaxed text-justify italic">
+                    Interview conducted by{" "}
+                    <Link
+                        href="/sizear"
+                        className="text-blue-600 font-medium hover:underline "
+                    >
+                        Monaemul Islam Sizear
+                    </Link>
+                </p>
             </div>
 
             {/* Footer */}
