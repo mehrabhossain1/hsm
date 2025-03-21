@@ -5,13 +5,17 @@ import img3 from "@/public/resources/reports.jpeg";
 import ResourcesSectionCard from "@/components/ui/ResourcesSectionCard";
 
 const resourcesSubLinks = [
-    {
-        title: "Overview",
-        href: "/news/overview",
-        description:
-            "This section features Upcoming Events, which covers key global health conferences, symposiums, webinars, campaigns, and health days.",
-        img: img1,
-    },
+    //     {
+    //         title: "Overview",
+    //         href: "/news/overview",
+    //         description:
+    //             "This section features Upcoming Events, which covers key global health conferences,
+    // symposiums, webinars, campaigns, and health days. On the other hand, Headline News cover
+    // current major global health issues demanding global attention. Meanwhile, the Do You Know
+    // highlights significant public health milestones and fascinating facts. Explore a curated list of
+    // notable health days and activities focused on global health.",
+    //         img: img1,
+    //     },
     {
         title: "Upcoming Event",
         href: "/news/upcoming-event",
@@ -43,7 +47,17 @@ const NewsPage = () => {
                         <h1 className="text-5xl font-[1000] text-white">
                             News
                         </h1>
-                        <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
+                        <p className="text-base max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
+                            This section features Upcoming Events, which covers
+                            key global health conferences, symposiums, webinars,
+                            campaigns, and health days. On the other hand,
+                            Headline News cover current major global health
+                            issues demanding global attention. Meanwhile, the Do
+                            You Know highlights significant public health
+                            milestones and fascinating facts. Explore a curated
+                            list of notable health days and activities focused
+                            on global health.
+                        </p>
                     </div>
                 </div>
             </div>

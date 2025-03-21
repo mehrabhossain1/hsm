@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
 
 const bookmarksData = [
-    {
-        title: "Overview",
-        href: "/newsletter/overview",
-        description:
-            "The Health Systems Matter Newsletter provides valuable insights and resources on global health, upcoming events, and career opportunities. Subscribers receive periodic emails, preferably monthly, featuring highlights from our recent social media posts, new blogs, interviews, and more. The newsletter also covers significant global health topics and news from around the world, keeping you updated and informed.",
-        Icon: "https://img.freepik.com/free-photo/e-mail-global-communications-connection-social-networking-concept_53876-123795.jpg?t=st=1742593975~exp=1742597575~hmac=a08034ef264427686a0fc170d67350e8753e7505ff39b01f7366058b3d168219&w=996",
-    },
+    // {
+    //     title: "Overview",
+    //     href: "/newsletter/overview",
+    //     description:
+    //         "The Health Systems Matter Newsletter provides valuable insights and resources on global health, upcoming events, and career opportunities. Subscribers receive periodic emails, preferably monthly, featuring highlights from our recent social media posts, new blogs, interviews, and more. The newsletter also covers significant global health topics and news from around the world, keeping you updated and informed.",
+    //     Icon: "https://img.freepik.com/free-photo/e-mail-global-communications-connection-social-networking-concept_53876-123795.jpg?t=st=1742593975~exp=1742597575~hmac=a08034ef264427686a0fc170d67350e8753e7505ff39b01f7366058b3d168219&w=996",
+    // },
     {
         title: "Subscribe for newsletter",
         href: "/newsletter/subscribe-for-newsletter",
@@ -43,7 +43,17 @@ const NewsletterPage = () => {
                         <h1 className="text-5xl font-[1000] text-white">
                             Newsletter
                         </h1>
-                        <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
+                        <p className="text-base max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
+                            The Health Systems Matter Newsletter provides
+                            valuable insights and resources on global health,
+                            upcoming events, and career opportunities.
+                            Subscribers receive periodic emails, preferably
+                            monthly, featuring highlights from our recent social
+                            media posts, new blogs, interviews, and more. The
+                            newsletter also covers significant global health
+                            topics and news from around the world, keeping you
+                            updated and informed.
+                        </p>
                     </div>
                 </div>
             </div>
