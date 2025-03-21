@@ -63,7 +63,7 @@ const DevelopmentPerspective = () => {
                                     <FaLinkedin />
                                 </a>
                             </p>
-
+                            {/* comment */}
                             <p className="text-[30px]  font-base leading-relaxed text-justify">
                                 “Perseverance, adaptability, and cultural
                                 sensitivity are essential skills for success in
