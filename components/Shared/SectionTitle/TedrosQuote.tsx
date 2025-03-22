@@ -26,7 +26,7 @@ export default function TedrosQuote() {
                                 rel="noopener noreferrer"
                                 className=""
                             >
-                                <FaLinkedin />
+                                <FaLinkedin className="text-2xl" />
                             </a>
                         </p>
 

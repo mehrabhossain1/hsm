@@ -85,7 +85,7 @@ const NewsAndNewsletterPage = () => {
 
     return (
         <div>
-            <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
+            <div className="relative w-full h-[120px] border-t-2 border-[#FFCE00]">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB] to-[#2D8CBB]/30 flex items-center ">
                     <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16">
                         <h1 className="text-4xl font-bold text-white">

@@ -34,9 +34,9 @@ const WhyHealthSystemsMatterPage = () => {
                         inspired me to create the HSM knowledge platform.
                     </p>
                     <p className="mb-2">
-                        <span className="font-bold">First,</span> early in my
-                        career in public health, I faced significant challenges
-                        in accessing relevant documents on the Bangladesh health
+                        <span className="">First,</span> early in my career in
+                        public health, I faced significant challenges in
+                        accessing relevant documents on the Bangladesh health
                         system. Understanding its complexities and gaining a
                         comprehensive overview was difficult due to the absence
                         of a centralized resource. This experience underscored
@@ -48,14 +48,14 @@ const WhyHealthSystemsMatterPage = () => {
                         manner.
                     </p>
                     <p className="mb-2">
-                        <span className="font-bold">Second,</span> over time, I
-                        gained access to a wealth of resources, empirical
-                        experiences, expert interactions, and participation in
-                        conferences and seminars. This exposure enriched my
-                        understanding and made me resourceful. I realized that
-                        developing a knowledge platform could benefit both
-                        emerging and established professionals by addressing
-                        their information needs.
+                        <span className="">Second,</span> over time, I gained
+                        access to a wealth of resources, empirical experiences,
+                        expert interactions, and participation in conferences
+                        and seminars. This exposure enriched my understanding
+                        and made me resourceful. I realized that developing a
+                        knowledge platform could benefit both emerging and
+                        established professionals by addressing their
+                        information needs.
                     </p>
                     <p>
                         This realization led to the creation of HSM, with the

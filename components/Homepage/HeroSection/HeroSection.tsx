@@ -23,7 +23,7 @@ const HeroSection = () => {
                                 HUB{" "}
                             </h1>
                             <div>
-                                <h2 className="text-3xl font-bold text-[#001844] text-center mb-4">
+                                <h2 className="text-[26px] font-bold text-[#35A6EA] text-center mb-4">
                                     Knowledge for Solutions
                                 </h2>
                                 <p className="text-justify text-base font-medium text-gray-600">

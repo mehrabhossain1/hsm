@@ -29,6 +29,13 @@ const resourcesSubLinks = [
         description: "",
         img: img3,
     },
+
+    {
+        title: "Data in Global Health",
+        href: "/news/do-you-know",
+        description: "",
+        img: img1,
+    },
     {
         title: "Do You Know",
         href: "/news/do-you-know",

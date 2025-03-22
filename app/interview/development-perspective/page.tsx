@@ -61,7 +61,7 @@ const DevelopmentPerspective = () => {
                                     rel="noopener noreferrer"
                                     className=""
                                 >
-                                    <FaLinkedin />
+                                    <FaLinkedin className="text-2xl" />
                                 </a>
                             </p>
                             {/* comment */}

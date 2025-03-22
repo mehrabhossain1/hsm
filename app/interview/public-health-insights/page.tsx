@@ -38,11 +38,11 @@ const PublicHealthInsightsPage = () => {
             <div className="max-w-screen-md mx-auto px-8 py-8 bg-white ">
                 {/* Question 1 */}
                 <div className="mb-8">
-                    <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        1. What drives your passion for public health, and what
+                    <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
+                        Q. What drives your passion for public health, and what
                         keeps you motivated daily?
                     </h2>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         <span className="font-bold">Madhukar Pai:</span> As a
                         child, I wanted to be a doctor. But once I started
                         medical school, I realized I wanted to prevent people

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "@/public/bg.jpeg";
+import bg from "@/public/youtube/youtube.webp";
 import { Separator } from "@/components/ui/separator";
 
 const Youtube = () => {
@@ -60,7 +60,7 @@ const Youtube = () => {
                     <Image
                         src={bg}
                         alt="YouTube Channel"
-                        className="w-full h-auto rounded-lg shadow-lg"
+                        className="w-full h-96 rounded-lg shadow-lg"
                     />
                 </div>
             </div>
