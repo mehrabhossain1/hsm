@@ -22,6 +22,7 @@ const HeroSection = () => {
                                 {" "}
                                 HUB{" "}
                             </h1>
+                            {/* comment */}
                             <div>
                                 <h2 className="text-[26px] font-bold text-[#35A6EA] text-center mb-4">
                                     Knowledge for Solutions
