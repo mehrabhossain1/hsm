@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
 
     return (
         <motion.div
-            className="relative w-full h-96 overflow-hidden cursor-pointer"
+            className="relative w-full h-96 overflow-hidden cursor-pointer rounded-md"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -70,18 +70,18 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
 export default function BlogsInterviewsSection() {
     const resources = [
         {
-            title: "Blog",
-            description:
-                "The blog covers diverse global health topics, offering thoughtful analysis from public health professionals through a health systems perspective.",
-            image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "#",
-        },
-        {
             title: "Interview",
             description:
                 "The interview section showcases the journeys and insights of global health advocates, highlighting their impactful experiences and perspectives.",
             image: "https://images.unsplash.com/photo-1565728744382-61accd4aa148?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             link: "/interview",
+        },
+        {
+            title: "Blog",
+            description:
+                "The blog covers diverse global health topics, offering thoughtful analysis from public health professionals through a health systems perspective.",
+            image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            link: "/blog",
         },
     ];
 
@@ -103,7 +103,7 @@ export default function BlogsInterviewsSection() {
 
                 <div className="flex gap-5 items-center w-full mb-8">
                     <h1 className="text-4xl font-[1000] text-[#001844] whitespace-nowrap">
-                        BLOG & INTERVIEW
+                        INTERVIEW & BLOG
                     </h1>
                     <Separator
                         orientation="vertical"
@@ -111,7 +111,7 @@ export default function BlogsInterviewsSection() {
                     />
 
                     <p className="text-lg text-[#001844] font-semibold text-justify">
-                        The Blog and Interview section is an exciting section of
+                        The Interview and Blog section is an exciting section of
                         the Health Systems Matter platform, offering original
                         content and insights from public health professionals
                         worldwide.

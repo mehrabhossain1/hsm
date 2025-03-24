@@ -70,14 +70,14 @@ const NewsAndNewsletterPage = () => {
         {
             title: "Interview",
             description:
-                "This section features Upcoming Events, which covers key global health conferences, symposiums, webinars, campaigns, and health days. ",
+                "The interview section showcases the journeys and insights of global health advocates, highlighting their impactful experiences and perspectives.",
             image: "https://img.freepik.com/free-photo/close-up-interviewee-taking-notes_23-2149037867.jpg?t=st=1742322872~exp=1742326472~hmac=a5db8ba5ecb40a2b8702b9df9313be9d979ad9699ec4a29823e25457f3132a6b&w=996",
             link: "/interview",
         },
         {
             title: "Blog",
             description:
-                "The Health Systems Matter Newsletter provides valuable insights and resources on global health, upcoming events, and career opportunities. ",
+                "The blog covers diverse global health topics, offering thoughtful analysis from public health professionals through a health systems perspective.",
             image: "https://img.freepik.com/free-photo/information-articles-blogging-device-screen_53876-124046.jpg?t=st=1742322970~exp=1742326570~hmac=cd90bb87bdfec31328054855b6a71c3c317922f795439c67377973bb71683225&w=900",
             link: "/blog",
         },
