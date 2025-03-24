@@ -13,9 +13,14 @@ const PublicHealthInsightsPage = () => {
                     <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-16 flex-wrap">
                         <h1 className="text-3xl font-bold text-center text-white">
                             Public Health Insights with{" "}
-                            <span className="text-[#001844] underline">
+                            <a
+                                href="https://www.linkedin.com/in/zarifrasul"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#001844] underline font-extrabold bg-[#FFCE00] px-2 rounded-md"
+                            >
                                 Dr. Madhukar Pai:
-                            </span>{" "}
+                            </a>{" "}
                             A Global Activist
                         </h1>
                     </div>
@@ -37,7 +42,7 @@ const PublicHealthInsightsPage = () => {
             {/* Interview Content */}
             <div className="max-w-screen-md mx-auto px-8 py-8 bg-white ">
                 {/* Question 1 */}
-                <div className="mb-8">
+                <div className="mb-4">
                     <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
                         Q. What drives your passion for public health, and what
                         keeps you motivated daily?
@@ -56,12 +61,12 @@ const PublicHealthInsightsPage = () => {
 
                 {/* Add more questions here as needed */}
                 {/* Question 2 */}
-                <div className="mb-8">
-                    <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        2. Who has been your source of inspiration in your
+                <div className="mb-4">
+                    <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
+                        Q. Who has been your source of inspiration in your
                         public health career?
                     </h2>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         <span className="font-bold">Madhukar Pai:</span> Several
                         people inspired and mentored me in my career! I thanked
                         them all in this TEDx talk:{" "}
@@ -74,7 +79,7 @@ const PublicHealthInsightsPage = () => {
                             https://www.youtube.com/watch?v=SjrzYzY98TQ
                         </a>
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         When I was a medical student, I was lucky to join a
                         network of socially oriented health professionals called{" "}
                         <a
@@ -90,27 +95,27 @@ const PublicHealthInsightsPage = () => {
                         sociopolitical context within which medical care
                         operates. MFC had and still has many inspiring people.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         Once I joined my public health residency program at the
                         Christian Medical College in Vellore, South India, and
                         my PhD epidemiology program at the University of
                         California, Berkeley, I had other professors who
                         inspired and mentored me.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         In short, very lucky to have had so many wonderful
                         teachers and mentors. Without them, I would be nothing.
                     </p>
                 </div>
 
                 {/* Question 3 */}
-                <div className="mb-8">
-                    <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        3. What do you consider your greatest accomplishment as
+                <div className="mb-4">
+                    <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
+                        Q. What do you consider your greatest accomplishment as
                         a faculty member at a globally renowned public health
                         institution?
                     </h2>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         <span className="font-bold">Madhukar Pai:</span> My
                         biggest source of happiness and impact comes from
                         teaching and students. I am passionate about teaching
@@ -118,7 +123,7 @@ const PublicHealthInsightsPage = () => {
                         all over the world and seeing their success and impact
                         makes me proud.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         I have made several scholarly contributions to global
                         health pedagogy, including publications that speak to
                         the need to{" "}
@@ -160,20 +165,20 @@ const PublicHealthInsightsPage = () => {
                 </div>
 
                 {/* Question 4 */}
-                <div className="mb-8">
-                    <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        4. What is the most pressing global public health
+                <div className="mb-4">
+                    <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
+                        Q. What is the most pressing global public health
                         challenge, and how would we address it with limited
                         resources?
                     </h2>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         <span className="font-bold">Madhukar Pai:</span> In a
                         world increasingly threatened by climate crisis,
                         conflicts, pandemics, and widening economic inequities,
                         we are not dealing with one pressing issue. We are
                         dealing with polycrisis.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         In these difficult times, I{" "}
                         <a
                             href="https://www.nature.com/articles/d41586-024-03413-2"
@@ -189,43 +194,43 @@ const PublicHealthInsightsPage = () => {
                         and many other social movements today are mostly led by
                         youth.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         So, anything we can do to back young people and open
                         leadership opportunities would be very impactful.
                     </p>
                 </div>
 
                 {/* Question 5 */}
-                <div className="mb-8">
-                    <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        5. What are the top three skills essential for success
+                <div className="mb-4">
+                    <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
+                        Q. What are the top three skills essential for success
                         in public health?
                     </h2>
 
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         <span className="font-bold">Madhukar Pai:</span>
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6 text-[15px]">
                         <strong>1.</strong> Strong training in a specific area,
                         ability to strategically think about what needs to be
                         done and how to execute
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6 text-[15px]">
                         <strong>2.</strong> Good communication
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify pl-6 text-[15px]">
                         <strong>3.</strong> Ability to work with teams
                     </p>
                 </div>
 
                 {/* Question 6 */}
-                <div className="mb-8">
-                    <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        6. How has your perspective on public health evolved
+                <div className="mb-4">
+                    <h2 className="text-[18px] font-bold text-[#2D8CBB] text-justify">
+                        Q. How has your perspective on public health evolved
                         over the years, and what message would you offer to
                         someone beginning their journey in this field?
                     </h2>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         <span className="font-bold">Madhukar Pai:</span> Over
                         the years, I have grown to realize that the field of
                         global health is neither diverse nor truly global. Every
@@ -237,7 +242,7 @@ const PublicHealthInsightsPage = () => {
                         on editorial boards. Their knowledge is mostly
                         invisible.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         Global public health cannot be a pursuit or passion of
                         the most privileged. It needs to firmly center on people
                         with the greatest lived experience. As my colleagues and
@@ -253,7 +258,7 @@ const PublicHealthInsightsPage = () => {
                         published recently, this will require leadership by the
                         Global South and allyship by the Global North.
                     </p>
-                    <p className="text-gray-700 mt-2 leading-relaxed text-justify">
+                    <p className="text-gray-700 mt-2 leading-relaxed text-justify text-[15px]">
                         For young people starting their careers, I would
                         encourage them to find their “purpose” in life, their
                         passion. Once they find it, they will find a way to
@@ -261,11 +266,11 @@ const PublicHealthInsightsPage = () => {
                     </p>
                 </div>
 
-                <p className="text-gray-700 mt-2 leading-relaxed text-justify italic">
+                <p className="text-[#001844] text-2xl mt-4 leading-relaxed text-center font-semibold bg-yellow-200 p-2 rounded-md">
                     Interview conducted by{" "}
                     <Link
                         href="/sizear"
-                        className="text-blue-600 font-medium hover:underline "
+                        className="text-blue-700 font-bold hover:underline"
                     >
                         Monaemul Islam Sizear
                     </Link>

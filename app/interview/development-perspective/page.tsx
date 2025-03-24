@@ -80,7 +80,7 @@ const DevelopmentPerspective = () => {
                 {/* Question 1 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        1. Can you share key highlights from your academic and
+                        Q. Can you share key highlights from your academic and
                         professional journey before joining the World Bank as a
                         Water Specialist under the Young Professionals Program?
                     </h2>
@@ -98,7 +98,7 @@ const DevelopmentPerspective = () => {
                 {/* Question 2 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        2. Pursuing a PhD requires strong commitment. In your
+                        Q. Pursuing a PhD requires strong commitment. In your
                         experience, when is a PhD most valuable, and how has it
                         influenced your career?
                     </h2>
@@ -117,7 +117,7 @@ const DevelopmentPerspective = () => {
                 {/* Question 3 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        3. How has your experience at the World Bank been so
+                        Q. How has your experience at the World Bank been so
                         far? What advice would you give to those aspiring to
                         work in multilateral organizations like the World Bank
                         or Asian Development Bank?
@@ -148,7 +148,7 @@ const DevelopmentPerspective = () => {
                 {/* Question 4 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        4. What career opportunities exist for emerging
+                        Q. What career opportunities exist for emerging
                         professionals focused on water issues? Could you share
                         insights from a global perspective?
                     </h2>
@@ -175,7 +175,7 @@ const DevelopmentPerspective = () => {
                 {/* Question 5 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        5. Innovation is key to addressing the water and climate
+                        Q. Innovation is key to addressing the water and climate
                         crisis. How does the World Bank ensure that innovative
                         solutions reach the most vulnerable communities,
                         particularly in low-income and climate-affected regions?
@@ -198,7 +198,7 @@ const DevelopmentPerspective = () => {
                 {/* Question 6 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        6. Based on your experience in Bangladesh’s water and
+                        Q. Based on your experience in Bangladesh’s water and
                         sanitation sector, what do you see as the country’s
                         biggest challenge in securing safe drinking water, and
                         what are the best strategies to address it?
@@ -224,7 +224,7 @@ const DevelopmentPerspective = () => {
                 {/* 7 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        7. Reflecting on your career, what has brought you the
+                        Q. Reflecting on your career, what has brought you the
                         most satisfaction, and who has been your biggest
                         inspiration in the development sector and why?
                     </h2>
@@ -246,7 +246,7 @@ const DevelopmentPerspective = () => {
                 {/* 8 */}
                 <div className="mb-8">
                     <h2 className="text-xl font-bold text-[#2D8CBB] text-justify">
-                        8. What are the top three skills essential for success
+                        Q. What are the top three skills essential for success
                         as a global development professional?
                     </h2>
                     <p className="text-gray-700 mt-2 leading-relaxed text-justify">
