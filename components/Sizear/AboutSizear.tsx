@@ -75,10 +75,10 @@ const AboutSizear = () => {
           {/* Contact Row */}
           <div className="mt-6 flex items-center gap-4 flex-wrap">
             <a
-              href="mailto:sizear.publichealth@gmail.com"
+              href="mailto:sizear.monaemul@gmail.com"
               className="text-sm text-gray-600 hover:text-blue-600 transition"
             >
-              sizear.publichealth@gmail.com
+              sizear.monaemul@gmail.com
             </a>
             <a
               href="https://www.linkedin.com/in/monaemul-islam-sizear"
