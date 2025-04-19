@@ -1,37 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaBriefcase } from "react-icons/fa";
+// import { FaBriefcase } from "react-icons/fa";
 
 const CareerTrajectory = () => {
-  //   const data = [
-  //     {
-  //       title: "January 2023 – Present",
-  //       content: (
-  //         <div>
-  //           <p className="text-neutral-600  text-xl font-medium mb-8">
-  //             Technical Advisor, Open Development
-  //           </p>
-  //         </div>
-  //       ),
-  //     },
-  //     {
-  //       title: "November 2021 – December 2022 ",
-  //       content: (
-  //         <div>
-  //           <p className="text-neutral-600  text-xl font-medium mb-8">
-  //             Senior Program Analyst, ThinkWell Global
-  //           </p>
-  //         </div>
-  //       ),
-  //     },
-  //   ];
-
   const experiences = [
     {
       title: "Technical Advisor",
       company: "Open Development",
-      date: "January 2023 – Present",
+      date: "January 2023 – March 2025",
     },
     {
       title: "Senior Program Analyst",
@@ -65,35 +42,42 @@ const CareerTrajectory = () => {
     },
     {
       title: "Research Assistant",
-      company: "BARCIK",
+      company:
+        "Bangladesh Agricultural Resource Center for Indigenous Knowledge (BARCIK)",
       date: "February 2011 – January 2012",
     },
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 pb-16">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-600  underline underline-offset-4 mb-4">
-        Career Trajectory / Employment Journey
-      </h3>
+    <div className="bg-gradient-to-br from-slate-900 via-gray-800 to-gray-900 py-20 px-6 sm:px-10 lg:px-20 text-white">
+      {/* Section Header */}
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <h3 className="text-3xl md:text-4xl font-bold">Career Trajectory</h3>
+        <div className="mt-3 inline-block px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 text-white text-sm font-semibold shadow-md">
+          12+ Years of Experience
+        </div>
+      </div>
 
-      <div className="relative max-w-3xl mx-auto pt-4">
+      {/* Timeline */}
+      <div className="relative max-w-3xl mx-auto">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="mb-6 relative border border-blue-500 hover:border-b-2 hover:border-r-2 shadow-sm rounded-md"
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="mb-6 relative border border-teal-600 bg-slate-800/50 hover:bg-slate-700 transition-all duration-300 rounded-lg shadow-lg overflow-hidden"
           >
-            <div className="absolute -left-[37px] top-2 bg-blue-500 w-12 h-12 flex items-center justify-center rounded-full">
+            {/* <div className="absolute -left-[36px] z-10 top-3 bg-blue-600 w-12 h-12 flex items-center justify-center rounded-full shadow-md border-4 border-slate-900">
               <FaBriefcase className="text-white text-xl" />
-            </div>
-            <div className="bg-slate-50 p-8 shadow-sm rounded-md flex justify-between">
-              <h3 className="text-lg font-semibold text-gray-600">
-                {exp.title}, {exp.company}
-              </h3>
-              {/* <p className="text-gray-700 text-xl">{exp.company}</p> */}
-              <p className=" text-gray-500 text-lg">{exp.date}</p>
+            </div> */}
+            <div className="p-6 pl-16">
+              <h4 className="text-lg md:text-xl font-semibold text-white">
+                {exp.title},{" "}
+                <span className="text-teal-300">{exp.company}</span>
+              </h4>
+              <p className="text-sm text-gray-300 mt-1">{exp.date}</p>
             </div>
           </motion.div>
         ))}
